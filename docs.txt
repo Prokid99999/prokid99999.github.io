@@ -1,1 +1,3 @@
+1.57 - Testing some code cleanup
+    Testing if I can put text color in <body>
 1.56 - The debug page reloads every second
