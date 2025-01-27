@@ -1,4 +1,5 @@
 1.63 - More trying to get atproto-did to work
+    1.63.1 - same
 1.62 - Added an icon to the debug page
     1.62.1 - Edited the debug page
     1.62.2 - More edits to the debug page
