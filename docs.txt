@@ -1,4 +1,5 @@
 1.60 - Icon added
+    1.60.1 Reverted the fix to <h1>
 1.59 - Code cleanup works!
     Fixed the heading in index.html
 1.58 - Code cleanup affects the page now
