@@ -1,3 +1,5 @@
+1.59 - Code cleanup works!
+    Fixed the heading in index.html
 1.58 - Code cleanup affects the page now
 1.57 - Testing some code cleanup
     Testing if I can put text color in <body>
