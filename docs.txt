@@ -1,6 +1,7 @@
 1.62 - Added an icon to the debug page
     1.62.1 - Edited the debug page
     1.62.2 - More edits to the debug page
+    1.62.3 - same
 1.61 - Fixed the icon
 1.60 - Icon added
     1.60.1 - Reverted the fix to <h1>
