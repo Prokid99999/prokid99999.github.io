@@ -1,3 +1,4 @@
+1.64 - Added thoughts
 1.63 - More trying to get atproto-did to work
     1.63.1 - same
     1.63.2 - same
@@ -9,7 +10,7 @@
         1.62.4.1 - testing some edits
 1.61 - Fixed the icon
 1.60 - Icon added
-    1.60.1 - Reverted the fix to <h1>
+    1.60.1 - Reverted the fix to <h1> (blue on black looks much better than blue on red)
 1.59 - Code cleanup works!
     Fixed the heading in index.html
 1.58 - Code cleanup affects the page now
