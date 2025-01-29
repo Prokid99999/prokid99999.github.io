@@ -1,3 +1,4 @@
+1.65 - Added style.css to make the page styles easier
 1.64 - Added thoughts
     1.64.1 - trying to get atproto to FUCKING work
     1.64.2 - small changes to index
