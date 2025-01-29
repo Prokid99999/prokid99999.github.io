@@ -5,7 +5,8 @@
     1.64.4 - same
     1.64.5 - same
         1.64.5.1 - changes to index and debug
-    1.64.5.6 - added character sheets
+    1.64.6 - added character sheets
+    1.64.6.1 - fixes for character sheets
 1.63 - More trying to get atproto-did to work
     1.63.1 - same
     1.63.2 - same
