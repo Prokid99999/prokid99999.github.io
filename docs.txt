@@ -2,6 +2,7 @@
     1.64.1 - trying to get atproto to FUCKING work
     1.64.2 - small changes to index
     1.64.3 - changes to thoughts
+    1.64.4 - same
 1.63 - More trying to get atproto-did to work
     1.63.1 - same
     1.63.2 - same
