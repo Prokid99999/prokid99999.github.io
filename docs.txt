@@ -1,6 +1,7 @@
 1.67 - Adding character sheets in the website
     1.67.1 - fixing debug page
     1.67.2 - updates to character sheets
+    1.67.3 - same
 1.66 - Trying bluesky verification
     1.66.1 - fixing
     1.66.2 - fixing
