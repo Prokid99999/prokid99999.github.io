@@ -1,0 +1,31 @@
+Default
+    <!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <html>
+        <body>
+            <h1></h1>
+            <p>
+
+            </p>
+        </body>
+    </html>
+Character sheet
+    <!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../characters.css">
+    </head>
+    <html>
+        <body>
+            <h1 style="color: ;"></h1>
+            <p>
+            Pronouns/Gender<br>
+            Sex<br>
+            Sexuality<br>
+            Weapon<br>
+            Species<br><br>
+            Character description<br>
+            </p>
+        </body>
+    </html>
