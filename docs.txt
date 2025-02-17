@@ -1,3 +1,4 @@
+1.68 - Overhauling character sheets
 1.67 - Adding character sheets in the website
     1.67.1 - fixing debug page
     1.67.2 - updates to character sheets
