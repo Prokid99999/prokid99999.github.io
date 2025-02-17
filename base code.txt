@@ -15,10 +15,12 @@ Character sheet
     <!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="../characters.css">
+        <link rel="icon" type="image/ico" href="../characters.ico">
     </head>
+    <title></title>
     <html>
         <body>
-            <h1 style="color: ;"></h1>
+            <h1 style="color: ;">Name</h1>
             <p>
             Pronouns/Gender<br>
             Sex<br>
