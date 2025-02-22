@@ -1,6 +1,7 @@
-body {background-color: black;}
+body {background-color: black; margin-inline: 2in;}
 strong {color: red;}
 * {font-family: Arial, Helvetica, sans-serif;}
 h1 {color:blue; font-family: 'Times New Roman', Times, serif;}
 p {font-size: 90%; text-indent: 0.5in; color: white;}
 h2 {color: white;}
+title {color: white;}

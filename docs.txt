@@ -1,3 +1,4 @@
+1.69 - nice - Added MBCKG
 1.68 - Overhauling character sheets
     1.68.1 - same
     1.68.2 - same
