@@ -4,3 +4,4 @@ strong {color: red;}
 h1 {color:blue; font-family: 'Times New Roman', Times, serif;}
 p {font-size: 90%; color: white; margin-right: 25px;}
 h2 {color: white;}
+.hidden {color: black; cursor: default;}

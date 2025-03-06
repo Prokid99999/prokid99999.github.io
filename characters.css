@@ -6,3 +6,5 @@ h1 {color:blue;}
 p {color: white; font-size: 90%; margin-right: 25px;}
 a {color: black;}
 span {font-size: 120%;}
+.hidden {color: black; cursor: default; font-size: 95%;}
+.hide {color: black; font-size: 95%;}
