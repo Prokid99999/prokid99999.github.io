@@ -1,3 +1,4 @@
+1.70 - changed a bunch of character sheets and methods of access
 1.69 - nice - Added MBCKG
     1.69.1 - nice- updates to MBCKG
     1.69.2 - nice - various updates

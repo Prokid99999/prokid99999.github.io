@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open thoughts.html",
-            "file": "d:\\prokid99999.github.io\\thoughts.html"
+            "name": "Open website",
+            "file": "d:\\prokid99999.github.io\\index.html"
         }
     ]
 }
