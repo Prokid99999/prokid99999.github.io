@@ -5,11 +5,31 @@
     <link rel="icon" href="thoughts.ico">
 </head>
 <body>
-    <h1>thoughts</h1>
+    <h1 >thoughts</h1>
     <p>
-        Maybe the reason this website is just black, white, blue and red is part of my design philsophy: basic design that lets the character's personality shine
-        <br>Well shit, that rhymes.
-        <br><br><a href="character_sheets.html">character sheets</a><br>
-        <br><a href="https://docs.google.com/document/d/1_JaB4aHlvy7FF0Ulwl8IwmxrR_lsryKxB0W3VUVrp4M/edit?tab=t.b9yrb23q1nt1#heading=h.mjc46dwdun9z" target="_blank" rel="noopener noreferrer">character sheets google doc (depricated)</a>
+        Maybe the reason this website is just black, white, red and blue is part of my design philsophy: basic design that lets the character's personality shine
+        <br>Well <span ondblclick="document.getElementById('passUser').textContent = 'character sheets'; document.getElementById('doc').textContent = 'character sheets google doc &#40;depricated&#41;'">shit,</span> that rhymes.
+        <br><br><a href="character_sheets.html" id="passUser"></a>
+        <!-- <br><input type="text" id="pass" style="cursor: default; background-color: white; border-color: black; border-bottom: black; border-right: black;" onkeydown="passWord = document.getElementById('pass').value; updatePass; var expected = 'Minecraftiscool_15';"> -->
+        <br><br><a id="doc" href="https://docs.google.com/document/d/1_JaB4aHlvy7FF0Ulwl8IwmxrR_lsryKxB0W3VUVrp4M/edit?tab=t.b9yrb23q1nt1#heading=h.mjc46dwdun9z" target="_blank" rel="noopener noreferrer"></a><br>
     </p>
 </body>
+<!-- <script>
+    var passWord = document.getElementById('pass').value;
+    var expected = 'Minecraftiscool_15';
+    var usable = false
+    // document.getElementById('pass').onkeydown = function() {updatePass()};
+    function updatePass() {
+            if (document.getElementById('pass').value == expected) {
+                usable = true
+            }
+            else {
+                usable = false
+            }
+        }
+    function checkPass() {
+        if (usable){
+            ;
+        }
+        };
+</script> -->

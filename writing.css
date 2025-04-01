@@ -4,8 +4,8 @@ strong {color: red;}
 h1 {color:blue; font-family: 'Times New Roman', Times, serif; font-size: 300%; text-align: center;}
 h2 {color: white; font-size: medium; text-align: center;}
 p {font-size: 90%; text-indent: 0.5in; color: white;}
-title {color: white;}
-.warning {color: red;}
 i {color: inherit;}
 span {text-indent: 0.5in;}
-.new-para {text-indent: 0.5in;}
+br {margin-left: 0.5in;}
+.new-para {margin-left: 0.5in;}
+.warning {color: red; font-size: 110%;}
