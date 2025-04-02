@@ -1,4 +1,5 @@
 1.71 - so many changes... I added a page to navigate stories, a couple of things related to HIGAGF, updated a lot of things (double-click 'shit' to get to the character sheets)
+    1.71.1 this must me the overhaul update; made a lot of organizational changes, updated all the icons, and rewrote MBCKG to use my formatting style 
 1.70 - changed a bunch of character sheets and methods of access
     1.70.1 - those methods of access are so fucking cool, it sounds kinda weird but getting rid of the preview at the bottom left and having to double click something to use the link is super impressive and it took a while to figure out
 1.69 - nice - Added MBCKG
@@ -46,7 +47,7 @@
     1.62.4 - same
         1.62.4.1 - testing some edits
 1.61 - Fixed the icon
-1.60 - Icon added
+1.60 - icon added
     1.60.1 - Reverted the fix to <h1> (blue on black looks much better than blue on red)
 1.59 - Code cleanup works!
     Fixed the heading in index.html

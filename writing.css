@@ -7,5 +7,9 @@ p {font-size: 90%; text-indent: 0.5in; color: white;}
 i {color: inherit;}
 span {text-indent: 0.5in;}
 br {margin-left: 0.5in;}
+/* classes */
 .new-para {margin-left: 0.5in;}
-.warning {color: red; font-size: 110%;}
+.warning {color: red; font-size: 125%;}
+.holly {color: white;}
+.mande {color: #326fda;}
+.sana {color: red;}
