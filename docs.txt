@@ -1,31 +1,39 @@
 1.71 - so many changes... I added a page to navigate stories, a couple of things related to HIGAGF, updated a lot of things (double-click 'shit' to get to the character sheets)
-    1.71.1 this must me the overhaul update; made a lot of organizational changes, updated all the icons, and rewrote MBCKG to use my formatting style 
+    1.71.1 - this must me the overhaul update; made a lot of organizational changes, updated all the icons, and rewrote MBCKG to use my formatting style
+    1.71.2 - [not me procrastinating higagf by working on everything else] fixed some bugs from the organization along with making a new icon for forest, dem and leite (i need to come up with a name for that)
+    
 1.70 - changed a bunch of character sheets and methods of access
     1.70.1 - those methods of access are so fucking cool, it sounds kinda weird but getting rid of the preview at the bottom left and having to double click something to use the link is super impressive and it took a while to figure out
+
 1.69 - nice - Added MBCKG
     1.69.1 - nice - updates to MBCKG
     1.69.2 - nice - various updates
     1.69.3 - nice - same
     1.69.4 - nice - updated just about every page
     1.69.5 - nice - added higagf
+
 1.68 - Overhauling character sheets
     1.68.1 - same
     1.68.2 - same
     1.68.3 - same
+
 1.67 - Adding character sheets in the website
     1.67.1 - fixing debug page
     1.67.2 - updates to character sheets
     1.67.3 - same
+
 1.66 - Trying bluesky verification
     1.66.1 - fixing
     1.66.2 - fixing
     1.66.3 - fixing
     1.66.4 - same
+
 1.65 - Added style.css to make the page styles easier
     1.65.1 - Fixed the style of debug.html
     1.65.2 - Changes to a few things
         1.65.2.1 - testing an embed
         1.65.2.2 - fixing the embed
+
 1.64 - Added thoughts
     1.64.1 - trying to get atproto to FUCKING work
     1.64.2 - small changes to index
@@ -37,21 +45,28 @@
         1.64.6.1 - fixes for character sheets
         1.64.6.2 - same
         1.64.6.3 - same
+
 1.63 - More trying to get atproto-did to work
     1.63.1 - same
     1.63.2 - same
+
 1.62 - Added an icon to the debug page
     1.62.1 - Edited the debug page
     1.62.2 - More edits to the debug page
     1.62.3 - same
     1.62.4 - same
         1.62.4.1 - testing some edits
+
 1.61 - Fixed the icon
+
 1.60 - icon added
     1.60.1 - Reverted the fix to <h1> (blue on black looks much better than blue on red)
+
 1.59 - Code cleanup works!
     Fixed the heading in index.html
+
 1.58 - Code cleanup affects the page now
+
 1.57 - Testing some code cleanup
-    Testing if I can put text color in <body>
+
 1.56 - The debug page reloads every second and these docs exist now!

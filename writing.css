@@ -1,7 +1,7 @@
 body {background-color: black; margin-inline: 1.5in;}
 strong {color: red;}
 * {font-family: Arial, Helvetica, sans-serif;}
-h1 {color:blue; font-family: 'Times New Roman', Times, serif; font-size: 300%; text-align: center;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center;}
 h2 {color: white; font-size: medium; text-align: center;}
 p {font-size: 90%; text-indent: 0.5in; color: white;}
 i {color: inherit;}
@@ -10,6 +10,6 @@ br {margin-left: 0.5in;}
 /* classes */
 .new-para {margin-left: 0.5in;}
 .warning {color: red; font-size: 125%;}
-.holly {color: white;}
+.holly {color: #6b8dc7;}
 .mande {color: #326fda;}
 .sana {color: red;}
