@@ -3,9 +3,9 @@
     <link rel="stylesheet" href="../../characters.css">
     <link rel="icon" href="../../icons/mbckg-story.png">
 </head>
-<title>me...</title>
+<title>Me.</title>
 <html>
-    <body>
+    <body onload="document.cookie = 'showAll=false;'">
         <h1 style="color: blue;"><Span style="color: blue;">Brody</Span><span style="color: white;">/</span><span style="color: red;">Prokid11</span><span style="color: white;">/</span><span style="color: #ff00ff;">Ben Heroblade</span></h1>
         <p>
         He/Him<span class="hidden">, thinking about enby</span><br>
@@ -13,9 +13,22 @@
         Aromatic Asexual<span class="hidden"> [i cannot give a fuck]</span><br>
         Words, stories<br>
         Human<br><br>
+        <!-- <button onclick="toggleAll">Show All Hidden Text</button><br><br> -->
         I don't know what to put for a character description.<br>
-        That's a part of my character, I have a hard time putting my thoughts into words, or maybe I can't decide which words to use, or I don't know which thoughts to write down.<br>
-        For example, Ben is a sort of persona, but I don't necessarily think of him as <i>me.</i> I don't think that's an example...
+        I guess that's a part of my character, I have a hard time putting my thoughts into words, or maybe I can't decide which words to use, or I don't know which thoughts to write down.<br>
+        For example, Ben is a sort of persona, but I don't necessarily think of him as <i>me.</i> I don't think that's an example...<br><br>
+        I've noticed a lot of similar themes in my writing, like some extreme mental condition, a mental breakdown, and sex. All of my stories involve sex. I don't know why, and that's kind of what this is for; figuring myself out.
         </p>
     </body>
 </html>
+<script>
+    var on = document.cookie
+    function toggleAll(){
+        if (document.cookie === 'showAll=true;'){
+        document.cookie = 'showAll=false;'
+    }
+        else {
+            document.cookie = 'showAll=true;'
+        }
+    }
+</script>
