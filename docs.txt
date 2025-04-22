@@ -4,7 +4,7 @@
     71.3 - added a sort of 'about me' page
     71.4 - added Lanette, more lists to explain things I use in stories, reformatted Character Sheets and added story names to groups of characters
     71.5 - added 'A Wish For Power'
-    71.6 - added ages to character sheets, links on the Sexuality and Gender pages, and changed the color of MBCKG.
+    71.6 - added ages to character sheets, links on the Sexuality and Gender pages, and changed the color of MBCKG
 
 70 - changed a bunch of character sheets and methods of access
     70.1 - those methods of access are so fucking cool, it sounds kinda weird but getting rid of the preview at the bottom left and having to double click something to use the link is super impressive and it took a while to figure out
