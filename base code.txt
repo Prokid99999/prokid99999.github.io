@@ -27,6 +27,7 @@ Character sheet
             <p>
             Pronouns/Gender<br>
             Sex<br>
+            Age<br>
             Sexuality<br>
             Weapon<br>
             Species<br><br>
