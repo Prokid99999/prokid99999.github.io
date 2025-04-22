@@ -1,11 +1,11 @@
 body {background-color: black;}
 * {font-family: Arial, Helvetica, sans-serif;}
-* {color: white;}
+/* * {color: white;} */
 strong {color: red;}
 button {color: black;}
 h1 {color:blue;}
-p {font-size: 90%; margin-right: 25px;}
-a {color: black;}
+p {font-size: 90%; margin-right: 25px; color: white;}
+a:hover {font-style: italic; font-size: calc(inherit + 10%);}
 /* span {} */
 i {color: inherit; font-family: inherit;}
 /* classes */
