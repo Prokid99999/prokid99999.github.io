@@ -1,6 +1,9 @@
 body {background-color: black; margin-inline: 1.5in;}
 * {font-family: Arial, Helvetica, sans-serif;}
 * {color: white;}
+a:link {color: blue;}
+a:visited {color: #9900ff;}
+a:active {color: red;}
 strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center;}
 h2 {font-size: medium; text-align: center;}

@@ -1,5 +1,8 @@
 body {background-color: black;}
 * {font-family: Arial, Helvetica, sans-serif;}
+a:link {color: blue;}
+a:visited {color: #9900ff;}
+a:active {color: red;}
 /* * {color: white;} */
 strong {color: red;}
 button {color: black;}
@@ -16,4 +19,4 @@ i {color: inherit; font-family: inherit;}
 .info {color: #00ff00; background-color: #f00; font-family: lucida console; text-align: center; display: block; margin: 10px; font-size: 250%; cursor: default;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #9900ff; font-style: italic; cursor: pointer;}
-.big {font-size: 120%; line-height: 1.4;}
+.big, .big:active, .big:visited, .big:link {font-size: 120%; line-height: 1.4; color: black;}
