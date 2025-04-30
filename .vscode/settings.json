@@ -1,3 +1,6 @@
 {
-    "figura.librariesFolderPath": "C:\\Users\\Brody\\AppData\\Roaming\\.minecraft\\figura\\avatars\\libraries\\"
+    "figura.librariesFolderPath": "C:\\Users\\Brody\\AppData\\Roaming\\.minecraft\\figura\\avatars\\libraries\\",
+    "github-actions.workflows.pinned.workflows": [
+        "dynamic/pages/pages-build-deployment"
+    ]
 }
