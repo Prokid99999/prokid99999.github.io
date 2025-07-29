@@ -2,7 +2,7 @@ body {background-color: black; margin-inline: 1.5in;}
 * {font-family: Arial, Helvetica, sans-serif;}
 * {color: white;}
 a:link {color: blue;}
-a:visited {color: #9900ff;}
+a:visited {color: #90f;}
 a:active {color: red;}
 strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center;}
@@ -17,4 +17,4 @@ i {color: inherit; font-family: inherit;}
 .warning {color: red; font-size: 125%;}
 .info {color: #00ff00; background-color: #f00; font-family: lucida console; text-align: center; display: block; margin: 10px; font-size: 250%; cursor: default;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
-.link:hover {color: #9900ff; font-style: italic; cursor: pointer;}
+.link:hover {color: #90f; font-style: italic; cursor: pointer;}
