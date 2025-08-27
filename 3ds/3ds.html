@@ -1,6 +1,17 @@
+<head>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../../icons/characters.png">
+</head>
+<title>3ds things</title>
+<script> 
+function changeImage(a, b) {
+        document.getElementById('img').src=a;
+    }
+</script>
 <html>
-    <body>
-        <img src="./unbound.png"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <img src="./unbound2.png">
+    <body style="text-align: center;">
+        <p onclick="document.getElementById('unbound').src='unbound.png'" style="cursor: pointer;">Unbound</p>
+        <p onclick="document.getElementById('unbound').src='unbound2.png'" style="cursor: pointer;">Alternate download</p>
+        <img id="unbound" src=""> 
     </body>
 </html>
