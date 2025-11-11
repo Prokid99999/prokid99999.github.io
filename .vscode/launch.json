@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open website",
-            "file": "d:\\prokid99999.github.io\\index.html"
+            "file": "./index.html"
         }
     ]
 }

@@ -1,5 +1,5 @@
-body {background-color: black; margin-inline: 1.5in;}
-* {font-family: Arial, Helvetica, sans-serif;}
+body {background-color: black; width:210mm; margin: auto;}
+* {font-family: Arial, sans-serif}
 * {color: white;}
 a:link {color: blue;}
 a:visited {color: #90f;}
@@ -7,7 +7,8 @@ a:active {color: red;}
 strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center;}
 h2 {font-size: medium; text-align: center;}
-p {font-size: 90%; text-indent: 0.5in;}
+p {text-indent: 0.5in; font-size: 80%; word-spacing: 1px; letter-spacing: 0.5px; padding:10mm;}
+pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 90%; padding:10mm; text-wrap: inherit;}
 i {color: inherit;}
 span {text-indent: 0.5in;}
 br {margin-left: 0.5in;}
