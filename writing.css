@@ -13,9 +13,26 @@ i {color: inherit;}
 span {text-indent: 0.5in;}
 br {margin-left: 0.5in;}
 i {color: inherit; font-family: inherit;}
+
 /* classes */
 .new-para {margin-left: 0.5in;}
 .warning {color: red; font-size: 125%;}
 .info {color: #00ff00; background-color: #f00; font-family: lucida console; text-align: center; display: block; margin: 10px; font-size: 250%; cursor: default;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #90f; font-style: italic; cursor: pointer;}
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: -163px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, #111, #000); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-left: 5px;
+    text-align: left;}
+.sidebar:hover{
+    left: 0px;
+}

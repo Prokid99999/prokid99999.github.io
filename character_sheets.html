@@ -7,6 +7,31 @@
 </head>
 <style>
     .large {font-size: 160%;}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border-color: #555;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 </style>
     <body>
         <h1 style="color: white;">Name</h1>
