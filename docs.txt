@@ -39,7 +39,7 @@
     66.4 - same
 
 65 - Added style.css to make the page styles easier
-    65.1 - Fixed the style of debug.html
+    65.1 - Fixed the style of debug
     65.2 - Changes to a few things
         65.2.1 - testing an embed
         65.2.2 - fixing the embed
@@ -73,7 +73,7 @@
     60.1 - Reverted the fix to <h1> (blue on black looks much better than blue on red)
 
 59 - Code cleanup works!
-    Fixed the heading in index.html
+    Fixed the heading in index
 
 58 - Code cleanup affects the page now
 
