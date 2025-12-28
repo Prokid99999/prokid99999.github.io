@@ -20,7 +20,7 @@ Character sheet
         <link rel="stylesheet" href="../characters.css">
         <link rel="icon" href="../icons/characters.png">
     </head>
-    <title></title>
+    <title>!!!</title>
     <html>
         <body>
             <h1 style="color: ;">Name</h1>
