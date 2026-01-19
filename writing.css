@@ -7,7 +7,7 @@ strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center; padding-top: 15mm; padding-bottom: 15mm; background: radial-gradient(#000, #000, #aaa, #aaa);}
 h2 {font-size: medium; text-align: center;}
 p {text-indent: 0.5in; font-size: 80%; word-spacing: 1px; letter-spacing: 0.5px; padding:10mm;}
-pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 3.85mm; padding:10mm; text-wrap: inherit; background: #aaa;}
+pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 14.4px; padding:10mm; text-wrap: inherit; background: #aaa;}
 i {color: inherit;}
 span {text-indent: 0.5in;}
 br {margin-left: 0.5in;}
