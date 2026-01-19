@@ -61,7 +61,7 @@ const magic = [" \
         <br> \
         <p>A few minutes later, Airn hasn't come back and I notice that Mina is gone. Looks like I was right. Anyway, I answer more questions, and Airn comes back. Mina shows up too, and both of them look normal. Aside from the slight sheen of magic over them. They don't speak up for the rest of class, so I finish it up and dismiss everyone.</p> \
         <br> \
-        <p>As we walk to the cafeteria, Mina takes off the magic hiding how disheveled the two are. It's not that bad, honestly. Airn's hair is messy, but that's really it.</p> \
+        <p>As we walk to the cafeteria, Mina takes off the magic hiding how disheveled the two are. It's not that bad, honestly. Airn's hair is messy, but that's it.</p> \
         <p>\"You two have fun?\" I'm being cheeky, I know.</p> \
         <p>\"Hell yeah! That was the best class I've taken here!\" She can't be lying with her eyes lit up like that, and it's not just from her alone time with Mina.</p> \
         <p>\"But you couldn't wait fifteen minutes?\"</p> \
