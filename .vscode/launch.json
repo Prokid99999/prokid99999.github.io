@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
             "name": "Open website",
-            "file": "./index"
+            "file": "/home/benheroblaw/Documents/GitHub/prokid99999.github.io/index.html"
         }
     ]
 }
