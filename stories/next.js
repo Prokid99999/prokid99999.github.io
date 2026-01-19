@@ -1,5 +1,6 @@
 function start(content=[]) {
 
+    window.scrollTo(0,0)
     const slides = content
     document.getElementById('story').innerHTML = slides[0]
 
