@@ -9,7 +9,7 @@ h2 {font-size: medium; text-align: center;}
 p {text-indent: 0.5in; font-size: 80%; word-spacing: 1px; letter-spacing: 0.5px; padding:10mm;}
 pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap: inherit; background: #aaa;}
 @media screen and (max-width: 900px) {
-    pre {font-size: 3rem;}
+    pre {font-size: 5rem;}
 }
 i {color: inherit;}
 span {text-indent: 0.5in;}
