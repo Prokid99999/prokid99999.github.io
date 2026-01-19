@@ -4,10 +4,10 @@ a:link {color: blue;}
 a:visited {color: #90f;}
 a:active {color: red;}
 strong {color: red;}
-h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center; padding-top: 15mm; padding-bottom: 15mm; background: radial-gradient(#000, #000, #aaa, #aaa);}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center; padding-top: 20mm; padding-bottom: 20mm; background: linear-gradient(#aaa, #111, #111, #aaa); margin-top: 0px; margin-bottom: 0px;}
 h2 {font-size: medium; text-align: center;}
-p {text-indent: 0.5in; font-size: 80%; word-spacing: 1px; letter-spacing: 0.5px; padding:10mm;}
-pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa;}
+p {text-indent: 3rem; line-height: 1.5rem; margin: auto;}
+pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
 @media screen and (max-width: 900px) and (max-height: 1600) {
     pre {font-size: 5rem;}
 }
@@ -20,8 +20,14 @@ i {color: inherit; font-family: inherit;}
 .new-para {margin-left: 0.5in;}
 .warning {color: red; font-size: 125%;}
 .info {color: #00ff00; background-color: #f00; font-family: lucida console; text-align: center; display: block; margin: 10px; font-size: 250%; cursor: default;}
+
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #90f; font-style: italic; cursor: pointer;}
+
+.background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
+@media screen and (max-width: 900px) and (max-height: 1600) {
+    .background {font-size: 5rem;}
+}
 .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
