@@ -72,4 +72,7 @@ const magic = [" \
         <p>\"Nah, we're going to bond over dinner.\"</p></div> \
         </div>",
 
-    ""]
+    '<h1 class="airn">Airn</h1> \
+    <div class="background"> \
+        <p>It\'s <i>finally</i> Saturday. My girlfriend lets me sleep through breakfast and wakes me up for lunch. I did all the homework I got yesterday last night, like every night. I don\'t get nearly enough sleep. \
+    </div>']

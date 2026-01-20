@@ -3,19 +3,12 @@
     <title>idk</title>
     <link rel="stylesheet" href="../writing.css">
     <link rel="icon" href="../icons/characters.png">
-    <script src="next.js"></script>
+    <script src="script.js"></script>
     <script src="text.js"></script>
 </head>
 <html>
-    <body onload="start(magic)">
-        <div style="text-align: center;">
-            <button id="prev">&lt Previous</button>
-            <button id="next">Next ></button>
-        </div>
-            <div id="story">balls</div>
-        <div style="text-align: center;">
-            <button id="prev1">&lt Previous</button>
-            <button id="next1">Next ></button>
-        </div>
+    <body onload="var text = getCookie('owner'); document.getElementById('show').textContent = text; checkCookie('owner')">
+        <button onclick="setCookie('owner', 'benheroblaw')">Set cookie</button>
+        <div id="show" style="color: white;">none</div>
     </body>
 </html>
