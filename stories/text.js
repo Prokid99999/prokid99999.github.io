@@ -76,3 +76,110 @@ const magic = [" \
     <div class="background"> \
         <p>It\'s <i>finally</i> Saturday. I did all the homework I got yesterday last night, like every night, so I can catch up on the sleep I lost from staying awake long past midnight doing homework for five days straight. My girlfriend lets me sleep through breakfast and wakes me up for lunch. I\'m perfectly awake even though I\'ll fall right back to sleep once we get back to our dorms. \
     </div>']
+
+const lustwreakers = ['<!DOCTYPE html>\
+<head>\
+    <link rel=\"stylesheet" href="../characters.css">\
+    <link rel="icon" href="../icons/lustwreaker.png">\
+</head>\
+<title>Marnin Lustwreaker</title>\
+<html>\
+    <body>\
+        <h1 style="color: #980000;">Marnin<span style="color: white;">(Marie)</span> Lustwreaker</h1>\
+        <p>\
+        She/Her<br>\
+        Female, but she can use the other one<br>\
+        20<br>\
+        Lesbian<br>\
+        Demonic power/magic<br>\
+        Demonoid/Cambion(Half human, half Arch Succubus)<br><br>\
+        Marnin is her demon name and Lustwreaker is her clan, nobody is related to each other except Quinn<br>\
+        Rory is second-in-command, while Diolas and Raein are only members in name and are free to do as they wish(not to say that Rory isn\'t; she simply \prefers working under Marnin)<br>Quinn will be third-in-command\
+        </p>\
+        <embed src="lustwreaker.png">\
+    </body>\
+</html>',
+
+'<!DOCTYPE html>\
+<head>\
+    <link rel="stylesheet" href="../characters.css">\
+    <link rel="icon" href="../icons/lustwreaker.png">\
+</head>\
+<title>Rory Lustwreaker</title>\
+<html>\
+    <body>\
+        <h1 style="color: #980000;"><span style="color: #cc0000;">Rory</span> Lustwreaker</h1>\
+        <p>\
+        She/Her<br>\
+        Female<br>\
+        old enough<br>\
+        Bi with strong female preference<br>\
+        Fists/melee<br>\
+        Greater Succubus<br><br>\
+        Short in height, small chest, keeps her horns, tail and wings hidden, very submissive, isn\'t affected by semen the way succubi normally are, likes women contrary to her evolutionary design<br><br>Bound herself to Marnin out of love, and was named\
+        </p>\
+    </body>\
+</html>',
+
+'<!DOCTYPE html>\
+<head>\
+    <link rel="stylesheet" href="../characters.css">\
+    <link rel="icon" href="../icons/lustwreaker.png">\
+</head>\
+<title>Diolas Lustwreaker</title>\
+<html>\
+    <body>\
+        <h1 style="color: #980000;"><span style="color: #783f04;">Diolas</span> Lustwreaker</h1>\
+        <p>\
+        They/Them<br>\
+        Male<br>\
+        old enough<br>\
+        Doesn\'t know other than they like Raein<br>\
+        Angelic power<br>\
+        Demon/Angel(Nephilim)<br><br>\
+        Forced away from Heaven and Hell, in a kind of exile on Earth<br>\
+        </p>\
+    </body>\
+</html>',
+
+'<!DOCTYPE html>\
+<head>\
+    <link rel="stylesheet" href="../characters.css">\
+    <link rel="icon" href="../icons/lustwreaker.png">\
+</head>\
+<title>Raein Lustwreaker</title>\
+<html>\
+    <body>\
+        <h1 style="color: #980000;"><span style="color: #bf9000;">Raein </span>Lustwreaker</h1>\
+        <p>\
+        He/Him<br>\
+        Male<br>\
+        old enough<br>\
+        Gay<br>\
+        Holy spear<br>\
+        Fallen Angel<br><br>\
+        Rory threw him from grace after he attacked her, Marnin and Diolas<br>\
+        </p>\
+    </body>\
+</html>',
+
+'<!DOCTYPE html>\
+<head>\
+    <link rel="stylesheet" href="../characters.css">\
+    <link rel="icon" href="../icons/lustwreaker.png">\
+</head>\
+<title>Quinn Lustwreaker</title>\
+<html>\
+    <body>\
+        <h1 style="color: #980000;"><span style="color: #660000;">Quinn(Quilin)</span> Lustwreaker</h1>\
+        <p>\
+        She/Her<br>\
+        Female<br>\
+        equivalent of 16<br>\
+        don\'t know yet<br>\
+        Katana<br>\
+        Demonoid - quarter human, 3/4 succubus<br><br>\
+        Daughter of Marnin and Rory<br>weeb perhaps? at least very interested in japanese culture\
+        </p>\
+    </body>\
+</html>']
