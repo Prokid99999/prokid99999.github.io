@@ -43,11 +43,11 @@ function start(content=[], doCookies=true) {
       if (checkCookie(page + "index") == "error"){
         setCookie(page + "index", 0)
         }
+      var pageX = getCookie(page + "scrollx")
+      var pageY = getCookie(page + "scrolly")
+      window.scrollTo(pageX,pageY)
       }
     }
-    var pageX = getCookie(page + "scrollx")
-    var pageY = getCookie(page + "scrolly")
-    window.scrollTo(pageX,pageY)
     document.getElementById('story').innerHTML = content[0]
 
     let index = Number(getCookie(page + "index"))
