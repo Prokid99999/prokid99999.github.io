@@ -8,7 +8,7 @@
             "type": "firefox",
             "request": "launch",
             "name": "Open website",
-            "file": "/home/benheroblaw/Documents/GitHub/prokid99999.github.io/index.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

@@ -31,61 +31,67 @@ function checkCookie(cname) {
   }
 }
 
-function start(content=[]) {
+function start(content=[], doCookies=true) {
 
     var page = window.location.pathname + " - "
-    if (checkCookie(page + "scrollx") == "error"){
-      setCookie(page + "scrollx", 0)
-    }
-    if (checkCookie(page + "scrolly") == "error"){
-      setCookie(page + "scrolly", 0)
+    if (doCookies=true) {
+      if (checkCookie(page + "scrollx") == "error"){
+        setCookie(page + "scrollx", 0)
+        }
+      if (checkCookie(page + "scrolly") == "error"){
+        setCookie(page + "scrolly", 0)
+      if (checkCookie(page + "index") == "error"){
+        setCookie(page + "index", 0)
+        }
+      }
     }
     var pageX = getCookie(page + "scrollx")
     var pageY = getCookie(page + "scrolly")
     window.scrollTo(pageX,pageY)
-    const slides = content
-    document.getElementById('story').innerHTML = slides[0]
-    if (checkCookie(page + "index") == "error"){
-      setCookie(page + "index", 0)
-    }
+    document.getElementById('story').innerHTML = content[0]
 
     let index = Number(getCookie(page + "index"))
 
     const showSlide = n => {
-        document.getElementById('story').innerHTML = slides[n]
+        document.getElementById('story').innerHTML = content[n]
     }
     showSlide(index)
 
     document.getElementById('next').addEventListener('click', () => {
-        index = (index + 1) % slides.length
+        index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        setCookie(page + "index", index)
+        if (doCookies=true) {
+        setCookie(page + "index", index)}
     })
 
     document.getElementById('prev').addEventListener('click', () => {
-        index = (index +  slides.length - 1) % slides.length
+        index = (index +  content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        setCookie(page + "index", index)
+        if (doCookies=true) {
+        setCookie(page + "index", index)}
     })
 
     document.getElementById('next1').addEventListener('click', () => {
-        index = (index + 1) % slides.length
+        index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        setCookie(page + "index", index)
+        if (doCookies=true) {
+        setCookie(page + "index", index)}
     })
 
     document.getElementById('prev1').addEventListener('click', () => {
-        index = (index +  slides.length - 1) % slides.length
+        index = (index + content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        setCookie(page + "index", index)
+        if (doCookies=true) {
+        setCookie(page + "index", index)}
     })
 
+    if (doCookies=true) {
     document.getElementById('scroll').addEventListener('scroll', function() {
       setCookie(page + "scrollx", window.scrollX)
       setCookie(page + "scrolly", window.scrollY)
-    })
+    })}
 }
