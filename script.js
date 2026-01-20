@@ -94,3 +94,11 @@ function start(content=[], doCookies=true) {
       setCookie(page + "scrolly", window.scrollY)
     })}
 }
+
+function getCommit(owner, repo) {
+  fetch('https://api.github.com/repos/'+owner+'/'+repo+'/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('message').innerHTML = res[0].commit.message
+  })
+}
