@@ -1,4 +1,4 @@
-function setCookie(cname, cvalue, exdays=365) {
+function setCookie(cname, cvalue, exdays=365*2) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
@@ -39,7 +39,7 @@ function start(content=[], doCookies=true) {
         setCookie(page + "scrollx", 0)
         }
       if (checkCookie(page + "scrolly") == "error"){
-        setCookie(page + "scrolly", 0)
+        setCookie(page + "scrolly", 0)}
       if (checkCookie(page + "index") == "error"){
         setCookie(page + "index", 0)
         }
@@ -47,7 +47,6 @@ function start(content=[], doCookies=true) {
       var pageY = getCookie(page + "scrolly")
       window.scrollTo(pageX,pageY)
       }
-    }
     document.getElementById('story').innerHTML = content[0]
 
     let index = Number(getCookie(page + "index"))
