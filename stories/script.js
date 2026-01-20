@@ -3,7 +3,7 @@ function setCookie(cname, cvalue, exdays=90) {
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";page=/";
-  console.log("Set cookie '" + cname + "' with value '" + cvalue + "'; expires " + expires)
+  console.log("Set cookie '" + cname + "' with value '" + cvalue + "'; " + expires)
 }
 function getCookie(cname) {
   let name = cname + "=";
@@ -23,7 +23,7 @@ function getCookie(cname) {
 function checkCookie(cname) {
   let anti = getCookie(cname)
   if (anti != "") {
-    console.log("Success! Loaded cookie '" + cname + "' with value '" + getCookie(cname) + "'")
+    console.log("Success! Found cookie '" + cname + "' with value '" + getCookie(cname) + "'")
     return "success!"
   } else {
     console.log("Couldn't find cookie " + cname)
@@ -84,7 +84,7 @@ function start(content=[]) {
         setCookie(page + "index", index)
     })
 
-    document.getElementById('scroll').addEventListener('scrollend', () => {
+    document.getElementById('scroll').addEventListener('scroll', function() {
       setCookie(page + "scrollx", window.scrollX)
       setCookie(page + "scrolly", window.scrollY)
     })
