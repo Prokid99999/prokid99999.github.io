@@ -49,7 +49,7 @@ function start(content=[]) {
       setCookie(page + "index", 0)
     }
 
-    let index = getCookie(page + "index")
+    let index = Number(getCookie(page + "index"))
 
     const showSlide = n => {
         document.getElementById('story').innerHTML = slides[n]
