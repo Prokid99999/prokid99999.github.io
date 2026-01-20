@@ -96,9 +96,20 @@ function start(content=[], doCookies=true) {
 }
 
 function getCommit(owner, repo) {
-  fetch('https://api.github.com/repos/'+owner+'/'+repo+'/commits?per_page=1')
+  fetch('https://api.github.com/repos/'+owner+'/'+repo+'/commits?per_page=1',
+    {Authorization:atob("")})
   .then(res => res.json())
   .then(res => {
     document.getElementById('message').innerHTML = res[0].commit.message
   })
 }
+function getCommitNumbers(owner, repo) {
+  fetch('https://api.github.com/repos/'+owner+'/'+repo+'/commits?per_page=1',
+    {Authorization:atob("")})
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('message').innerHTML = res[0].commit.message
+  })
+}
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
