@@ -74,5 +74,5 @@ const magic = [" \
 
     '<h1 class="airn">Airn</h1> \
     <div class="background"> \
-        <p>It\'s <i>finally</i> Saturday. My girlfriend lets me sleep through breakfast and wakes me up for lunch. I did all the homework I got yesterday last night, like every night. I don\'t get nearly enough sleep. \
+        <p>It\'s <i>finally</i> Saturday. I did all the homework I got yesterday last night, like every night, so I can catch up on the sleep I lost from staying awake long past midnight doing homework for five days straight. My girlfriend lets me sleep through breakfast and wakes me up for lunch. I\'m perfectly awake even though I\'ll fall right back to sleep once we get back to our dorms. \
     </div>']
