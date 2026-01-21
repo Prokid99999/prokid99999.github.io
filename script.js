@@ -31,6 +31,18 @@ function checkCookie(cname) {
   }
 }
 
+// function fetchJSONData(jsonFile="./test.json") {
+//   fetch(jsonFile)
+//     .then(response => {
+//       if (!response.ok) {
+//         throw new Error(`HTTP error! Status: ${response.status}`);
+//       }
+//       return response.json();
+//     })
+//     .then(data => console.log(data))
+//     .catch(error => console.error('Failed to fetch data:', error));
+// }
+
 function start(content=[], doCookies=true) {
 
     var page = window.location.pathname + " - "

@@ -183,3 +183,5 @@ const lustwreakers = ['<!DOCTYPE html>\
         </p>\
     </body>\
 </html>']
+
+const test = fetchJSONData()
