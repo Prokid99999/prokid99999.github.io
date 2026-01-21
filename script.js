@@ -23,7 +23,7 @@ function getCookie(cname) {
 function checkCookie(cname) {
   let anti = getCookie(cname)
   if (anti != "") {
-    console.log("Success! Found cookie '" + cname + "' with value '" + getCookie(cname) + "'")
+    console.log("Found cookie '" + cname + "' with value '" + getCookie(cname) + "'")
     return "success!"
   } else {
     console.log("Couldn't find cookie " + cname)
