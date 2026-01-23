@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta http-equiv="refresh" content="-1">
+    <meta http-equiv="refresh" content="5">
     <title>
         debug page!!!
     </title>
@@ -16,25 +16,31 @@
     /* span {color: red; text-decoration: underline;}
     span {color: #90f; text-decoration: underline;} */
     .message {font-size: 150%; color: #0f0; font-family: cursive;}
-    .updating {font-size: 140%; color: white;}
+    .updating {font-size: 100%; color: white; font-family: sans-serif;}
 </style>
 <script>
     const refresh = async () => {
         while (true) {
             document.getElementById("message").className = "updating"
-            document.getElementById("message").textContent = "updating..."
-            await delay(0.1 * 1000)
+            document.getElementById("message").textContent = "fetching"
+            await delay(0.05 * 1000)
+            document.getElementById("message").textContent = "fetching."
+            await delay(0.05 * 1000)
+            document.getElementById("message").textContent = "fetching.."
+            await delay(0.05 * 1000)
+            document.getElementById("message").textContent = "fetching..."
+            await delay(0.05 * 1000)
             getCommit('Prokid99999', 'prokid99999.github.io')
-            await delay(5 * 1000)
+            await delay(2.5 * 1000)
             console.clear()
         }
     };
 </script>
 <html>
-    <body onload="var x = ' ' + navigator.onLine; document.getElementById('online').textContent = x; if (x = true) {document.getElementById('online').style.color = '#00ff00'; refresh()}">
+    <body onload="var x = ' ' + navigator.onLine; document.getElementById('online').textContent = x; if (x = true) {document.getElementById('online').style.color = '#00ff00'; refresh(); console.log('Started refresh')}">
         <h1 style="color: blue; font-family: 'Times New Roman', Times, serif;">debugging fucking sucks!!!</h1>
-        <p>Version:
-            <span style="text-decoration: inherit; cursor: inherit;" id="message" >loading...</span><br><br>
+        <p>Latest commit:
+            <span style="text-decoration: inherit; cursor: inherit; display: inline-block;" id="message" >loading...</span><br><br>
         Online:<span id="online" style="color: darkred; text-decoration: none; cursor: default;"> wtf</span>
         </p>
         <p>
@@ -52,7 +58,7 @@
             <br>The number at the top lists the version in the docs.
             <br>
             <br>
-            <br>
+            <br>Enjoy your look behind the curtain.
             <br>
             <br>
             <br>
