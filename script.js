@@ -115,6 +115,16 @@ function getCommit(owner, repo) {
   .then(res => {
     document.getElementById("message").className = "message"
     document.getElementById('message').innerHTML = res[0].commit.message
+    if (res[0].commit.author.name = "benheroblaw") {
+      document.getElementById("committer").className = "benheroblaw"
+    }
+    else if (res[0].commit.author.name == "Prokid99999") {
+      document.getElementById("committer").className = "prokid"
+    }
+    else {
+      document.getElementById("committer").className = "other"
+    }
+    document.getElementById('committer').innerHTML = res[0].commit.author.name
   })
 }
 function getCommitNumbers(owner, repo) {

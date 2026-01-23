@@ -17,20 +17,29 @@
     span {color: #90f; text-decoration: underline;} */
     .message {font-size: 150%; color: #0f0; font-family: cursive;}
     .updating {font-size: 100%; color: white; font-family: sans-serif;}
+    .benheroblaw {color: #0f0;}
+    .prokid {color: #00f;}
+    .other {color: white;}
 </style>
 <script>
     const refresh = async () => {
         while (true) {
             document.getElementById("message").className = "updating"
             document.getElementById("message").textContent = "fetching"
+            document.getElementById("committer").className = "updating"
+            document.getElementById("committer").textContent = "fetching"
             await delay(0.05 * 1000)
             document.getElementById("message").textContent = "fetching."
+            document.getElementById("committer").textContent = "fetching."
             await delay(0.05 * 1000)
             document.getElementById("message").textContent = "fetching.."
+            document.getElementById("committer").textContent = "fetching.."
             await delay(0.05 * 1000)
             document.getElementById("message").textContent = "fetching..."
+            document.getElementById("committer").textContent = "fetching..."
             await delay(0.1 * 1000)
             document.getElementById("message").textContent = "error"
+            document.getElementById("committer").textContent = "error"
             getCommit('Prokid99999', 'prokid99999.github.io')
             await delay(2.5 * 1000)
             console.clear()
@@ -52,7 +61,9 @@
     <body onload="refresh(); onlineRefresh(); console.log('Started refresh')">
         <h1 style="color: blue; font-family: 'Times New Roman', Times, serif;">debugging fucking sucks!!!</h1>
         <p>Latest commit:
-            <span style="text-decoration: inherit; cursor: inherit; display: inline-block;" id="message" >loading...</span><br><br>
+            <span style="text-decoration: inherit; cursor: inherit; display: inline-block;" id="message" >loading...</span><br>
+            Committer: <span style="text-decoration: inherit; cursor: inherit;" id="committer">loading...</span><br>
+            <br>
         Online:<span id="online" style="text-decoration: inherit; cursor: default;"> wtf</span>
         </p>
         <p>
@@ -71,7 +82,6 @@
             <br>
             <br>
             <br>Enjoy your look behind the curtain.
-            <br>
             <br>
             <br>
             <br>
