@@ -109,9 +109,11 @@ function start(content=[], doCookies=true) {
 
 function getCommit(owner, repo) {
   fetch('https://api.github.com/repos/'+owner+'/'+repo+'/commits?per_page=1',
-    {Authorization:atob("")})
+    // headers: {Authorization: "Bearer github_pat_none-lololololol"}
+  )
   .then(res => res.json())
   .then(res => {
+    document.getElementById("message").className = "message"
     document.getElementById('message').innerHTML = res[0].commit.message
   })
 }
