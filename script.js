@@ -124,7 +124,7 @@ function getCommit(owner, repo) {
     else {
       document.getElementById("committer").className = "other"
     }
-    document.getElementById('committer').innerHTML = res[0].commit.author.name
+    document.getElementById('committer').innerText = res[0].commit.committer.name
   })
 }
 function getCommitNumbers(owner, repo) {
