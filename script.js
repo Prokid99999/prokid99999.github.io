@@ -43,10 +43,16 @@ function checkCookie(cname) {
 //     .catch(error => console.error('Failed to fetch data:', error));
 // }
 
+
 function start(content=[], doCookies=true) {
 
     var page = window.location.pathname + " - "
-    if (doCookies=true) {
+    let index = Number(getCookie(page + "index"))
+    const showSlide = n => {
+        document.getElementById('story').innerHTML = content[n]
+    }
+    showSlide(index)
+    if (doCookies==true) {
       if (checkCookie(page + "scrollx") == "error"){
         setCookie(page + "scrollx", 0)
         }
@@ -55,24 +61,15 @@ function start(content=[], doCookies=true) {
       if (checkCookie(page + "index") == "error"){
         setCookie(page + "index", 0)
         }
-      var pageX = getCookie(page + "scrollx")
-      var pageY = getCookie(page + "scrolly")
-      window.scrollTo(pageX,pageY)
+      window.scrollTo(Number(getCookie(page + "scrollx")), Number(getCookie(page + "scrolly")))
       }
-    document.getElementById('story').innerHTML = content[0]
 
-    let index = Number(getCookie(page + "index"))
-
-    const showSlide = n => {
-        document.getElementById('story').innerHTML = content[n]
-    }
-    showSlide(index)
 
     document.getElementById('next').addEventListener('click', () => {
         index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        if (doCookies=true) {
+        if (doCookies==true) {
         setCookie(page + "index", index)}
     })
 
@@ -80,7 +77,7 @@ function start(content=[], doCookies=true) {
         index = (index +  content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        if (doCookies=true) {
+        if (doCookies==true) {
         setCookie(page + "index", index)}
     })
 
@@ -88,7 +85,7 @@ function start(content=[], doCookies=true) {
         index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        if (doCookies=true) {
+        if (doCookies==true) {
         setCookie(page + "index", index)}
     })
 
@@ -96,12 +93,12 @@ function start(content=[], doCookies=true) {
         index = (index + content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
-        if (doCookies=true) {
+        if (doCookies==true) {
         setCookie(page + "index", index)}
     })
 
-    if (doCookies=true) {
-    document.getElementById('scroll').addEventListener('scroll', function() {
+    if (doCookies==true) {
+      window.addEventListener('scroll', function() {
       setCookie(page + "scrollx", window.scrollX)
       setCookie(page + "scrolly", window.scrollY)
     })}

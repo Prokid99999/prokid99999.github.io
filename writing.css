@@ -1,16 +1,20 @@
-body {background-color: black; max-width: 800px; margin: auto;}
+body {background-color: black; width: 800px; margin: auto;}
 * {font-family: Arial, sans-serif}
 a:link {color: blue;}
 a:visited {color: #90f;}
 a:active {color: red;}
 strong {color: red;}
-h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center; padding-top: 15mm; padding-bottom: 25mm; background: linear-gradient(#000, #111, #111, #111, #aaa); margin-top: 0px; margin-bottom: 0px;}
-h2 {font-size: medium; text-align: center;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 350%; text-align: center; padding-top: 15mm; padding-bottom: 20mm; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0px; margin-bottom: 0px;}
+h2 {text-align: center;}
 p {text-indent: 3rem; line-height: 1.5rem; margin: auto;}
 pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
-@media screen and (max-width: 900px){
-    pre {font-size: 2rem;}
+button {font-size: 1.25rem;}
+@media screen and (max-width: 600px){
+    pre, h2 {font-size: 2rem;}
+    h1 {font-size: 4rem;}
+    p {font-size: 1.5rem;}
     button {font-size: 2rem;}
+    body {max-width: 100%;}
 }
 i {color: inherit;}
 span {text-indent: 0.5in;}

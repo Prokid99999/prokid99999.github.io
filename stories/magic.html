@@ -5,19 +5,24 @@
     <script src="../script.js"></script>
     <script src="text.js"></script>
 </head>
-<title>i don't have a name yet</title>
-<script>
-</script>
+<title>i dont have a name yet</title>
+<style>
+    #prev, #prev1 {text-align: left; display: inline-block;}
+    #next, #next1 {text-align: right; display: inline-block;}
+    .space {display: flex; justify-content: space-between;}
+    h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%;}
+</style>
 <html>
-    <body id="scroll" onload="start(magic)">
-        <div style="text-align: center;">
+    <body onload="start(magic)">
+        <br>
+        <div class="space">
             <button id="prev">&lt Previous</button>
             <button id="next">Next ></button>
-        </div>
-            <div id="story">balls</div>
-        <div style="text-align: center;">
+        </div><br>
+            <div id="story">balls</div><br>
+        <div class="space">
             <button id="prev1">&lt Previous</button>
-            <button id="next1">Next ></button>
-        </div>
+            <button id="next1">Next &gt</button>
+        </div><br>
     </body>
 </html>
