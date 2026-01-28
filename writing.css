@@ -1,20 +1,20 @@
-body {background-color: black; width: 800px; margin: auto;}
+body {background-color: black; max-width: 800px; margin: auto;}
 * {font-family: Arial, sans-serif}
 a:link {color: blue;}
 a:visited {color: #90f;}
 a:active {color: red;}
 strong {color: red;}
-h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 15mm; padding-bottom: 20mm; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0px; margin-bottom: 0px;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 50.5px; padding-bottom: 55px; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0%; margin-bottom: 0%;}
 h2 {text-align: center; font-size: 1rem;}
 p {font-size: 1rem; text-indent: 3rem; line-height: 1.5rem; margin: auto;}
-pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
+pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
 button {font-size: 0.9rem;}
 @media screen and (max-width: 1200px){
     pre, h2 {font-size: 3rem;}
     h1 {font-size: 6rem;}
-    p {font-size: 1rem;}
+    p {font-size: 2rem; line-height: 3rem;}
     button {font-size: 2rem;}
-    /* body {max-width: 100%; width: auto;} */
+    body {max-width: 1000px; width: auto;}
 }
 i {color: inherit;}
 span {text-indent: 0.5in;}
@@ -29,9 +29,11 @@ i {color: inherit; font-family: inherit;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #90f; font-style: italic; cursor: pointer;}
 
-.background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
-@media screen and (max-width: 900px) and (max-height: 1600) {
+.background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:38px; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
+.continue {font-size: 1.5rem; text-align: center;}
+@media screen and (max-width: 1000px) {
     .background {font-size: 5rem;}
+    .continue {font-size: 3rem;}
 }
 .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -51,10 +53,6 @@ i {color: inherit; font-family: inherit;}
 }
 
 
-.noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}
-.airn, .Airn {color: azure; text-shadow: 0px 0px 15px #0af;}
-.mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}
-.void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}
 
 /*  fuck
     4u(k

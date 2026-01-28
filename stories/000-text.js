@@ -1,8 +1,8 @@
 const magic = ["<h2>1</h2> \
-<h1 class=\"noza\">Noza</h1> \
+<h1 id='char' class=\"noza\">Noza</h1> \
   <div class=\"background\"> \
     <p>I'm walking to math class with my roommates and best friends, Mina and Airn. Mina looks like she's going to get some sleep during learning time. She's been doing pretty well, getting straight A's but almost never an A+. I'm starting to think she's trying to get lower grades so she has less attention on herself. Her girlfriend's and mine seems like enough. Really, she's the least attention-hungry succubus I know. She pays attention in class and answers questions while the others rule their classes. Like, seriously, they make up at least half of the student council. They can't even do it honestly! Whenever I walk past one, I feel a prickle of magic drawing my eyes to their skimpy clothes that can't be allowed through the dress code. There's something seriously wrong with our school if they allow students to walk around in bikini tops and have half their butts out of their shorts but pester Airn about her vest.</p> \
-    <p>Speaking of her, Airn's less than thrilled. I bet she'd rather be doing magical equations than numerical, especially because she's failing. Mina and I have been doing our damndest to help, and she's been trying, but her grades have only gone from straight F's to D's. We're getting worried they're going to make her retake the grade, but it's so unfair. I've never seen someone get put on their ass quicker than Airn can. During magic sparring, students line up to see who can last the longest against her. The record is two minutes, set by Mina. The closest behind her is forty-five seconds. My personal theory is: she's hiding a bunch of magic items covered in protections. That, along with what she denies is a natural gift for spell-casting, puts her up with some of the higher-level arch wizards here. So what if it takes her a while to figure out what number <i>X</i> is? She'll have your surrender in a quarter of that time.</p> \
+    <p>Speaking of her, Airn's less than thrilled. I bet she'd rather be doing magical equations than numerical, especially because she's failing. Mina and I have been doing our damndest to help, and she's been trying, but her grades have only gone from straight F's to D's. We're getting worried they're going to make her retake the grade, but it's so unfair. I've never seen someone get beaten quicker than Airn can beat them. During magic sparring, students line up to see who can last the longest against her. The record is about two minutes, set by Mina. The closest behind her is forty-five seconds. My personal theory is that she's hiding a bunch of protective magic items. That, along with what she denies is a natural gift for spell-casting, puts her up with some of the higher-level arch wizards here. So what if it takes her a while to figure out what number <i>X</i> is? She'll have your surrender in a quarter of that time.</p> \
     <p>\"So, what black-magic bullshit do you think Mrs. Johann has today?\" Airn asks. Both of us chuckle, ignoring whatever the crowd around us might think.</p> \
     <p>\"It's <i>math</i>! And she's not even a mage.\" Of course Mina would know. She says it's because she's a magic-born creature, even though slimes are magic-born and I wouldn't know whether Airn was a normal human or a god taking a stroll among us mortals.</p> \
     <p>\"She's still using dark magic! Mages use the mana in our bodies; she uses runes.\"</p> \
@@ -13,7 +13,7 @@ const magic = ["<h2>1</h2> \
     <p>\"Is there a problem, Miss Avalon?\"</p> \
     <p>\"No, ma'am!\" Airn says, with an impressive fake smile.</p> \
     <p>\"Then let's begin.\"</p> \
-    <div style=\"font-size: 150%; text-align: center;\">~~&gt ~~&gt ~~&gt</div> \
+    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div> \
     <p>I can't help looking at a newer student down the row from me. They're a slime, and a young one at that. Their body is more liquid than solid, and they're having trouble staying in their seat. Mrs. Johann keeps giving them looks that make me bristle and them shrink. I want to beat our teacher to death with rocks, but I'm sure that would get me unflattering wanted posters, so I settle for solidifying my body in a position that makes me look busy and send a little ball of slime down the row.</p> \
     <p>When I get to the new slime's seat, I slide up the legs of their desk and arrange myself in a puddle on top of it. They stare at me, so I whisper, \"Hold up something to read.\"</p> \
     <p>They root through their bag and pull out a math textbook. I slip closer to them as they set it open on their desk. Mrs. Johann looks our way. I look at the pages and quietly order them to turn it right-side-up. They oblige, and I assume my humanoid form. Scaled down to the size of my hand. And between the pages of a math book.</p> \
@@ -61,7 +61,7 @@ const magic = ["<h2>1</h2> \
     <br> \
     <p>A few minutes later, Airn hasn't come back and I notice that Mina is gone. Looks like I was right. Anyway, I answer more questions, and Airn comes back. Mina shows up too, and both of them look normal. Aside from the slight sheen of magic over them. They don't speak up for the rest of class, so I finish it up and dismiss everyone.</p> \
     <br> \
-    <p>As we walk to the cafeteria, Mina takes off the magic hiding how disheveled the two are. It's not that bad, honestly. Mina's hair is a little messy and both of their shirts are ruffled, but that's it.</p> \
+    <p>As we walk to the cafeteria, Mina takes off the magic hiding how disheveled the two are. It's not that bad, honestly. Mina's hair is a little messy, both of their shirts are ruffled, and they're both blushing, but that's it.</p> \
     <p>\"You two have fun?\" I'm being cheeky, I know.</p> \
     <p>\"Hell yeah! That was the best class I've taken here!\" She can't be lying with her eyes lit up like that, and it's not just from her alone time with Mina.</p> \
     <p>\"But you couldn't wait fifteen minutes?\"</p> \
@@ -72,28 +72,34 @@ const magic = ["<h2>1</h2> \
     <p>\"Nah, we're going to bond over dinner.\"</p></div> \
     </div>",
 
-  '<h2>2</h2> \
-  <h1 class="airn">Airn</h1> \
-  <div class="background"> \
-    <p>Mina walks over to my desk. I sense her without my eyes or ears; a presence behind me combined with a unique, shifting flow of mana marks this person-shaped object as my girlfriend. I\'ve explained it to her before, probably more than once. Focusing on one person\'s mana for long enough lets you recognize patterns you wouldn\'t otherwise. It\'s like staring at someone\'s face until you memorize it. Plus, monitoring someone\'s mana is easier (and a lot less weird) than staring them down for hours at a time.</p> \
-    <p>She hugs me and sits in the chair next to mine. I want to light my homework on fire and wrap my arms around her and touch her and kiss her and fall asleep next to her.<br> \
-    Instead, I show her my math homework, covered in handwritten equations and scribbled-out swears. The school requires a 90% score in math to continue to the next grade. I barely have eighty percent after studying long past midnight for a minimum of five days a week. What have I learned? How to destroy my health and put on a mask.</p> \
-    <p>I just want to stay in the same grade as Mina. The teasing I would recieve for being held back can be fixed easily. Show the class a few spells and I\'m golden, or at least metallic. What doesn\'t make sense is why I would have to retake a grade with 110% in Magic Studies. This is a <i>magic</i> school. Why the fuck do I need to learn math? How the hell does putting numbers together make me a better mage? <b><i>It fucking doesn\'t</i></b>. Anything more than basic algerbra is unnecessary. Mana isn\'t something that can be measured. Arch-mages are arch-mages because they\'re just too damn powerful to be considered regular magic users. Why is this school forcing me to lose hours every day shoving techniques I\'ll never use into my skull? If I could use a spell to put algebra skills directly into my brain, I... Well, I wouldn\'t use it, but I would make a charm for my vest or something. <i>Allow the wearer of this charm to perform mathematical equations no matter the difficulty...</i> That kind of spell would be considered cheating. However, if I worded it to enhance the wearer\'s <i>existing</i> ability...</p> \
-    <p>"Airn?" Mina drags me out of my fantasy with a tired look. I don\'t like that she\'s losing sleep over this too... but I\'m happy she\'s next to me. I wonder if I\'m selfish for thinking that.</p> \
-    <p>"Sorry..." I don\'t care right now. I want to be done with this bullshit so I can go to bed.<br> \
-    ...Too bad I won\'t be able to enjoy cuddling with her.</p> \
-    <div style=\"font-size: 150%; text-align: center;\">~~&gt ~~&gt ~~&gt</div> \
-  </div>']
+  "<h2>2</h2> \
+  <h1 id='char' class=\"airn\">Airn</h1> \
+  <div class=\"background\"> \
+    <p>Mina walks over to my desk. I sense her without my eyes or ears; a presence combined with a unique, shifting flow of mana marks the person-shaped object behind me as my girlfriend. I've explained it to her before, probably more than once. Focusing on one person's mana for long enough lets you recognize patterns you wouldn't otherwise. It's like staring at someone's face until you memorize it. Plus, monitoring someone's mana is easier (<i>and a lot less weird</i>) than staring them down for hours at a time.</p> \
+    <p>She hugs me and sits in the chair next to mine. I want to light my homework on fire and wrap my arms around her and touch her and kiss her and fall asleep next to her.</p> \
+    <p>Instead, I show her my math homework, covered in handwritten equations and scribbled-out swears. The school requires a 90% score in math to continue to the next grade. I barely have eighty percent after studying long past midnight for a minimum of five days a week. What have I learned? How to destroy my health and put on a mask.</p> \
+    <p>I just want to stay in the same grade as Mina. The teasing I would recieve for being held back can be fixed easily. Show the class one sparring match and I'm shiny as a clean dagger. What doesn't make sense is why I would have to retake a grade with 110% in every magical class. This is a <i>magic</i> school. Why do I need to learn math? How the hell does putting numbers together make me a better mage? <b><i>It fucking doesn't</i></b>. Anything more than basic arithmetic is unnecessary. Mana isn't something that can be measured. Arch-mages are called arch-mages because they're so goddamn powerful everybody is too afraid to compare them to regular magic users. Why is this school forcing me to lose hours every day shoving techniques I'll never use into my skull? If I could use a spell to put algebra skills directly into my brain, I... Well, I wouldn't use it, but I would make a new charm for my vest or something. <i>Allow the wearer of this charm to perform mathematical equations no matter the difficulty...</i> That kind of spell would be considered cheating. However, if it enhanced the wearer's <i>existing</i> ability...</p> \
+    <p>\"Airn?\" Mina drags me out of my fantasy with a tired look. I don't like that she's losing sleep over this too... but I'm happy she's next to me. I wonder if I'm selfish for thinking that.</p> \
+    <p>\"Sorry...\" I don't care right now. I want to be done with this bullshit so I can go to bed.<br> \
+    ...Too bad I won't be able to enjoy cuddling with her.</p> \
+    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div> \
+    <p>I wake up to Mina gently shaking me. Sometimes I think she couldn't hurt anyone if she tried, but I'll be reminded of how dangerous she can be when we get to sparring. History of our relationship aside- I say good morning and climb out of bed to put some clothes on. Doesn't really matter which shirt I wear with my vest, I only care about the sleeve length.</p> \
+    <p>Mina woke me up around ten minutes before we have to start walking to class. I have enough time to put clothes on, get my backpack ready, and eat whatever Mina and Noza brought me. I'm not a huge fan of being taken care of like that, but I am a fan of breakfast. Whoever said breakfast is the most important meal of the day was right. I can't spend first period waking up on an empty stomach, not without being obvious. Sparring is more of a pressing concern than Science. </p> \
+    <p>There's this group of succubi who've been bad-mouthing me. That part's not new, and it's never just succubi. Every week brings more and more tales of things I have and haven't done, people I've kissed, maimed, had sex with, killed, disfigured, cheated on, insulted, dated, and hurt. The love-related ones are my favorite. I've never shown much affection to anyone outside my little triangle, so it's funny watching people try to guess who I would and wouldn't like. They're almost always wrong, of course. They wouldn't know my taste if I shot it through their skulls. Nonetheless, I get paired up with the most boring combination of popular or powerful and lacking in one or both of the personality or likeability departments. Seriously, if people wanna make a scandal they should at least be creative. Make it believable, like 'Mina got mad at Arin for being too rough while they were sparring' or something. I can usually tell when I go too hard on her, and I make sure I don't hurt her <i>too</i> badly. That probably goes over most people's head, though.</p> \
+    <p>Still, there's a reason the most harmful spell I use on her is mana drain. I would use much stronger and more violent spells in a real fight, like making someone's heart explode or turning their brain into lava. This is just friendly sparring. I enchanted the mats myself to block deadly spells; don't want the school authorites coming for my head if someone dies.</p> \
+    <p>I spent three whole classes thinking about how best to humiliate that group of succubi. They were harping on my relationship with Mina, so they've been sentenced to a sound beating. Mina would act like she doesn't care, tell me not to listen to them. The first step of ignoring people is acknowledging that they're saying something you don't want to hear. You need a reason to tune them out. That reason usually comes from you hearing them insulting you.</p> \
+    <p>I don't tune people out, I don't ignore people. I make them stop. Someone insults me? I'll deal karma like a deck of goddamn cards. Someone calls me a faggot? Beat their ass. I accept bribes to curse people. Sometimes money, sometimes more. I've been offered sex, favors and secrets. I deny people's payments of their someone's body and curse the bastard anyway.</p> \
+  </div>"]
 
-const lustwreakers = ['<!DOCTYPE html>\
+const lustwreakers = ["<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet" href="../characters.css">\
-  <link rel="icon" href="../icons/lustwreaker.png">\
+  <link rel=\"stylesheet\" href=\"../characters.css\">\
+  <link rel=\"icon\" href=\"../icons/lustwreaker.png\">\
 </head>\
 <title>Marnin Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;">Marnin<span style="color: white;">(Marie)</span> Lustwreaker</h1>\
+    <h1 style=\"color: #980000;\">Marnin<span style=\"color: white;\">(Marie)</span> Lustwreaker</h1>\
     <p>\
     She/Her<br>\
     Female, but she can use the other one<br>\
@@ -102,11 +108,12 @@ const lustwreakers = ['<!DOCTYPE html>\
     Demonic power/magic<br>\
     Demonoid/Cambion(Half human, half Arch Succubus)<br><br>\
     Marnin is her demon name and Lustwreaker is her clan, nobody is related to each other except Quinn<br>\
-    Rory is second-in-command, while Diolas and Raein are only members in name and are free to do as they wish(not to say that Rory isn\'t; she simply \prefers working under Marnin)<br>Quinn will be third-in-command\
+    Rory is second-in-command, while Diolas and Raein are only members in name and are free to do as they wish(not to say that Rory isn't; she simply prefers working under Marnin)<br>\
+    Quinn will be third-in-command\
     </p>\
-    <img src="lustwreaker.png">\
+    <img src=\"lustwreaker.png\">\
   </body>\
-</html>',
+</html>",
 
 '<!DOCTYPE html>\
 <head>\
@@ -121,10 +128,11 @@ const lustwreakers = ['<!DOCTYPE html>\
     She/Her<br>\
     Female<br>\
     old enough<br>\
-    Bi with b female preference<br>\
+    Bi with female preference<br>\
     Fists/melee<br>\
     Greater Succubus<br><br>\
-    Short in height, small chest, keeps her horns, tail and wings hidden, very submissive, isn\'t affected by semen the way succubi normally are, likes women contrary to her evolutionary design<br><br>Bound herself to Marnin out of love, and was named\
+    Short in height, small chest, keeps her horns, tail and wings hidden, very submissive, isn\'t affected by semen the way succubi normally are, likes women contrary to her evolutionary design<br><br> \
+    Bound herself to Marnin out of love, and was named\
     </p>\
   </body>\
 </html>',
@@ -158,7 +166,7 @@ const lustwreakers = ['<!DOCTYPE html>\
 <title>Raein Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;"><span style="color: #bf9000;">Raein </span>Lustwreaker</h1>\
+    <h1 style="color: #980000;"><span style="color: #bf9000;">Raein</span> Lustwreaker</h1>\
     <p>\
     He/Him<br>\
     Male<br>\
@@ -187,7 +195,8 @@ const lustwreakers = ['<!DOCTYPE html>\
     don\'t know yet<br>\
     Katana<br>\
     Demonoid - quarter human, 3/4 succubus<br><br>\
-    Daughter of Marnin and Rory<br>weeb perhaps? at least very interested in japanese culture\
+    Daughter of Marnin and Rory<br> \
+    weeb perhaps? at least very interested in japanese culture\
     </p>\
   </body>\
 </html>']
