@@ -1,4 +1,4 @@
-function setCookie(cname, cvalue, exdays=365*2) {
+function setCookie(cname, cvalue, exdays=365) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
@@ -44,26 +44,34 @@ function checkCookie(cname) {
 // }
 
 
-function start(content=[], doCookies=true) {
+function start(content=["wtf"], doCookies=true) {
 
     var page = window.location.pathname + " - "
     let index = Number(getCookie(page + "index"))
+    let contentLength = content.length
     const showSlide = n => {
         document.getElementById('story').innerHTML = content[n]
     }
-    showSlide(index)
     if (doCookies==true) {
       if (checkCookie(page + "scrollx") == "error"){
         setCookie(page + "scrollx", 0)
         }
-      if (checkCookie(page + "scrolly") == "error"){
-        setCookie(page + "scrolly", 0)}
-      if (checkCookie(page + "index") == "error"){
-        setCookie(page + "index", 0)
-        }
-      window.scrollTo(Number(getCookie(page + "scrollx")), Number(getCookie(page + "scrolly")))
+      if (checkCookie(page + "scrolly") === "error"){
+        setCookie(page + "scrolly", 0)
       }
-
+      if (checkCookie(page + "index") === "error"){
+        setCookie(page + "index", 0)
+        index = 0
+        }
+      if (checkCookie(page + "index") === 'NaN'){
+        setCookie(page + "index", '0')
+        index = 0
+        }
+      }
+    showSlide(index)
+    if (doCookies=true) {
+        window.scrollTo(Number(getCookie(page + "scrollx")), Number(getCookie(page + "scrolly")))
+      }
 
     document.getElementById('next').addEventListener('click', () => {
         index = (index + 1) % content.length
@@ -71,14 +79,20 @@ function start(content=[], doCookies=true) {
         showSlide(index)
         if (doCookies==true) {
         setCookie(page + "index", index)}
+        document.getElementById('char').addEventListener('dblclick', () => {
+          word_count()
+        })
     })
 
     document.getElementById('prev').addEventListener('click', () => {
-        index = (index +  content.length - 1) % content.length
+        index = (index + content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
         if (doCookies==true) {
         setCookie(page + "index", index)}
+        document.getElementById('char').addEventListener('dblclick', () => {
+          word_count()
+        })
     })
 
     document.getElementById('next1').addEventListener('click', () => {
@@ -87,6 +101,9 @@ function start(content=[], doCookies=true) {
         showSlide(index)
         if (doCookies==true) {
         setCookie(page + "index", index)}
+        document.getElementById('char').addEventListener('dblclick', () => {
+          word_count()
+        })
     })
 
     document.getElementById('prev1').addEventListener('click', () => {
@@ -95,10 +112,17 @@ function start(content=[], doCookies=true) {
         showSlide(index)
         if (doCookies==true) {
         setCookie(page + "index", index)}
+        document.getElementById('char').addEventListener('dblclick', () => {
+          word_count()
+        })
+    })
+
+    document.getElementById('char').addEventListener('dblclick', () => {
+      word_count()
     })
 
     if (doCookies==true) {
-      window.addEventListener('scroll', function() {
+      window.addEventListener('scrollend', function() {
       setCookie(page + "scrollx", window.scrollX)
       setCookie(page + "scrolly", window.scrollY)
     })}
@@ -134,3 +158,44 @@ function getCommitNumbers(owner, repo) {
 }
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
+
+function word_count(paras="background") {
+  paras = document.getElementsByClassName(paras);
+
+  var count = 0;
+
+for (var i=0; i<paras.length; i++){
+  var content = paras[i].textContent;
+  var words = content.match(/\S+/g);
+  count += words? words.length : 0;
+}
+
+let contents = paras[0].textContent
+contents.trim()
+char = contents.length
+
+console.log(count + " words, " + char + " characters");
+}
+function wordcount(paras="background") {
+
+        let area = document.getElementById(paras);
+        let char = 0
+
+            // Count characters
+            let content = area.textContent;
+            char = content.length;
+
+            // Remove empty spaces from start and end
+            content.trim();
+            console.log(content);
+
+            let wordList = content.split(/\s/);
+
+            // Remove spaces from between words
+            let words = wordList.filter(function (element) {
+                return element != "";
+            });
+
+            // Count words
+            console.log(words.length)
+}
