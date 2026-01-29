@@ -6,7 +6,7 @@ a:active {color: red;}
 strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 50.5px; padding-bottom: 55px; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0%; margin-bottom: 0%;}
 h2 {text-align: center; font-size: 1rem;}
-p {font-size: 1rem; text-indent: 3rem; line-height: 1.5rem; margin: auto;}
+p {font-size: 1rem; text-indent: 3rem; line-height: 1.75rem; margin: auto;}
 pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
 button {font-size: 0.9rem;}
 @media screen and (max-width: 1200px){
@@ -29,7 +29,7 @@ i {color: inherit; font-family: inherit;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #90f; font-style: italic; cursor: pointer;}
 
-.background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding:38px; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
+.background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 38px; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
 .continue {font-size: 1.5rem; text-align: center;}
 @media screen and (max-width: 1000px) {
     .background {font-size: 5rem;}

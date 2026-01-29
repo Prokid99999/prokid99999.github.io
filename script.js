@@ -125,7 +125,7 @@ function start(content=["wtf"], doCookies=true) {
       window.addEventListener('scrollend', function() {
       setCookie(page + "scrollx", window.scrollX)
       setCookie(page + "scrolly", window.scrollY)
-    })}
+      })}
 }
 
 function getCommit(owner, repo) {
