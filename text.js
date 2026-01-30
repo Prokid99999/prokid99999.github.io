@@ -91,10 +91,16 @@ const magic = ["<h2>1</h2> \
     <p>I'm finished premeditating my assault by the time we get to the gym. They want a reaction, I'll give 'em a damn show.</p> \
     <p>Scoping the group out wasn't hard; they're succubi, they can't be subtle if their lives depend on it. Except Mina, obviously. I used a little spell to ensure I know their clan, so I can call them out directly. Shows how unknown they are. They wouldn't've messed with me unless they were looking for attention.</p> \
     <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is giving me odd looks. \"I challenge you to a duel.\"</p> \
-    <p>\"Oh? \" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's laying a trap, trying to make me look weak. Obviously hasn't been doing this long.</p> \
-    <p>\"All of you. Fight me all at once, 'cause that's what you need for a fraction of a chance.\" A demon grin cracks my face. The crowd looks at me like I'm insane. Mina shakes her head and Noza silently claps. The little pussies who're gonna fight me? They're furious.</p> \
-    <p>\"You wanna go?!\" I wish I could frame her face, she's so mad. Her clan circles the mat I'm standing on. My mana rises, thrumming warm in my bones. Its power makes me light and reckless. It burns away whatever fog is left from this morning and leaves me needing an outlet. Only magic and Mina can make me feel this.</p> \
-    <p>An unseen signal makes their mana flare in sync, rearing like gasoline in fire. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short, little strings of Sun-bright power. I tally their blasts, marking angles and strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning, needy power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p> \
+    <p>\"Oh? \" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's trickier than I thought, knows how to manipulate a crowd.</p> \
+    <p>\"All of you. Fight me all at once, 'cause that's what you need for a fraction of a chance.\" A demon grin cracks my face. The crowd looks at me like I'm insane. Mina shakes her head and Noza throws a thumbs-up. The little pussies who're gonna fight me? Their eyes could rip someone to shreds.</p> \
+    <p>\"You wanna go?!\" I wish I could frame her face, she's so mad. Her clan circles the mat I'm standing on. My mana rises at the danger, thrumming warm through my bones. Its power makes me light and reckless. It burns away the fog from this morning and leaves me needing an outlet. Only magic and Mina can make me feel this.</p> \
+    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Amateurs. Half their spells fail, the mat choking their magic before it can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning, needy power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p> \
+    <p>You could kill a boar with the shock on their faces. The crowd is cheering, Mina looks impressed, Noza starts clapping. I feel a little sick. That spell overfilled my mana reserves, which my vest will take care of, but I need to hide that weakness. Only until my vest can siphon off enough mana.</p> \
+    <p></p> \
+    <p></p> \
+    <p></p> \
+    <p></p> \
+    <p></p> \
     <p></p> \
     <p></p> \
   </div>"]
