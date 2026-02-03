@@ -24,12 +24,12 @@
 <script>
     const refresh = async () => {
         while (true) {
-            if (document.hasFocus()){
             document.getElementById("message").className = "updating"
             document.getElementById("committer").className = "updating"
             document.getElementById("message").textContent = "fetching"
             document.getElementById("committer").textContent = "fetching"
             await delay(0.05 * 1000)
+            if (document.hasFocus()){
             document.getElementById("message").textContent = "fetching."
             document.getElementById("committer").textContent = "fetching."
             await delay(0.05 * 1000)
