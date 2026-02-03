@@ -11,10 +11,10 @@ function getCookie(cname) {
   let ca = decodedCookie.split(';');
   for(let i = 0; i <ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == ' ') {
+    while (c.charAt(0) === ' ') {
       c = c.substring(1);
     }
-    if (c.indexOf(name) == 0) {
+    if (c.indexOf(name) === 0) {
       return c.substring(name.length, c.length);
     }
   }
@@ -44,7 +44,7 @@ function checkCookie(cname) {
 // }
 
 
-function start(content=["wtf"], doCookies=true) {
+function start(content=["wtf"], doCookies=true, doX=false, doY=true) {
 
     var page = window.location.pathname + " - "
     let index = Number(getCookie(page + "index"))
@@ -53,10 +53,10 @@ function start(content=["wtf"], doCookies=true) {
         document.getElementById('story').innerHTML = content[n]
     }
     if (doCookies==true) {
-      if (checkCookie(page + "scrollx") == "error"){
+      if (doX === true && checkCookie(page + "scrollx") === "error"){
         setCookie(page + "scrollx", 0)
         }
-      if (checkCookie(page + "scrolly") === "error"){
+      if (doY === true && checkCookie(page + "scrolly") === "error"){
         setCookie(page + "scrolly", 0)
       }
       if (checkCookie(page + "index") === "error"){
@@ -123,8 +123,8 @@ function start(content=["wtf"], doCookies=true) {
 
     if (doCookies==true) {
       window.addEventListener('scrollend', function() {
-      setCookie(page + "scrollx", window.scrollX)
-      setCookie(page + "scrolly", window.scrollY)
+      if (doX === true) {setCookie(page + "scrollx", window.scrollX)}
+      if (doY === true) {setCookie(page + "scrolly", window.scrollY)}
       })}
 }
 
@@ -139,7 +139,7 @@ function getCommit(owner, repo) {
     if (res[0].commit.author.name = "benheroblaw") {
       document.getElementById("committer").className = "benheroblaw"
     }
-    else if (res[0].commit.author.name == "Prokid99999") {
+    else if (res[0].commit.author.name === "Prokid99999") {
       document.getElementById("committer").className = "prokid"
     }
     else {

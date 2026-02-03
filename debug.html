@@ -24,9 +24,10 @@
 <script>
     const refresh = async () => {
         while (true) {
+            if (document.hasFocus()){
             document.getElementById("message").className = "updating"
-            document.getElementById("message").textContent = "fetching"
             document.getElementById("committer").className = "updating"
+            document.getElementById("message").textContent = "fetching"
             document.getElementById("committer").textContent = "fetching"
             await delay(0.05 * 1000)
             document.getElementById("message").textContent = "fetching."
@@ -38,7 +39,7 @@
             document.getElementById("message").textContent = "fetching..."
             document.getElementById("committer").textContent = "fetching..."
             await delay(0.1 * 1000)
-            getCommit('Prokid99999', 'prokid99999.github.io')
+            getCommit('Prokid99999', 'prokid99999.github.io')}
             await delay(2.5 * 1000)
             console.clear()
         }
