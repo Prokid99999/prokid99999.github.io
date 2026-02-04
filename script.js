@@ -44,7 +44,7 @@ function checkCookie(cname) {
 // }
 
 
-function start(content=["wtf"], doCookies=true, doX=false, doY=true) {
+function startStory(content=["wtf"], doCookies=true, doX=false, doY=true) {
 
     var page = window.location.pathname + " - "
     let index = Number(getCookie(page + "index"))

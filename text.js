@@ -1,4 +1,4 @@
-const magic = ["<h2>1</h2> \
+const earth = ["<h2>1</h2> \
 <h1 id='char' class=\"noza\">Noza</h1> \
   <div class=\"background\"> \
     <p>I'm walking to math class with my roommates and best friends, Mina and Airn. Mina looks like she's going to get some sleep during learning time. She's been doing pretty well, getting straight A's but almost never an A+. I'm starting to think she's trying to get lower grades so she has less attention on herself. Her girlfriend's and mine seems like enough. Really, she's the least attention-hungry succubus I know. She pays attention in class and answers questions while the others rule their classes. Like, seriously, they make up at least half of the student council. They can't even do it honestly! Whenever I walk past one, I feel a prickle of magic drawing my eyes to their skimpy clothes that can't be allowed through the dress code. There's something seriously wrong with our school if they allow students to walk around in bikini tops and have half their butts out of their shorts but pester Airn about her vest.</p> \
