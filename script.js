@@ -84,8 +84,8 @@ function start(content=["wtf"], doCookies=true, doX=false, doY=true) {
         })
     })
 
-    document.getElementById('prev').addEventListener('click', () => {
-        index = (index + content.length - 1) % content.length
+    document.getElementById('next1').addEventListener('click', () => {
+        index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
         if (doCookies==true) {
@@ -95,8 +95,8 @@ function start(content=["wtf"], doCookies=true, doX=false, doY=true) {
         })
     })
 
-    document.getElementById('next1').addEventListener('click', () => {
-        index = (index + 1) % content.length
+    document.getElementById('prev').addEventListener('click', () => {
+        index = (index + content.length - 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
         if (doCookies==true) {
@@ -171,7 +171,8 @@ for (var i=0; i<paras.length; i++){
 }
 
 let contents = paras[0].textContent
-contents.trim()
+contents = contents.trim()
+contents = contents.replace(/<[^>]*>?/gm, '');
 char = contents.length
 
 console.log(count + " words, " + char + " characters");
