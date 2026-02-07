@@ -73,7 +73,7 @@ function startStory(content=["wtf"], doCookies=true, doX=false, doY=true) {
         window.scrollTo(Number(getCookie(page + "scrollx")), Number(getCookie(page + "scrolly")))
       }
 
-    document.getElementById('next').addEventListener('click', () => {
+    function next() {
         index = (index + 1) % content.length
         window.scrollTo(0,0)
         showSlide(index)
@@ -82,44 +82,49 @@ function startStory(content=["wtf"], doCookies=true, doX=false, doY=true) {
         document.getElementById('char').addEventListener('dblclick', () => {
           word_count()
         })
+    }
+    function prev() {
+      index = (index + content.length - 1) % content.length
+        window.scrollTo(0,0)
+        showSlide(index)
+        if (doCookies==true) {
+        setCookie(page + "index", index)}
+        document.getElementById('char').addEventListener('dblclick', () => {
+          word_count()
+        })
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      next()
     })
 
     document.getElementById('next1').addEventListener('click', () => {
-        index = (index + 1) % content.length
-        window.scrollTo(0,0)
-        showSlide(index)
-        if (doCookies==true) {
-        setCookie(page + "index", index)}
-        document.getElementById('char').addEventListener('dblclick', () => {
-          word_count()
-        })
+      next()
     })
 
     document.getElementById('prev').addEventListener('click', () => {
-        index = (index + content.length - 1) % content.length
-        window.scrollTo(0,0)
-        showSlide(index)
-        if (doCookies==true) {
-        setCookie(page + "index", index)}
-        document.getElementById('char').addEventListener('dblclick', () => {
-          word_count()
-        })
+      prev()
     })
 
     document.getElementById('prev1').addEventListener('click', () => {
-        index = (index + content.length - 1) % content.length
-        window.scrollTo(0,0)
-        showSlide(index)
-        if (doCookies==true) {
-        setCookie(page + "index", index)}
-        document.getElementById('char').addEventListener('dblclick', () => {
-          word_count()
-        })
+      prev()
     })
 
     document.getElementById('char').addEventListener('dblclick', () => {
       word_count()
     })
+
+    function Keybind(event) {
+    if (event.code === "ArrowRight") {
+        event.preventDefault();
+        next()
+    }
+    if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        prev()
+    }
+}
+document.addEventListener("keydown", Keybind(false));
 
     if (doCookies==true) {
       window.addEventListener('scrollend', function() {
@@ -177,7 +182,7 @@ char = contents.length
 
 console.log(count + " words, " + char + " characters");
 }
-function wordcount(paras="background") {
+function wordcount(paras="story") {
 
         let area = document.getElementById(paras);
         let char = 0
