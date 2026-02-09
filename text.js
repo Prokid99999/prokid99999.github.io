@@ -1,23 +1,33 @@
-const earth = ["<br> <div class='background' style='padding: 0'> \
-  <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; text-align: left; padding-left: 1rem; '> \
-  A Human's Guide <span style='font-size: 1.5rem; color: grey;'>to the</span> Magical World</h2> \
-  <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'> \
-  <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p> \
-  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p> \
-  <p></p> \
+const earth = ["<br> \
+  <div class='background' style='padding: 0'> \
+  <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-top: 2rem;'> \
+  Congratulations!</h2> \
+  <div style='color: black; background-color: white; padding: 5rem; text-align: left;'> \
+  <span style='font-family: Allan; text-decoration: underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airn Avalon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, you have been accepted by the First Magical Academy of the United States of America!<br><br><br><br><br><br><br><br> \
+  This school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br><br><br><br><br><br><br><br> \
+  Our school year begins on September 1st. You will find a curriculum, a list of allowed and disallowed items, and an introduction to the magical world within this envelope. Textbooks will be provided.<br><Br><Br><Br><Br><br><br><br> \
+  Yours sincerly,<br> \
+  <p style='font-size: 2rem; line-height: 3rem; text-indent: 2rem;'><span style='font-family: Aguafina Script;'>Second Archmage Oleanda Navarisque</span></p> \
+  <div style='text-indent: 2rem'>Second Archmage Oleanda Navarisque</div> \
   </div></div>",
 
-  "<br> <div class='background' style='padding: 0'> \
-  <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; text-align: left; padding-left: 1rem; '> \
-  Welcome to the First Magical Academy of the United States of America!</h2> \
-  <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 5rem'> \
-  <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p> \
-  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p> \
-  <p></p> \
+"<br> <div class='background' style='padding: 0; background-color: white'> \
+  <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-bottom: 0'>A Human's Guide</h2> \
+  <span style='font-size: 1.5rem; color: grey; background-color: white; text-align: center; display: block; line-height: 1.5rem; padding-top: 0rem;'><br style='line-height: 1.5rem'>to the<br></span> \
+  <h2 id='char' style='color: black; background-color: white; font-family: sans-serif;'>Magical World</h2> \
+  <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'><br><br><br><br> \
+  <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p><br><br><br><br> \
+  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br><br><br> \
+  <p>Now, we can get to the introduction. Magic is a natural force given to intellegent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, allevating pain, and, really, whatever you can make it do.</p> \
+  <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species and even among a single species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p> \
+  <br><br><br><br> \
+  <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport to our school has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius. The license plate reads Minnesota, SEA-354. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br> \
+  <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>I get the feeling you'll be a very interesting girl.</span></p> \
+  <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>Show me what you're made of, Airn Avalon.</span></p><br><br><br> \
   </div></div>",
 
   "<h2>1</h2> \
-<h1 id='char' class=\"noza\">Noza</h1> \
+  <h1 id='char' class=\"noza\">Noza</h1> \
   <div class=\"background\"> \
     <p>I'm walking to math class with my roommates and best friends, Mina and Airn. Mina looks like she's going to get some sleep during learning time. She's been doing pretty well, getting straight A's but almost never an A+. I'm starting to think she's trying to get lower grades so she has less attention on herself. Her girlfriend's and mine seems like enough. Really, she's the least attention-hungry succubus I know. She pays attention in class and answers questions while the others rule their classes. Like, seriously, they make up at least half of the student council. They can't even do it honestly! Whenever I walk past one, I feel a prickle of magic drawing my eyes to their skimpy clothes that can't be allowed through the dress code. There's something seriously wrong with our school if they allow students to walk around in bikini tops and have half their butts out of their shorts but pester Airn about her vest.</p> \
     <p>Speaking of her, Airn's less than thrilled. I bet she'd rather be doing magical equations than numerical, especially because she's failing. Mina and I have been doing our damndest to help, and she's been trying, but her grades have only gone from straight F's to D's. We're getting worried they're going to make her retake the grade, but it's so unfair. I've never seen someone get beaten quicker than Airn can beat them. During magic sparring, students line up to see who can last the longest against her. The record is about two minutes, set by Mina. The closest behind her is forty-five seconds. My personal theory is that she's hiding a bunch of protective magic items. That, along with what she denies is a natural gift for spell-casting, puts her up with some of the higher-level arch wizards here. So what if it takes her a while to figure out what number <i>X</i> is? She'll have your surrender in a quarter of that time.</p> \
@@ -25,7 +35,7 @@ const earth = ["<br> <div class='background' style='padding: 0'> \
     <p>\"It's <i>math</i>! And she's not even a mage.\" Of course Mina would know. She says it's because she's a magic-born creature, even though slimes are magic-born and I wouldn't know whether Airn was a normal human or a god taking a stroll among us mortals.</p> \
     <p>\"She's still using dark magic! Mages use the mana in our bodies; she uses runes.\"</p> \
     <p>\"What, can you not come up with a spell to defend yourself?\" Dammit, I gave her an idea. Her eyes unfocus and glance around at a diagram nobody else sees while muttering ingredients and possible equations. Mina nudges her and says \"Eyes on the road\" like she wouldn't guide Airn through the whole school.</p> \
-    <p>\"Aw, and we're at the worst hour of the day.\" Airn's face takes on the resigned and depressed expression she wears during math class.</p> \
+    <p>\"Aw, and we're at the worst hour of the day.\" Airn's face takes on the resigned and depressed expression she hides during math class.</p> \
     <p>\"Come on, it's supposed to be review.\" Honestly, the only real reason Airn's still taking math is because Mina's there. She would drop it immediately if her favorite person wasn't there and trying to teach her. To slightly more avail than Mrs. Johann, <i>might I add.</i> She <i>tries</i> if Mina's helping!</p> \
     <p>Once we're all seated, Mrs. Johann says, \"Alright, class, today we'll be reviewing fractions.\" Airn sighs, apparently loud enough for the teacher to hear.</p> \
     <p>\"Is there a problem, Miss Avalon?\"</p> \
@@ -148,6 +158,10 @@ const earth = ["<br> <div class='background' style='padding: 0'> \
     <p></p> \
     <p></p> \
   </div>"]
+
+const abyss = ["penis :3"]
+
+const nothing = ["balls >:3c"]
 
 const lustwreakers = ["<!DOCTYPE html>\
 <head>\
