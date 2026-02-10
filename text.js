@@ -4,8 +4,8 @@ const earth = ["<br> \
   Congratulations!</h2> \
   <div style='color: black; background-color: white; padding: 5rem; text-align: left;'> \
   <span style='font-family: Allan; text-decoration: underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airn Avalon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, you have been accepted by the First Magical Academy of the United States of America!<br><br><br><br><br><br><br><br> \
-  This school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br><br><br><br><br><br><br><br> \
-  Our school year begins on September 1st. You will find a curriculum, a list of allowed and disallowed items, and an introduction to the magical world within this envelope. Textbooks will be provided.<br><Br><Br><Br><Br><br><br><br> \
+  Our school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br><br><br><br><br><br><br><br> \
+  Semester begins on September 1st. You will find an introduction to the magical world within this envelope. Textbooks will be provided.<br><Br><Br><Br><Br><br><br><br> \
   Yours sincerly,<br> \
   <p style='font-size: 2rem; line-height: 3rem; text-indent: 2rem;'><span style='font-family: Aguafina Script;'>Second Archmage Oleanda Navarisque</span></p> \
   <div style='text-indent: 2rem'>Second Archmage Oleanda Navarisque</div> \
@@ -19,12 +19,42 @@ const earth = ["<br> \
   <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p><br><br><br><br> \
   <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br><br><br> \
   <p>Now, we can get to the introduction. Magic is a natural force given to intellegent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, allevating pain, and, really, whatever you can make it do.</p> \
-  <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species and even among a single species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p> \
-  <br><br><br><br> \
-  <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport to our school has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius. The license plate reads Minnesota, SEA-354. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br> \
+  <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p> \
+  <br><br> \
+  <p>You may bring conduits and any magical items not enchanted to cause harm to our school.</p> \
+  <p>Items designed to injure or kill will be confiscated and destroyed. Their owners will have their welcome to our school reevaluated.</p><br><br> \
+  <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius with the license plate 'Minnesota SEA-354'. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br> \
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>I get the feeling you'll be a very interesting girl.</span></p> \
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>Show me what you're made of, Airn Avalon.</span></p><br><br><br> \
   </div></div>",
+
+  // "<br> \
+  // <div class='background' style='padding: 0'> \
+  // <div style='color: black; background-color: white; padding: 5rem; text-align: left;'> \
+  //  \
+  // </div></div>",
+
+  "<h2>prologue</h2> \
+  <h1 id='char' class=\"none\">Airn</h1> \
+  <div class=\"background\"> \
+  <p>Well, that's fucking weird. Some random letter with only my name and a return address on the front shows up. Who the hell sent me this? Why is it printed and annotated? And it's from a magic school? This must be a joke.</p> \
+  <p>But the envelope was covered in magic. I found it next to my sleeping bag, with no other traces of life. You can't exactly mail a letter to my little place, and I'm the only magic user around here anyway. It must have been delivered by who it says.</p> \
+  <p>What kind of rich-ass name is 'Oleanda Navarisque', anyway? It sounds made-up.</p> \
+  <p>Then again, I kind of made up my own name. I guess I can't judge them if they chose theirs.</p> \
+  <p>The other handwriting is more interesting. Fuck you mean, 'I have a feeling you'll be interesting?' No shit. You think a cryptid from the streets won't be <i>interesting?</i> I don't think I can take someone called \"The Second Archmage\", but I bet I can pack up most of the other people at this school.</p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  <p></p> \
+  </div>",
 
   "<h2>1</h2> \
   <h1 id='char' class=\"noza\">Noza</h1> \
