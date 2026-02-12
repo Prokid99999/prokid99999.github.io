@@ -3,7 +3,7 @@ Default
     <head>
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" href="../icons/characters.png">
-        <script src="./script.js"></script>
+        <script src="/script.js"></script>
 </head>
     <title></title>
     <html>
@@ -20,7 +20,7 @@ Character sheet
     <head>
         <link rel="stylesheet" href="../characters.css">
         <link rel="icon" href="../icons/characters.png">
-        <script src="./script.js"></script>
+        <script src="/script.js"></script>
 </head>
     <title>!!!</title>
     <html>

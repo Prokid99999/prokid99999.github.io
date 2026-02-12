@@ -222,7 +222,7 @@ const lustwreakers = ["<!DOCTYPE html>\
 <head>\
   <link rel="stylesheet" href="../characters.css">\
   <link rel="icon" href="../icons/lustwreaker.png">\
-    <script src="./script.js"></script> \
+    <script src="/script.js"></script> \
 </head>\
 <title>Rory Lustwreaker</title>\
 <html>\
@@ -245,7 +245,7 @@ const lustwreakers = ["<!DOCTYPE html>\
 <head>\
   <link rel="stylesheet" href="../characters.css">\
   <link rel="icon" href="../icons/lustwreaker.png">\
-    <script src="./script.js"></script> \
+    <script src="/script.js"></script> \
 </head>\
 <title>Diolas Lustwreaker</title>\
 <html>\
@@ -267,7 +267,7 @@ const lustwreakers = ["<!DOCTYPE html>\
 <head>\
   <link rel="stylesheet" href="../characters.css">\
   <link rel="icon" href="../icons/lustwreaker.png">\
-    <script src="./script.js"></script>\
+    <script src="/script.js"></script>\
 </head>\
 <title>Raein Lustwreaker</title>\
 <html>\
@@ -289,7 +289,7 @@ const lustwreakers = ["<!DOCTYPE html>\
 <head>\
   <link rel="stylesheet" href="../characters.css">\
   <link rel="icon" href="../icons/lustwreaker.png">\
-    <script src="./script.js"></script>\
+    <script src="/script.js"></script>\
 </head>\
 <title>Quinn Lustwreaker</title>\
 <html>\
