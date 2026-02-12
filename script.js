@@ -59,6 +59,12 @@ function startStory(content = [
     document.getElementById('next').style.display = 'none'
     document.getElementById('next1').style.display = 'none'
   }
+  else {
+    document.getElementById('prev').style.display = 'inline'
+    document.getElementById('prev1').style.display = 'inline'
+    document.getElementById('next').style.display = 'inline'
+    document.getElementById('next1').style.display = 'inline'
+  }
   if (index === 0) {
     document.getElementById('prev').style.display = 'none'
     document.getElementById('prev1').style.display = 'none'
@@ -70,6 +76,12 @@ function startStory(content = [
       document.getElementById('prev').style.display = 'none'
       document.getElementById('prev1').style.display = 'none'
     }
+  }
+  else {
+    document.getElementById('prev').style.display = 'inline'
+    document.getElementById('prev1').style.display = 'inline'
+    document.getElementById('next').style.display = 'inline'
+    document.getElementById('next1').style.display = 'inline'
   }
   const showSlide = n => {
     document.getElementById('story').innerHTML = content[n]
