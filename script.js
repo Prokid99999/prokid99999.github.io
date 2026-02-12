@@ -53,7 +53,7 @@ function startStory(content = [
     setCookie(page + 'index', 0);
     index = 0
   }
-  if (index + 1 === content.length) {
+  if (index + 1 >= content.length) {
     document.getElementById('prev').style.display = 'inline'
     document.getElementById('prev1').style.display = 'inline'
     document.getElementById('next').style.display = 'none'
@@ -76,12 +76,6 @@ function startStory(content = [
       document.getElementById('prev').style.display = 'none'
       document.getElementById('prev1').style.display = 'none'
     }
-  }
-  else {
-    document.getElementById('prev').style.display = 'inline'
-    document.getElementById('prev1').style.display = 'inline'
-    document.getElementById('next').style.display = 'inline'
-    document.getElementById('next1').style.display = 'inline'
   }
   const showSlide = n => {
     document.getElementById('story').innerHTML = content[n]
