@@ -48,11 +48,7 @@ function startStory(content = [
   'wtf'
 ], doCookies = true, doX = false, doY = true) {
   var page = window.location.pathname + ' - '
-  let index = Number(getCookie(page + 'index'))
-  if (index + 1 > content.length) {
-    setCookie(page + 'index', 0);
-    index = 0
-  }
+  index = 0
   if (index + 1 >= content.length) {
     document.getElementById('prev').style.display = 'inline'
     document.getElementById('prev1').style.display = 'inline'
@@ -81,6 +77,11 @@ function startStory(content = [
     document.getElementById('story').innerHTML = content[n]
   }
   if (doCookies == true) {
+    let index = Number(getCookie(page + 'index'))
+    if (index + 1 > content.length) {
+      setCookie(page + 'index', 0);
+      index = 0
+    }
     if (doX === true && checkCookie(page + 'scrollx') === 'error') {
       setCookie(page + 'scrollx', 0)
     }
