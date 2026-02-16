@@ -8,22 +8,28 @@
     <script src="/script.js"></script>
 </head>
 <script>
+    window.addEventListener('scroll', function () {
+        console.log('if you\'re looking for the real website double click the word fun')
+    })
 </script>
 <html>
-    <body style="background-color:black; color: white">
+    <body style="background-color:black; color: white" onload="console.log('if you\'re looking for the real website double click the word fun')">
         <h1 style="color:blue;"><span style="font-family: inherit;" ondblclick="window.open('thoughts', '_self')">fun</span> <span style="font-family: inherit;" ondblclick="window.open('./files.html', '_self')">website</span></h1>
-        <p>
-            A couple of <span style="font-family: inherit;" ondblclick="window.open('./debug')">links</span> to my profiles.
-            <br><a style="cursor: progress;" href="https://youtube.com/@Prokid11_YT" target="_blank" rel="noopener noreferrer">Youtube</a>
-            <br><a style="cursor: progress;" href="https://twitch.tv/prokid99999" target="_blank" rel="noopener noreferrer">Twitch</a>
-            <br><a style="cursor: progress;" href="https://bsky.app/profile/prokid11.bsky.social" target="_blank" rel="noopener noreferrer">Bsky</a>
-        </p>
-        <br><br>
-        <p>
-            <a href="./.well-known/atproto-did/atproto.txt" target="_blank" style="color: black; cursor: default;" rel="noopener noreferrer">test</a>
-        </p>
-        <p class="hidden">
-            <br><br><br><br><br><br><br><br><br>balls<br><br><br>/\/\/\
-        </p>
+        <div>
+            <p>
+                <!-- A couple of <span style="font-family: inherit;" ondblclick="window.open('./debug')">links</span> to my profiles.
+                <br><a style="cursor: progress;" href="https://youtube.com/@Prokid11_YT" target="_blank" rel="noopener noreferrer">Youtube</a>
+                <br><a style="cursor: progress;" href="https://twitch.tv/prokid99999" target="_blank" rel="noopener noreferrer">Twitch</a>
+                <br><a style="cursor: progress;" href="https://bsky.app/profile/prokid11.bsky.social" target="_blank" rel="noopener noreferrer">Bsky</a> -->
+                little coding project
+            </p>
+            <br><br>
+            <p>
+                <span class="hidden" onclick="window.open('/.well-known/atproto-did/atproto.txt')" target="_self" style="color: black; cursor: default;" rel="noopener noreferrer">test</span>
+            </p>
+            <p class="hidden">
+                <br><br><br><br><br><br><br><br><br>balls<br><br><br>/\/\/\
+            </p>
+        </div>
     </body>
 </html>
