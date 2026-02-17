@@ -331,16 +331,12 @@ const intro = [
   program[0] + 'hello!',
   program[0] + 'my name is program!',
   program[6] + 'i\'m speaking as proxy for prokid,',
-  program[4] + 'although you might know him as brody.',
+  program[4] + 'although you might know him by other names.',
   program[0] + 'the interface that i\'m using to speak with you was made by him.',
-  program[6] + 'coding is about building whatever amazing things you can think of with a provided toolbox, and he would like to share his creations with his peers.',
-  program[0] + 'since you offer chromebooks to your students, using those would be the easiest way to acomplish this.',
-  program[6] + 'so, we humbly ask you to help us by allowing your students to view this website.',
-  program[3] + 'we promise to keep what we put here school-appropriate,',
-  program[4] + 'and if anything on this website violates your policies, please let prokid know so he can amend it.',
-  program[0] + 'we hope you will let us share this slice of imagination!',
-  program[0] + 'here\'s an example of what we can do: ',
-  program[8] + '"<a href="/driving.html">How Does Gaming Help You Drive?</a>"'
+  program[6] + 'coding is about building whatever amazing things you can think of with a provided toolbox, and he would like to share his creations.',
+  program[0] + 'that\'s what this website is for.',
+  program[0] + 'here\'s an example of what we can do:',
+  program[8] + '"<a href="/driving.html">How Does Gaming Help You Drive?</a>"<br>' + '"<a href="/love-triangle.html">What <i>Is</i> A Love Triangle?</a>"'
 ]
 
 const driving = ["<style> \
@@ -362,3 +358,17 @@ const driving = ["<style> \
     <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks. </p>\
     </div> \
     "]
+
+const love_triangle = ["<style> \
+    @media (prefers-color-scheme: light) { \
+    .background, h2, h1 {background-color: white; color: black;} \
+    } \
+    @media (prefers-color-scheme: dark) { \
+    .background, h2, h1 {background-color: #111; color: white;} \
+    } \
+    p, h1, h2 {font-family: Arial, sans-serif} \
+    h2 {font-size: 2.5rem;} \
+    </style> \
+    <div class=\"background\"> \
+    wip \
+    </div>"]

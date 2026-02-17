@@ -70,6 +70,12 @@ function startStory(content = [
       index = 0
     }
   }
+  // chapter
+  // const adding = document.createElement('button')
+  // for (let i = 0; i < content.length; i++) {
+  //   adding.innerText = i + 1
+  //   document.getElementById('center').appendChild(adding)
+  // }
   if (index + 1 >= content.length) {
     document.getElementById('prev').style.display = 'inline'
     document.getElementById('prev1').style.display = 'inline'
