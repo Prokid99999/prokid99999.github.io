@@ -335,7 +335,7 @@ const intro = [
   program[0] + 'the interface that i\'m using to speak with you was made by him.',
   program[6] + 'coding is about building whatever amazing things you can think of with a provided toolbox, and he would like to share his creations.',
   program[0] + 'that\'s what this website is for.',
-  program[0] + 'here\'s an example of what we can do:',
+  program[0] + 'here\'s what we\'ve done so far:',
   program[8] + '"<a href="/driving.html">How Does Gaming Help You Drive?</a>"<br>' + '"<a href="/love-triangle.html">What <i>Is</i> A Love Triangle?</a>"'
 ]
 
