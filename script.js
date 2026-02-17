@@ -48,7 +48,28 @@ function startStory(content = [
   'wtf'
 ], doCookies = true, doX = false, doY = true) {
   var page = window.location.pathname + ' - '
-  index = 0
+  let index = 0
+  if (doCookies == true) {
+    index = Number(getCookie(page + 'index'))
+    if (index + 1 > content.length) {
+      setCookie(page + 'index', 0);
+      index = 0
+    }
+    if (doX === true && checkCookie(page + 'scrollx') === 'error') {
+      setCookie(page + 'scrollx', 0)
+    }
+    if (doY === true && checkCookie(page + 'scrolly') === 'error') {
+      setCookie(page + 'scrolly', 0)
+    }
+    if (checkCookie(page + 'index') === 'error') {
+      setCookie(page + 'index', 0)
+      index = 0
+    }
+    if (index === 'NaN') {
+      setCookie(page + 'index', 0)
+      index = 0
+    }
+  }
   if (index + 1 >= content.length) {
     document.getElementById('prev').style.display = 'inline'
     document.getElementById('prev1').style.display = 'inline'
@@ -76,27 +97,6 @@ function startStory(content = [
   const showSlide = n => {
     document.getElementById('story').innerHTML = content[n]
   }
-  if (doCookies == true) {
-    let index = Number(getCookie(page + 'index'))
-    if (index + 1 > content.length) {
-      setCookie(page + 'index', 0);
-      index = 0
-    }
-    if (doX === true && checkCookie(page + 'scrollx') === 'error') {
-      setCookie(page + 'scrollx', 0)
-    }
-    if (doY === true && checkCookie(page + 'scrolly') === 'error') {
-      setCookie(page + 'scrolly', 0)
-    }
-    if (checkCookie(page + 'index') === 'error') {
-      setCookie(page + 'index', 0)
-      index = 0
-    }
-    if (index === 'NaN') {
-      setCookie(page + 'index', 0)
-      index = 0
-    }
-  }
   showSlide(index)
   if (doCookies = true) {
     window.scrollTo(
@@ -104,91 +104,67 @@ function startStory(content = [
       Number(getCookie(page + 'scrolly'))
     )
   }
-  document.getElementById('next').addEventListener(
-    'click',
-    () => {
-      index = (index + 1) % content.length
-      if (index + 1 >= content.length) {
-        document.getElementById('next').style.display = 'none'
-        document.getElementById('next1').style.display = 'none'
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-      }
-      else {
-        document.getElementById('next').style.display = 'inline'
-        document.getElementById('next1').style.display = 'inline'
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-      }
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      document.getElementById('char').addEventListener('dblclick', () => {
-        word_count()
-      })
+  function next() {
+    index = (index + 1) % content.length
+    if (index + 1 >= content.length) {
+      document.getElementById('next').style.display = 'none'
+      document.getElementById('next1').style.display = 'none'
+      document.getElementById('prev').style.display = 'inline'
+      document.getElementById('prev1').style.display = 'inline'
     }
+    else {
+      document.getElementById('next').style.display = 'inline'
+      document.getElementById('next1').style.display = 'inline'
+      document.getElementById('prev').style.display = 'inline'
+      document.getElementById('prev1').style.display = 'inline'
+    }
+    window.scrollTo(0, 0)
+    showSlide(index)
+    if (doCookies == true) {
+      setCookie(page + 'index', index)
+    }
+    document.getElementById('char').addEventListener('dblclick', () => {
+      word_count()
+    })
+  }
+  function prev() {
+    index = (index + content.length - 1) % content.length
+    if (index === 0) {
+      document.getElementById('prev').style.display = 'none'
+      document.getElementById('prev1').style.display = 'none'
+      document.getElementById('next').style.display = 'inline'
+      document.getElementById('next1').style.display = 'inline'
+    }
+    else {
+      document.getElementById('prev').style.display = 'inline'
+      document.getElementById('prev1').style.display = 'inline'
+      document.getElementById('next').style.display = 'inline-block'
+      document.getElementById('next1').style.display = 'inline-block'
+    }
+    window.scrollTo(0, 0)
+    showSlide(index)
+    if (doCookies == true) {
+      setCookie(page + 'index', index)
+    }
+    document.getElementById('char').addEventListener('dblclick', () => {
+      word_count()
+    })
+  }
+  document.getElementById('next').addEventListener('click', () => {
+    next()
+  }
   )
-  document.getElementById('next1').addEventListener(
-    'click',
-    () => {
-      index = (index + 1) % content.length
-      if (index + 1 >= content.length) {
-        document.getElementById('next').style.display = 'none'
-        document.getElementById('next1').style.display = 'none'
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-      }
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      document.getElementById('char').addEventListener('dblclick', () => {
-        word_count()
-      })
-    }
+  document.getElementById('next1').addEventListener('click', () => {
+    next()
+  }
   )
-  document.getElementById('prev').addEventListener(
-    'click',
-    () => {
-      index = (index + content.length - 1) % content.length
-      if (index === 0) {
-        document.getElementById('prev').style.display = 'none'
-        document.getElementById('prev1').style.display = 'none'
-        document.getElementById('next').style.display = 'inline'
-        document.getElementById('next1').style.display = 'inline'
-      }
-      else {
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-        document.getElementById('next').style.display = 'inline-block'
-        document.getElementById('next1').style.display = 'inline-block'
-      }
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      document.getElementById('char').addEventListener('dblclick', () => {
-        word_count()
-      })
-    }
+  document.getElementById('prev').addEventListener('click', () => {
+    prev()
+  }
   )
-  document.getElementById('prev1').addEventListener(
-    'click',
-    () => {
-      index = (index + content.length - 1) % content.length
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      document.getElementById('char').addEventListener('dblclick', () => {
-        word_count()
-      })
-    }
+  document.getElementById('prev1').addEventListener('click', () => {
+    prev()
+  }
   )
   document.getElementById('char').addEventListener('dblclick', () => {
     word_count()
@@ -279,13 +255,14 @@ function stripHtml(html)
   tmp.innerText ||
   '';
 }
-
-
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-  .then(function(registration) {
-    console.log('Service Worker registered with scope:', registration.scope);
-  }).catch(function(error) {
-    console.log('Service Worker registration failed:', error);
-  });
+  navigator.serviceWorker.register('/sw.js').then(
+    function (registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }
+  ).catch(
+    function (error) {
+      console.log('Service Worker registration failed:', error);
+    }
+  );
 }
