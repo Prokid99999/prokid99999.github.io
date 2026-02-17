@@ -356,8 +356,7 @@ const driving = ["<style> \
     <p>An example of a HUD is in <i>Minecraft</i>, where your health, hunger, experience, and items are readily viewable. Though a HUD is an important piece of gameplay, it <i>is</i> only a piece of the experience. In <i>Minecraft</i>, you wouldn't have very much fun if you fixate on the HUD. Playing would get frustrating quickly because you would have to shift your focus away from the game itself to check your health and hunger. You have to learn how to stay focused on the world of the game and only glance at your display to update your information.</p>\
     <p>That sentence doesn't have to be changed much to apply to driving: 'You have to learn how to stay focused on the road and only glance at your dashboard to update your information.'</p>\
     <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks. </p>\
-    </div> \
-    "]
+    </div>"]
 
 const love_triangle = ["<style> \
     @media (prefers-color-scheme: light) { \
