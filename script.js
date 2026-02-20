@@ -33,7 +33,9 @@ function checkCookie(cname) {
     console.log('Couldn\'t find cookie ' + cname)
     return 'error'
   }
-} // function fetchJSONData(jsonFile="./test.json") {
+}
+//
+// function fetchJSONData(jsonFile="./test.json") {
 //   fetch(jsonFile)
 //     .then(response => {
 //       if (!response.ok) {
@@ -94,8 +96,7 @@ function startStory(content = [
     document.getElementById('next').style.display = 'inline'
     document.getElementById('next1').style.display = 'inline'
     if (content.length <= 1) {
-      document.getElementById('next').style.display = 'none'
-      document.getElementById('next1').style.display = 'none'
+      document.getElementById('next next1').style.display = 'none'
       document.getElementById('prev').style.display = 'none'
       document.getElementById('prev1').style.display = 'none'
     }

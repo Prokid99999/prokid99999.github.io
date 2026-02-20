@@ -6,19 +6,47 @@
     <script src="/script.js"></script>
 </head>
 <script>
-    function replace() {
-        document.getElementById('stories').innerHTML = '<span style="color: #0099ff;">Stories</span>'
-        document.getElementById('universes').innerHTML = '<span style="color: skyblue;">Universes</span>'
-        document.getElementById('passUser').textContent = 'character sheets'
-        document.getElementById('doc').textContent = 'character sheets google doc (depricated)'
-        document.getElementById('3ds').textContent = '3ds stuff';
+    function replace(toggle = true) {
+        let thoughts = getCookie('thoughts')
+        if (toggle === true) {
+            if (thoughts === 'false') {
+                setCookie('thoughts', 'true')
+                document.getElementById('stories').innerHTML = '<span style="color: #0099ff;">Stories</span>'
+                document.getElementById('universes').innerHTML = '<span style="color: skyblue;">Universes</span>'
+                document.getElementById('passUser').innerHTML = '<span style="color: white;">character sheets</span>'
+                document.getElementById('doc').textContent = 'character sheets google doc (depricated)'
+                document.getElementById('3ds').textContent = '3ds stuff';
+            }
+            else if (thoughts === 'true') {
+                setCookie('thoughts', 'false')
+                document.getElementById('stories').textContent = ''
+                document.getElementById('universes').textContent = ''
+                document.getElementById('passUser').textContent = ''
+                document.getElementById('doc').textContent = ''
+                document.getElementById('3ds').textContent = ''
+            }
+        }
+        else if (thoughts === 'true' && toggle === false) {
+            document.getElementById('stories').innerHTML = '<span style="color: #0099ff;">Stories</span>'
+            document.getElementById('universes').innerHTML = '<span style="color: skyblue;">Universes</span>'
+            document.getElementById('passUser').innerHTML = '<span style="color: white;">character sheets</span>'
+            document.getElementById('doc').innerHTML = 'character sheets google doc &lpar;depricated&rpar;'
+            document.getElementById('3ds').innerHTML = '3ds stuff'
+            }
+    }
+    window.onload = () => {
+        replace(false)
+        if (checkCookie('thoughts') === 'error') {
+            setCookie('thoughts', 'false')
+        }
     }
 </script>
 <body>
     <h1 >thoughts</h1>
     <p>
         Maybe the reason this website is just black, white, red and blue is part of my design philsophy: basic design that lets the character's personality shine<br>
-        Well <span ondblclick="replace()">shit,</span> that rhymes.<br><br>
+        Well <span ondblclick="replace()">shit</span>, that rhymes.<br>
+        Either that or I'm inexperienced.<br><br>
         <a id='stories' href="stories"></a><br>
         <a id="universes" href="/universes"></a><br><br>
         <a href="character-sheets" id="passUser"></a><br>

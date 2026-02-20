@@ -1,4 +1,4 @@
-const earth = ["<br>\
+var earth = ["<br>\
   <div class='background' style='padding: 0'>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-top: 2rem;'>\
   Congratulations!</h2>\
@@ -194,11 +194,11 @@ const earth = ["<br>\
     <p></p>\
   </div>"]
 
-const abyss = ["penis :3"]
+var abyss = ["penis :3"]
 
-const nothing = ["balls >:3c"]
+var nothing = ["balls >:3c"]
 
-const lustwreakers = ["<!DOCTYPE html>\
+var lustwreakers = ["<!DOCTYPE html>\
 <head>\
   <link rel=\"stylesheet\" href=\"../characters.css\">\
   <link rel=\"icon\" href=\"/icons/lustwreaker.png\">\
@@ -313,9 +313,9 @@ const lustwreakers = ["<!DOCTYPE html>\
   </body>\
 </html>']
 
-// const test = fetchJSONData()
+// var test = fetchJSONData()
 
-let program = [
+var program = [
   '(^///^) ',
   "(o///o) ",
   "(0///0) ",
@@ -329,7 +329,7 @@ let program = [
 
 
 
-const intro = [
+var intro = [
   program[0] + 'hello!',
   program[0] + 'my name is program!',
   program[6] + 'i\'m speaking as proxy for prokid,',
@@ -341,7 +341,7 @@ const intro = [
   program[8] + '"<a href="/driving.html">How Does Gaming Help You Drive?</a>"<br>' + '"<a href="/love-triangle.html">What <i>Is</i> A Love Triangle?</a>"'
 ]
 
-const driving = ["<style> \
+var driving = ["<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
@@ -360,7 +360,7 @@ const driving = ["<style> \
     <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks. </p>\
     </div>"]
 
-const love_triangle = ["<style> \
+var love_triangle = ["<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
