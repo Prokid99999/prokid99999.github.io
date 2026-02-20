@@ -96,7 +96,8 @@ function startStory(content = [
     document.getElementById('next').style.display = 'inline'
     document.getElementById('next1').style.display = 'inline'
     if (content.length <= 1) {
-      document.getElementById('next next1').style.display = 'none'
+      document.getElementById('next').style.display = 'none'
+      document.getElementById('next1').style.display = 'none'
       document.getElementById('prev').style.display = 'none'
       document.getElementById('prev1').style.display = 'none'
     }
