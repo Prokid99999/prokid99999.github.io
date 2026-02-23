@@ -184,7 +184,7 @@ var earth = ["<br>\
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
     <p>Airn lifts her hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
-    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, saying it will keep me safe.</p>\
+    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then- it seems to realize its mistake. Its magic brushes against mine, asking to take some, saying it will keep me safe.</p>\
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>\
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
     <p>I squeeze her tighter, press my lips to her head. \"Thank you.\"</p>\
@@ -327,7 +327,7 @@ var program = [
   '(u///u) ',
 ]
 
-
+var tes = ["(o ^ o) ", "(- ^ -)"]
 
 var intro = [
   program[0] + 'hello!',
