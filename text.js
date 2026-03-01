@@ -1,4 +1,5 @@
-var earth = ["<br>\
+var earth = [
+  "<br>\
   <div class='background' style='padding: 0'>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-top: 2rem;'>\
   Congratulations!</h2>\
@@ -147,47 +148,33 @@ var earth = ["<br>\
     <p>\"Sorry.\" I don't care right now. I want to be done with this bullshit so I can go to bed.<br>\
     ...Too bad I won't be able to enjoy cuddling with her.</p><br>\
     <div class=\"continue\">~~&gt ~~&gt ~~&gt</div><br>\
-    <p>I wake up to Mina gently shaking me. Sometimes I think she couldn't hurt anyone if she tried, but I'll be reminded of how dangerous she can be when we get to sparring. History of our relationship aside- I manage a good morning and perform the Herculean effort of climbing out of bed and putting some clothes on. Doesn't really matter which shirt I wear with my vest, I only care about the sleeve length. A pair of pants. I didn't sweat through the underwear I put on last night, so they don't change.</p>\
+    <p>I wake up to Mina gently shaking me. Sometimes I think she couldn't hurt anyone if she tried, but I'll be reminded of how dangerous she can be when we get to sparring. History of our relationship aside- I manage a good morning and perform the Herculean effort of climbing out of bed and putting some clothes on. Doesn't really matter which shirt I wear with my vest, I only care about the sleeve length. A pair of pants. I didn't sweat through the underwear I put on last night, so they don't change. A bra gets put on because nobody willingly sleeps in bras.</p>\
     <p>Mina got me up around ten minutes before we have to start walking to class. I have enough time to get my backpack ready and eat whatever she and Noza brought me from breakfast. I'm too hungry and not conscious enough to resist. I can't spend first period waking up on an empty stomach, after all.</p> <br><br><br>\
     <p>My thoughts turn to violence as soon as I finish waking up. I overheard a group of succubi gossiping about me and Mina, something about me seeing some guy I don't know. Noza would run with it, say some shit like \"He was <i>really</i> boring, didn't even last five minutes!\" without ever knowing who they were talking about. Mina would act like she doesn't care and tell me not to listen to them.</p>\
     <p>I spent my next three classes thinking about how best to humiliate those bitches.</p>\
     <p>If they were talking about Mina or Noza, I would tell them and let them deal with it. It's not my place to act. They've made that very clear. Me, though...</p>\
     <p>When Mina and I first got together, I knocked out every kid who called me a faggot with my bare hands. No magic except healing my knuckles after the beatdown. There were a few other slurs; anyone who used them on me had to be taken to the healers on a strecher. Worth every trip to the principal's office. Used my time there to get the sparring mats, too.</p>\
     <p>I one-up insults and threats. Say you're going to kill me? You'll find knives in your wrists tomorrow morning. Threaten to assault me? I'll make you wish you could claw your brain out of your skull right there. That one started with some bastard who was saying he'd rape me if I hurt anyone else. Talked some big shit, got people joining in.</p>\
-    <p>The day after that, his eyes started bleeding. They wouldn't stop, red running off his face with barely a moment between drops. He clawed at them like his nails would help. Screamed about how much it hurt until his voice actually stopped working. Really, no more sounds out of his mouth. I think somebody said he broke his vocal cords.</p>\
+    <p>The day after that, his eyes started bleeding. They wouldn't stop, red running off his face in an almost constant stream. He clawed at them like his nails would help. Screamed about how much it hurt until his voice actually stopped working. Really, no more sounds out of his mouth. I think somebody said he broke his vocal cords.</p>\
     <p>Took the healers almost a week to get the curse off. He didn't come to my class after.</p>\
-    <p>In the next months, every person who had said they would assault me with him experienced similar tourture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened, I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>\
+    <p>In the next months, every person who had said they would assault me with him experienced similar tourture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>\
     <p>All that to say: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether they want me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, aka the 'Realistic Option', they're hoping to break the record of time survived against me.</p>\
-    <p>Whatever they calculated, it's wrong. Bet they think it only takes a succubus to get a difficult match, meaning they're missing some numbers. Mina lasts minutes against me because she's been watching me fight for years and knows me intimately. She has a gold mine of information that these washed-up fools are lacking.</p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is giving me odd looks. \"I challenge you to a duel.\"</p>\
+    <p>Whatever they calculated, it's wrong. Bet they think it only takes a succubus for a difficult match, meaning they're missing some numbers. Mina lasts minutes against me because she's been watching me fight for years and knows me intimately. She has a gold mine of information that these washed-up fools are lacking.</p>\
+    <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is giving me violent looks. \"I challenge you to a duel.\"</p>\
     <p>\"Oh?\" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's a little trickier than I thought, thinks she knows how to manipulate a crowd.</p>\
     <p>\"All of you. Fight me all at once, 'cause that's what you need for a fraction of a chance.\" A demon grin cracks my face. The crowd looks at me like I'm insane. Mina shakes her head and Noza throws a thumbs-up. The little bitches who're gonna fight me? Their eyes could rip me to shreds.</p>\
-    <p>\"You wanna go?!\" I wish I could frame her face, she's fucking livid. Her clan circles the mat I'm standing on. My mana rises at the danger, thrumming warm through my bones. Its power makes me light and reckless. It burns away the fog from this morning and leaves me in need of an outlet. Only magic and Mina can make me feel like this.</p>\
-    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Amateurs. Goddamn amatures. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
-    <p>You could kill boars with the shock on their faces. The crowd is cheering, Mina looks torn between impressed and concerned, Noza starts clapping. I feel sick. That spell overfilled my body's mana limit, which my vest will take care of, but evidently magic doesn't like being stolen. Feels like a groggy bear. I ensured their power can't hurt me, even if it doesn't want to be in my body. Any spells I cast with it will be unstable. Could be worse, I guess.</p>\
-    <p>Even so, I'm going to keep this one on the shelf. Use it when people need reminders of how strong I am or to enforce my strength like right now. Anyway, my opponents throw a few spells for me to brush off before surrendering. There's a couple more challengers I take care of quickly before Mina steps up.</p>\
+    <p>\"You wanna go?!\" I wish I could frame her face, she's fucking livid. If looks could kill, I'd be a corpse mangled beyond recognition. Her clan circles the mat I'm standing on. My mana rises at the danger, thrumming warm through my bones. Its power makes me light and reckless. It burns away the fog from this morning and leaves me in need of an outlet. Only magic and Mina can make me feel like this.</p>\
+    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Goddamn amatures. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
+    <p>You could kill boars with the shock on their faces. The crowd is cheering, Mina looks torn between impressed and concerned, Noza starts clapping. I feel sick. That spell overfilled my body's mana limit, which my vest will take care of, but evidently magic doesn't like being stolen. Feels like a groggy bear. I ensured their power can't hurt me, even if it doesn't want to be in my body. Any spells I cast with it will be unstable. Could be worse, I guess. I can burn it off later.</p>\
+    <p>Even so, I'm going to keep this one on the shelf. Use it when people need reminders of how strong I am or to enforce my strength like right now. Anyway, my opponents throw a few spells for me to brush off before surrendering. There's a couple more challengers I short work of before Mina steps up.</p>\
     <p>Oh, Mina. She walks up casually, like we're going to hug instead of fight. Her hair is tied in a ponytail to keep it out of her face, a look I only see here but wouldn't mind seeing more often. There's a glove on her right hand, a deep red fishnet stretching from her middle three fingers to about a palm below her wrist. Magic seethes through it. I draw my wand from its holster in my vest, a long, lighter-colored stick carved into a handle and a point. Mina's power comes into sharper focus when I hold it. I can almost anticipate the way her mana shifts, almost predict the direction.</p>\
-    <p>It doesn't flare all over when she casts, only a heartbeat pump through her arm. A string of power shoots somewhere out of her hand. My instincts pick it apart as fast as they can, but it has too many layered folds. I have to twist out of the way rather than block it. She gives me a cocky little smile. <i>Got you,</i> it seems to say. No way that spell would've done any more than take a little bit of my mana, but still.</p>\
-    <p>I launch my own spell, feeling hot power pump through my arm and out of my wand. It's hard to keep under control. It would be harder if I hadn't spent years training myself to conceal my casting. Mina gracefully spins out of its path, then makes a clumsier twist out of instinct. My spell chases after her. She dodges a few more spells from me and sends an unguarded plume of magic straight up while concealing her mana. Clever. That trick sends my spell whistling through empty air and into the wall of the mat's arena. Mina... Mina's not where I left her. I whip around, making a barrier just in time to block a spell from slamming into my face. I can't help but grin. <i>Almost got me!</i></p>\
+    <p>It doesn't flare all over when she casts, only a heartbeat pump through her arm. A string of power shoots somewhere out of her hand. My instincts pick it apart as fast as they can, but it has too many layered folds. I have to twist out of the way rather than block it. She gives me a cocky little smile. <i>Got you,</i> it seems to say. No way that spell would've done any more than blow off a little bit of my mana, but still.</p>\
+    <p>I launch my own spell, feeling hot power pump through my arm and out of my wand. It's hard to keep under control. It would be harder if I hadn't spent years training myself to conceal my casting. Mina gracefully spins out of its path, then makes a clumsier twist out of instinct. My spell chases after her. She dodges a few non-homing spells from me and sends an unguarded plume of magic straight up while concealing her mana. Clever. That trick sends my spell whistling through empty air and into the wall of the mat's arena. Mina... Mina's not where I left her. I whip around, making a barrier just in time to block a spell from slamming into my face. I can't help but grin. <i>Almost got me!</i></p>\
     <p>She's grinning too. <i>That spell was a real piece of work. How did you come up with it?</i> I chuckle; <i>How do you think?</i></p>\
     <p>My eyes find their way to her chest, hidden under a high-cut shirt. A necklace is hanging over it.</p>\
     <p>I blitz her, standing in front of her before she can start blinking. My hand finds the small heart pendant and tucks it back under her collar. Nobody else needs to see it; we can keep it between myself and Mina. I return to my position as she finishes blinking.</p>\
     <p>Mina touches her shirt where the pendant was. Her eyes widen when she discovers it's a layer lower than she thought, then shift into gratitude. I give her a warm smile. I don't know how she thinks I did it, but that doesn't matter right now. We're supposed to be fighting.</p>\
-    <p>I throw another spell at her. She smirks as she dodges, sidestepping like she had always intended to. I cast a barrier with my wand hand and spread the rest of my fingers. I don't really try to conceal my casting, weaving five scorching strings of magic into spells homing in on Mina. Her eyes widen and she dodges one, barely misses the second. She tries that magic flare again, but I bend my power towards her.</p>\
+    <p>I throw another spell at her. She smirks as she dodges, sidestepping like she had always intended to. I cast a halfhearted barrier with my wand hand and spread the rest of my fingers. I can't really conceal my casting, weaving five scorching strings of magic into spells homing in on Mina. Her eyes widen and she dodges one, barely misses the second. She tries that magic flare again, but I bend my power towards her.</p>\
     <p>All five spells hit at once, bringing Mina to all fours. Her mana burns down to almost nothing. I shove my wand into its holster, rush over to her and put my hands on her shoulders, chanting a spell that forces her body to replenish its magic. It drains my own mana pretty quickly. If I didn't have my vest, I would only be able to get her standing before I collapse. Luckily, I only take it off in our room after classes. I can fully restore her mana and only empty one of the power cells along my spine.</p>\
     <p>The grimace on her face says I'm probably going too fast, but I'd rather have her uncomfortable than dead. I need to make a safeguard to keep that from happening again.</p>\
     <p>\"I'm sorry,\" I whisper into her ear. \"I'm really sorry. Are you okay?\"</p>\
@@ -198,26 +185,46 @@ var earth = ["<br>\
     "<h2>3</h2>\
   <h1 id='char' class=\"Mina\">Mina</h1>\
   <div class=\"background\">\
-    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a human on Fridays or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilites. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is already an arch mage.</p>\
+    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilites. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is already an arch mage.</p>\
     <p>I walk up behind Airn and wrap my arms around her, put my chin on her head, aware I can't surprise her.</p>\
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
-    <p>Airn lifts her hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
-    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then- it seems to realize its mistake. Its magic brushes against mine, asking to take some, saying it will keep me safe.</p>\
+    <p>Airn lifts a hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
+    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>\
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
-    <p>I squeeze her tighter, press my lips to her head. \"Thank you.\"</p>\
+    <p>I squeeze her tighter, press my lips to the top of her head. \"Thank you.\"</p>\
+    <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>\
+    <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentally harmful magic cast upon them without their consent.</i></p>\
     <p></p>\
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>"]
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>"
+]
 
-var abyss = ["penis :3"]
+var abyss = [
+  "penis :3"
+]
 
-var nothing = ["balls >:3c"]
+var nothing = [
+  "balls >:3c"
+]
 
-var lustwreakers = ["<!DOCTYPE html>\
+var lustwreakers = [
+  "<!DOCTYPE html>\
 <head>\
   <link rel=\"stylesheet\" href=\"../characters.css\">\
   <link rel=\"icon\" href=\"/icons/lustwreaker.png\">\
@@ -244,14 +251,14 @@ var lustwreakers = ["<!DOCTYPE html>\
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel="stylesheet" href="../characters.css">\
-  <link rel="icon" href="/icons/lustwreaker.png">\
-    <script src="/script.js"></script>\
+  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"icon" href=\"/icons/lustwreaker.png">\
+    <script src=\"/script.js"></script>\
 </head>\
 <title>Rory Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;"><span style="color: #cc0000;">Rory</span> Lustwreaker</h1>\
+    <h1 style=\"color: #980000;"><span style=\"color: #cc0000;">Rory</span> Lustwreaker</h1>\
     <p>\
     She/Her<br>\
     Female<br>\
@@ -267,14 +274,14 @@ var lustwreakers = ["<!DOCTYPE html>\
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel="stylesheet" href="../characters.css">\
-  <link rel="icon" href="/icons/lustwreaker.png">\
-    <script src="/script.js"></script>\
+  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"icon" href=\"/icons/lustwreaker.png">\
+    <script src=\"/script.js"></script>\
 </head>\
 <title>Diolas Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;"><span style="color: #783f04;">Diolas</span> Lustwreaker</h1>\
+    <h1 style=\"color: #980000;"><span style=\"color: #783f04;">Diolas</span> Lustwreaker</h1>\
     <p>\
     They/Them<br>\
     Male<br>\
@@ -289,14 +296,14 @@ var lustwreakers = ["<!DOCTYPE html>\
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel="stylesheet" href="../characters.css">\
-  <link rel="icon" href="/icons/lustwreaker.png">\
-    <script src="/script.js"></script>\
+  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"icon" href=\"/icons/lustwreaker.png">\
+    <script src=\"/script.js"></script>\
 </head>\
 <title>Raein Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;"><span style="color: #bf9000;">Raein</span> Lustwreaker</h1>\
+    <h1 style=\"color: #980000;"><span style=\"color: #bf9000;">Raein</span> Lustwreaker</h1>\
     <p>\
     He/Him<br>\
     Male<br>\
@@ -311,14 +318,14 @@ var lustwreakers = ["<!DOCTYPE html>\
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel="stylesheet" href="../characters.css">\
-  <link rel="icon" href="/icons/lustwreaker.png">\
-    <script src="/script.js"></script>\
+  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"icon" href=\"/icons/lustwreaker.png">\
+    <script src=\"/script.js"></script>\
 </head>\
 <title>Quinn Lustwreaker</title>\
 <html>\
   <body>\
-    <h1 style="color: #980000;"><span style="color: #660000;">Quinn (Quilin)</span> Lustwreaker</h1>\
+    <h1 style=\"color: #980000;"><span style=\"color: #660000;">Quinn (Quilin)</span> Lustwreaker</h1>\
     <p>\
     She/Her<br>\
     Female<br>\
@@ -330,7 +337,8 @@ var lustwreakers = ["<!DOCTYPE html>\
     weeb perhaps? at least very interested in japanese culture\
     </p>\
   </body>\
-</html>']
+</html>'
+]
 
 // var test = fetchJSONData()
 
@@ -346,21 +354,25 @@ var program = [
   '(u///u) ',
 ]
 
-var tes = ["(o ^ o) ", "(- ^ -)"]
-
-var intro = [
-  program[0] + 'hello!',
-  program[0] + 'my name is program!',
-  program[6] + 'i\'m speaking as proxy for prokid,',
-  program[4] + 'although you might know him by other names.',
-  program[0] + 'the interface that i\'m using to speak with you was made by him.',
-  program[6] + 'coding is about building whatever amazing things you can think of with a provided toolbox, and he would like to share his creations.',
-  program[0] + 'that\'s what this website is for.',
-  program[0] + 'here\'s what we\'ve done so far:',
-  program[8] + '"<a href="/driving.html">How Does Gaming Help You Drive?</a>"<br>' + '&nbsp;&nbsp;&nbsp;&nbsp;"<a href="/love-triangle.html">What <i>Is</i> A Love Triangle in Literature?</a>"'
+var tes = [
+  "(o ^ o) ",
+  "(- ^ -)"
 ]
 
-var driving = ["<style> \
+var intro = [
+program[0] + 'hello!',
+program[0] + 'my name is program!',
+program[6] + 'i\'m speaking as proxy for prokid,',
+program[4] + 'although you might know him by other names.',
+program[0] + 'the interface that i\'m using to speak with you was made by him.',
+program[6] + 'coding is about building whatever amazing things you can think of with a provided toolbox, and he would like to share his creations.',
+program[0] + 'that\'s what this website is for.',
+program[0] + 'here\'s what we\'ve done so far:',
+program[8] + '"<a href=\"/driving.html">How Does Gaming Help You Drive?</a>"<br>' + '&nbsp;&nbsp;&nbsp;&nbsp;"<a href=\"/love-triangle.html">What <i>Is</i> A Love Triangle in Literature?</a>"'
+]
+
+var driving = [
+  "<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
@@ -376,10 +388,12 @@ var driving = ["<style> \
     <p>I believe that all the games I've played have made me classify the dashboard as a HUD ('Heads-Up Display'). The HUD is an easily-readable display of all the important information in a game, such as health, mana, hunger, money, and items. Depending on the game, the HUD might even be a dashboard.</p> \
     <p>An example of a HUD is in <i>Minecraft</i>, where your health, hunger, experience, and items are readily viewable. Though a HUD is an important piece of gameplay, it <i>is</i> only a piece of the experience. In <i>Minecraft</i>, you wouldn't have very much fun if you fixate on the HUD. Playing would get frustrating quickly because you would have to shift your focus away from the game itself to check your health and hunger. You have to learn how to stay focused on the world of the game and only glance at your display to update your information.</p>\
     <p>That sentence doesn't have to be changed much to apply to driving: 'You have to learn how to stay focused on the road and only glance at your dashboard to update your information.'</p>\
-    <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks. </p>\
-    </div>"]
+    <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks.</p>\
+    </div>"
+]
 
-var love_triangle = ["<style> \
+var love_triangle = [
+  "<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
@@ -391,4 +405,36 @@ var love_triangle = ["<style> \
     </style> \
     <div class=\"background\"> \
     wip \
-    </div>"]
+    </div>"
+]
+
+var mikuteto_jjk = [
+  "<h2>1</h2>\
+  <h1 id='char' class=\"Miku\">Hatsune</h1>\
+  <div class='background'>\
+    <p>Hatsune strides down the road, aiming for a particular back street with quite a reputation. It's rumored around these parts that a spirit lives in an alleyway between a warehouse and an apartment complex, silently taking sleeping tenants and killing them inside its lair.</p>\
+    <p>She walks down this alleyway, empty eyes flicking over apartment windows and the ground, searching for something to lead her to the supposed spirit. A trail reveals itself to her in residual cursed energy.</p>\
+    <p>\"Yami yori idete yami yori kuroku sono kegare o misogiharae.\"</p>\
+    <p style='color: #444;'>\"Emerge from the darkness, blacker than blackness. Purify that which is impure.\"</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h2>2</h2>\
+  <h1 id='char' class=\"Teto\">Teto</h1>\
+  <div class='background'>\
+    <p>penis</p>\
+  </div>",
+]

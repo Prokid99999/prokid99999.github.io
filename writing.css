@@ -52,6 +52,10 @@ i {color: inherit; font-family: inherit;}
     left: 0px;
 }
 
+#prev, #prev1 {text-align: left; display: inline-block;}
+#next, #next1 {text-align: right; display: inline-block;}
+.space {display: flex; justify-content: space-between;}
+
 
 
 /*  fuck

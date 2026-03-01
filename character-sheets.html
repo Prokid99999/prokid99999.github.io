@@ -1,53 +1,18 @@
 <!DOCTYPE html>
-<html>
-<title>Character Sheets</title>
 <head>
     <link rel="stylesheet" href="characters.css">
     <link rel="icon" href="icons/characters.png">
     <script src="/script.js"></script>
+    <title>Character Sheets</title>
 </head>
-<style>
-    .large {font-size: 160%;}
-    span {color: white;}
-    .noza, .Noza {color: green; text-shadow: 0px 0px 7px #0a0;}
-    .airn, .Airn {color: azure; text-shadow: 0px 0px 7px #0af;}
-    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 7px #f0c;}
-    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 10px #fff;}
-    .earth {color: green; text-shadow: 0px 0px 10px #ff8400;}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    background-color: black;
-    color: #ffffff;
-}
-
-/* Tooltip text */
-.tooltiptext {
-    visibility: hidden;
-    width: 130px;
-    background-color: black;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    border-color: #555;
-    position: absolute;
-    z-index: 1;
-}
-
-/* Show the tooltip text on hover */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-</style>
+<html>
     <body>
         <h1 style="color: white;">Name</h1>
         <p>
-            <a href="./gender"><span style="color: #fff;">Pronouns/Gender</span></a><br>
+            <a href="./gender" style="font-size: 1rem"><span style="color: #fff; font-size: 1rem">Pronouns/Gender</span></a><br>
             Sex<br>
             Age<br>
-            <a href="./sexualities"><span style="color: #fff;">Sexuality</span></a><br>
+            <a href="./sexualities" style="font-size: 1rem"><span style="color: #fff; font-size: 1rem">Sexuality</span></a><br>
             Weapon<br>
             Species<br><br>
             Character description<br><br>
@@ -91,8 +56,9 @@
             <a class="big" href="character-sheets/raein"><span style="color: #bf9000;">Raein</span></a><br><br><br>
 
             <span class="large">Misc</span><br>
-            <a class="big" href="character-sheets/miku"><span style="color: #00ff9b;">Miku</span> <span style="color: #009bff;">Hatsune</span> <span>(JJK)</span></a><br>
-            <a class="big" href="character-sheets/luka"><span style="color: #E3BCCD;">Luka</span> <span style="color: #ff7db5;">Megurine</span> <span>(JJK)</span></a><br><br>
+            <a class="big" href="character-sheets/miku"><span style="color: #009bff;">Miku</span> <span style="color: #00ff9b;">Hatsune</span> <span>(JJK)</span></a><br>
+            <a class="big" href="character-sheets/teto-jjk"><span style="color: #f00;">Teto</span> <span style="color: #f66;">Kasane</span> <span>(JJK)</span></a><br>
+            <a class="big" href="character-sheets/luka"><span style="color: #ff7db5;">Luka</span> <span style="color: #E3BCCD;">Megurine</span> <span>(JJK)</span></a><br><br>
             <a class="big" href="character-sheets/void"><span class="void">Void</span></a><br>
             <a class="big" href="character-sheets/earth"><span class="earth">Earth</span></a><br>
             <a class="big" href="character-sheets/airn"><span class="airn">Airn</span></a><br>
@@ -101,3 +67,37 @@
         </p>
     </body>
 </html>
+
+<style>
+    .large {font-size: 160%;}
+    span {color: white;}
+    .noza, .Noza {color: green; text-shadow: 0px 0px 7px #0a0;}
+    .airn, .Airn {color: azure; text-shadow: 0px 0px 7px #0af;}
+    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 7px #f0c;}
+    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 10px #fff;}
+    .earth {color: green; text-shadow: 0px 0px 10px #ff8400;}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border-color: #555;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
