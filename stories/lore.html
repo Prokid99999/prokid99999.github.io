@@ -2,39 +2,46 @@
 <head>
     <!-- <link href='https://fonts.googleapis.com/css?family=Allan|Aguafina Script|Amatic SC' rel='stylesheet'> -->
     <link rel="stylesheet" href="/writing.css">
-    <link rel="icon" href="/icons/mikuteto.png">
+    <link rel="icon" href="/icons/story.png">
     <script src="/script.js"></script>
     <script src="/text.js"></script>
 </head>
-<title>mikuteto jjk</title>
+<title>lore</title>
 <style>
+    #prev, #prev1 {text-align: left; display: inline-block;}
+    #next, #next1 {text-align: right; display: inline-block;}
+    .space {display: flex; justify-content: space-between;}
+    h1 {color: white;}
     h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%; font-family: cursive;}
+    /* br {line-height: 5vh;} */
+    .noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}
+    .airn, .Airn {color: azure; text-shadow: 0px 0px 15px #0af;}
+    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}
+    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}
+    .none {color: white}
 
-    .miku, .Miku, .Hatsune, .hatsune {color: #00ff9b; text-shadow: 0px 0px 15px #009bff;}
-    .teto, .Teto, .Kasane, .kasane {color: #f66; text-shadow: 0px 0px 15px #f00;}
-
-    #next, #prev {color: #00ff9b; border-color: #009bff;}
-    #prev1, #next1 {color: #f66; border-color: #f00;}
-    #next, #prev, #next1, #prev1 {background: #000;}
+    hr {
+        border-style: dashed;
+}
 </style>
 <html>
-    <body onload="startStory(mikuteto_jjk)">
-        <span style="font-family: 'Allan';"></span>
+    <body onload="startStory(earth_lore)">
+        <!-- <span style="font-family: 'Allan';"></span>
         <span style="font-family: 'Aguafina Script';"></span>
-        <span style="font-family: 'Amatic SC';"></span>
+        <span style="font-family: 'Amatic SC';"></span> -->
         <br>
         <div class="space">
             <div><button id="prev">&lt; Previous</button></div>
             <div id="center" style="text-align: center;"></div>
             <div style="text-align: right;"><button id="next">Next &gt;</button></div>
         </div>
-            <div id="story"><br>
+            <div id="story">
                 <span style="color: white;">this shit isnt fucking working :&lpar;</span>
             </div><br>
         <div class="space">
             <div><button id="prev1">&lt; Previous</button></div>
             <div id="center1" style="text-align: center;"></div>
             <div style="text-align: right;"><button id="next1">Next &gt;</button></div>
-        </div><br>
+        </div>
     </body>
 </html>

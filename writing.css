@@ -6,6 +6,7 @@ a:active {color: red;}
 strong {color: red;}
 h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 50.5px; padding-bottom: 55px; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0%; margin-bottom: 0%;}
 h2 {text-align: center; font-size: 1rem;}
+h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%; font-family: cursive;}
 p {font-size: 1rem; text-indent: 3rem; line-height: 1.75rem; margin: auto;}
 pre {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 10mm; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px;}
 button {font-size: 0.9rem;}
@@ -56,7 +57,14 @@ i {color: inherit; font-family: inherit;}
 #next, #next1 {text-align: right; display: inline-block;}
 .space {display: flex; justify-content: space-between;}
 
-
+/* characters */cursive
+    .miku, .Miku, .Hatsune, .hatsune {color: #00ff9b; text-shadow: 0px 0px 15px #009bff;}
+    .teto, .Teto, .Kasane, .kasane {color: #f66; text-shadow: 0px 0px 15px #f00;}
+    .noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}
+    .airn, .Airn {color: azure; text-shadow: 0px 0px 15px #0af;}
+    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}
+    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}
+    .none {color: white}
 
 /*  fuck
     4u(k

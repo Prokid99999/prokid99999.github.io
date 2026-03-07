@@ -1,12 +1,58 @@
-function setCookie(cname, cvalue, exdays = 365) {
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+  .then(function(registration) {
+    console.log(tes[0] + 'Service Worker registered with scope:', registration.scope);
+  }).catch(function(error) {
+    console.log(tes[0] + 'Service Worker registration failed:', error);
+  });
+}
+
+var program = [
+    '(^///^) ',
+    "(o///o) ",
+    "(0///0) ",
+    "(>///<) ",
+    " ( /o///o) ",
+    " ( /0///0) ",
+    "(v///v) ",
+    '(-///-) ',
+    '(u///u) ',
+]
+
+var tes = ["(o ^ o) ", "(- ^ -)"]
+
+function setCookie(cname, cvalue, output = true, exdays = 365) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = 'expires=' + d.toUTCString();
   document.cookie = cname + '=' + cvalue + ';' + expires + ';page=/';
+  if (output) {
   console.log(
-    'Set cookie \'' + cname + '\' with value \'' + cvalue + '\'; ' + expires
-  )
+    tes[0] + 'Set cookie \'' + cname + '\' with value \'' + cvalue + '\'; ' + expires
+  )}
 }
+
+function setArrayCookie(name, value, daysToLive = 365) {
+  // Serialize the value (array → string)
+  const serializedValue = JSON.stringify(value);
+
+  // Set expiration date
+  const date = new Date();
+  date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 * 1000)); // days → milliseconds
+  const expires = `expires=${date.toUTCString()}`;
+
+  // Combine all cookie attributes[0]
+  const cookie = `${name}=${encodeURIComponent(serializedValue)}; ${expires}; path=/; SameSite=Strict`;
+
+  // Add "secure" attribute if using HTTPS
+  if (window.location.protocol === "https:") {
+    cookie += "; secure";
+  }
+
+  // Set the cookie
+  document.cookie = cookie;
+}
+
 function getCookie(cname) {
   let name = cname + '=';
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -22,20 +68,60 @@ function getCookie(cname) {
   }
   return '';
 }
+
+function getArrayCookie(name) {
+  // Split all cookies into an array of "name=value" strings
+  const cookies = document.cookie.split(";");
+
+  // Loop through cookies to find the one with the matching name
+  for (let cookie of cookies) {
+    // Trim whites[0]pace and split into name/value
+    const [cookieName, cookieValue] = cookie.trim().split("=");
+
+    // If the name matches, decode and parse the value
+    if (cookieName === name) {
+      try {
+        // Decode URI and parse JSON
+        return JSON.parse(decodeURIComponent(cookieValue));
+      } catch (error) {
+        // Handle invalid JSON (e.g., manually modified cookie)
+        console.error("Failed to parse cookie:", error);
+        return null;
+      }
+    }
+  }
+
+  // Return null if cookie not found
+  return null;
+}
+
 function checkCookie(cname) {
   let anti = getCookie(cname)
   if (anti != '') {
     console.log(
-      'Found cookie \'' + cname + '\' with value \'' + getCookie(cname) + '\''
+      tes[0] + 'Found cookie \'' + cname + '\' with value \'' + getCookie(cname) + '\''
     )
     return 'success!'
   } else {
-    console.log('Couldn\'t find cookie ' + cname)
+    errorMessage(tes[0] + 'Couldn\'t find cookie ' + cname)
     return 'error'
   }
 }
-//
-// function fetchJSONData(jsonFile="./test.json") {
+
+function checkArrayCookie(cname) {
+  let anti = getArrayCookie(cname)
+  if (anti != null) {
+    console.log(
+      tes[0] + 'Found cookie \'' + cname + '\' with value \'' + getArrayCookie(cname) + '\''
+    )
+    return 'success!'
+  } else {
+    errorMessage(tes[0] + 'Couldn\'t find cookie \'' + cname + '\'')
+    return 'error'
+  }
+}
+
+// function fetchJSONData(jsonFile="./tes[0]t.json") {
 //   fetch(jsonFile)
 //     .then(response => {
 //       if (!response.ok) {
@@ -46,39 +132,19 @@ function checkCookie(cname) {
 //     .then(data => console.log(data))
 //     .catch(error => console.error('Failed to fetch data:', error));
 // }
-function startStory(content = [
-  'wtf'
-], doCookies = true, doX = false, doY = true) {
-  var page = window.location.pathname + ' - '
-  let index = 0
-  if (doCookies == true) {
-    index = Number(getCookie(page + 'index'))
-    if (index + 1 > content.length) {
-      setCookie(page + 'index', 0);
-      index = 0
-    }
-    if (doX === true && checkCookie(page + 'scrollx') === 'error') {
-      setCookie(page + 'scrollx', 0)
-    }
-    if (doY === true && checkCookie(page + 'scrolly') === 'error') {
-      setCookie(page + 'scrolly', 0)
-    }
-    if (checkCookie(page + 'index') === 'error') {
-      setCookie(page + 'index', 0)
-      index = 0
-    }
-    if (index === 'NaN') {
-      setCookie(page + 'index', 0)
-      index = 0
-    }
+
+function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
+  const page = window.location.pathname + ' - '
+  const showSlide = n => {
+    document.getElementById('story').innerHTML = content[n]
   }
-  // chapter
-  // const adding = document.createElement('button')
-  // for (let i = 0; i < content.length; i++) {
-  //   adding.innerText = i + 1
-  //   document.getElementById('center').appendChild(adding)
-  // }
-  if (index + 1 >= content.length) {
+
+  let index = Number(getCookie(page + 'index'))
+  if (index + 1 > content.length) {
+    setCookie(page + 'index', 0);
+    index = 0
+  }
+  if (index + 1 === content.length) {
     document.getElementById('prev').style.display = 'inline'
     document.getElementById('prev1').style.display = 'inline'
     document.getElementById('next').style.display = 'none'
@@ -96,14 +162,27 @@ function startStory(content = [
     document.getElementById('next').style.display = 'inline'
     document.getElementById('next1').style.display = 'inline'
     if (content.length <= 1) {
-      document.getElementById('next').style.display = 'none'
-      document.getElementById('next1').style.display = 'none'
       document.getElementById('prev').style.display = 'none'
       document.getElementById('prev1').style.display = 'none'
+      document.getElementById('next').style.display = 'none'
+      document.getElementById('next1').style.display = 'none'
     }
   }
-  const showSlide = n => {
-    document.getElementById('story').innerHTML = content[n]
+  if (doCookies == true) {
+    if (doX === true && checkCookie(page + 'scrollx') === 'error') {
+      setCookie(page + 'scrollx', 0)
+    }
+    if (doY === true && checkCookie(page + 'scrolly') === 'error') {
+      setCookie(page + 'scrolly', 0)
+    }
+    if (checkCookie(page + 'index') === 'error') {
+      setCookie(page + 'index', 0)
+      index = 0
+    }
+    if (index === 'NaN') {
+      setCookie(page + 'index', 0)
+      index = 0
+    }
   }
   showSlide(index)
   if (doCookies = true) {
@@ -113,70 +192,82 @@ function startStory(content = [
     )
   }
   function next() {
-    index = (index + 1) % content.length
-    if (index + 1 >= content.length) {
-      document.getElementById('next').style.display = 'none'
-      document.getElementById('next1').style.display = 'none'
-      document.getElementById('prev').style.display = 'inline'
-      document.getElementById('prev1').style.display = 'inline'
+      index = (index + 1) % content.length
+      if (index + 1 >= content.length) {
+        document.getElementById('next').style.display = 'none'
+        document.getElementById('next1').style.display = 'none'
+        document.getElementById('prev').style.display = 'inline'
+        document.getElementById('prev1').style.display = 'inline'
+      }
+      else {
+        document.getElementById('next').style.display = 'inline'
+        document.getElementById('next1').style.display = 'inline'
+        document.getElementById('prev').style.display = 'inline'
+        document.getElementById('prev1').style.display = 'inline'
+      }
+      window.scrollTo(0, 0)
+      showSlide(index)
+      if (doCookies == true) {
+        setCookie(page + 'index', index)
+      }
+      char()
     }
-    else {
-      document.getElementById('next').style.display = 'inline'
-      document.getElementById('next1').style.display = 'inline'
-      document.getElementById('prev').style.display = 'inline'
-      document.getElementById('prev1').style.display = 'inline'
-    }
-    window.scrollTo(0, 0)
-    showSlide(index)
-    if (doCookies == true) {
-      setCookie(page + 'index', index)
-    }
-    document.getElementById('char').addEventListener('dblclick', () => {
-      word_count()
-    })
-  }
   function prev() {
-    index = (index + content.length - 1) % content.length
-    if (index === 0) {
-      document.getElementById('prev').style.display = 'none'
-      document.getElementById('prev1').style.display = 'none'
-      document.getElementById('next').style.display = 'inline'
-      document.getElementById('next1').style.display = 'inline'
+      index = (index + content.length - 1) % content.length
+      if (index === 0) {
+        document.getElementById('prev').style.display = 'none'
+        document.getElementById('prev1').style.display = 'none'
+        document.getElementById('next').style.display = 'inline'
+        document.getElementById('next1').style.display = 'inline'
+      }
+      else {
+        document.getElementById('prev').style.display = 'inline'
+        document.getElementById('prev1').style.display = 'inline'
+        document.getElementById('next').style.display = 'inline-block'
+        document.getElementById('next1').style.display = 'inline-block'
+      }
+      window.scrollTo(0, 0)
+      showSlide(index)
+      if (doCookies == true) {
+        setCookie(page + 'index', index)
+      }
+      char()
+  }
+  document.getElementById('next').addEventListener(
+    'click',
+    () => {
+      next()
     }
-    else {
-      document.getElementById('prev').style.display = 'inline'
-      document.getElementById('prev1').style.display = 'inline'
-      document.getElementById('next').style.display = 'inline-block'
-      document.getElementById('next1').style.display = 'inline-block'
+  )
+  document.getElementById('next1').addEventListener(
+    'click',
+    () => {
+      next()
     }
-    window.scrollTo(0, 0)
-    showSlide(index)
-    if (doCookies == true) {
-      setCookie(page + 'index', index)
+  )
+  document.getElementById('prev').addEventListener(
+    'click',
+    () => {
+      prev()
     }
+  )
+  document.getElementById('prev1').addEventListener(
+    'click',
+    () => {
+      prev()
+    }
+  )
+  function char() {
+    try {
     document.getElementById('char').addEventListener('dblclick', () => {
       word_count()
     })
+    }
+    catch (TypeError) {
+      colorTrace(program[4] + 'no char element', 'red')
+    }
   }
-  document.getElementById('next').addEventListener('click', () => {
-    next()
-  }
-  )
-  document.getElementById('next1').addEventListener('click', () => {
-    next()
-  }
-  )
-  document.getElementById('prev').addEventListener('click', () => {
-    prev()
-  }
-  )
-  document.getElementById('prev1').addEventListener('click', () => {
-    prev()
-  }
-  )
-  document.getElementById('char').addEventListener('dblclick', () => {
-    word_count()
-  })
+  char()
   if (doCookies == true) {
     window.addEventListener(
       'scrollend',
@@ -191,6 +282,39 @@ function startStory(content = [
     )
   }
 }
+
+var startNumber = 0
+
+function startStory(content=['wtf']) {
+  var s = document.createElement('script');
+  s.id = 'text'
+  if (startNumber === 0) {
+    s.src = '/text.js';
+    document.body.appendChild(s);
+    startNumber++
+    document.getElementById('text').remove()
+    startStory(content)
+  }
+  else if (startNumber === 1) {
+    s.src = 'https://prokid99999.github.io/text.js';
+    document.body.appendChild(s);
+    startNumber++
+    document.getElementById('text').remove()
+    startStory(content)
+  }
+  else if (startNumber === 2) {
+    s.src = 'http://localhost:2009/text.js';
+    document.body.appendChild(s);
+    startNumber++
+    document.getElementById('text').remove()
+    startStory(content)
+  }
+  else if (startNumber === 3) {
+    startNumber = 0
+    start(content)
+  }
+}
+
 function getCommit(owner, repo) {
   fetch(
     'https://api.github.com/repos/' + owner + '/' + repo + '/commits?per_page=1',
@@ -212,6 +336,7 @@ function getCommit(owner, repo) {
     }
   )
 }
+
 function getCommitNumbers(owner, repo) {
   fetch(
     'https://api.github.com/repos/' + owner + '/' + repo + '/commits?per_page=1',
@@ -224,7 +349,9 @@ function getCommitNumbers(owner, repo) {
     }
   )
 }
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
+
 function word_count(paras = 'background') {
   paras = document.getElementsByClassName(paras);
   var count = 0;
@@ -237,8 +364,9 @@ function word_count(paras = 'background') {
   contents = contents.trim()
   contents = contents.replace(/<[^>]*>?/gm, '');
   char = contents.length
-  console.log(count + ' words, ' + char + ' characters');
+  console.log(tes[0] + count + ' words, ' + char + ' characters');
 }
+
 function wordcount(paras = 'background') {
   let area = document.getElementById(paras);
   let char = 0 // Count characters
@@ -255,6 +383,7 @@ function wordcount(paras = 'background') {
   // Count words
   console.log(words.length)
 }
+
 function stripHtml(html)
 {
   let tmp = document.createElement('DIV');
@@ -263,14 +392,21 @@ function stripHtml(html)
   tmp.innerText ||
   '';
 }
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(
-    function (registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }
-  ).catch(
-    function (error) {
-      console.log('Service Worker registration failed:', error);
-    }
-  );
+
+function vol(video_volume = 0.1, audio_volume = 0.75) {
+  const video = document.querySelectorAll('video');
+  video.forEach(element => element.volume = video_volume
+
+  )
+  video.forEach(element => element.addEventListener('pause', () => setCookie(element + 'time', element.currentTime)))
+  const audio = document.querySelectorAll('audio');
+  audio.forEach(element => element.volume = audio_volume)
+}
+
+function colorTrace(msg, color='red') {
+    console.log("%c" + msg, "color:" + color + "; font-weight:bolder;");
+}
+
+function errorMessage(msg) {
+  colorTrace(msg, 'red')
 }

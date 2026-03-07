@@ -190,17 +190,17 @@ var earth = [
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
     <p>Airn lifts a hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
-    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
+    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. It's grabbing at my mana. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>\
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
     <p>I squeeze her tighter, press my lips to the top of her head. \"Thank you.\"</p>\
     <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>\
     <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentally harmful magic cast upon them without their consent.</i></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
+    <p>It doesn't have the most pleasant history. Once upon a time, before Airn and I shared a room but after the first time we kissed, an older boy tried at me against a wall. This kind of thing isn't new. Even with my perception-altering powers on full blast to make me seem less attractive, I'm still a succubus. I prepared to deny him, to talk him down and away from me.</p>\
+    <p>Before I could say anything, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I don't think he had anything to do there.</p>\
+    <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice' face. She strode over to me in sharp movements.</p>\
+    <p>\"What... What did you do?\" I stared at her, still tasting the leftover sparks of her magic. It was sweet and hot and gave the impression of a one-track mind, like a fighter in pure battle state or a lover unable to think about anything but their partner.</p>\
+    <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Love I couldn't name yet fluttered in my chest at the thought that she was angry on my behalf.</p>\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -223,10 +223,54 @@ var nothing = [
   "balls >:3c"
 ]
 
+var earth_lore = [
+  "<style>\
+    #prev, #prev1 {text-align: left; display: inline-block;}\
+    #next, #next1 {text-align: right; display: inline-block;}\
+    .space {display: flex; justify-content: space-between;}\
+    h1 {color: white;}\
+    h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%; font-family: cursive;}\
+    /* br {line-height: 5vh;} */\
+    .noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}\
+    .airn, .Airn {color: azure; text-shadow: 0px 0px 15px #0af;}\
+    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}\
+    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}\
+    .none {color: white}\
+\
+    hr {border-style: dashed;}\
+</style>\<h1>dragons</h1>\
+  <div class='background'>\
+    <p>Dragons are very picky creatures, still trying to bring their numbers up after humanity's slaughter of magical creatures and wary of everyone. Some species are more open-minded than others and a small group are even willing to work with magical species. Very few are willing to work with humans, though this mindset is usually imposed upon them by elders. (tl:dr if you want a dragon go young [that sounds weird though  -  ^  -  ])</p><br>\
+    <p>Their general powers are magic manipulation (theyre magic beasts) (this includes fire) and flight with either wings or magic</p>\
+    <br><hr color='black' noshade size='2.5'><br>\
+    <p>The main species/family of dragons that allow riders is the Beatreaux, a friendly clan opposed to reasonless violence. If you get called a name they will stand behind you menacingly, but they won't hurt the person responsible.<br>\
+    most dragon-related knowledge is from them</p>\<br>\
+    <p>The Nemonius are a clan that keep so far away from interaction even the Archmages don't really know anything about them. In fact, the only reason anyone(non-dragon) knows anything about them is from other dragons.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>"
+]
+
 var lustwreakers = [
   "<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet\" href=\"../characters.css\">\
+  <link rel=\"stylesheet\" href=\"/characters.css\">\
   <link rel=\"icon\" href=\"/icons/lustwreaker.png\">\
     <script src=\"./script.js\"></script>\
 </head>\
@@ -251,7 +295,7 @@ var lustwreakers = [
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"stylesheet" href=\"/characters.css">\
   <link rel=\"icon" href=\"/icons/lustwreaker.png">\
     <script src=\"/script.js"></script>\
 </head>\
@@ -274,7 +318,7 @@ var lustwreakers = [
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"stylesheet" href=\"/characters.css">\
   <link rel=\"icon" href=\"/icons/lustwreaker.png">\
     <script src=\"/script.js"></script>\
 </head>\
@@ -296,7 +340,7 @@ var lustwreakers = [
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"stylesheet" href=\"/characters.css">\
   <link rel=\"icon" href=\"/icons/lustwreaker.png">\
     <script src=\"/script.js"></script>\
 </head>\
@@ -318,7 +362,7 @@ var lustwreakers = [
 
 '<!DOCTYPE html>\
 <head>\
-  <link rel=\"stylesheet" href=\"../characters.css">\
+  <link rel=\"stylesheet" href=\"/characters.css">\
   <link rel=\"icon" href=\"/icons/lustwreaker.png">\
     <script src=\"/script.js"></script>\
 </head>\
@@ -415,7 +459,7 @@ var mikuteto_jjk = [
     <p>Hatsune strides down the road, aiming for a particular back street with quite a reputation. It's rumored around these parts that a spirit lives in an alleyway between a warehouse and an apartment complex, silently taking sleeping tenants and killing them inside its lair.</p>\
     <p>She walks down this alleyway, empty eyes flicking over apartment windows and the ground, searching for something to lead her to the supposed spirit. A trail reveals itself to her in residual cursed energy.</p>\
     <p>\"Yami yori idete yami yori kuroku sono kegare o misogiharae.\"</p>\
-    <p style='color: #444;'>\"Emerge from the darkness, blacker than blackness. Purify that which is impure.\"</p>\
+    <p style='color: #444;'>\"Emerge from darkness, blacker than blackness. Purify that which is impure.\"</p>\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -433,8 +477,142 @@ var mikuteto_jjk = [
   </div>",
 
   "<h2>2</h2>\
-  <h1 id='char' class=\"Teto\">Teto</h1>\
+  <h1 id='char' class=\"Teto\">Kasane</h1>\
   <div class='background'>\
-    <p>penis</p>\
+    <p>Hatsune ghosts her lips over Kasane's neck, close enough that she can <i>feel</i> the kiss without Hatsune actually touching her. Hatsune has spent the last five minutes doing this and Kasane is going to explode. She had tried to lean into Hatsune's mouth a few times when she started, but Hatsune expertly kept her distance.</p>\
+    <p>Now Kasane is sitting with hands knotted and trembling in the sheets, Hatsune </p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+]
+
+var writing_stuff = [
+  "\
+  <h1 id='char' class=\"none\">Week 1</h1>\
+  <div class='background'>\
+  <p>\
+  ACADEMY GUESTBOOK\
+DAY THIRTY-FOUR<br>\
+march the third 2026<br><br><br><br>\
+Brody<br>\
+idk<br>\
+WHERE AND HOW WOULD YOU LIKE THE NEW FIRST-YEARS AT THE ACADEMY TO BE SORTED? DO YOU WANT THE HOUSES TO \"BALANCE OUT,\" IN ORDER TO EVEN UP THE CHALICE CUP STANDINGS? OR DO YOU WANT THE BEST FOR *YOUR* HOUSE? BE HONEST. idk ill go to  ka'iryte ig\
+<br>\
+<br>\
+<br>\
+TODAY'S PROMPT\
+<br>\
+100 words minimum, 500 words target, no word limit<br>\
+50 House Points for a Story of Great Distinction<br>\
+40 for second place, 30 for 3rd, 20 for 4th, 10 for 5th<br>\
+<br>\
+COMPLETE THE FOLLOWING PROMPT:\
+<br>\
+I am ready, she said.\
+<br>\
+Her father nodded and touched the switch.\
+<br>\
+She felt her veins fill with the mysterious liquid, first in her arm, in the small of her elbow, where her father had gently placed the IV tube only moments before.\
+She made eye contact with her father. He looked at her with as much love as a father could give a daughter. His fear was undeniable. As was hers.\
+<br>\
+\"You're very brave, Ellie,\" he said.\
+<br>\
+<br>\
+She swallowed hard. And then she saw it.\
+<br>\
+Her own hand. Changing. Assessing her hand against the background of her father's shirt, she spread her fingers wide. There was no doubt about it. Her hand was the size of his shoulder; but now, only as big as his shirt pocket. And now, only a button.\
+<br>\
+She was shrinking.\
+<br>\
+Slowly, she thought; or maybe very fast. Time wasn't a priority. She had shrunk to the size of three buttons tall, and that seemed to be a more pressing matter. Maybe she was in shock, and that's why she didn't feel very strongly about her predicament. It was very surreal.\
+<br>\
+Either way, her father was staring down at her with his Sun-sized face, eyes wide as she was tall, his face bright with his accomplishment.\
+<br>\
+\"It worked!\" He was beaming, seeming to have forgotten both his fear and his love for just a moment. He quickly remembered, though, and started to crouch down, then thought better of it. \"Are you alright? No pain, no discomfort? Is everything where you remember?\"\
+<br>\
+She ran her hands over her body, trying to remember how it had been arranged and proportioned before and coming up blank. It occurred to her that her father should have sounded different. Interesting.\
+<br>\
+\"I think so.\" She stared at her arms, looking for the feeling of the liquid in her blood that was not there. Then she looked up at her father, the hope clear in his face. No matter what happened, she would place her trust in her father. That was the only thing she had been sure of for a while, and it wasn't going to change now.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>"
+]
+
+var template = [
+  "\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    ",
+
+  "<h2>1</h2>\
+  <h1 id='char' class=\"Miku\">Hatsune</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h2>2</h2>\
+  <h1 id='char' class=\"Teto\">Kasane</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
   </div>",
 ]

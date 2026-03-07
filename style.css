@@ -5,7 +5,7 @@ a:visited {color: #90f;}
 a:active {color: red;}
 strong {color: red;}
 h1 {color:blue; font-family: 'Times New Roman', Times, serif;}
-p {font-size: 90%; margin-right: 25px; color: white;}
+p {margin-right: 25px; color: white;}
 i {color: inherit; font-family: inherit;}
 /* classes */
 .hidden {color: black; cursor: default;}

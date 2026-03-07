@@ -11,10 +11,24 @@ p {margin-right: 25px; margin-left: 1rem; text-indent: -1rem; color: white;}
 /* span {} */
 i {color: inherit; font-family: inherit;}
 /* classes */
-.hidden {color: black; cursor: default; font-size: 95%;}
-.hide {color: black; font-size: 95%;}
+.hidden {color: black; cursor: default; line-height: 1rem; font-size: 85%;}
+.hide {color: black;}
 .hid {color: #111;}
 .warning {color: red; font-size: 125%;}
 .info {color: #00ff00; background-color: #f00; font-family: lucida console; text-align: center; display: block; margin: 10px; font-size: 250%; cursor: default;}
 .link {font-size: inherit; font-family: inherit; color: blue;}
 .link:hover {color: #90f; font-style: italic; cursor: pointer;}
+.spoiler {
+    display: inline;
+    padding: 0.5em 0em;
+    background-color: white;
+    box-shadow: 1em 0 0 white, -1em 0 0 white;
+    box-decoration-break: clone;
+}
+.spoiler:hover {
+    display: inline;
+    padding: 0.5em 0em;
+    background-color: black;
+    box-shadow: 1em 0 0 black, -1em 0 0 black;
+    box-decoration-break: clone;
+}

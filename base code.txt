@@ -18,7 +18,7 @@ Default
 Character sheet
     <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" href="../characters.css">
+        <link rel="stylesheet" href="/characters.css">
         <link rel="icon" href="/icons/characters.png">
         <script src="/script.js"></script>
     </head>
@@ -49,17 +49,9 @@ Story
     </head>
     <title>make a title dipshit</title>
     <style>
-        h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%; font-family: cursive;}
-
-        .miku, .Miku {color: #009bff; text-shadow: 0px 0px 15px #00ff9b;}
-        .teto, .Teto {color: #f66; text-shadow: 0px 0px 15px #f00;}
-
-        #next, #prev {color: #00ff9b; border-color: #009bff;}
-        #prev1, #next1 {color: #f66; border-color: #f00;}
-        #next, #prev, #next1, #prev1 {background: #000;}
     </style>
     <html>
-        <body onload="startStory(mikuteto_jjk)">
+        <body onload="startStory(template)">
             <span style="font-family: 'Allan';"></span>
             <span style="font-family: 'Aguafina Script';"></span>
             <span style="font-family: 'Amatic SC';"></span>
