@@ -22,11 +22,10 @@ Character sheet
         <link rel="icon" href="/icons/characters.png">
         <script src="/script.js"></script>
     </head>
-    <title>!!!</title>
+    <title>make a damn title</title>
     <html>
         <body>
             <h1 style="color: ;">Name</h1>
-            <p>
             Pronouns/Gender<br>
             Sex<br>
             Age<br>
@@ -34,6 +33,7 @@ Character sheet
             Weapon<br>
             Species<br><br>
             Character description<br>
+            <p>
             </p>
         </body>
     </html>

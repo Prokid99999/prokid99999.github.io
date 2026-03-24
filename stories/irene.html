@@ -6,7 +6,7 @@
     <script src="/script.js"></script>
     <script src="/text.js"></script>
 </head>
-<title>lore</title>
+<title>Irene's Dragon</title>
 <style>
     #prev, #prev1 {text-align: left; display: inline-block;}
     #next, #next1 {text-align: right; display: inline-block;}
@@ -19,38 +19,14 @@
     .mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}
     .void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}
     .none {color: white}
-
-    hr {
-        border-style: dashed;
-}
 </style>
-<script>
-setUpdate = async (story) => {
-    while (true) {
-        var s = document.createElement('script');
-        s.id = 'text'
-        s.src = '/text.js';
-        document.body.appendChild(s);
-        delay(1*1000)
-        startStory(story)
-        document.getElementById('text').remove()
-    }
-}
-update = async (story) => {
-    var s = document.createElement('script');
-    s.id = 'text'
-    s.src = '/text.js';
-    document.body.appendChild(s);
-    startStory(story)
-    document.getElementById('text').remove()
-}
-</script>
 <html>
-    <body onload="startStory(earth_lore)">
+    <body onload="startStory(irene)">
         <!-- <span style="font-family: 'Allan';"></span>
         <span style="font-family: 'Aguafina Script';"></span>
         <span style="font-family: 'Amatic SC';"></span> -->
         <br>
+        <h2>Irene</h2>
         <div class="space">
             <div><button id="prev">&lt; Previous</button></div>
             <div id="center" style="text-align: center;"></div>

@@ -190,22 +190,22 @@ var earth = [
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
     <p>Airn lifts a hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
-    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away. It's grabbing at my mana. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
+    <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away, something grabbing at my mana. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>\
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
     <p>I squeeze her tighter, press my lips to the top of her head. \"Thank you.\"</p>\
     <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>\
     <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentally harmful magic cast upon them without their consent.</i></p>\
     <p>It doesn't have the most pleasant history. Once upon a time, before Airn and I shared a room but after the first time we kissed, an older boy tried at me against a wall. This kind of thing isn't new. Even with my perception-altering powers on full blast to make me seem less attractive, I'm still a succubus. I prepared to deny him, to talk him down and away from me.</p>\
-    <p>Before I could say anything, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I don't think he had anything to do there.</p>\
-    <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice' face. She strode over to me in sharp movements.</p>\
+    <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I don't think he had anything to do there.</p>\
+    <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice-bringer' face. She strode over to me in sharp movements.</p>\
     <p>\"What... What did you do?\" I stared at her, still tasting the leftover sparks of her magic. It was sweet and hot and gave the impression of a one-track mind, like a fighter in pure battle state or a lover unable to think about anything but their partner.</p>\
-    <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Love I couldn't name yet fluttered in my chest at the thought that she was angry on my behalf.</p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
+    <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Love I couldn't name yet fluttered in my chest at the thought that she was angry on my behalf, alongside a twinge of fear.</p>\
+    <p>\"You- you mind-controlled him.\" Mind control is a very dangerous power; there's a reason succubi restrict their usage to cosmetic changes.</p>\
+    <p>\"Directly controlling the mind is very difficult. I don't know of anyone who can do it.\"</p>\
+    <p>\"That's not what you did.\"</p>\
+    <p>Airn glanced at me then, eyes and voice soft. \"Is it that big of a deal?\"</p>\
+    <p>I stared back at her, love and terror twisting in my stomach. She had used succubus magic. Not the way any succubus does, but I had seen the spell. It's a piece of what I do every conscious second to keep people from looking at me the way they look at succubi on a much grander scale. Manipulating the mind into seeing something other than reality requires access to the mind. Airn was able to reverse-engineer my magic.</p>\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -224,6 +224,42 @@ var nothing = [
 ]
 
 var earth_lore = [
+  "<h1>demons</h1>\
+  <div class='background'>\
+    <p>Demons or daemons [pronounced 'day-mon'] are one of the most common magical species. They are very humanoid, to the point where some can walk undisguised through human territory, though most have horns.</p>\
+    <p>They have organs called 'heartstrings' that allow them better control over magic. Heartstrings can be placed into wood and other materials to act as a conduit. This is usually called a wand.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h1>dracodemons</h1>\
+  <div class='background'>\
+    <p>Dragon demons, or 'dracodemons' or 'dragodaemons', are a subsect of demons aligned with dragons <small>(no shit)</small>. They forge bonds with dragons, hoping to be allowed access to the dragons' enormous stores of mana. Outside of that, having a house-sized, clawed, winged, fire-breathing lizard willing to fight for you is pretty useful.</p>\
+    <p>The main difference between normal demons and dracodemons is their love for and knowledge of dragons.</p>\
+    <p>Sometimes they have horns.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
   "<style>\
     #prev, #prev1 {text-align: left; display: inline-block;}\
     #next, #next1 {text-align: right; display: inline-block;}\
@@ -240,8 +276,8 @@ var earth_lore = [
     hr {border-style: dashed;}\
 </style>\<h1>dragons</h1>\
   <div class='background'>\
-    <p>Dragons are very picky creatures, still trying to bring their numbers up after humanity's slaughter of magical creatures and wary of everyone. Some species are more open-minded than others and a small group are even willing to work with magical species. Very few are willing to work with humans, though this mindset is usually imposed upon them by elders. (tl:dr if you want a dragon go young [that sounds weird though  -  ^  -  ])</p><br>\
-    <p>Their general powers are magic manipulation (theyre magic beasts) (this includes fire) and flight with either wings or magic</p>\
+    <p>Dragons are very picky creatures, still trying to bring their numbers up after humanity's slaughter of magical creatures and wary of everyone. Some species are more open-minded than others and a small group are even willing to work with magical species. Very few are willing to work with humans, though this mindset is usually imposed upon them by elders. (tl:dr if you want a dragon go young [that sounds weird though   -   ^   -  ])</p><br>\
+    <p>Their general powers are magic manipulation (theyre magic beasts) (this includes breathing fire) and flight with either wings or magic</p>\
     <br><hr color='black' noshade size='2.5'><br>\
     <p>The main species/family of dragons that allow riders is the Beatreaux, a friendly clan opposed to reasonless violence. If you get called a name they will stand behind you menacingly, but they won't hurt the person responsible.<br>\
     most dragon-related knowledge is from them</p>\<br>\
@@ -264,7 +300,47 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>"
+  </div>",
+
+  "<h1>gods</b></h1>\
+  <div class='background'>\
+    <p>Gods </p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+]
+
+var irene = [
+  "<h1>1</h1>\
+  <div class='background'>\
+    <p>Irene strode through the halls of the United States' First Magical Academy, plotting how they would tame a dragon. All they had been told about dragons was that they had withdrawn from the world millennia ago and hadn't been seen since. They knew for a fact that this was false. They had seen and talked to dragons, heard dragon history recounted very enthusiastically in their brain. Dragons had only left the world after the Cleansing and many had stayed in the magical world. The Beatreaux in particular were very talkative; and they had stayed the friendliest. They allowed people to ride them, and didn't even torch humans on sight! Irene didn't have to worry about that, being a dracodemon and all, but that kind of thing was very kind for dragons. They didn't take the Cleansing very well.</p>\
+    <p>Honestly, nobody did. Humans had just started killing non-humans for no reason they could discern. Maybe humans had been wronged one too many times. They <i>are</i> very territorial. Or they had simply decided that the era of magic had come to an end.</p>\
+    <p>The Cleansing had made dragons in particular extremely distrustful of other species and even other families of dragons. Tight-knit groups had grown even tighter, divides had widened. Anyone unknown was an enemy first, person later.</p>\
+    <p>The Beatreaux were, as far as Irene knew, the only exception to this. They're good people, a little too good for Irene. They wanted someone wilder, less influenced toward the beliefs of the Beatreaux, or any other family for that matter.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
 ]
 
 var lustwreakers = [
@@ -428,9 +504,9 @@ var driving = [
     </style> \
     <div class=\"background\"> \
     <h2>How Does Gaming Help You Drive?</h2> \
-    <p>As an avid gamer myself, I couldn\'t help but notice that, while the Driver's Ed course I took says that teens tend to focus on the dashboard rather than on the road, I don't. Whenever I look down at the speedometer, I only look at it for long enough to recognize the number before flicking my eyes back to the road.</p> \
+    <p>As an avid gamer myself, I couldn\'t help but notice that, while the Driver's Ed course I took says that teens tend to focus on the dashboard rather than on the road, I don't. Whenever I look down at the speedometer, I only glance at it for long enough to recognize the number before flicking my eyes back to the road.</p> \
     <p>I believe that all the games I've played have made me classify the dashboard as a HUD ('Heads-Up Display'). The HUD is an easily-readable display of all the important information in a game, such as health, mana, hunger, money, and items. Depending on the game, the HUD might even be a dashboard.</p> \
-    <p>An example of a HUD is in <i>Minecraft</i>, where your health, hunger, experience, and items are readily viewable. Though a HUD is an important piece of gameplay, it <i>is</i> only a piece of the experience. In <i>Minecraft</i>, you wouldn't have very much fun if you fixate on the HUD. Playing would get frustrating quickly because you would have to shift your focus away from the game itself to check your health and hunger. You have to learn how to stay focused on the world of the game and only glance at your display to update your information.</p>\
+    <p>An example of a HUD is in <i>Minecraft</i>, where your health, hunger, experience, and hotbar are readily viewable. Though a HUD is an important piece of gameplay, it <i>is</i> only a piece of the experience. In <i>Minecraft</i>, you wouldn't have very much fun if you fixate on the HUD. Playing would get frustrating quickly because you would have to shift your focus away from the game itself to check your health and hunger. You have to learn how to stay focused on the world of the game and only glance at your display to update your information.</p>\
     <p>That sentence doesn't have to be changed much to apply to driving: 'You have to learn how to stay focused on the road and only glance at your dashboard to update your information.'</p>\
     <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks.</p>\
     </div>"
@@ -497,6 +573,64 @@ var mikuteto_jjk = [
   </div>",
 ]
 
+var terraria_kaisen = [
+  "<link rel='icon' href='/icons/lustwreaker-story.png'>\
+  <h2>Chapter 1</h2>\
+  <h1 id='char' class=\"adele\">The Beginning of a Cruel Tale</h1>\
+  <div class='background'>\
+    <p>Adele is a very normal kind of person. She has a cursed sword, a girlfriend, some skill in combat. More than enough to get by as a Grade 4 sorcerer.</p>\
+    <p>This lifestyle, however, isn't exciting or fulfilling in the slightest. Adele can't tell her partner about being a sorcerer, barely has a cursed technique, and can't beat any more than maybe a Grade 3 curse. She gets paid a meanger wage for exorcisms and relies on her girlfriend to ensure they have a stable income.</p>\
+    <p>Living like this got boring almost a year ago. Adele has been trying to train her cursed technique without any success. She must simply be unable to comprehend the Shrine of her ancient one-hundered-times-great grandfather Ryomen Sukuna.</p>\
+    <p>Being related to the strongest and most feared sorcerer in history hasn't done her any favors, either. Living in Jujutsu Tech for years has trained her to introduce herself with her given name rather than her family name, as opposed to the tradition in Japan. Every sorcerer she's met thinks that it's only a matter of time until Adele goes crazy and starts murdering people for fun.</p>\
+    <br>\
+    <p>Soon, though, she wants to be able to call herself a Sukuna with pride.</p>\
+    <br>\
+    <br>\
+    <p>Soon.</p>\
+    <br>\
+    <br>\
+    <br>\
+    <p>Adele Sukuna went missing on October 17th, 2019.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<link rel='icon' href='/icons/lustwreaker-story.png'>\
+  <h2 class=\"noen\">Chapter 2</h2>\
+  <h1 id='char' class=\"adele\">A Cruel World 1</h1>\
+  <div class='background'>\
+    <p>Adele wakes, something green tickling her face. Long, healthy blades of grass.</p>\
+    <p>She rases herself to her hands and knees, staring out at a vast plain dotted with tall spindly trees.</p>\
+    <p>She stands up, takes a step forward.</p>\
+    <p>Her shoe hits something that makes a <i>clunk</i> on impact. A shiny orange material shaped into the head of an axe, seated upon a wooden handle. A sword and what can only be a pickaxe made of the same metallic orange and wooden brown are lain to the sides of the axe.</p>\
+    <p>Adele reaches down and grasps the handle of the axe and gives it a test swing. It's got heft, most of the weight in the head. Very unlike her sword.</p>\
+    <p>She walks up to a tree and slams the blade of the axe into the trunk one-handed. It takes a sizable chunk out of the tree, maybe a quarter of the way through.</p>\
+    <br>\
+    <p>She gazes at her hand.</p>\
+    <br>\
+    <p>She raises it and makes a slicing motion at the tree.</p>\
+    <p>Splinters fly to the roots, cursed energy cutting a gash in the wood.</p>\
+    <br>\
+    <p>...</p>\
+    <br>\
+    <p>It's only half as deep as the axe.</p>\
+    <br>\
+    <hr style='border: dashed #000'></hr>\
+    <br>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+]
+
 var writing_stuff = [
   "\
   <h1 id='char' class=\"none\">Week 1</h1>\
@@ -557,7 +691,26 @@ She ran her hands over her body, trying to remember how it had been arranged and
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>"
+  </div>",
+
+  "<h1 class='none'>Week 2</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
 ]
 
 var template = [
@@ -577,6 +730,25 @@ var template = [
     <p></p>\
     <p></p>\
     ",
+
+  "<h2>chapter number</h2>\
+  <h1 id='char' class=\"Character\">Character</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
 
   "<h2>1</h2>\
   <h1 id='char' class=\"Miku\">Hatsune</h1>\

@@ -283,19 +283,20 @@ function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
   }
 }
 
-var startNumber = 0
+let startNumber = 0
 
 function startStory(content=['wtf']) {
   var s = document.createElement('script');
   s.id = 'text'
   if (startNumber === 0) {
     s.src = '/text.js';
+    s.id = 'text'
     document.body.appendChild(s);
     startNumber++
     document.getElementById('text').remove()
     startStory(content)
   }
-  else if (startNumber === 1) {
+  else if (startNumber === 2) {
     s.src = 'https://prokid99999.github.io/text.js';
     document.body.appendChild(s);
     startNumber++
@@ -309,7 +310,7 @@ function startStory(content=['wtf']) {
     document.getElementById('text').remove()
     startStory(content)
   }
-  else if (startNumber === 3) {
+  else if (startNumber === 1) {
     startNumber = 0
     start(content)
   }

@@ -17,6 +17,7 @@
                 document.getElementById('doc').textContent = 'character sheets google doc (depricated)'
                 document.getElementById('3ds').textContent = '3ds stuff';
             document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
+            document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
             }
             else if (thoughts === 'true') {
                 setCookie('thoughts', 'false')
@@ -26,6 +27,7 @@
                 document.getElementById('doc').textContent = ''
                 document.getElementById('3ds').textContent = ''
                 document.getElementById('writing').textContent = ''
+                document.getElementById('lore').textContent = ''
             }
         }
         else if (thoughts === 'true' && toggle === false) {
@@ -35,6 +37,7 @@
             document.getElementById('doc').innerHTML = 'character sheets google doc &lpar;depricated&rpar;'
             document.getElementById('3ds').innerHTML = '3ds stuff'
             document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
+            document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
             }
     }
     window.onload = () => {
@@ -52,7 +55,8 @@
         Either that or I'm inexperienced.<br><br>
 
         <a id='stories' href="stories"></a><br>
-        <a id="universes" href="/universes"></a><br><br>
+        <a id="universes" href="/universes"></a><br>
+        <a id="lore" href="/stories/lore"></a><br><br>
 
         <a href="character-sheets" id="passUser"></a><br>
         <a id="doc" href="https://docs.google.com/document/d/1_JaB4aHlvy7FF0Ulwl8IwmxrR_lsryKxB0W3VUVrp4M/edit?tab=t.b9yrb23q1nt1#heading=h.mjc46dwdun9z" target="_blank" rel="noopener noreferrer"></a><br><br>
