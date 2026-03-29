@@ -47,7 +47,7 @@ Story
         <script src="/script.js"></script>
         <script src="/text.js"></script>
     </head>
-    <title>make a title dipshit</title>
+    <title>make a title dipshit :P</title>
     <style>
     </style>
     <html>
