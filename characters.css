@@ -1,9 +1,9 @@
 body {background-color: black; margin-right: 25%;}
 * {font-family: Arial, Helvetica, sans-serif; color: white;}
-a:link {line-height: 1.4; color: blue; text-decoration: none;}
-a:visited {line-height: 1.4; color: #90f; text-decoration: underline;}
-a:hover {line-height: 1.4; font-style: italic; text-decoration: underline; color: aqua;}
-a:active {line-height: 1.4; color: red; text-decoration: underline;}
+a:link {color: blue; text-decoration: none;}
+a:visited {color: #90f; text-decoration: underline;}
+a:hover {font-style: italic; text-decoration: underline; color: aqua;}
+a:active {color: red; text-decoration: underline;}
 strong {color: red;}
 button {color: black;}
 h1 {color:blue;}
@@ -11,7 +11,7 @@ p {margin-right: 25px; margin-left: 1rem; text-indent: -1rem; color: white;}
 /* span {} */
 i {color: inherit; font-family: inherit;}
 /* classes */
-.hidden {color: black; cursor: default; line-height: 1rem; font-size: 85%;}
+.hidden {color: black; cursor: default; line-height: 1rem;}
 .hide {color: black;}
 .hid {color: #111;}
 .warning {color: red; font-size: 125%;}

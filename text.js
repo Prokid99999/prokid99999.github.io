@@ -7,7 +7,7 @@ var earth = [
   <span style='font-family: Allan; text-decoration: underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airn Avalon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, you have been accepted by the First Magical Academy of the United States of America!<br><br><br><br><br><br><br><br>\
   Our school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br><br><br><br><br><br><br><br>\
   Semester begins on September 1st. You will find an introduction to the magical world within this envelope. Textbooks will be provided.<br><Br><Br><Br><Br><br><br><br>\
-  Yours sincerly,<br>\
+  Yours sincerely,<br>\
   <p style='font-size: 2rem; line-height: 3rem; text-indent: 2rem;'><span style='font-family: Aguafina Script;'>Second Archmage Oleanda Navarisque</span></p>\
   <div style='text-indent: 2rem'>Second Archmage Oleanda Navarisque</div>\
   </div></div>",
@@ -19,7 +19,7 @@ var earth = [
   <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'><br><br>\
   <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p><br><br>\
   <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br><br><br>\
-  <p>Now, we can get to the introduction. Magic is a natural force given to intellegent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, allevating pain, and, really, whatever you can imagine it can possibly do.</p>\
+  <p>Now, we can get to the introduction. Magic is a natural force given to intelligent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, alleviating pain, and, really, whatever you can imagine it can possibly do.</p>\
   <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p>\
   <p>\"What could the downside to this kind of power be,\" you may ask?</p>\
   <p>You have to process every step. Every atom you modify must be acknowledged by your mind. Each particle of magic you bend into shape has to go through your brain to continue.</p>\
@@ -46,7 +46,7 @@ var earth = [
   <p>Well, that's fucking weird. Some random letter with my name and a return address on the front shows up. Who the hell sent me this? Why is it printed and annotated? And it's from a magic school? This must be a joke.</p>\
   <p>But the envelope was covered in magic. I found it next to my sleeping bag, with no other traces of life. You can't exactly mail a letter to my little place, and I'm the only magic user around here anyway. It must have been delivered by who it says.</p>\
   <p>What kind of rich-ass name is 'Oleanda Navarisque', anyway? It sounds made-up.</p>\
-  <p>Then again, I kind of made up my own name. I guess I can't judge them for chosing theirs.</p>\
+  <p>Then again, I kind of made up my own name. I guess I can't judge them for choosing theirs.</p>\
   <p>The other handwriting is more interesting. Fuck you mean, 'I have a feeling you'll be interesting?' <i>No shit!</i> You think a cryptid won't be <i>interesting?</i> Maybe I can't take someone called \"The Second Archmage\", but I bet I can pack up most of the other people at this school.</p>\
   <p></p>\
   <p></p>\
@@ -97,8 +97,8 @@ var earth = [
     <p>\"M-my name is Arna. I'm a- I'm a girl.\" She looks so pitiful. I bet the <i>goddamn glare</i> Mrs. Johann is aiming at her isn't helping either.</p>\
     <p>\"I was helping Arna keep her shape.\" The whole class is glancing between me and the teacher like we're about to beat each other up.</p>\
     <p>\"While you were supposed to be focusing on the lesson.\" Mrs. Johann's eyes are narrowed on me. Feels like she's trying to get a confession of a crime.</p>\
-    <p>\"It's much easier to focus on math when you don't have to keep picking your body up off the floor.\" My back stays striaght. I did nothing wrong.</p>\
-    <p>\"Well, if you have so much to teach, why don't you come up here?\" She's glaring at me with vengance in her eyes. I get out of my chair and walk up to the board. Mrs. Johann takes my seat, to my annoyance. Either way, I have a class to teach.</p>\
+    <p>\"It's much easier to focus on math when you don't have to keep picking your body up off the floor.\" My back stays straight. I did nothing wrong.</p>\
+    <p>\"Well, if you have so much to teach, why don't you come up here?\" She's glaring at me with vengeance in her eyes. I get out of my chair and walk up to the board. Mrs. Johann takes my seat, to my annoyance. Either way, I have a class to teach.</p>\
     <p>\"Hello, everyone! Welcome to Slime Biology.\" I use a tendril of slime to grab the eraser off the whiteboard and erase the math problem. I bet Airn would be cheering if we weren't in class.</p>\
     <p>I write the words 'Slime Biology' on the board, and someone asks, \"How did you do that?\"</p>\
     <p>\"Raise your hand if you have a question!\" Ms. Johann snaps. They look down.</p>\
@@ -129,7 +129,7 @@ var earth = [
     <p>\"You two have fun?\" I'm being cheeky, I know.</p>\
     <p>\"Hell yeah! That was the best class I've taken here!\" She can't be lying with her eyes lit up like that, and it's not just from her alone time with Mina.</p>\
     <p>\"But you couldn't wait fifteen minutes?\"</p>\
-    <p>\"Yeah, sorry about that.\" Mina's predicably sheepish. Airn grins and says, \"I've been told I'm irresistible.\"</p>\
+    <p>\"Yeah, sorry about that.\" Mina's predictably sheepish. Airn grins and says, \"I've been told I'm irresistible.\"</p>\
     <p>\"Well, I've got a slime to go see.\" Airn's expression shifts towards cheeky.</p>\
     <p>\"Did you pull her in <i>ten minutes?</i>\" I mean, I've been known to sleep around, but I need <i>at least</i> half of to one hour to get to know someone. I have low standards, which means I at least have <i>some.</i></p>\
     <p>\"No, just talking slime things.\" She's got a shit-eating grin now.</p>\
@@ -143,7 +143,7 @@ var earth = [
     <p>Mina walks over to my desk. I sense her without my eyes or ears; a presence combined with a unique, shifting flow of mana marks the person-shaped object behind me as my girlfriend. I've explained it to her before, probably more than once. Focusing on one person's mana for long enough lets you recognize patterns you wouldn't otherwise. It's like staring at someone's face until you memorize it. Plus, monitoring someone's mana is easier (<i>and a lot less weird</i>) than staring them down for hours at a time.</p>\
     <p>She hugs me and sits in the chair next to mine. I want to light my homework on fire and wrap my arms around her and touch her and kiss her and fall asleep next to her.</p>\
     <p>Instead, I show her my math homework, covered in handwritten equations and scribbled-out swears. The school requires an 80% in math to continue to the next grade. I have less than fifty percent after studying long past midnight for a minimum of five days a week. What have I learned? How to destroy my health and put on a mask.</p>\
-    <p>I just want to stay in the same grade as Mina. The teasing I would recieve for being held back can be fixed easily. That kind of reputational damage is easily repairable. What doesn't make sense is why I would have to retake a grade with 110% in <i>every magical class.</i> This is a <i>magic</i> school. Why do I need to learn math? How the hell does putting numbers together make me a better mage? <i>It fucking doesn't</i>. Anything more than basic arithmetic is unnecessary. Mana isn't something that can be measured. Arch-mages are called arch-mages because they're so goddamn powerful everybody is too afraid to compare them to regular magic users. Why is this school forcing me to lose hours every day shoving techniques I'll never use into my skull?</p>\
+    <p>I just want to stay in the same grade as Mina. The teasing I would receive for being held back can be fixed easily. That kind of reputational damage is easily repairable. What doesn't make sense is why I would have to retake a grade with 110% in <i>every magical class.</i> This is a <i>magic</i> school. Why do I need to learn math? How the hell does putting numbers together make me a better mage? <i>It fucking doesn't</i>. Anything more than basic arithmetic is unnecessary. Mana isn't something that can be measured. Arch-mages are called arch-mages because they're so goddamn powerful everybody is too afraid to compare them to regular magic users. Why is this school forcing me to lose hours every day shoving techniques I'll never use into my skull?</p>\
     <p>\"Airn?\" Mina drags me out of my thoughts with a tired look. I don't like that she's losing sleep over this too... but I'm happy she's next to me. I wonder if I'm selfish for thinking that.</p>\
     <p>\"Sorry.\" I don't care right now. I want to be done with this bullshit so I can go to bed.<br>\
     ...Too bad I won't be able to enjoy cuddling with her.</p><br>\
@@ -153,18 +153,18 @@ var earth = [
     <p>My thoughts turn to violence as soon as I finish waking up. I overheard a group of succubi gossiping about me and Mina, something about me seeing some guy I don't know. Noza would run with it, say some shit like \"He was <i>really</i> boring, didn't even last five minutes!\" without ever knowing who they were talking about. Mina would act like she doesn't care and tell me not to listen to them.</p>\
     <p>I spent my next three classes thinking about how best to humiliate those bitches.</p>\
     <p>If they were talking about Mina or Noza, I would tell them and let them deal with it. It's not my place to act. They've made that very clear. Me, though...</p>\
-    <p>When Mina and I first got together, I knocked out every kid who called me a faggot with my bare hands. No magic except healing my knuckles after the beatdown. There were a few other slurs; anyone who used them on me had to be taken to the healers on a strecher. Worth every trip to the principal's office. Used my time there to get the sparring mats, too.</p>\
+    <p>When Mina and I first got together, I knocked out every kid who called me a faggot with my bare hands. No magic except healing my knuckles after the beatdown. There were a few other slurs; anyone who used them on me had to be taken to the healers on a stretcher. Worth every trip to the principal's office. Used my time there to get the sparring mats, too.</p>\
     <p>I one-up insults and threats. Say you're going to kill me? You'll find knives in your wrists tomorrow morning. Threaten to assault me? I'll make you wish you could claw your brain out of your skull right there. That one started with some bastard who was saying he'd rape me if I hurt anyone else. Talked some big shit, got people joining in.</p>\
     <p>The day after that, his eyes started bleeding. They wouldn't stop, red running off his face in an almost constant stream. He clawed at them like his nails would help. Screamed about how much it hurt until his voice actually stopped working. Really, no more sounds out of his mouth. I think somebody said he broke his vocal cords.</p>\
     <p>Took the healers almost a week to get the curse off. He didn't come to my class after.</p>\
-    <p>In the next months, every person who had said they would assault me with him experienced similar tourture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>\
+    <p>In the next months, every person who had said they would assault me with him experienced similar torture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>\
     <p>All that to say: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether they want me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, aka the 'Realistic Option', they're hoping to break the record of time survived against me.</p>\
     <p>Whatever they calculated, it's wrong. Bet they think it only takes a succubus for a difficult match, meaning they're missing some numbers. Mina lasts minutes against me because she's been watching me fight for years and knows me intimately. She has a gold mine of information that these washed-up fools are lacking.</p>\
     <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is giving me violent looks. \"I challenge you to a duel.\"</p>\
     <p>\"Oh?\" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's a little trickier than I thought, thinks she knows how to manipulate a crowd.</p>\
     <p>\"All of you. Fight me all at once, 'cause that's what you need for a fraction of a chance.\" A demon grin cracks my face. The crowd looks at me like I'm insane. Mina shakes her head and Noza throws a thumbs-up. The little bitches who're gonna fight me? Their eyes could rip me to shreds.</p>\
     <p>\"You wanna go?!\" I wish I could frame her face, she's fucking livid. If looks could kill, I'd be a corpse mangled beyond recognition. Her clan circles the mat I'm standing on. My mana rises at the danger, thrumming warm through my bones. Its power makes me light and reckless. It burns away the fog from this morning and leaves me in need of an outlet. Only magic and Mina can make me feel like this.</p>\
-    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Goddamn amatures. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
+    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Goddamn amateurs. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
     <p>You could kill boars with the shock on their faces. The crowd is cheering, Mina looks torn between impressed and concerned, Noza starts clapping. I feel sick. That spell overfilled my body's mana limit, which my vest will take care of, but evidently magic doesn't like being stolen. Feels like a groggy bear. I ensured their power can't hurt me, even if it doesn't want to be in my body. Any spells I cast with it will be unstable. Could be worse, I guess. I can burn it off later.</p>\
     <p>Even so, I'm going to keep this one on the shelf. Use it when people need reminders of how strong I am or to enforce my strength like right now. Anyway, my opponents throw a few spells for me to brush off before surrendering. There's a couple more challengers I short work of before Mina steps up.</p>\
     <p>Oh, Mina. She walks up casually, like we're going to hug instead of fight. Her hair is tied in a ponytail to keep it out of her face, a look I only see here but wouldn't mind seeing more often. There's a glove on her right hand, a deep red fishnet stretching from her middle three fingers to about a palm below her wrist. Magic seethes through it. I draw my wand from its holster in my vest, a long, lighter-colored stick carved into a handle and a point. Mina's power comes into sharper focus when I hold it. I can almost anticipate the way her mana shifts, almost predict the direction.</p>\
@@ -185,7 +185,7 @@ var earth = [
     "<h2>3</h2>\
   <h1 id='char' class=\"Mina\">Mina</h1>\
   <div class=\"background\">\
-    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilites. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is already an arch mage.</p>\
+    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilities. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is already an arch mage.</p>\
     <p>I walk up behind Airn and wrap my arms around her, put my chin on her head, aware I can't surprise her.</p>\
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
@@ -195,7 +195,7 @@ var earth = [
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
     <p>I squeeze her tighter, press my lips to the top of her head. \"Thank you.\"</p>\
     <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>\
-    <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentally harmful magic cast upon them without their consent.</i></p>\
+    <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentially harmful magic cast upon them without their consent.</i></p>\
     <p>It doesn't have the most pleasant history. Once upon a time, before Airn and I shared a room but after the first time we kissed, an older boy tried at me against a wall. This kind of thing isn't new. Even with my perception-altering powers on full blast to make me seem less attractive, I'm still a succubus. I prepared to deny him, to talk him down and away from me.</p>\
     <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I don't think he had anything to do there.</p>\
     <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice-bringer' face. She strode over to me in sharp movements.</p>\
@@ -319,6 +319,72 @@ var earth_lore = [
     <p></p>\
     <p></p>\
   </div>",
+
+]
+
+var airn_and_mina_have_secks = [
+  "<h2>1</h2>\
+  <h1 id='char' class=\"Airn\">Airn</h1>\
+  <div class='background'>\
+    <p>Mina crawls over to me, wrapping her arms under mine.</p>\
+    <p>\"You wanna cuddle?\"</p>\
+    <p>She tightens her embrace and twists her head, both saying 'no' and rather pleasantly rubbing her face into my tits to tell me what she really wants.</p>\
+    <p>\"No, you want sex.\"</p>\
+    <p>I can <i>feel</i> her face turn sheepish and glow bright red, even if her cheeks only really got a couple degrees warmer. She looks a lot smaller than her usually decently-sized presence, even shrinks a bit more as I hit the nail on the head.</p>\
+    <p>She still nods timidly into my chest like there's a chance in hell I could say no.</p>\
+    <p>I gaze down at her, giving the back of her head a little scratch.</p>\
+    <p>\"Fine.\"</p>\
+    <p>Her eyes pop over my boobs, so full of relief and love that I can't help but smile.</p>\
+    <p>I scratch the top of her head, making her eyes go half-lidded for a second, then whisper, <i>\"now suck me off.\"</i></p>\
+    <p>She pulls a cute little inhale through my shirt, then rearranges herself, moving her feet and then her legs onto the floor, planting herself between my thighs.</p>\
+    <p>She runs her lips over the long bulge in my pants and places a kiss on the tip. It gives her a throb in response.</p>\
+    <p>My pants come off first, her fingers hooking over the waistband but not into my underwear. They slide reverently down my legs, her eyes getting hotter with each inch revealed.</p>\
+    <p>My underwear stays on for now.</p>\
+    <p>Mina runs her nails over my still-covered shaft, smirking at the tiny breath I push out my nose.</p>\
+    <p>She reaches through the tunnel in my briefs, making a little \"ooh\" when she gets an unfiltered feel of how hard I am.</p>\
+    <p>Now the last layer between her skin and mine slips down my legs, revealing my rock-hard girlcock. Her eyes fill with thoughts of how she's going to make me beg for release and tease me up to that point.</p>\
+    <p>The tip of her tongue slides from base to tip, pausing with my head on her lips. Her question is clear.</p>\
+    <p>\"Please,\" I barely keep myself from moaning.</p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
 
 ]
 
@@ -534,7 +600,7 @@ var mikuteto_jjk = [
   <div class='background'>\
     <p>Hatsune strides down the road, aiming for a particular back street with quite a reputation. It's rumored around these parts that a spirit lives in an alleyway between a warehouse and an apartment complex, silently taking sleeping tenants and killing them inside its lair.</p>\
     <p>She walks down this alleyway, empty eyes flicking over apartment windows and the ground, searching for something to lead her to the supposed spirit. A trail reveals itself to her in residual cursed energy.</p>\
-    <p>\"Yami yori idete yami yori kuroku sono kegare o misogiharae.\"</p>\
+    <p>\"Yami yori idete, yami yori kuroku sono kegare o misogiharae.\"</p>\
     <p style='color: #444;'>\"Emerge from darkness, blacker than blackness. Purify that which is impure.\"</p>\
     <p></p>\
     <p></p>\
@@ -579,8 +645,8 @@ var terraria_kaisen = [
   <h1 id='char' class=\"adele\">The Beginning of a Cruel Tale</h1>\
   <div class='background'>\
     <p>Adele is a very normal kind of person. She has a cursed sword, a girlfriend, some skill in combat. More than enough to get by as a Grade 4 sorcerer.</p>\
-    <p>This lifestyle, however, isn't exciting or fulfilling in the slightest. Adele can't tell her partner about being a sorcerer, barely has a cursed technique, and can't beat any more than maybe a Grade 3 curse. She gets paid a meanger wage for exorcisms and relies on her girlfriend to ensure they have a stable income.</p>\
-    <p>Living like this got boring almost a year ago. Adele has been trying to train her cursed technique without any success. She must simply be unable to comprehend the Shrine of her ancient one-hundered-times-great grandfather Ryomen Sukuna.</p>\
+    <p>This lifestyle, however, isn't exciting or fulfilling in the slightest. Adele can't tell her partner about being a sorcerer, barely has a cursed technique, and can't beat any more than maybe a Grade 3 curse. She gets paid a meager wage for exorcisms and relies on her girlfriend to ensure they have a stable income.</p>\
+    <p>Living like this got boring almost a year ago. Adele has been trying to train her cursed technique without any success. She must simply be unable to comprehend the Shrine of her ancient one-hundred-times-great grandfather Ryomen Sukuna.</p>\
     <p>Being related to the strongest and most feared sorcerer in history hasn't done her any favors, either. Living in Jujutsu Tech for years has trained her to introduce herself with her given name rather than her family name, as opposed to the tradition in Japan. Every sorcerer she's met thinks that it's only a matter of time until Adele goes crazy and starts murdering people for fun.</p>\
     <br>\
     <p>Soon, though, she wants to be able to call herself a Sukuna with pride.</p>\
@@ -601,7 +667,7 @@ var terraria_kaisen = [
   </div>",
 
   "<link rel='icon' href='/icons/lustwreaker-story.png'>\
-  <h2 class=\"noen\">Chapter 2</h2>\
+  <h2 class=\"none\">Chapter 2</h2>\
   <h1 id='char' class=\"adele\">A Cruel World 1</h1>\
   <div class='background'>\
     <p>Adele wakes, something green tickling her face. Long, healthy blades of grass.</p>\
