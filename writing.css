@@ -36,6 +36,9 @@ i {color: inherit; font-family: inherit;}
     .background {font-size: 5rem;}
     .continue {font-size: 3rem;}
 }
+
+p.character-sheet, div.character-sheet>p {margin-right: 25px; margin-left: 1rem; text-indent: -1rem;}
+
 .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */

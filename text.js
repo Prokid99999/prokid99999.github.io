@@ -18,16 +18,16 @@ var earth = [
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif;'>Magical World</h2>\
   <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'><br><br>\
   <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p><br><br>\
-  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br><br><br>\
+  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br>\
   <p>Now, we can get to the introduction. Magic is a natural force given to intelligent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, alleviating pain, and, really, whatever you can imagine it can possibly do.</p>\
   <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p>\
   <p>\"What could the downside to this kind of power be,\" you may ask?</p>\
   <p>You have to process every step. Every atom you modify must be acknowledged by your mind. Each particle of magic you bend into shape has to go through your brain to continue.</p>\
   <p>That's what we did in the first days of magic. We have devised strategies that allow a person's mana to handle most of the heavy lifting. When you cast a spell, your magic will do what you ask of it, then you can check its work.</p>\
   <br>\
-  <br><br><div style='text-align: center'>------------------------</div>\
+  <br><div style='text-align: center'>------------------------</div>\
   <br><br>\
-  <p>You may bring conduits and any magical items not enchanted to cause harm to our school.</p><br>\
+  <p>You may bring conduits and any magical items not enchanted to cause harm to our school.</p>\
   <p>Items designed to injure or kill will be confiscated and destroyed. Their owners will have their welcome to our school reevaluated.</p><br><br>\
   <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius with the license plate 'Minnesota SEA-354'. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br>\
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>I get the feeling you'll be a very interesting girl.</span></p>\
@@ -158,24 +158,24 @@ var earth = [
     <p>The day after that, his eyes started bleeding. They wouldn't stop, red running off his face in an almost constant stream. He clawed at them like his nails would help. Screamed about how much it hurt until his voice actually stopped working. Really, no more sounds out of his mouth. I think somebody said he broke his vocal cords.</p>\
     <p>Took the healers almost a week to get the curse off. He didn't come to my class after.</p>\
     <p>In the next months, every person who had said they would assault me with him experienced similar torture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>\
-    <p>All that to say: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether they want me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, aka the 'Realistic Option', they're hoping to break the record of time survived against me.</p>\
+    <p>All that to say: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether this is a hook for me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, aka the 'Realistic Option', they're hoping to break the record of time survived against me.</p>\
     <p>Whatever they calculated, it's wrong. Bet they think it only takes a succubus for a difficult match, meaning they're missing some numbers. Mina lasts minutes against me because she's been watching me fight for years and knows me intimately. She has a gold mine of information that these washed-up fools are lacking.</p>\
-    <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is giving me violent looks. \"I challenge you to a duel.\"</p>\
+    <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is trying to slit my throat with their eyes. \"I challenge you to a duel.\"</p>\
     <p>\"Oh?\" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's a little trickier than I thought, thinks she knows how to manipulate a crowd.</p>\
     <p>\"All of you. Fight me all at once, 'cause that's what you need for a fraction of a chance.\" A demon grin cracks my face. The crowd looks at me like I'm insane. Mina shakes her head and Noza throws a thumbs-up. The little bitches who're gonna fight me? Their eyes could rip me to shreds.</p>\
     <p>\"You wanna go?!\" I wish I could frame her face, she's fucking livid. If looks could kill, I'd be a corpse mangled beyond recognition. Her clan circles the mat I'm standing on. My mana rises at the danger, thrumming warm through my bones. Its power makes me light and reckless. It burns away the fog from this morning and leaves me in need of an outlet. Only magic and Mina can make me feel like this.</p>\
-    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Goddamn amateurs. Half their spells fail, the mat choking their magic before they can kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
-    <p>You could kill boars with the shock on their faces. The crowd is cheering, Mina looks torn between impressed and concerned, Noza starts clapping. I feel sick. That spell overfilled my body's mana limit, which my vest will take care of, but evidently magic doesn't like being stolen. Feels like a groggy bear. I ensured their power can't hurt me, even if it doesn't want to be in my body. Any spells I cast with it will be unstable. Could be worse, I guess. I can burn it off later.</p>\
-    <p>Even so, I'm going to keep this one on the shelf. Use it when people need reminders of how strong I am or to enforce my strength like right now. Anyway, my opponents throw a few spells for me to brush off before surrendering. There's a couple more challengers I short work of before Mina steps up.</p>\
-    <p>Oh, Mina. She walks up casually, like we're going to hug instead of fight. Her hair is tied in a ponytail to keep it out of her face, a look I only see here but wouldn't mind seeing more often. There's a glove on her right hand, a deep red fishnet stretching from her middle three fingers to about a palm below her wrist. Magic seethes through it. I draw my wand from its holster in my vest, a long, lighter-colored stick carved into a handle and a point. Mina's power comes into sharper focus when I hold it. I can almost anticipate the way her mana shifts, almost predict the direction.</p>\
-    <p>It doesn't flare all over when she casts, only a heartbeat pump through her arm. A string of power shoots somewhere out of her hand. My instincts pick it apart as fast as they can, but it has too many layered folds. I have to twist out of the way rather than block it. She gives me a cocky little smile. <i>Got you,</i> it seems to say. No way that spell would've done any more than blow off a little bit of my mana, but still.</p>\
-    <p>I launch my own spell, feeling hot power pump through my arm and out of my wand. It's hard to keep under control. It would be harder if I hadn't spent years training myself to conceal my casting. Mina gracefully spins out of its path, then makes a clumsier twist out of instinct. My spell chases after her. She dodges a few non-homing spells from me and sends an unguarded plume of magic straight up while concealing her mana. Clever. That trick sends my spell whistling through empty air and into the wall of the mat's arena. Mina... Mina's not where I left her. I whip around, making a barrier just in time to block a spell from slamming into my face. I can't help but grin. <i>Almost got me!</i></p>\
-    <p>She's grinning too. <i>That spell was a real piece of work. How did you come up with it?</i> I chuckle; <i>How do you think?</i></p>\
+    <p>Some unseen signal makes my opponents' mana flare in sync, rearing like gasoline in a fire. Goddamn amateurs. Half their spells fail, the mat choking their magic before they can try to kill me. The rest fire short little strings of Sun-bright power. I tally their blasts, marking angles, strength and type on pure instinct to weave shreds of armor tailored exactly to their attacks. Time resumes its normal pace as their magic strikes me and splatters off. My wonderful fabric leaps off of me to swallow every delicious drop of burning power and strokes the fire out of its catch. Finally, it returns to me, winding new threads onto my nearly full spool of mana.</p>\
+    <p>You could kill boars with the shock on their faces. The crowd is cheering, Mina looks torn between impressed and concerned, Noza starts clapping. Me? I feel sick. That spell overfilled my body's mana limit, which my vest will take care of, but evidently magic doesn't like being stolen. Feels like a groggy bear. I ensured their power can't hurt me, even if it doesn't want to be in my body. Any spells I cast with it will be unstable. Could be worse, I guess. I can burn it off later.</p>\
+    <p>Even so, I'm going to keep this one on the shelf. Use it when people need reminders of how strong I am or to enforce my strength like right now. Anyway, my opponents throw a few spells for me to brush off before an unceremonious surrender. There's a couple more challengers I make short work of before the main course.</p>\
+    <p>Oh, Mina. She walks up so casually, like we're going to hug instead of fight. Her hair is tied in a ponytail to keep it out of her face, a look I mostly see here and thoroughly enjoy whenever she ties it up in other places. There's a glove on her right hand, a deep red fishnet stretching from her middle three fingers to about a palm below her wrist. Magic seethes through it. I draw my wand from its holster in my vest, a long, light stick carved into a handle and a point. Mina's power comes into sharper focus when I hold it. I can almost anticipate when her mana shifts, almost predict the direction.</p>\
+    <p>It doesn't flare all over when she casts, only a heartbeat pump through her arm. A string of power shoots somewhere out of her hand. My instincts pick it apart as fast as they can, but it has too many layered folds. I have to twist out of the way rather than block it. She gives me a cocky little smile. <i>Got you,</i> her eyes seem to say. No way that spell would've done any more than blow off a little bit of my mana, but still.</p>\
+    <p>I launch my own spell, feeling hot power pump through my arm and out of my wand. It's hard to keep under control. It would be harder if I hadn't spent years training myself to conceal my casting. Mina gracefully spins out of its path, then makes a clumsier twist out of instinct. My spell chases after her. She dodges another non-homing spell from me and sends an unguarded plume of magic straight up while concealing her mana. Clever. That trick sends my spell whistling through empty air and into the wall of the mat's arena. Mina... Mina's not where I left her. I whip around, making a barrier just in time to block a spell from slamming into my face. I can't help but grin. <i>Almost got me!</i></p>\
+    <p>She's grinning too. <i>That was a real piece of work. How did you come up with it?</i> I chuckle; <i>How do you think?</i></p>\
     <p>My eyes find their way to her chest, hidden under a high-cut shirt. A necklace is hanging over it.</p>\
-    <p>I blitz her, standing in front of her before she can start blinking. My hand finds the small heart pendant and tucks it back under her collar. Nobody else needs to see it; we can keep it between myself and Mina. I return to my position as she finishes blinking.</p>\
+    <p>I blitz forward, standing in front of her before she can start blinking. My hand finds the small heart pendant and tucks it back under her collar. Nobody else needs to see it; we can keep it between myself and Mina. I return to my position as she finishes blinking.</p>\
     <p>Mina touches her shirt where the pendant was. Her eyes widen when she discovers it's a layer lower than she thought, then shift into gratitude. I give her a warm smile. I don't know how she thinks I did it, but that doesn't matter right now. We're supposed to be fighting.</p>\
-    <p>I throw another spell at her. She smirks as she dodges, sidestepping like she had always intended to. I cast a halfhearted barrier with my wand hand and spread the rest of my fingers. I can't really conceal my casting, weaving five scorching strings of magic into spells homing in on Mina. Her eyes widen and she dodges one, barely misses the second. She tries that magic flare again, but I bend my power towards her.</p>\
-    <p>All five spells hit at once, bringing Mina to all fours. Her mana burns down to almost nothing. I shove my wand into its holster, rush over to her and put my hands on her shoulders, chanting a spell that forces her body to replenish its magic. It drains my own mana pretty quickly. If I didn't have my vest, I would only be able to get her standing before I collapse. Luckily, I only take it off in our room after classes. I can fully restore her mana and only empty one of the power cells along my spine.</p>\
+    <p>I throw another spell at her. She smirks as she dodges, sidestepping like she had always intended to. I put up a half-assed barrier with my wand hand and spread the rest of my fingers. I can't really conceal my casting, weaving five scorching strings of magic into spells homing in on Mina. Her eyes widen and she dodges one, barely misses the second. She tries that magic flare again, but I bend my power towards her.</p>\
+    <p>All five spells hit at once, bringing Mina to all fours. Even with the barrier she was able to throw, her mana burns down to almost nothing. I shove my wand into its holster, rush over to her and put my hands on her shoulders, chanting a spell that forces her body to replenish its magic. It drains my own mana pretty quickly, almost a one-to-one rate. If I didn't have my vest, I would only be able to get her standing before I collapse. Luckily, I only take it off in our room after classes. I can fully restore her mana and only empty one of the power cells along my spine.</p>\
     <p>The grimace on her face says I'm probably going too fast, but I'd rather have her uncomfortable than dead. I need to make a safeguard to keep that from happening again.</p>\
     <p>\"I'm sorry,\" I whisper into her ear. \"I'm really sorry. Are you okay?\"</p>\
     <p>She gives me a small smile and breathes, \"I'll be fine.\" Then she stands up, brushes some hair out of my face. \"You're already thinking of how to keep me safe. I love you.\"</p>\
@@ -185,11 +185,12 @@ var earth = [
     "<h2>3</h2>\
   <h1 id='char' class=\"Mina\">Mina</h1>\
   <div class=\"background\">\
-    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilities. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is already an arch mage.</p>\
+    <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays, or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilities. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is an arch mage.</p>\
     <p>I walk up behind Airn and wrap my arms around her, put my chin on her head, aware I can't surprise her.</p>\
     <p>\"Hey, honey.\" My eyes slide closed. I'll take every second I can get with her, just existing with her before I supervise her math. I know she has to get it done and I know she knows, too. Doesn't make either of us like it any more.</p>\
     <p>\"Hi.\" She puts a hand over mine and my heart flutters in its cage. I love her more than the sun, and she probably can't feel every little reaction my body and mind have when she touches me or says something, but surely Airn can sense it. My wonderful devil can sense someone casting a spell from the corner of the grounds; she's capable of noticing that I love her.</p>\
-    <p>Airn lifts a hand from her desk, bringing something up to where I can see it. \"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
+    <p>Airn lifts a hand from her desk, bringing something up to where I can see it.</p>\
+    <p>\"I've been working on something.\" A little chain, as long as one of the segments of my finger.</p>\
     <p>I reach over and touch it. A violent tugging sensation almost makes me flinch away, something grabbing at my mana. Carefully, I let it pull a bit of magic out of my fingertip. It keeps pulling, but I cut it off. Then it- it seems to realize its mistake. Its magic brushes against mine, asking to take some, whispering promises about keeping me safe.</p>\
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>\
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>\
@@ -197,15 +198,139 @@ var earth = [
     <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>\
     <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentially harmful magic cast upon them without their consent.</i></p>\
     <p>It doesn't have the most pleasant history. Once upon a time, before Airn and I shared a room but after the first time we kissed, an older boy tried at me against a wall. This kind of thing isn't new. Even with my perception-altering powers on full blast to make me seem less attractive, I'm still a succubus. I prepared to deny him, to talk him down and away from me.</p>\
-    <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I don't think he had anything to do there.</p>\
+    <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I can't help but think that he walked over for me and doesn't have anything to do there.</p>\
     <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice-bringer' face. She strode over to me in sharp movements.</p>\
-    <p>\"What... What did you do?\" I stared at her, still tasting the leftover sparks of her magic. It was sweet and hot and gave the impression of a one-track mind, like a fighter in pure battle state or a lover unable to think about anything but their partner.</p>\
-    <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Love I couldn't name yet fluttered in my chest at the thought that she was angry on my behalf, alongside a twinge of fear.</p>\
-    <p>\"You- you mind-controlled him.\" Mind control is a very dangerous power; there's a reason succubi restrict their usage to cosmetic changes.</p>\
+    <p>\"What... What did you do?\" I stared at her, tasting the leftover sparks of her magic. It's sweet and hot and gives the impression of a one-track mind, like a fighter in pure battle state or a lover unable to think about anything but their partner.</p>\
+    <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Affection I couldn't yet name fluttered in my chest at the thought that she was angry on my behalf, alongside a twinge of fear.</p>\
+    <p>\"You- you mind-controlled him.\" Mind control is a very dangerous power; there's a reason succubi restrict their usage to cosmetic changes and minor coercion.</p>\
     <p>\"Directly controlling the mind is very difficult. I don't know of anyone who can do it.\"</p>\
     <p>\"That's not what you did.\"</p>\
     <p>Airn glanced at me then, eyes and voice soft. \"Is it that big of a deal?\"</p>\
-    <p>I stared back at her, love and terror twisting in my stomach. She had used succubus magic. Not the way any succubus does, but I had seen the spell. It's a piece of what I do every conscious second to keep people from looking at me the way they look at succubi on a much grander scale. Manipulating the mind into seeing something other than reality requires access to the mind. Airn was able to reverse-engineer my magic.</p>\
+    <p>I stared back at her, love and terror twisting my gut into an full tapestry of emotion.</p>\
+    <p>She had used succubus magic. Not the way any succubus would, but I had felt the spell. It's a piece of what I do every conscious second to keep people from looking at me the way they look at succubi, on a much grander and more sinister scale. Convincing the mind to see something other than reality requires access to the mind.</p>\
+    <p>Airn was able to reverse-engineer my magic. I later confirmed she had worked backward from my anti-attention glamour and learned how to access the mind.</p>\
+    <p>I could tell it was from me. When she cast the spell, I was confused because it was so close my magic, even though I hadn't cast anything on him. After I had time to think, I was able to acknowledge my method of looking into the mind. Most succubi glare into someone's head, demanding that they accept whatever the succubus wants. I keep my looking respectful, quietly but firmly ordering them to stop staring at me.</p>\
+    <p>Airn had kept that minimal intrusion, though I would guess it was more out of efficiency than respect. She had taken over the bare minimum of his mind to make him get away from me.</p>\
+    <p>Then the matter of morality. Her usage just now was arguably good, but she hadn't told me what she was capable of. I could easily imagine her simply not knowing its taboo in magical culture, but...</p>\
+    <p>But I started to doubt myself.</p>\
+    <p>She most likely hadn't known about the taboo, but mind-control opens up enormous questions of morality. <i>What lengths are you willing to go to? How do I know what you tell me is true?</i></p>\
+    <p><i>When do I stop trusting you?</i></p>\
+    <p>I voiced each of these concerns to Airn that night. Her eyes had taken on a horrible darkness, and she said, \"You don't know.\"</p>\
+    <p>\"You have no idea when to stop trusting me. You can't trust yourself. There's nothing I can say to change that.\"</p>\
+    <p>She had retired to her room. Her struggles with math were only beginning back then, so I didn't see her until the next morning.</p>\
+    <p>Airn was waiting in our common room, fiddling with something in what I couldn't fully read as nervousness or anxiety. She raised her head and looked at me when I walked in, standing up to meet me.</p>\
+    <p>She held up a cord with a metal representation of a heart weighing it down. \"This is for you.\"</p>\
+    <p>\"What is it?\" I had asked. Her face didn't change from its guarded expression.</p>\
+    <p>\"Read the enchantment yourself, so I can't lie.\" My heart fell at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>\
+    <p>A person Airn isn't.</p>\
+    <p>Everything I knew about Airn told me that she would rather rip herself apart than hurt people she cared about. Violent and extreme, but that's Airn. She will deal karma like a dealer stacking the deck to ensure you never even see a good hand. Not because they're in a casino and their job is making the house win, but as a personal grudge.</p>\
+    <p>Airn is a violent creature who will stop at nothing to exact revenge.</p>\
+    <p>Learning about her changes that perspective. Yes, she will get her revenge. She also values her friends above herself. If someone catcalls me, her eyes light up a vengeant fire hotter than the one that gets ignited when people insult her. I have had to talk her down from outright murder many times. Every time she has gotten that angry was over someone targeting her friends.</p>\
+    <p>I hated that Airn couldn't see herself the way I do in the moment. That </p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -305,6 +430,24 @@ var earth_lore = [
   "<h1>gods</b></h1>\
   <div class='background'>\
     <p>Gods </p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h1>Enchanted Items</h1>\
+  <div class='background'>\
+    <p></p>\
     <p></p>\
     <p></p>\
     <p></p>\

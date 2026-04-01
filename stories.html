@@ -11,10 +11,31 @@
     }
     .noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}
 </style>
+<script>
+function lore() {
+    document.getElementById('earth').addEventListener('onclick', (e) => {
+        var isRightMB;
+        e = e || window.event;
+
+        if ("which" in e)  // Gecko (Firefox), WebKit (Safari/Chrome) & Opera
+            isRightMB = e.which == 3;
+        else if ("button" in e)  // IE, Opera
+            isRightMB = e.button == 2;
+
+        alert("Right mouse button " + (isRightMB ? "" : " was not") + "clicked!")
+        }
+    )
+    document.getElementById('earth').addEventListener('contextmenu', () => {
+        window.open('/stories/lore.html', '_self')
+        }
+    )
+}
+window.onload = lore()
+</script>
 <html>
-    <body>
+    <body onload="lore()">
         <h1>
-            <a href="/stories/magic"><span style="color: #5a5;">Please the Earth</span></a><br>
+            <a href="/stories/magic"><span style="color: #5a5;" id="earth">Please the Earth</span></a><br>
             <a href="/stories/irene"><span style="color: white;">Irene's Dragon</span></a><br><br>
 
             <!-- <a href="/stories/higagf">How'd I Get A Girlfriend?</a><br><br> -->
