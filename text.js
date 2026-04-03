@@ -221,7 +221,7 @@ var earth = [
     <p>Airn was waiting in our common room, fiddling with something in what I couldn't fully read as nervousness or anxiety. She raised her head and looked at me when I walked in, standing up to meet me.</p>\
     <p>She held up a cord with a metal representation of a heart weighing it down. \"This is for you.\"</p>\
     <p>\"What is it?\" I had asked. Her face didn't change from its guarded expression.</p>\
-    <p>\"Read the enchantment yourself, so I can't lie.\" My heart fell at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>\
+    <p>\"Read the enchantment yourself so I can't lie.\" My heart fell at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>\
     <p>A person Airn isn't.</p>\
     <p>Everything I knew about Airn told me that she would rather rip herself apart than hurt people she cared about. Violent and extreme, but that's Airn. She will deal karma like a dealer stacking the deck to ensure you never even see a good hand. Not because they're in a casino and their job is making the house win, but as a personal grudge.</p>\
     <p>Airn is a violent creature who will stop at nothing to exact revenge.</p>\
