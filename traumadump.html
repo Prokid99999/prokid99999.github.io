@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/writing.css">
+    <link rel="icon" href="/icons/story.png">
+    <script src="/script.js"></script>
+    <script src="/text.js"></script>
+</head>
+<title>idek</title>
+<style>
+    #prev, #prev1 {text-align: left; display: inline-block;}
+    #next, #next1 {text-align: right; display: inline-block;}
+    .space {display: flex; justify-content: space-between;}
+    h2 {color: white; background: #000; font-size: 3rem; margin: 0%; padding: 0%; font-family: cursive;}
+    /* br {line-height: 5vh;} */
+    .noza, .Noza {color: green; text-shadow: 0px 0px 15px #0a0;}
+    .airn, .Airn {color: azure; text-shadow: 0px 0px 15px #0af;}
+    .mina, .Mina {color: deeppink; text-shadow: 0px 0px 15px blueviolet;}
+    .void, .Void, .VOID {color: black; text-shadow: 0px 0px 15px #fff;}
+    .none {color: white}
+</style>
+<script>
+    var trauma = ["<div class='background'>\
+        <p>Once upon a time, when I was twelve, there was a voxel game called Classicube that I played all the time. I didn't have a real computer yet, so I played on my school Chromebook. There was one server I played on all the time, where I would be online for most of the day. I was very talkative back then, saying pretty much whatever I wanted. One day, I said something I didn't understand in chat and got rightfully banned. I pleaded with the moderators to unban me, claiming my account got hacked. They did not. After this, I stopped talking online. I became reserved, not really showing much of my real self to people I don't know. Now, I'm the quiet one. When I speak up about something, that shows I really care about it.</p>\
+        "]
+</script>
+<html>
+    <body onload="startStory(trauma)">
+        <br>
+        <div class="space">
+            <div><button id="prev">&lt; Previous</button></div>
+            <div id="center" style="text-align: center;"></div>
+            <div style="text-align: right;"><button id="next">Next &gt;</button></div>
+        </div>
+            <div id="story">
+                <span style="color: white;">this shit isnt fucking working :&lpar;</span>
+            </div><br>
+        <div class="space">
+            <div><button id="prev1">&lt; Previous</button></div>
+            <div id="center1" style="text-align: center;"></div>
+            <div style="text-align: right;"><button id="next1">Next &gt;</button></div>
+        </div><br>
+        <!-- <br style="line-height: 15vh;"> -->
+    </body>
+</html>
