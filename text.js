@@ -213,20 +213,21 @@ var earth = [
     <p>Airn had kept that minimal intrusion, though I would guess it was more out of efficiency than respect. She had taken over the bare minimum of his mind to make him get away from me.</p>\
     <p>Then the matter of morality. Her usage just now was arguably good, but she hadn't told me what she was capable of. I could easily imagine her simply not knowing its taboo in magical culture, but...</p>\
     <p>But I started to doubt myself.</p>\
-    <p>She most likely hadn't known about the taboo, but mind-control opens up enormous questions of morality. <i>What lengths are you willing to go to? How do I know what you tell me is true?</i></p>\
+    <p>She most likely hadn't known about the taboo, but mind control opens up enormous moral questions. <i>What lengths are you willing to go to? How do I know what you tell me is true?</i></p>\
     <p><i>When do I stop trusting you?</i></p>\
-    <p>I voiced each of these concerns to Airn that night. Her eyes had taken on a horrible darkness, and she said, \"You don't know.\"</p>\
+    <p>I voiced all of these concerns to Airn that night. Her eyes had taken on a horrible darkness, and she said, \"You don't know.\"</p>\
     <p>\"You have no idea when to stop trusting me. You can't trust yourself. There's nothing I can say to change that.\"</p>\
     <p>She had retired to her room. Her struggles with math were only beginning back then, so I didn't see her until the next morning.</p>\
-    <p>Airn was waiting in our common room, fiddling with something in what I couldn't fully read as nervousness or anxiety. She raised her head and looked at me when I walked in, standing up to meet me.</p>\
-    <p>She held up a cord with a metal representation of a heart weighing it down. \"This is for you.\"</p>\
+    <p>Airn was waiting in our common room, fiddling with something in what I couldn't fully read as nervousness or anxiety. She raised her head and looked me in the eye when I walked in, standing up to meet me.</p>\
+    <p>She held up a cord with a metal representation of a heart weighing it down.</p>\
+    <p>\"This is for you.\"</p>\
     <p>\"What is it?\" I had asked. Her face didn't change from its guarded expression.</p>\
-    <p>\"Read the enchantment yourself so I can't lie.\" My heart fell at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>\
+    <p>\"Read the enchantment yourself so I can't lie.\" My heart shattered at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>\
     <p>A person Airn isn't.</p>\
     <p>Everything I knew about Airn told me that she would rather rip herself apart than hurt people she cared about. Violent and extreme, but that's Airn. She will deal karma like a dealer stacking the deck to ensure you never even see a good hand. Not because they're in a casino and their job is making the house win, but as a personal grudge.</p>\
     <p>Airn is a violent creature who will stop at nothing to exact revenge.</p>\
-    <p>Learning about her changes that perspective. Yes, she will get her revenge. She also values her friends above herself. If someone catcalls me, her eyes light up a vengeant fire hotter than the one that gets ignited when people insult her. I have had to talk her down from outright murder many times. Every time she has gotten that angry was over someone targeting her friends.</p>\
-    <p>I hated that Airn couldn't see herself the way I do in the moment. That </p>\
+    <p>Learning about her changes that perspective. Yes, she is exactly the creature I just described. She also values her friends above herself. If someone catcalls me, her eyes light up a vengeant fire hotter and brighter than the one that people ignite when they insult her. I have had to talk her down from outright murder many times. Every time she has gotten that angry was over someone targeting her friends.</p>\
+    <p>I hated that Airn couldn't see herself the way I do in the moment. That she is deserving of trust, of love, of care. She is the best person I know, not because she hurts people but because she always hurts people for the right reason.</p>\
     <p></p>\
     <p></p>\
     <p></p>\
