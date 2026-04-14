@@ -285,36 +285,53 @@ function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
 
 let startNumber = 0
 
-function startStory(content=['wtf']) {
+
+function startStory(content=['wtf'], doCookies=true, doX=false, doY=true, doOutput=true, format=true) {
   var s = document.createElement('script');
   s.id = 'text'
   if (startNumber === 0) {
     s.src = '/text.js';
-    s.id = 'text'
     document.body.appendChild(s);
     startNumber++
     document.getElementById('text').remove()
-    startStory(content)
+    startStory(content, doCookies, doX, doY, doOutput, format)
   }
-  else if (startNumber === 2) {
+  else if (startNumber === 1) {
     s.src = 'https://prokid99999.github.io/text.js';
     document.body.appendChild(s);
     startNumber++
     document.getElementById('text').remove()
-    startStory(content)
+    startStory(content, doCookies, doX, doY, doOutput, format)
   }
   else if (startNumber === 2) {
     s.src = 'http://localhost:2009/text.js';
     document.body.appendChild(s);
     startNumber++
     document.getElementById('text').remove()
-    startStory(content)
+    startStory(content, doCookies, doX, doY, doOutput, format)
   }
-  else if (startNumber === 1) {
+  else if (startNumber === 3) {
     startNumber = 0
-    start(content)
+    if (format) {
+    document.body.innerHTML = '\
+        <br>\
+        <div class="space">\
+            <div><button id="prev">&lt; Previous</button></div>\
+            <div id="center" style="text-align: center;"></div>\
+            <div style="text-align: right;"><button id="next">Next &gt;</button></div>\
+        </div>\
+            <div id="story"><br>\
+                <span style="color: white;">this shit isn\'t fucking working :&lpar;</span>\
+            </div><br>\
+        <div class="space">\
+            <div><button id="prev1">&lt; Previous</button></div>\
+            <div id="center1" style="text-align: center;"></div>\
+            <div style="text-align: right;"><button id="next1">Next &gt;</button></div>\
+        </div><br></br>'}
+    start(content, doCookies, doX, doY, doOutput)
   }
 }
+
 
 function getCommit(owner, repo) {
   fetch(
@@ -410,4 +427,8 @@ function colorTrace(msg, color='red') {
 
 function errorMessage(msg) {
   colorTrace(msg, 'red')
+}
+
+function random(list) {
+  return list[Math.floor(Math.random() * list.length)]
 }

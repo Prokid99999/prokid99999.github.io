@@ -45,15 +45,24 @@
         if (checkCookie('thoughts') === 'error') {
             setCookie('thoughts', 'false')
         }
+        document.getElementById('tip').innerHTML += random(tips)
     }
+    const tips = [
+        '<span oncontextmenu="this.textContent = \'Tip: Try other text!\'; hideContextmenu">Tip: Try right-clicking text for secrets!</span>',
+        'Tip: See if you can reveal hidden text by highlighting a page!',
+        'Recommended by 1e+1 out of 10 doctors!',
+        'Recommended by 4x10^2 / 2x10^1 out of 10 optometrists!'
+        ]
 </script>
 <body>
     <h1>thoughts</h1>
     <p>
+        <i id='tip' style="color: yellow;"></i><br><br>
         Maybe the reason this website is just black, white, red and blue is part of my design philosophy: basic design that lets the character's personality shine<br>
         Well <span ondblclick="replace()">shit</span>, that rhymes.<br>
         Either that or I'm inexperienced.<br><br>
-        It's not <span ondblclick="window.open('/traumadump.html')">inexperience</span>, though. I really like how this page looks.<br><br>
+        It's not just <span ondblclick="window.open('/traumadump.html')">inexperience</span>, though. I really like how this page looks.<br><br>
+
 
         <a id='stories' href="stories"></a><br>
         <a id="universes" href="/universes"></a><br>
