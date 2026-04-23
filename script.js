@@ -257,6 +257,24 @@ function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
       prev()
     }
   )
+  window.onkeydown = function (event) {
+    if (event.key === 'ArrowRight') {
+      if (index + 1 != content.length) {
+        next()
+      }
+    }
+    else if (event.key === 'ArrowLeft') {
+      if (index != 0) {
+        prev()
+      }
+    }
+    else if (event.key === 'ArrowUp') {
+    // Up Arrow pressed
+    }
+    else if (event.key === 'ArrowDown') {
+      // Down Arrow pressed
+    }
+  }
   function char() {
     try {
     document.getElementById('char').addEventListener('dblclick', () => {
