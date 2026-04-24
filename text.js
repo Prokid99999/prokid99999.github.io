@@ -799,7 +799,6 @@ var terraria_kaisen = [
     <p>Soon.</p>\
     <br>\
     <br>\
-    <br>\
     <p>Adele Sukuna went missing on October 17th, 2019.</p>\
     <p></p>\
     <p></p>\
@@ -834,6 +833,25 @@ var terraria_kaisen = [
     <br>\
     <p></p>\
     <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h2>chapter number</h2>\
+  <h1 id='char' class=\"adele\">later fight</h1>\
+  <div class='background'>\
+    <p>Blackness envelops the two combatants, solidifying into a barrier. The two instinctively attempt to form the hand signs for their respective domains.</p>\
+    <p>They freeze in place, standing up straight, their arms falling limp to their sides.</p>\
+    <p>A rhythmic <i>click, click, click</i> of heels announce the presence of Masaharu the Mindbender.</p>\
+    <p>She stops between Adele and her opponent.</p>\
+    <p>\"You.\" Her finger aims at *****.</p>\
+    <p>The person stiffens slightly.</p>\
+    <p>\"Cum so hard and so painfully that you can't think about anything except how much it hurts.\"</p>\
+    <p>The figure collapses, curling in on themself and writhing in agony.</p>\
+    <p>Adele twitches.</p>\
+    <p>Masaharu turns her head to them.</p>\
+    <p>\"Don't worry, you can do whatever you want.\" She smiles at her partner.</p>\
     <p></p>\
     <p></p>\
     <p></p>\
