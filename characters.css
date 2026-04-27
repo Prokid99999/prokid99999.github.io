@@ -7,7 +7,7 @@ a:active {color: red; text-decoration: underline;}
 strong {color: red;}
 button {color: black;}
 h1 {color:blue;}
-p {margin-right: 25px; margin-left: 1rem; text-indent: -1rem; color: white;}
+p {margin-right: 25px; margin-left: calc(0px + 1rem); text-indent: calc(0px + -1rem); color: white;}
 /* span {} */
 i {color: inherit; font-family: inherit;}
 /* classes */

@@ -21,6 +21,10 @@ var program = [
 
 var tes = ["(o ^ o) ", "(- ^ -)"]
 
+var terraria_kaisenSidebar = [
+  '<h1>Terraria kaisen</h1>'
+]
+
 function setCookie(cname, cvalue, output = true, exdays = 365) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
