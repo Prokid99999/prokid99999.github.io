@@ -137,54 +137,54 @@ function checkArrayCookie(cname) {
 //     .catch(error => console.error('Failed to fetch data:', error));
 // }
 
-function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
-  const page = window.location.pathname + ' - '
-  const showSlide = n => {
-    document.getElementById('story').innerHTML = content[n]
+function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX = false, doY = true, doOutput = false) {
+  var page = window.location.pathname + ' - '
+  var showSlide = (n) => {
+    gewi('story').innerHTML = content[n]
   }
 
   let index = Number(getCookie(page + 'index'))
   if (index + 1 > content.length) {
-    setCookie(page + 'index', 0);
+    setCookie(page + 'index', 0, doOutput)
     index = 0
   }
   if (index + 1 === content.length) {
-    document.getElementById('prev').style.display = 'inline'
-    document.getElementById('prev1').style.display = 'inline'
-    document.getElementById('next').style.display = 'none'
-    document.getElementById('next1').style.display = 'none'
+    gewi('prev').style.display = 'inline'
+    gewi('prev1').style.display = 'inline'
+    gewi('next').style.display = 'none'
+    gewi('next1').style.display = 'none'
   }
   else {
-    document.getElementById('prev').style.display = 'inline'
-    document.getElementById('prev1').style.display = 'inline'
-    document.getElementById('next').style.display = 'inline'
-    document.getElementById('next1').style.display = 'inline'
+    gewi('prev').style.display = 'inline'
+    gewi('prev1').style.display = 'inline'
+    gewi('next').style.display = 'inline'
+    gewi('next1').style.display = 'inline'
   }
   if (index === 0) {
-    document.getElementById('prev').style.display = 'none'
-    document.getElementById('prev1').style.display = 'none'
-    document.getElementById('next').style.display = 'inline'
-    document.getElementById('next1').style.display = 'inline'
+    gewi('prev').style.display = 'none'
+    gewi('prev1').style.display = 'none'
+    gewi('next').style.display = 'inline'
+    gewi('next1').style.display = 'inline'
     if (content.length <= 1) {
-      document.getElementById('prev').style.display = 'none'
-      document.getElementById('prev1').style.display = 'none'
-      document.getElementById('next').style.display = 'none'
-      document.getElementById('next1').style.display = 'none'
+      gewi('prev').style.display = 'none'
+      gewi('prev1').style.display = 'none'
+      gewi('next').style.display = 'none'
+      gewi('next1').style.display = 'none'
     }
   }
   if (doCookies == true) {
-    if (doX === true && checkCookie(page + 'scrollx') === 'error') {
-      setCookie(page + 'scrollx', 0)
+    if (doX === true && checkCookie(page + 'scrollx', false) === 'error') {
+      setCookie(page + 'scrollx', 0, doOutput)
     }
-    if (doY === true && checkCookie(page + 'scrolly') === 'error') {
-      setCookie(page + 'scrolly', 0)
+    if (doY === true && checkCookie(page + 'scrolly', false) === 'error') {
+      setCookie(page + 'scrolly', 0, doOutput)
     }
-    if (checkCookie(page + 'index') === 'error') {
-      setCookie(page + 'index', 0)
+    if (checkCookie(page + 'index', false) === 'error') {
+      setCookie(page + 'index', 0, doOutput)
       index = 0
     }
     if (index === 'NaN') {
-      setCookie(page + 'index', 0)
+      setCookie(page + 'index', 0, doOutput)
       index = 0
     }
   }
@@ -196,71 +196,76 @@ function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
     )
   }
   function next() {
+    var videoElement = qSelA('video')
+    try {videoElement.forEach(element => {
+      element.pause()
+      element.removeAttribute('src')
+      element.load()
+    })}
+    catch (TypeError) {errorMessage('no videos')}
       index = (index + 1) % content.length
-      if (index + 1 >= content.length) {
-        document.getElementById('next').style.display = 'none'
-        document.getElementById('next1').style.display = 'none'
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-      }
-      else {
-        document.getElementById('next').style.display = 'inline'
-        document.getElementById('next1').style.display = 'inline'
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-      }
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      char()
+    if (index + 1 >= content.length) {
+      gewi('next').style.display = 'none'
+      gewi('next1').style.display = 'none'
+      gewi('prev').style.display = 'inline'
+      gewi('prev1').style.display = 'inline'
     }
-  function prev() {
-      index = (index + content.length - 1) % content.length
-      if (index === 0) {
-        document.getElementById('prev').style.display = 'none'
-        document.getElementById('prev1').style.display = 'none'
-        document.getElementById('next').style.display = 'inline'
-        document.getElementById('next1').style.display = 'inline'
-      }
-      else {
-        document.getElementById('prev').style.display = 'inline'
-        document.getElementById('prev1').style.display = 'inline'
-        document.getElementById('next').style.display = 'inline-block'
-        document.getElementById('next1').style.display = 'inline-block'
-      }
-      window.scrollTo(0, 0)
-      showSlide(index)
-      if (doCookies == true) {
-        setCookie(page + 'index', index)
-      }
-      char()
+    else {
+      gewi('next').style.display = 'inline'
+      gewi('next1').style.display = 'inline'
+      gewi('prev').style.display = 'inline'
+      gewi('prev1').style.display = 'inline'
+    }
+    window.scrollTo(0, 0)
+    showSlide(index)
+    vol()
+    eval(extraScript)
+    if (doCookies == true) {
+      setCookie(page + 'index', index, doOutput)
+    }
+    char()
   }
-  document.getElementById('next').addEventListener(
-    'click',
-    () => {
-      next()
+  function prev() {
+    var videoElement = qSelA('video')
+    try {videoElement.forEach(element => {
+      element.pause()
+      element.removeAttribute('src')
+      element.load()
+    })}
+    catch (TypeError) {errorMessage('no videos')}
+    index = (index + content.length - 1) % content.length
+    if (index === 0) {
+      gewi('prev').style.display = 'none'
+      gewi('prev1').style.display = 'none'
+      gewi('next').style.display = 'inline'
+      gewi('next1').style.display = 'inline'
     }
-  )
-  document.getElementById('next1').addEventListener(
-    'click',
-    () => {
-      next()
+    else {
+      gewi('prev').style.display = 'inline'
+      gewi('prev1').style.display = 'inline'
+      gewi('next').style.display = 'inline-block'
+      gewi('next1').style.display = 'inline-block'
     }
-  )
-  document.getElementById('prev').addEventListener(
-    'click',
-    () => {
-      prev()
+    window.scrollTo(0, 0)
+    showSlide(index)
+    vol()
+    if (doCookies == true) {
+      setCookie(page + 'index', index, doOutput)
     }
-  )
-  document.getElementById('prev1').addEventListener(
-    'click',
-    () => {
-      prev()
-    }
-  )
+    char()
+  }
+  gewi('next').addEventListener('click', () => {
+    next()
+  })
+  gewi('next1').addEventListener('click', () => {
+    next()
+  })
+  gewi('prev').addEventListener('click', () => {
+    prev()
+  })
+  gewi('prev1').addEventListener('click', () => {
+    prev()
+  })
   window.onkeydown = function (event) {
     if (event.key === 'ArrowRight') {
       if (index + 1 != content.length) {
@@ -281,64 +286,59 @@ function start(content = ['wtf'], doCookies = true, doX = false, doY = true) {
   }
   function char() {
     try {
-    document.getElementById('char').addEventListener('dblclick', () => {
+    gewi('char').addEventListener('dblclick', () => {
       word_count()
     })
     }
     catch (TypeError) {
-      colorTrace(program[4] + 'no char element', 'red')
+      errorMessage('story: no char element')
     }
   }
   char()
   if (doCookies == true) {
-    window.addEventListener(
-      'scrollend',
-      function () {
-        if (doX === true) {
-          setCookie(page + 'scrollx', window.scrollX)
-        }
-        if (doY === true) {
-          setCookie(page + 'scrolly', window.scrollY)
-        }
+    window.addEventListener('scrollend', () => {
+      if (doX === true) {
+        setCookie(page + 'scrollx', window.scrollX, doOutput)
       }
-    )
+      if (doY === true) {
+        setCookie(page + 'scrolly', window.scrollY, doOutput)
+      }
+    })
   }
+  tesLog('finished loading story')
 }
 
-let startNumber = 0
+var startState = 'not started'
 
-
-function startStory(content=['wtf'], doCookies=true, doX=false, doY=true, doOutput=true, format=true) {
+function startStory(content=['wtf'], format=false, extraScript='', doCookies=true, doX=false, doY=true, doOutput=true) {
+  if (doOutput) {tesLog('starting story...')}
   var s = document.createElement('script');
   s.id = 'text'
-  if (startNumber === 0) {
-    s.src = '/text.js';
-    document.body.appendChild(s);
-    startNumber++
-    document.getElementById('text').remove()
-    startStory(content, doCookies, doX, doY, doOutput, format)
+  if (startState === 'not started') {
+    getScript('/text.js')
+    if (doOutput) {tesLog('story: fetched text')}
+    startState = 'debug check'
   }
-  else if (startNumber === 1) {
-    s.src = 'https://prokid99999.github.io/text.js';
-    document.body.appendChild(s);
-    startNumber++
-    document.getElementById('text').remove()
-    startStory(content, doCookies, doX, doY, doOutput, format)
+  if (window.location.href.indexOf('http://localhost:8001') > 0) {
+    if (doOutput) {tesLog('story: debug true')}
+    startState = 'debug true'
   }
-  else if (startNumber === 2) {
-    s.src = 'http://localhost:2009/text.js';
-    document.body.appendChild(s);
-    startNumber++
-    document.getElementById('text').remove()
-    startStory(content, doCookies, doX, doY, doOutput, format)
+  else {
+    if (doOutput) {tesLog('story: debug false')}
+    startState = 'ready to display'
   }
-  else if (startNumber === 3) {
-    startNumber = 0
-    if (format) {
-    document.body.innerHTML = '\
+  if (startState === 'debug true') {
+    tesLog('story: getting text')
+    getScript('https://prokid99999.github.io/text.js')
+    getScript('http://localhost:2009/text.js')
+    }
+  if (doOutput) {tesLog('story: displaying')}
+  if (startState === 'ready to display') {
+    if (format) {document.body.innerHTML +=
+      '\
         <br>\
         <div class="space">\
-            <div><button id="prev">&lt; Previous</button></div>\
+            <div style="text-align: left"><button id="prev">&lt; Previous</button></div>\
             <div id="center" style="text-align: center;"></div>\
             <div style="text-align: right;"><button id="next">Next &gt;</button></div>\
         </div>\
@@ -346,14 +346,29 @@ function startStory(content=['wtf'], doCookies=true, doX=false, doY=true, doOutp
                 <span style="color: white;">this shit isn\'t fucking working :&lpar;</span>\
             </div><br>\
         <div class="space">\
-            <div><button id="prev1">&lt; Previous</button></div>\
+            <div style="text-align: left"><button id="prev1">&lt; Previous</button></div>\
             <div id="center1" style="text-align: center;"></div>\
             <div style="text-align: right;"><button id="next1">Next &gt;</button></div>\
-        </div><br></br>'}
-    start(content, doCookies, doX, doY, doOutput)
+        </div><br><br>'}
+    displayStory(content, doCookies, extraScript, doX, doY, doOutput)
   }
 }
 
+function StartThoughts(content = ['wtf']) {
+  var page = window.location.pathname + ' - '
+  getScript('/thoughts.js')
+  // content.reverse()
+  var showSlide = (n) => {
+    gewi('story').innerHTML += '<div class="background">' + content[n] + '</div><br><br>'
+  }
+
+  gewi('story').innerHTML = ""
+
+  for (let index = 0; index < content.length; index++) {
+    const element = content[index];
+    showSlide(index)
+  }
+}
 
 function getCommit(owner, repo) {
   fetch(
@@ -448,9 +463,155 @@ function colorTrace(msg, color='red') {
 }
 
 function errorMessage(msg) {
-  colorTrace(msg, 'red')
+  colorTrace(tes[1] + ' ' + msg, 'red')
 }
 
 function random(list) {
   return list[Math.floor(Math.random() * list.length)]
+}
+
+function tesLog (msg='') {
+  console.log(tes[0] + msg)
+}
+
+function getScript(file) {
+  var s = document.createElement('script');
+  s.id = 'getScript'
+  s.src = file;
+  document.head.appendChild(s);
+  // gewi('getScript').remove()
+}
+
+/**
+ * little function to add a face to a log
+ * @param {string} msg - message to be displayed in the console
+ */
+function bullshitLog(msg='') {
+  let bull = ':3 > '
+  console.log(bull + msg)
+}
+function bsLog(msg='') {
+  bullshitLog(msg)
+}
+function bhbUnhide() {
+  qSelA('.hidden').forEach( element => {
+    element.style.color = '#666'
+  })
+  bullshitLog
+}
+
+// help functions
+/**
+ * Help function
+ * @param {string} func specific function to help with - unfinished
+ */
+function bsHelp(func='') {
+  let bull = ':3 > '
+  if (func === '') {
+    return bull+'bullshit.js, console helper/Javascript library by Bullshit Programs.'
+  }
+
+  else {return bull+'unrecognized function'}
+}
+
+/**
+ * loads a script
+ * @param {string} file file path
+ */
+function getScript(file) {
+  var s = document.createElement('script');
+  s.id = 'getScript'
+  s.src = file;
+  document.head.appendChild(s);
+}
+/**
+ * loads a script as a module
+ * @param {string} file file path
+ */
+function getModule(file) {
+  var s = document.createElement('script');
+  s.id = 'getScript'
+  s.src = file;
+  s.type = 'module'
+  document.head.appendChild(s);
+}
+
+/**
+ * Quick element adder
+ * @param {string} element element type
+ * @param {string} id id to add to the element
+ */
+function addElement(element='', id='') {
+  let elem = document.createElement(element)
+  if (id != '') {
+    elem.id = id
+  }
+  document.body.appendChild(elem)
+  if (id === '') {return `added ${element} to document`}
+  else {return `added ${element} to document with id ${id}`}
+}
+
+/**
+ *Shorthand for document.getElementById
+ * @param {string} id - id of the element
+ * @returns the element
+ */
+function getElementWithId(id='') {
+  return document.getElementById(id)
+}
+/**
+ *Shortened version of getElementWithId
+ * @param {string} id - id of the element
+ */
+function gEWI(id='') {
+  return getElementWithId(id)
+}
+/**
+ *Shortened version of getElementWithId
+ * @param {string} id - id of the element
+ */
+function gewi(id='') {
+  return getElementWithId(id)
+}
+
+/**
+ * Shorthand for document.getElementsByClassName
+ * @param {string} clas - class to search for
+ * @returns elements
+ */
+function getElementsWithClassname(clas='') {
+  return document.getElementsByClassName(clas)
+}
+/**
+ * Shortened version of getElementWithClass
+ * @param {*} clas - class to search for
+ * @returns elements
+ */
+function gEWC(clas='') {
+  return getElementsWithClassname(clas)
+}
+/**
+ * Shortened version of getElementWithClass
+ * @param {*} clas - class to search for
+ * @returns elements
+ */
+function gewc(clas='') {
+  return gEWC(clas)
+}
+
+/**
+ * Shorthand for document.querySelector
+ * @param {string} params CSS selectors
+ * @returns elements
+ */
+function qSel(params='') {
+  return document.querySelector(params)
+}
+/**
+ * Shorthand for document.querySelectorAll
+ * @param {string} params CSS selectors
+ * @returns elements
+ */
+function qSelA(params='') {
+  return document.querySelectorAll(params)
 }

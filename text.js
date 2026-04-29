@@ -1,3 +1,79 @@
+var template = [
+  "\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    ",
+
+  "<h2>chapter number</h2>\
+  <h1 id='char' class=\"Character\">Character</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h2>1</h2>\
+  <h1 id='char' class=\"Miku\">Hatsune</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+
+  "<h2>2</h2>\
+  <h1 id='char' class=\"Teto\">Kasane</h1>\
+  <div class='background'>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>",
+]
+
 var earth = [
   "<br>\
   <div class='background' style='padding: 0'>\
@@ -941,45 +1017,10 @@ She ran her hands over her body, trying to remember how it had been arranged and
 
 ]
 
-var template = [
-  "\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    ",
-
-  "<h2>chapter number</h2>\
-  <h1 id='char' class=\"Character\">Character</h1>\
-  <div class='background'>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-  </div>",
+var shortstory = [
 
   "<h2>1</h2>\
-  <h1 id='char' class=\"Miku\">Hatsune</h1>\
+  <h1 id='char' class=\"Character\">haven't named her yet</h1>\
   <div class='background'>\
     <p></p>\
     <p></p>\
@@ -997,22 +1038,4 @@ var template = [
     <p></p>\
   </div>",
 
-  "<h2>2</h2>\
-  <h1 id='char' class=\"Teto\">Kasane</h1>\
-  <div class='background'>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-  </div>",
 ]
