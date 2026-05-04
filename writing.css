@@ -60,6 +60,19 @@ p.character-sheet, div.character-sheet>p {margin-right: 25px; margin-left: 1rem;
 #next, #next1 {text-align: right; display: inline-block;}
 .space {display: flex; justify-content: space-between;}
 
+@media (prefers-color-scheme: light) {
+    button {color: black; background-color: white;}
+    .background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 38px; text-wrap-mode: wrap; background: #aaa; margin-top: 0px; margin-bottom: 0px; color: black;}
+    .background>p {color: black; text-shadow: none;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 50.5px; padding-bottom: 55px; background: linear-gradient(#000, #000, #111, #111, #111, #111, #aaa, #aaa); margin-top: 0%; margin-bottom: 0%;}
+}
+@media (prefers-color-scheme: dark) {
+    button {color: white; background-color: #111;}
+    .background {word-spacing: 1px; letter-spacing: 0.5px; font-size: 1rem; padding: 38px; text-wrap-mode: wrap; background: #141414; margin-top: 0px; margin-bottom: 0px; color: #ddd;}
+    .background>p {color: #ddd; text-shadow: none;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 3.5rem; text-align: center; padding-top: 50.5px; padding-bottom: 55px; background: linear-gradient(#000, #000, #252525, #252525, #252525, #252525, #141414, #141414); margin-top: 0%; margin-bottom: 0%;}
+}
+
 /* characters */
     .miku, .Miku, .Hatsune, .hatsune {color: #00ff9b; text-shadow: 0px 0px 15px #009bff;}
     .teto, .Teto, .Kasane, .kasane {color: #f66; text-shadow: 0px 0px 15px #f00;}
