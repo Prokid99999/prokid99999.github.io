@@ -1020,14 +1020,14 @@ She ran her hands over her body, trying to remember how it had been arranged and
 var shortstory = [
 
   "<h2>1</h2>\
-  <h1 id='char' class=\"Character\">haven't named her yet</h1>\
+  <h1 id='char' class=\"Character\">lillian, cool</h1>\
   <div class='background'>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
-    <p></p>\
+    <p>Welp, time for another day of purgatory. I have to walk to a prison building and spend the equivalent of a 9-5 work shift doing exactly what other people tell me I have to do, because when I'm an adult I'm going to have to get a job and they're going to spend about fourteen years of my life not teaching me anything about how the world works, or how to get a job, or how to pay my taxes. Instead, they're going to teach me about a shit-ton of math I'm never going to use, a bunch of racist and sexist bastards that died trying to keep women and anyone they didn't like under them, and how to write without a voice.</p>\
+    <p>Sounds fun, right?</p>\
+    <p>I slink through the doors, following a herd of people who feel vaguely the same way I do about this hell. A few people look at my jacket, black and covered in patches and embroidery of many things that aren't exactly school-appropriate. I got an audience with the principal back when I first wore it here, he told me it went against the dress code, I told him to go fuck himself. For some reason, he thought it was okay to try and pull it off my back, so now he has a bad shoulder and one of his wrists causes him pain to move.</p>\
+    <p>Good memories. Anyway, who in their clearly dysfunctional mind thought trying to teach history to a room of teenagers at seven in the morning was even a passable idea? Everything I hear this morning is going to slide out of my brain and out my ears by lunchtime. They should serve coffee in the cafeteria, that would really get us motivated.</p>\
+    <p>The teacher whose name I haven't been able to remember through the amount of homework he assigns drones on about the Founding Fathers and why they were <i>not</i> super sexist, actually. I can only remember, like, Hamilton and Burr and maybe Jefferson. That musical was awesome. Hell of a lot better than Mr. What'shisface.</p>\
+    <p>Anyway, History passes me by half-conscious. </p>\
     <p></p>\
     <p></p>\
     <p></p>\
