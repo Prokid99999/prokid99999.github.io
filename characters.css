@@ -6,9 +6,7 @@ a:hover {font-style: italic; text-decoration: underline; color: aqua;}
 a:active {color: red; text-decoration: underline;}
 strong {color: red;}
 button {color: black;}
-h1 {color:blue;}
 p {margin-right: 25px; margin-left: calc(0px + 1rem); text-indent: calc(0px + -1rem); color: white;}
-/* span {} */
 i {color: inherit; font-family: inherit;}
 /* classes */
 .hidden {color: black; cursor: default; line-height: 1rem;}

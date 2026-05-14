@@ -1,5 +1,5 @@
 var template = [
-  "\
+  `\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -14,9 +14,9 @@ var template = [
     <p></p>\
     <p></p>\
     <p></p>\
-    ",
+    `,
 
-  "<h2>chapter number</h2>\
+  `<h2>chapter number</h2>\
   <h1 id='char' class=\"Character\">Character</h1>\
   <div class='background'>\
     <p></p>\
@@ -33,9 +33,9 @@ var template = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h2>1</h2>\
+  `<h2>1</h2>\
   <h1 id='char' class=\"Miku\">Hatsune</h1>\
   <div class='background'>\
     <p></p>\
@@ -52,9 +52,9 @@ var template = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h2>2</h2>\
+  `<h2>2</h2>\
   <h1 id='char' class=\"Teto\">Kasane</h1>\
   <div class='background'>\
     <p></p>\
@@ -71,11 +71,11 @@ var template = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 ]
 
 var earth = [
-  "<br>\
+  `<br>\
   <div class='background' style='padding: 0'>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-top: 2rem;'>\
   Congratulations!</h2>\
@@ -86,9 +86,9 @@ var earth = [
   Yours sincerely,<br>\
   <p style='font-size: 2rem; line-height: 3rem; text-indent: 2rem;'><span style='font-family: Aguafina Script;'>Second Archmage Oleanda Navarisque</span></p>\
   <div style='text-indent: 2rem'>Second Archmage Oleanda Navarisque</div>\
-  </div></div>",
+  </div></div>`,
 
-"<br> <div class='background' style='padding: 0; background-color: white'>\
+`<br> <div class='background' style='padding: 0; background-color: white'>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-bottom: 0'>A Human's Guide</h2>\
   <span style='font-size: 1.5rem; color: grey; background-color: white; text-align: center; display: block; line-height: 1.5rem; padding-top: 0rem;'><br style='line-height: 1.5rem'>to the<br></span>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif;'>Magical World</h2>\
@@ -108,22 +108,22 @@ var earth = [
   <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius with the license plate 'Minnesota SEA-354'. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br>\
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>I get the feeling you'll be a very interesting girl.</span></p>\
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>Show me what you're made of, Airn Avalon.</span></p><br><br><br>\
-  </div></div>",
+  </div></div>`,
 
-  // "<br>\
+  // `<br>\
   // <div class='background' style='padding: 0'>\
   // <div style='color: black; background-color: white; padding: 5rem; text-align: left;'>\
   // \
-  // </div></div>",
+  // </div></div>`,
 
-  "<h2>prologue</h2>\
+  `<h2>prologue</h2>\
   <h1 id='char' class=\"none\">Airn</h1>\
   <div class=\"background\">\
   <p>Well, that's fucking weird. Some random letter with my name and a return address on the front shows up. Who the hell sent me this? Why is it printed and annotated? And it's from a magic school? This must be a joke.</p>\
   <p>But the envelope was covered in magic. I found it next to my sleeping bag, with no other traces of life. You can't exactly mail a letter to my little place, and I'm the only magic user around here anyway. It must have been delivered by who it says.</p>\
   <p>What kind of rich-ass name is 'Oleanda Navarisque', anyway? It sounds made-up.</p>\
   <p>Then again, I kind of made up my own name. I guess I can't judge them for choosing theirs.</p>\
-  <p>The other handwriting is more interesting. Fuck you mean, 'I have a feeling you'll be interesting?' <i>No shit!</i> You think a cryptid won't be <i>interesting?</i> Maybe I can't take someone called \"The Second Archmage\", but I bet I can pack up most of the other people at this school.</p>\
+  <p>The other handwriting is more interesting. Fuck you mean, 'I have a feeling you'll be interesting?' <i>No shit!</i> You think a cryptid won't be <i>interesting?</i> Maybe I can't take someone called \"The Second Archmage\`, but I bet I can pack up most of the other people at this school.</p>\
   <p></p>\
   <p></p>\
   <p></p>\
@@ -136,9 +136,9 @@ var earth = [
   <p></p>\
   <p></p>\
   <p></p>\
-  </div>",
+  </div>`,
 
-  "<h2>1</h2>\
+  `<h2>1</h2>\
   <h1 id='char' class=\"noza\">Noza</h1>\
   <div class=\"background\">\
     <p>I'm walking to math class with my roommates and best friends, Mina and Airn. Mina looks like she's going to get some sleep during learning time. She's been doing pretty well, getting straight A's but almost never an A+. I'm starting to think she's trying to get lower grades so she has less attention on herself. Her girlfriend's and mine seems like enough. Really, she's the least attention-hungry succubus I know. She pays attention in class and answers questions while the others rule their classes. Like, seriously, they make up at least half of the student council. They can't even do it honestly! Whenever I walk past one, I feel a prickle of magic drawing my eyes to their skimpy clothes that can't be allowed through the dress code. There's something seriously wrong with our school if they allow students to walk around in tops that would make bikinis blush and have half their butts out of their shorts but pester Airn about her vest.</p>\
@@ -211,9 +211,9 @@ var earth = [
     <p>\"No, just talking slime things.\" She's got a shit-eating grin now.</p>\
     <p>\"And you need to go to <i>her</i> room for that?\"</p>\
     <p>\"Nah, we're going to bond over dinner.\"</p></div>\
-    </div>",
+    </div>`,
 
-  "<h2>2</h2>\
+  `<h2>2</h2>\
   <h1 id='char' class=\"airn\">Airn</h1>\
   <div class=\"background\">\
     <p>Mina walks over to my desk. I sense her without my eyes or ears; a presence combined with a unique, shifting flow of mana marks the person-shaped object behind me as my girlfriend. I've explained it to her before, probably more than once. Focusing on one person's mana for long enough lets you recognize patterns you wouldn't otherwise. It's like staring at someone's face until you memorize it. Plus, monitoring someone's mana is easier (<i>and a lot less weird</i>) than staring them down for hours at a time.</p>\
@@ -256,9 +256,9 @@ var earth = [
     <p>\"I'm sorry,\" I whisper into her ear. \"I'm really sorry. Are you okay?\"</p>\
     <p>She gives me a small smile and breathes, \"I'll be fine.\" Then she stands up, brushes some hair out of my face. \"You're already thinking of how to keep me safe. I love you.\"</p>\
     <p>My train of thought slips off its tracks. All I can say is \"I love you too.\"</p>\
-  </div>",
+  </div>`,
 
-    "<h2>3</h2>\
+    `<h2>3</h2>\
   <h1 id='char' class=\"Mina\">Mina</h1>\
   <div class=\"background\">\
     <p>After Airn's sparring escapade, the rest of our classes pass with little issue. There was a pop quiz in Math that wore Airn down more than usual, but that was it. She's transitioning into a walking corpse faster than in the past. I'm worried, of course, but she's taken it standing up for years. I don't like that she can barely function as a sentient being on Fridays, or that she has to sleep Friday night to Sunday morning to get out of bed after a week of school, or that the bags under her eyes only get lighter instead of disappearing, but I won't downplay her abilities. She could have executed Mrs. Johann or threated the school. Airn is capable of taking out the entire staff of the First Magical Academy of the United States of America. She chooses to sacrifice her own well-being instead of hurting adults she doesn't like. That means something, even if only two people know Airn is an arch mage.</p>\
@@ -414,19 +414,19 @@ var earth = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>"
+  </div>`
 ]
 
 var abyss = [
-  "penis :3"
+  `penis :3`
 ]
 
 var nothing = [
-  "balls >:3c"
+  `balls >:3c`
 ]
 
 var earth_lore = [
-  "<h1>demons</h1>\
+  `<h1>demons</h1>\
   <div class='background'>\
     <p>Demons or daemons [pronounced 'day-mon'] are one of the most common magical species. They are very humanoid, to the point where some can walk undisguised through human territory, though most have horns.</p>\
     <p>They have organs called 'heartstrings' that allow them better control over magic. Heartstrings can be placed into wood and other materials to act as a conduit. This is usually called a wand.</p>\
@@ -442,9 +442,9 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h1>dracodemons</h1>\
+  `<h1>dracodemons</h1>\
   <div class='background'>\
     <p>Dragon demons, or 'dracodemons' or 'dragodaemons', are a subsect of demons aligned with dragons <small>(no shit)</small>. They forge bonds with dragons, hoping to be allowed access to the dragons' enormous stores of mana. Outside of that, having a house-sized, clawed, winged, fire-breathing lizard willing to fight for you is pretty useful.</p>\
     <p>The main difference between normal demons and dracodemons is their love for and knowledge of dragons.</p>\
@@ -460,9 +460,9 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<style>\
+  `<style>\
     #prev, #prev1 {text-align: left; display: inline-block;}\
     #next, #next1 {text-align: right; display: inline-block;}\
     .space {display: flex; justify-content: space-between;}\
@@ -502,9 +502,9 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h1>gods</b></h1>\
+  `<h1>gods</b></h1>\
   <div class='background'>\
     <p>Gods </p>\
     <p></p>\
@@ -520,9 +520,9 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h1>Enchanted Items</h1>\
+  `<h1>Enchanted Items</h1>\
   <div class='background'>\
     <p></p>\
     <p></p>\
@@ -538,12 +538,12 @@ var earth_lore = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
 ]
 
 var airn_and_mina_have_secks = [
-  "<h2>1</h2>\
+  `<h2>1</h2>\
   <h1 id='char' class=\"Airn\">Airn</h1>\
   <div class='background'>\
     <p>Mina crawls over to me, wrapping her arms under mine.</p>\
@@ -603,13 +603,13 @@ var airn_and_mina_have_secks = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
 
 ]
 
 var irene = [
-  "<h1>1</h1>\
+  `<h1>1</h1>\
   <div class='background'>\
     <p>Irene strode through the halls of the United States' First Magical Academy, plotting how they would tame a dragon. All they had been told about dragons was that they had withdrawn from the world millennia ago and hadn't been seen since. They knew for a fact that this was false. They had seen and talked to dragons, heard dragon history recounted very enthusiastically in their brain. Dragons had only left the world after the Cleansing and many had stayed in the magical world. The Beatreaux in particular were very talkative; and they had stayed the friendliest. They allowed people to ride them, and didn't even torch humans on sight! Irene didn't have to worry about that, being a dracodemon and all, but that kind of thing was very kind for dragons. They didn't take the Cleansing very well.</p>\
     <p>Honestly, nobody did. Humans had just started killing non-humans for no reason they could discern. Maybe humans had been wronged one too many times. They <i>are</i> very territorial. Or they had simply decided that the era of magic had come to an end.</p>\
@@ -625,12 +625,12 @@ var irene = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
 ]
 
 var lustwreakers = [
-  "<!DOCTYPE html>\
+  `<!DOCTYPE html>\
 <head>\
   <link rel=\"stylesheet\" href=\"/characters.css\">\
   <link rel=\"icon\" href=\"/icons/lustwreaker.png\">\
@@ -653,7 +653,7 @@ var lustwreakers = [
     </p>\
     <img src=\"lustwreaker.png\">\
   </body>\
-</html>",
+</html>`,
 
 '<!DOCTYPE html>\
 <head>\
@@ -750,19 +750,19 @@ var lustwreakers = [
 
 var program = [
   '(^///^) ',
-  "(o///o) ",
-  "(0///0) ",
-  "(>///<) ",
-  " ( /o///o) ",
-  " ( /0///0) ",
-  "(v///v) ",
+  `(o///o) `,
+  `(0///0) `,
+  `(>///<) `,
+  ` ( /o///o) `,
+  ` ( /0///0) `,
+  `(v///v) `,
   '(-///-) ',
   '(u///u) ',
 ]
 
 var tes = [
-  "(o ^ o) ",
-  "(- ^ -)"
+  `(o ^ o) `,
+  `(- ^ -)`
 ]
 
 var intro = [
@@ -778,7 +778,7 @@ program[8] + '"<a href=\"/driving.html">How Does Gaming Help You Drive?</a>"<br>
 ]
 
 var driving = [
-  "<style> \
+  `<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
@@ -795,11 +795,11 @@ var driving = [
     <p>An example of a HUD is in <i>Minecraft</i>, where your health, hunger, experience, and hotbar are readily viewable. Though a HUD is an important piece of gameplay, it <i>is</i> only a piece of the experience. In <i>Minecraft</i>, you wouldn't have very much fun if you fixate on the HUD. Playing would get frustrating quickly because you would have to shift your focus away from the game itself to check your health and hunger. You have to learn how to stay focused on the world of the game and only glance at your display to update your information.</p>\
     <p>That sentence doesn't have to be changed much to apply to driving: 'You have to learn how to stay focused on the road and only glance at your dashboard to update your information.'</p>\
     <p>Prioritization in this vein isn't the only benefit of gaming on your driving ability. Games such as <i>Minecraft</i>, <i>Hollow Knight</i>, and <i>Terraria</i> teach you to keep your cool when faced with new experiences and to react calmly to threats. In <i>Minecraft</i>, when you see a zombie at night or in a cave, you shouldn't just swing your fist wildly at it. You need to equip your sword or axe and hit it in intervals that will do the full damage of your weapon. In <i>Hollow Knight</i>, if you walk into a boss arena, you swing your nail at the boss and try to dodge its attacks.</p>\
-    </div>"
+    </div>`
 ]
 
 var love_triangle = [
-  "<style> \
+  `<style> \
     @media (prefers-color-scheme: light) { \
     .background, h2, h1 {background-color: white; color: black;} \
     } \
@@ -811,11 +811,11 @@ var love_triangle = [
     </style> \
     <div class=\"background\"> \
     wip \
-    </div>"
+    </div>`
 ]
 
 var mikuteto_jjk = [
-  "<h2>1</h2>\
+  `<h2>1</h2>\
   <h1 id='char' class=\"Miku\">Hatsune</h1>\
   <div class='background'>\
     <p>Hatsune strides down the road, aiming for a particular back street with quite a reputation. It's rumored around these parts that a spirit lives in an alleyway between a warehouse and an apartment complex, silently taking sleeping tenants and killing them inside its lair.</p>\
@@ -836,9 +836,9 @@ var mikuteto_jjk = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h2>2</h2>\
+  `<h2>2</h2>\
   <h1 id='char' class=\"Teto\">Kasane</h1>\
   <div class='background'>\
     <p>Hatsune ghosts her lips over Kasane's neck, close enough that she can <i>feel</i> the kiss without Hatsune actually touching her. Hatsune has spent the last five minutes doing this and Kasane is going to explode. She had tried to lean into Hatsune's mouth a few times when she started, but Hatsune expertly kept her distance.</p>\
@@ -856,11 +856,11 @@ var mikuteto_jjk = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 ]
 
 var terraria_kaisen = [
-  "<link rel='icon' href='/icons/lustwreaker-story.png'>\
+  `<link rel='icon' href='/icons/lustwreaker-story.png'>\
   <h2>Chapter 1</h2>\
   <h1 id='char' class=\"adele\">The Beginning of a Cruel Tale</h1>\
   <div class='background'>\
@@ -883,9 +883,9 @@ var terraria_kaisen = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<link rel='icon' href='/icons/lustwreaker-story.png'>\
+  `<link rel='icon' href='/icons/lustwreaker-story.png'>\
   <h2 class=\"none\">Chapter 2</h2>\
   <h1 id='char' class=\"adele\">A Cruel World 1</h1>\
   <div class='background'>\
@@ -912,9 +912,9 @@ var terraria_kaisen = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h2>chapter number</h2>\
+  `<h2>chapter number</h2>\
   <h1 id='char' class=\"adele\">later fight</h1>\
   <div class='background'>\
     <p>Blackness envelops the two combatants, solidifying into a barrier. The two instinctively attempt to form the hand signs for their respective domains.</p>\
@@ -931,12 +931,12 @@ var terraria_kaisen = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
 ]
 
 var writing_stuff = [
-  "\
+  `\
   <h1 id='char' class=\"none\">Week 1</h1>\
   <div class='background'>\
   <p>\
@@ -995,9 +995,9 @@ She ran her hands over her body, trying to remember how it had been arranged and
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
-  "<h1 class='none'>Week 2</h1>\
+  `<h1 class='none'>Week 2</h1>\
   <div class='background'>\
     <p></p>\
     <p></p>\
@@ -1013,21 +1013,34 @@ She ran her hands over her body, trying to remember how it had been arranged and
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+  </div>`,
 
 ]
 
 var shortstory = [
+  `
+  <h1 style="text-align: center">Content Warning</h1>
+  <div class='background' style="text-align: center">\
+  This story contains but is not limited to:<br><br>
+  <strong>SWEARING, LESBIANS, TRANS WOMEN, and SEXUAL ACTS THAT REQUIRE A SAFEWORD.</strong>
+  </div>`,
 
-  "<h2>1</h2>\
-  <h1 id='char' class=\"Character\">lillian, cool</h1>\
+  `
+  <h1 id='char' class=\"Character\">idk how long this will be</h1>\
   <div class='background'>\
-    <p>Welp, time for another day of purgatory. I have to walk to a prison building and spend the equivalent of a 9-5 work shift doing exactly what other people tell me I have to do, because when I'm an adult I'm going to have to get a job and they're going to spend about fourteen years of my life not teaching me anything about how the world works, or how to get a job, or how to pay my taxes. Instead, they're going to teach me about a shit-ton of math I'm never going to use, a bunch of racist and sexist bastards that died trying to keep women and anyone they didn't like under them, and how to write without a voice.</p>\
+    <p>Welp, time for another day of purgatory. I have to walk to a prison building and spend the equivalent of a 9-5 work shift doing exactly what other people tell me I have to do, because when I'm an adult I'm going to have to get a job and pay rent, so they're going to spend fourteen years of my life not teaching me anything about how the world works, or how to get a job, or how to pay my taxes. Instead, they're going to teach me about a shit-ton of math I'm never going to use, a bunch of racist and sexist bastards that died trying to keep women and anyone they didn't like under them, and how to write essays that cater to whatever bullshit they believe.</p>\
     <p>Sounds fun, right?</p>\
-    <p>I slink through the doors, following a herd of people who feel vaguely the same way I do about this hell. A few people look at my jacket, black and covered in patches and embroidery of many things that aren't exactly school-appropriate. I got an audience with the principal back when I first wore it here, he told me it went against the dress code, I told him to go fuck himself. For some reason, he thought it was okay to try and pull it off my back, so now he has a bad shoulder and one of his wrists causes him pain to move.</p>\
-    <p>Good memories. Anyway, who in their clearly dysfunctional mind thought trying to teach history to a room of teenagers at seven in the morning was even a passable idea? Everything I hear this morning is going to slide out of my brain and out my ears by lunchtime. They should serve coffee in the cafeteria, that would really get us motivated.</p>\
-    <p>The teacher whose name I haven't been able to remember through the amount of homework he assigns drones on about the Founding Fathers and why they were <i>not</i> super sexist, actually. I can only remember, like, Hamilton and Burr and maybe Jefferson. That musical was awesome. Hell of a lot better than Mr. What'shisface.</p>\
-    <p>Anyway, History passes me by half-conscious. </p>\
+    <p>I slink through the doors, following a herd of people who look like they feel vaguely the same way I do about this hell. A few people look at my jacket, black and covered in patches and embroidery of many things that are not at all school-appropriate. I got an audience with the principal back when I first wore it here, he told me it went against the dress code, I told him to go fuck himself. Then, for some reason, he thought it was okay to try and pull my jacket off my back, so now he has a bad shoulder and one of his wrists doesn't work quite right.</p>\
+    <p>Good memories. Anyway, who in their clearly dysfunctional mind thought trying to teach American history to a room of teenagers at seven in the goddamn morning was even a passable idea? Everything I hear for the first half of the day is going to drip out of my ears by lunchtime. They should serve coffee in the cafeteria, that would really wake us up.</p>\
+    <p>The teacher whose name I haven't been able to remember through the amount of homework he assigns drones on about the Founding Fathers and why they were <i>not</i> super bad people, actually. I can only remember, like, Hamilton and Burr and maybe Jefferson. That musical was awesome. Hell of a lot better than Mr. What's-his-face.</p>\
+    <p>History passes me by half-conscious. I'm about two-thirds awake for my next class... Math, right? Math fucking sucks. I don't give a shit about these numbers. Why do I need to know equations for gravity? I'm not an engineer. I'm never gonna to use them. What the hell are these methods going to do for me, make a damn meal?</p>\
+    <p>Finally, I'm wide awake for my third class with Des. The only person I care about in this dump. She walks over to my locker as I'm shoving books into it and pulling different ones out.</p>\
+    <p>"Hey, girl!" Cool black of the void, hovering next to me closer than anyone else gets to. She wraps her arms around me from behind, almost using my body to hold herself up. "God, this place is horrible. Can't wait to write nothing of fucking value today, just like every other writing class!"</p>\
+    <p>"You should roast Mr. Klein! The look on his face would be priceless." Mr. Klein is the most boring man in this school. It's full of boring men, even if you just count the teachers.</p>\
+    <p>"Hmm... That's not a bad idea." She cracks a smile as the wheels in her head turn. "Maybe I should print it and put it on the bulletin board."</p>\
+    <p>"Nobody's going to disagree."</p>\
+    <p>"That's the best part. Even if I write terribly, everyone will agree if it's dunking on Mr. Klein."</p>\
+    <p>We stride to </p>\
     <p></p>\
     <p></p>\
     <p></p>\
@@ -1036,6 +1049,34 @@ var shortstory = [
     <p></p>\
     <p></p>\
     <p></p>\
-  </div>",
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+    <p></p>\
+  </div>`,
 
 ]
