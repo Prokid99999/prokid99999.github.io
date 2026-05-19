@@ -1018,12 +1018,12 @@ She ran her hands over her body, trying to remember how it had been arranged and
 ]
 
 var shortstory = [
-  `
-  <h1 style="text-align: center">Content Warning</h1>
-  <div class='background' style="text-align: center">\
-  This story contains but is not limited to:<br><br>
-  <strong>SWEARING, LESBIANS, TRANS WOMEN, and SEXUAL ACTS THAT REQUIRE A SAFEWORD.</strong>
-  </div>`,
+  // `
+  // <h1 style="text-align: center">Content Warning</h1>
+  // <div class='background' style="text-align: center">\
+  // This story contains but is not limited to:<br><br>
+  // <strong>SWEARING, LESBIANS, TRANS WOMEN, and SEXUAL ACTS THAT REQUIRE A SAFEWORD.</strong>
+  // </div>`,
 
   `
   <h1 id='char' class=\"Character\">idk how long this will be</h1>\
