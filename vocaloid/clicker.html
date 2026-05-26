@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/vocaloid/clicker.css">
-    <link rel="icon" href="/icons/miku.png">
+    <link rel="icon" href="/icons/mikuSelected.png">
     <script src="https://benheroblaw.github.io/script.js"></script>
     <script src="/vocaloid/clicker.js"></script>
 </head>
-<title>Vocaloid Clicker</title>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        init()
-    })
-</script>
+<title>Vocaloid Idle</title>
+<style>
+
+</style>
 <html>
     <body>
-        <div id="loading">loading</div>
+        <div id="loading">loading... <img src="loading.gif"></div>
         <div class="left">
-            <div id="miku"><div id="mikuFace"></div> <div id="mikus" style="text-shadow: 2px 2px 2px #0af">0 Mikus</div></div>
-            <div id="teto"><div id="tetoFace"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
-            <div id="neru"><div id="neruFace"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div>
+            <div class="bakas">
+                <h2>Triple Baka</h2>
+                <div class="miku"><div id="mikuFace"></div> <div id="mikus" style="text-shadow: 2px 2px 2px #0af">0 Mikus</div></div>
+                <div class="teto"><div id="tetoFace"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
+                <div class="neru"><div id="neruFace"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div>
+            </div>
+            <div class="family">
+                <h2>Kagamines</h2>
+                <div class="luka"><div id="lukaFace"></div> <div id="lukas" style="text-shadow: 2px 2px 2px #ff7db5">0 Lukas</div></div>
+                <!-- <div id="teto"><div id="tetoFace"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
+                <div id="neru"><div id="neruFace"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div> -->
+            </div>
         </div>
 
         <div class="center">
             <div id="funfacts"><div id="funtext">fun facts</div></div>
             <h2></h2>
-            <div id="mps">Mikus per second</div>
-            <div id="tps">Tetos per second</div>
-            <div id="nps">Nerus per second</div>
-            <br>
+            <div class="miku" id="mps">Mikus per second</div>
+            <div class="teto" id="tps">Tetos per second</div>
+            <div class="neru" id="nps">Nerus per second</div>
+            <div class="luka" id="lps">Lukas per second</div>
+            <br><br>
             <button id="reset">reset</button>
             <br>
             <pre>Volume: <input type="range" value="0" id="volume-slider"> <span id="volume"></span>%</pre>
-            <pre>Time:   <input type="range" value="0" min="0" max="219" id="playbackBar"></pre>
+            <pre style="display: none;">Time:   <input type="range" value="0" min="0" id="playbackBar"></pre>
 
             <br><div class="images">
                 <img src="background.svg">
@@ -42,8 +50,8 @@
                 <img src="faces/neruSelected.svg">
                 <img src="faces/teto.svg">
                 <img src="faces/tetoSelected.svg">
-                <img src="faces/">
-                <img src="faces/">
+                <img src="faces/luka.svg">
+                <img src="faces/lukaSelected.svg">
                 <img src="faces/">
                 <img src="faces/">
                 <img src="faces/">
@@ -62,17 +70,29 @@
 
         <div class="right">
             <div class="item-container">
-                <div class="item tooltip" id="mikuAuto"><span style="text-shadow: 1px 1px 2px #0af;">Auto-Miku</span>
-                    <span class="tooltiptext">Auto-Miku.<br><i>It's like autocorrect for Vocaloid.</i><br><small>Adds 1 Miku per second</small></span>
+                <div class="item tooltip miku" id="mikuAuto"><span style="text-shadow: 1px 1px 2px #0af;">Auto-Miku</span>
+                    <span class="tooltiptext">Auto-Miku.<br><i>It's like autocorrect for Vocaloid.</i><br><small>Adds 1 Miku per second</small><br>
+                        <img src="faces/mikuSelected.svg"> 25
+                    </span>
                     <div id="amikus"></div><div id="aMikuPrice"></div>
                 </div>
-                <div class="item tooltip" id="tetoAuto"><span style="text-shadow: 1px 1px 2px #f33;">Auto-Teto</span>
-                    <span class="tooltiptext">Auto-Teto.<br><i>It's like autocorrect for SynthV.</i><br><small>Adds 1 Teto per second</small></span>
+                <div class="item tooltip teto" id="tetoAuto"><span style="text-shadow: 1px 1px 2px #f33;">Auto-Teto</span>
+                    <span class="tooltiptext">Auto-Teto.<br><i>It's like autocorrect for SynthV.</i><br><small>Adds 1 Teto per second</small><br>
+                        <img src="faces/tetoSelected.svg"> 25
+                    </span>
                     <div id="atetos"></div><div id="aTetoPrice"></div>
                 </div>
-                <div class="item tooltip" id="neruAuto"><span style="text-shadow: 1px 1px 2px #eeea00;">Auto-Neru</span>
-                    <span class="tooltiptext">Auto-Neru.<br><i>It's like autocorrect for UTAU.</i><br><small>Adds 1 Neru per second</small></span>
+                <div class="item tooltip neru" id="neruAuto"><span style="text-shadow: 1px 1px 2px #eeea00;">Auto-Neru</span>
+                    <span class="tooltiptext">Auto-Neru.<br><i>It's like autocorrect for UTAU.</i><br><small>Adds 1 Neru per second</small><br>
+                        <img src="faces/neruSelected.svg"> 25
+                    </span>
                     <div id="anerus"></div><div id="aNeruPrice"></div>
+                </div>
+                <div class="item tooltip luka" id="lukaAuto"><span style="text-shadow: 1px 1px 2px #ff7db5;">Auto-Luka</span>
+                    <span class="tooltiptext">Auto-Luka.<br><i>It's like autocorrect for VOCALOID.</i><br><small>Adds 1 Luka per second</small><br>
+                        <img src="faces/lukaSelected.svg"> 25
+                    </span>
+                    <div id="alukas"></div><div id="aLukaPrice"></div>
                 </div>
                 <!-- <div class="item tooltip" id="electro">Electrostim
                     <span class="tooltiptext">Electrical stimulation.<br><i>Adds 10 jorks per second and 5 click power</i></span>
