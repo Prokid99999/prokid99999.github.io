@@ -18,6 +18,7 @@
                 document.getElementById('3ds').textContent = '3ds stuff';
             document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
             document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
+            gewi('vocaloid').innerHTML = '<span style="color: #0ff;">Vocaloid Idle</span>'
             }
             else if (thoughts === 'true') {
                 setCookie('thoughts', 'false')
@@ -28,6 +29,7 @@
                 document.getElementById('3ds').textContent = ''
                 document.getElementById('writing').textContent = ''
                 document.getElementById('lore').textContent = ''
+                gewi('vocaloid').textContent = ''
             }
         }
         else if (thoughts === 'true' && toggle === false) {
@@ -38,6 +40,7 @@
             document.getElementById('3ds').innerHTML = '3ds stuff'
             document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
             document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
+            gewi('vocaloid').innerHTML = '<span style="color: #0ff;">Vocaloid Idle</span>'
             }
     }
     window.onload = () => {
@@ -48,8 +51,8 @@
         document.getElementById('tip').innerHTML += random(tips)
     }
     const tips = [
-        '<span oncontextmenu="this.textContent = \'Tip: Try other text!\'; hideContextmenu">Tip: Try right-clicking text for secrets!</span>',
-        'Tip: See if you can reveal hidden text by highlighting a page!',
+        '<span oncontextmenu="this.textContent = \'Not here!\'; hideContextmenu">Try right-clicking text for secrets!</span>',
+        'See if you can reveal hidden text by highlighting a page!',
         'Recommended by 1e+1 out of 10 doctors!',
         'Recommended by 4x10^2 / 2x10^1 out of 10 optometrists!'
         ]
@@ -72,7 +75,8 @@
         <a id="doc" href="https://docs.google.com/document/d/1_JaB4aHlvy7FF0Ulwl8IwmxrR_lsryKxB0W3VUVrp4M/edit?tab=t.b9yrb23q1nt1#heading=h.mjc46dwdun9z" target="_blank" rel="noopener noreferrer"></a><br><br>
 
         <a id="writing" href="writing-stuff"></a><br>
-        <a id="3ds" href="3ds"></a><br>
+        <a id="3ds" href="3ds"></a><br><br>
+        <a id="vocaloid" href="/vocaloid/clicker.html"></a>
     </p>
 </body>
 <!-- <script>

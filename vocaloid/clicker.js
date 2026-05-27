@@ -5,11 +5,17 @@ function vsynthLog (msg='') {
 function mikuLog (msg='') {
   vsynthLog(msg)
 }
+function tetoLog(msg='') {
+  console.log(`\\/O\\/ > ${msg}`)
+}
+function neruLog(msg='') {
+  console.log(`/'O > ${msg}`)
+}
 
 if (checkCookie(path + 'debug') === 'error') {
   setCookie(path + 'debug', false, debug)
 }
-debug = getCookie(path + 'debug')
+let debug = getCookie(path + 'debug')
 if (debug === 'false') {debug = false}
 else if (debug === 'true') {debug = true}
 
@@ -36,16 +42,19 @@ if (checkCookie(path + 'amikus') === 'error') {
   setCookie(path + 'amikus', 0, debug)
 }
 if (checkCookie(path + 'tetos') === 'error') {
-  setCookie(path + 'tetos', 0, debug)
+  setCookie(path + 'tetos', 25, debug)
 }
 if (checkCookie(path + 'atetos') === 'error') {
   setCookie(path + 'atetos', 0, debug)
 }
 if (checkCookie(path + 'nerus') === 'error') {
-  setCookie(path + 'nerus', 0, debug)
+  setCookie(path + 'nerus', 25, debug)
 }
 if (checkCookie(path + 'anerus') === 'error') {
   setCookie(path + 'anerus', 0, debug)
+}
+if (checkCookie(path + 'lukas') === 'error') {
+  setCookie(path + 'lukas', 25, debug)
 }
 if (checkCookie(path + 'alukas') === 'error') {
   setCookie(path + 'alukas', 0, debug)
@@ -80,21 +89,92 @@ function displayAutoVsynth(vsynth='') {
 }
 function buyAutoVsynth(vsynth='') {
   gewi(`${vsynth}Auto`).addEventListener('click', () => {
+    purchaseAutoVsynth(vsynth)
+  })}
+function purchaseAutoVsynth(vsynth='', amount=1) {
     let vsynths = getVsynths(vsynth)
     let avsynths = getAutoVsynth(vsynth)
-    if (vsynths >= 25) {
-      avsynths++
-        setCookie(path + `a${vsynth}s`, avsynths, debug)
-        vsynths -= 25
-        setCookie(path + `${vsynth}s`, vsynths, debug)
-      displayVsynth(vsynth)
-      displayAutoVsynth(vsynth)
-      if (avsynths == 1) {
-        autoVsynth(vsynth)
+    // miku
+    if (vsynth === 'miku') {
+      if (vsynths >= 25*amount) {
+      mikuLog('purchasing miku')
+        avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+        displayVsynth(vsynth)
+        displayAutoVsynth(vsynth)
+        if (avsynths == 1) {
+          autoVsynth(vsynth)
+        }
+        }
       }
-    }
-  })}
-async function autoVsynth (vsynth = '', debug) {
+      // teto
+      else if (vsynth === 'teto') {
+        let mikus = getVsynths('miku')
+        if (vsynths >= 25*amount && mikus >= 2500*amount) {
+        tetoLog('purchasing teto')
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          mikus -= 2500*amount
+          setCookie(path + 'mikus', mikus, debug)
+        displayVsynth(vsynth)
+        displayAutoVsynth(vsynth)
+        if (avsynths == 1) {
+          autoVsynth(vsynth)
+        }
+        }
+      }
+      // neru
+      else if (vsynth === 'neru') {
+        let mikus = getVsynths('miku')
+        let tetos = getVsynths('teto')
+        vsynths = getVsynths(vsynth)
+        if (vsynths >= 25*amount && tetos >= 2500*amount && mikus >= 5000*amount) {
+          neruLog('purchasing neru')
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          tetos -= 2500*amount
+          setCookie(path + 'tetos', tetos, debug)
+          mikus -= 5000*amount
+          setCookie(path + 'mikus', mikus, debug)
+          displayVsynth(vsynth)
+          displayAutoVsynth(vsynth)
+          if (avsynths == 1) {
+            autoVsynth(vsynth)
+          }
+        }
+      }
+      else if (vsynth === 'luka') {
+        let mikus = getVsynths('miku')
+        let tetos = getVsynths('teto')
+        let nerus = getVsynths('neru')
+        vsynths = getVsynths(vsynth)
+        if (vsynths >= 25*amount && nerus >= 2500*amount && tetos >= 5000*amount && mikus >= 10000*amount) {
+          neruLog('purchasing neru')
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          nerus -= 2500*amount
+          setCookie(path + 'nerus', nerus, debug)
+          tetos -= 5000*amount
+          setCookie(path + 'tetos', tetos, debug)
+          mikus -= 10000*amount
+          setCookie(path + 'mikus', mikus, debug)
+          displayVsynth(vsynth)
+          displayAutoVsynth(vsynth)
+          if (avsynths == 1) {
+            autoVsynth(vsynth)
+          }
+        }
+      }
+  }
+async function autoVsynth (vsynth = '') {
   mikuLog(`starting auto${sentenceCase(vsynth)}`)
   let vsynths = getVsynths(vsynth)
   let avsynths = getAutoVsynth(vsynth)
@@ -112,7 +192,7 @@ async function autoVsynth (vsynth = '', debug) {
     else {
       vsynths = getVsynths(vsynth)
       setCookie(path + vsynth + 's', vsynths + Math.round(avsynths / 30), debug)
-    gewi(vsynth + 's').innerHTML = vsynths + sentenceCase(vsynth) + 's'
+    gewi(vsynth + 's').innerHTML = vsynths + " " + sentenceCase(vsynth) + 's'
       await delay(30)
     }
   }
@@ -188,16 +268,30 @@ function init() {
     gewi(`${element}Face`).innerHTML = selectableVsynth(element)
     onclickVsynth(element)
     buyAutoVsynth(element)
-    if (getCookie(path + `unlocked${sentenceCase(element)}`) === 'done') {
-      qSelA(`.${element}`).forEach(element => {element.style.display = 'inline-block'})
-      vsynthFacts.push(
-        `Kasane Teto<br>${selectedVsynth('teto', '3rem')}`,
-          'Kasane Teto\'s gender is "Chimera".',
-          `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
-          `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
-          `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, crucified by fanbase. More at 7.`
-      )
-    }
+  }
+
+  if (getCookie(path + 'mikuNews') === 'done') {
+    mikuFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+  }
+
+    facts = randomNoRepeats(vsynthFacts)
+  if (getCookie(path + 'unlockedTeto') === 'done') {
+    qSelA('.teto').forEach(element => {element.style.display = 'block'})
+    tetoFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+  }
+  if (getCookie(path + 'unlockedNeru') === 'done') {
+    qSelA('.neru').forEach(element => {element.style.display = 'block'})
+    neruFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+  }
+  if (getCookie(path + 'unlockedLuka') === 'done') {
+    qSelA('.luka').forEach(element => {element.style.display = 'block'})
+    qSelA('.family').forEach(element => {element.style.display = 'block'})
+    lukaFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+    qSelA('.family').forEach(element => {element.style.display = 'block'})
   }
 
   gewi('reset').addEventListener('click', () => {
@@ -205,18 +299,61 @@ function init() {
       for (let index = 0; index < allVsynths.length; index++) {
         const element = allVsynths[index];
         setCookie(path + `a${element}s`, 0, debug)
-        setCookie(path + `${element}s`, 0, debug)
-        setCookie(path + `unlockedTeto`, false, debug)
+        setCookie(path + `${element}s`, 25, debug)
+        setCookie(path + `unlocked${sentenceCase(element)}`, false, debug)
 
         displayVsynth(element)
         qSelA(`.${element}`).forEach(element => {element.style.display = 'none'})
       }
-    qSelA('.miku').forEach(element => {element.style.display = 'inline-block'})
+    setCookie(path+'mikus', 0)
+    qSelA('.miku').forEach(element => {element.style.display = 'block'})
     window.location.reload(true)
   }
   })
-  funFacts(vsynthFacts)
 
+  window.onkeydown = function (event) {
+    if (event.key === 'ArrowRight') {
+      // right arrow
+    }
+    else if (event.key === 'ArrowLeft') {
+      // left arrow
+    }
+    else if (event.key === 'ArrowUp') {
+    // Up Arrow pressed
+    }
+    else if (event.key === 'ArrowDown') {
+      // Down Arrow pressed
+    }
+    else if (event.key === 'e') {
+      console.log('e')
+    }
+    else if (event.key === 'm') {
+      purchaseAutoVsynth('miku')
+    }
+    else if (event.key === 'M') {
+      purchaseAutoVsynth('miku', 10)
+    }
+    else if (event.key === 't') {
+      purchaseAutoVsynth('teto')
+    }
+    else if (event.key === 'T') {
+      purchaseAutoVsynth('teto', 10)
+    }
+    else if (event.key === 'n') {
+      purchaseAutoVsynth('neru')
+    }
+    else if (event.key === 'N') {
+      purchaseAutoVsynth('neru', 10)
+    }
+    else if (event.key === 'l') {
+      purchaseAutoVsynth('luka')
+    }
+    else if (event.key === 'L') {
+      purchaseAutoVsynth('luka', 10)
+    }
+  }
+
+  funFacts(vsynthFacts)
   sing()
   tick()
 
@@ -249,12 +386,12 @@ function init() {
   gewi('volume-slider').addEventListener('change', function(e) {
     setCookie(path + 'volume', e.currentTarget.value, debug)
   })
-  gewi('playbackBar').input = function() {
-    gewi('music').currentTime = gewi('playbackBar').value
-  }
+  // gewi('playbackBar').input = function() {
+  //   gewi('music').currentTime = gewi('playbackBar').value
+  // }
   gewi('music').onloadedmetadata = (e) => {
     gewi('playbackBar').max = Math.round(e.currentTarget.duration)
-    e.currentTime = getCookie(path + 'musicTime')
+    gewi('music').currentTime = getCookie(path + 'musicTime')
   }
 
   setInterval(() => {
@@ -359,34 +496,43 @@ const tick = async () => {
     displayVsynth(element)
     displayAutoVsynth(element)
   }
-    amikus = Number(getCookie(path + 'amikus'))
-    if (amikus === 20) {setCookie(path + 'unlockedTeto', true), debug}
+    let amikus = getAutoVsynth('miku')
+    if (amikus >= 1 && getCookie(path + 'mikuNews') != 'done' && getCookie(path + 'mikuNews') != 'true') {setCookie(path + 'mikuNews', true), true}
+    if (getCookie('mikuNews') === 'true') {
+      mikuFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
+      setCookie(path + 'mikuNews', 'done')
+    }
+
+    if (amikus >= 100 && getCookie(path + 'unlockedTeto') != 'done' && getCookie(path + 'unlockedTeto') != 'true') {setCookie(path + 'unlockedTeto', true), true}
     if (getCookie(path + 'unlockedTeto') === 'true') {
-      qSelA('.teto').forEach(element => {element.style.display = 'inline-block'})
-      vsynthFacts.push (
-        `Kasane Teto<br>${selectedVsynth('teto', '3rem')}`,
-          'Kasane Teto\'s gender is "Chimera".',
-          `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
-          `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
-          `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, crucified by fanbase. More at 7.`,
-      )
+      qSelA('.teto').forEach(element => {element.style.display = 'block'})
+      tetoFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedTeto', 'done', debug)
     }
-    if (atetos === 10) {setCookie(path + 'unlockedNeru', true), debug}
+
+    let atetos = getAutoVsynth('teto')
+    if (atetos >= 200 && getCookie(path + 'unlockedNeru') != 'done' && getCookie(path + 'unlockedNeru') != 'true') {setCookie(path + 'unlockedNeru', true), true}
     if (getCookie(path + 'unlockedNeru') === 'true') {
-      qSelA('.neru').forEach(element => {element.style.display = 'inline-block'})
-      vsynthFacts.push (
-        `Akita Neru<br>${selectedVsynth('neru', '3rem')}`,
-          '9 hour makeout session with the Baka Polycule<sup>TM</sup>',
-          `Hatsune Miku, Akita Neru and Kasane Teto are often portrayed as being in a romantic relationship, forming the Baka Polycule<sup>TM</sup>.`,
-          'What if each member of the Baka Polycule<sup>TM</sup> painted their thumbnails the colors of the other two? For example, Miku would have one thumbnail red and the other yellow', // Teto would have one blue and one yellow, Neru, one blue one red',
-      )
+      qSelA('.neru').forEach(element => {element.style.display = 'block'})
+      neruFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedNeru', 'done', debug)
     }
 
-    facts = randomNoRepeats(vsynthFacts)
+    let anerus = getAutoVsynth('neru')
+    if (anerus >= 300 && getCookie(path + 'unlockedLuka') != 'done' && getCookie(path + 'unlockedLuka') != 'true') {setCookie(path + 'unlockedLuka', true), true}
+    if (getCookie(path + 'unlockedLuka') === 'true') {
+      qSelA('.luka').forEach(element => {element.style.display = 'block'})
+      qSelA('.family').forEach(element => {element.style.display = 'block'})
+      lukaFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
+
+      setCookie(path + 'unlockedLuka', 'done', debug)
+    }
 
     // end
     await delay(100)
@@ -398,11 +544,40 @@ function sentenceCase(string) {
 }
 
 vsynthFacts = [
+  "The term 'Vocaloid' is often used to refer to the general idea of voice synthesizers, rather than the specific software named VOCALOID.",
+    "There are at least three mainstream vocal synthesizers: VOCALOID, UTAU, and SynthV.",
+    // "Every Vocaloid is a vocal synthesizer that comes with a character for recognizability.",
+    "Vocal synthesizers are like any other musical synthesizer, but with words and an anime girl.",
+
+]
+let mikuFacts = [
   `Hatsune Miku<br>${selectedVsynth('miku', '3rem')}`,
     'Every Miku is canon, which means Miku is canonically super gay',
-    `The original release of the Hatsune Miku voicebank was 19 years ago, in 2007.`,
-    "The term 'Vocaloid' is often used to refer to the general idea of voice synthesizers, rather than the specific software named 'VOCALOID'.",
+    `The release of the Hatsune Miku v1 voicebank was 19 years ago, in 2007.`,
+    'Violent dispute over whether world-famous singer Hatsune Miku is "a top or a bottom" continues to rage. 43 hospitalized, 12 dead.'
 
+]
+let tetoFacts = [
+  `Kasane Teto<br>${selectedVsynth('teto', '3rem')}`,
+    'Kasane Teto\'s gender is "Chimera".',
+    `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
+    `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
+    `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, tied up and paraded through city by fanbase. More at 7.`,
+    `Twitter claims Kasane Teto "cannot be 'transgender'", reasoning ranges from "that is not what the creator said" to "'Transgender' people are mentally ill and should be euthanized".`,
+]
+let neruFacts = [
+  `Akita Neru<br>${selectedVsynth('neru', '3rem')}`,
+    '9 hour makeout session with the Baka Polycule<sup>TM</sup>',
+    `Hatsune Miku, Akita Neru and Kasane Teto are often portrayed as being in a romantic relationship, forming the Baka Polycule<sup>TM</sup>.`,
+    'What if each member of the Baka Polycule<sup>TM</sup> painted their thumbnails the colors of the other two? For example, Miku would have one thumbnail red and the other yellow...', // Teto would have one blue and one yellow, Neru, one blue one red',
+    `Twitter users continue to fight among themselves over the gender of popular singer Kasane Teto, death threats number more than a thousand.`,
+    `<strong>Breaking News:</strong> A "Vocaloid fan" admitted to writing a "detransition" fan fiction featuring SynthV idol Kasane Teto, they were promptly beaten senseless, tied up, and paraded through the city to be burned on a cross. Given context, witnesses said: "Deserved."`,
+]
+let lukaFacts = [
+  `Megurine Luka<br>${selectedVsynth('luka', '3rem')}`,
+    `<b>Shattering News:</b> Many people would let Luka step on them.<br>The editors of the Shattering News leave no comment.`,
+    `Luka is the first adult character made for Vocaloid.`,
+    `Luka lacks a V3 voicebank, only having V2 and V4.`,
 ]
   "",
   ``,
@@ -412,7 +587,11 @@ vsynthFacts = [
 // vsynthFacts = list[Math.floor(Math.random() * vsynthFacts.length)]
 let facts = randomNoRepeats(vsynthFacts)
 
+function unlockVsynth(vsynth='') {
+  setCookie(path + `unlocked${sentenceCase(vsynth)}`, true)
+}
 
+// event listeners
 document.addEventListener('DOMContentLoaded', () => {
   init()
 })

@@ -42,6 +42,7 @@ div.center {
     position: fixed;
     top: 0;
     color: black;
+    text-shadow: 1px 1px 2px #aaa;
 }
 
 div.right {
@@ -71,6 +72,9 @@ div.right {
     position: relative;
     bottom: 1.75rem
 }
+.faces {
+    cursor: pointer;
+}
 
 .item-container {
     /* position: static; */
@@ -92,7 +96,7 @@ div.right {
     user-select: none;
     width: 98%;
     margin: 0%;
-    border: 0.45rem solid #ff0;
+    border: 0.45rem inset #cb0;
     border-right: none;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -103,12 +107,22 @@ div.right {
     color: white;
     text-shadow: 2px 0px 2.5px black;
 }
-
+.item:active {
+    border: 0.45rem inset #fff;
+    background-color: #999;
+    color: white;
+}
+.item:hover {
+    border: 0.45rem inset #ff0;
+    background-color: #aaa;
+    color: #777;
+}
 
 .tooltip {
     position: sticky;
     display: block;
     z-index: 1;
+
 }
 
 /* Tooltip text */
@@ -175,9 +189,11 @@ small {
     /* max-height: 5rem; */
     overflow: none;
     padding: 1rem;
-    /* padding-top: 0.5rem; */
+    padding-top: 0.5rem;
+    /* padding-bottom: ; */
     text-align: center;
-    border: solid gray 4px;
+    /* align-items: center; */
+    border: outset gray 4px;
     background-image: url('/vocaloid/fun-facts.svg');
     background-color: #fafad2;
     /* background-repeat: no-repeat; */
@@ -189,7 +205,8 @@ small {
 }
 
 #funtext {
-    user-select: text;
+    /* user-select: text; */
+    /* display: flex; */
     cursor: pointer;
 }
 
@@ -222,6 +239,13 @@ pre {
     font-size: 1rem;
 }
 
-.teto, .neru, .luka {
+.teto, .neru, .luka, .rin, .len, .family {
     display: none;
+    /* width: auto; */
+}
+
+h2 {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: large;
 }

@@ -1,11 +1,14 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-  .then(function(registration) {
-    console.log(tes[0] + 'Service Worker registered with scope:', registration.scope);
-  }).catch(function(error) {
-    console.log(tes[0] + 'Service Worker registration failed:', error);
-  });
+function serviceWorker(output) {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(registration) {
+      if (output) {console.log(tes[0] + 'Service Worker registered with scope:', registration.scope);}
+    }).catch(function(error) {
+      if (output) {console.log(tes[0] + 'Service Worker registration failed:', error);}
+    });
+  }
 }
+let output = false
 
 var program = [
     '(^///^) ',
@@ -310,7 +313,7 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
 
 var startState = 'not started'
 
-function startStory(content=['wtf'], format=false, extraScript='', doCookies=true, doX=false, doY=true, doOutput=true) {
+function startStory(content=['wtf'], format=false, doOutput=false, extraScript='', doCookies=true, doX=false, doY=true) {
   if (doOutput) {tesLog('starting story...')}
   var s = document.createElement('script');
   s.id = 'text'
@@ -349,7 +352,7 @@ function startStory(content=['wtf'], format=false, extraScript='', doCookies=tru
             <div style="text-align: left"><button id="prev1">&lt; Previous</button></div>\
             <div id="center1" style="text-align: center;"></div>\
             <div style="text-align: right;"><button id="next1">Next &gt;</button></div>\
-        </div><br><br>'}
+        </div><br>'}
     displayStory(content, doCookies, extraScript, doX, doY, doOutput)
   }
 }
@@ -359,7 +362,7 @@ function StartThoughts(content = ['wtf']) {
   getScript('/thoughts.js')
   // content.reverse()
   var showSlide = (n) => {
-    gewi('story').innerHTML += '<div class="background">' + content[n] + '</div><br><br>'
+    gewi('story').innerHTML += '<div class="background">' + content[n] + '</div><br>'
   }
 
   gewi('story').innerHTML = ""
@@ -615,3 +618,7 @@ function qSel(params='') {
 function qSelA(params='') {
   return document.querySelectorAll(params)
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  serviceWorker(output)
+})

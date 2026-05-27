@@ -15,26 +15,33 @@
         <div class="left">
             <div class="bakas">
                 <h2>Triple Baka</h2>
-                <div class="miku"><div id="mikuFace"></div> <div id="mikus" style="text-shadow: 2px 2px 2px #0af">0 Mikus</div></div>
-                <div class="teto"><div id="tetoFace"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
-                <div class="neru"><div id="neruFace"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div>
+                <div class="miku"><div id="mikuFace" class="faces"></div> <div id="mikus" style="text-shadow: 2px 2px 2px #0af">0 Mikus</div></div>
+                <div class="teto"><div id="tetoFace" class="faces"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
+                <div class="neru"><div id="neruFace" class="faces"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div>
             </div>
             <div class="family">
-                <h2>Kagamines</h2>
-                <div class="luka"><div id="lukaFace"></div> <div id="lukas" style="text-shadow: 2px 2px 2px #ff7db5">0 Lukas</div></div>
-                <!-- <div id="teto"><div id="tetoFace"></div> <div id="tetos" style="text-shadow: 2px 2px 2px #f00">0 Tetos</div></div>
-                <div id="neru"><div id="neruFace"></div> <div id="nerus" style="text-shadow: 2px 2px 2px #ea0">0 Nerus</div></div> -->
+                <h2>The Fam</h2>
+                <div class="luka"><div id="lukaFace" class="faces"></div> <div id="lukas" style="text-shadow: 2px 2px 2px #ff7db5">0 Lukas</div></div>
+                <div class="rin"><div id="rinFace" class="face"></div> <div id="rins" style="text-shadow: 2px 2px 2px #fe0">0 Rins</div></div>
+                <div class="len"><div id="lenFace" class="face"></div> <div id="lens" style="text-shadow: 2px 2px 2px #fe0">0 Lens</div></div>
             </div>
         </div>
 
         <div class="center">
             <div id="funfacts"><div id="funtext">fun facts</div></div>
             <h2></h2>
+            <h2>Triple Baka</h2>
             <div class="miku" id="mps">Mikus per second</div>
             <div class="teto" id="tps">Tetos per second</div>
             <div class="neru" id="nps">Nerus per second</div>
-            <div class="luka" id="lps">Lukas per second</div>
-            <br><br>
+            <div class="family">
+                <h2>The Fam</h2>
+                <div class="luka" id="lps">Lukas per second</div>
+                <div class="rin" id="lps">Rins per second</div>
+                <div class="len" id="lps">Lens per second</div>
+            </div>
+            <!-- <br> -->
+            <br>
             <button id="reset">reset</button>
             <br>
             <pre>Volume: <input type="range" value="0" id="volume-slider"> <span id="volume"></span>%</pre>
@@ -70,33 +77,42 @@
 
         <div class="right">
             <div class="item-container">
-                <div class="item tooltip miku" id="mikuAuto"><span style="text-shadow: 1px 1px 2px #0af;">Auto-Miku</span>
-                    <span class="tooltiptext">Auto-Miku.<br><i>It's like autocorrect for Vocaloid.</i><br><small>Adds 1 Miku per second</small><br>
+                <div class="item tooltip miku" id="mikuAuto"><span style="text-shadow: 1px 1px 2px #0af;"><img src="faces/mikuSelected.svg" style="width: 1rem;"> Auto-Miku</span>
+                    <span class="tooltiptext">Auto-Miku.<br><i>It's like autocorrect for Vocaloids.</i><br><small>+1 Miku per second</small><br>
                         <img src="faces/mikuSelected.svg"> 25
                     </span>
                     <div id="amikus"></div><div id="aMikuPrice"></div>
                 </div>
-                <div class="item tooltip teto" id="tetoAuto"><span style="text-shadow: 1px 1px 2px #f33;">Auto-Teto</span>
-                    <span class="tooltiptext">Auto-Teto.<br><i>It's like autocorrect for SynthV.</i><br><small>Adds 1 Teto per second</small><br>
-                        <img src="faces/tetoSelected.svg"> 25
+                <div class="item tooltip teto" id="tetoAuto"><span style="text-shadow: 1px 1px 2px #f33;"><img src="faces/tetoSelected.svg" style="width: 1rem;"> Auto-Teto</span>
+                    <span class="tooltiptext">Auto-Teto.<br><i>It's like autocorrect for SynthV.</i><br><small>+1 Teto per second</small><br>
+                        <img src="faces/tetoSelected.svg"> 25 <img src="faces/mikuSelected.svg"> 2500
                     </span>
                     <div id="atetos"></div><div id="aTetoPrice"></div>
                 </div>
-                <div class="item tooltip neru" id="neruAuto"><span style="text-shadow: 1px 1px 2px #eeea00;">Auto-Neru</span>
-                    <span class="tooltiptext">Auto-Neru.<br><i>It's like autocorrect for UTAU.</i><br><small>Adds 1 Neru per second</small><br>
-                        <img src="faces/neruSelected.svg"> 25
+                <div class="item tooltip neru" id="neruAuto"><span style="text-shadow: 1px 1px 2px #eeea00;"><img src="faces/neruSelected.svg" style="width: 1rem;"> Auto-Neru</span>
+                    <span class="tooltiptext">Auto-Neru.<br><i>It's like autocorrect for UTAU.</i><br><small>+1 Neru per second</small><br>
+                        <img src="faces/neruSelected.svg"> 25 <img src="faces/tetoSelected.svg"> 2500 <img src="faces/mikuSelected.svg"> 5000
                     </span>
                     <div id="anerus"></div><div id="aNeruPrice"></div>
                 </div>
-                <div class="item tooltip luka" id="lukaAuto"><span style="text-shadow: 1px 1px 2px #ff7db5;">Auto-Luka</span>
-                    <span class="tooltiptext">Auto-Luka.<br><i>It's like autocorrect for VOCALOID.</i><br><small>Adds 1 Luka per second</small><br>
-                        <img src="faces/lukaSelected.svg"> 25
+                <div class="item tooltip luka" id="lukaAuto"><span style="text-shadow: 1px 1px 2px #ff7db5;"><img src="faces/lukaSelected.svg" style="width: 1rem;"> Auto-Luka</span>
+                    <span class="tooltiptext">Auto-Luka.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Luka per second</small><br>
+                        <img src="faces/lukaSelected.svg"> 25 <img src="faces/neruSelected.svg"> 2500 <img src="faces/tetoSelected.svg"> 5000 <img src="faces/mikuSelected.svg"> 10,000
                     </span>
-                    <div id="alukas"></div><div id="aLukaPrice"></div>
+                    <div id="arins"></div><div id="aRinPrice"></div>
                 </div>
-                <!-- <div class="item tooltip" id="electro">Electrostim
-                    <span class="tooltiptext">Electrical stimulation.<br><i>Adds 10 jorks per second and 5 click power</i></span>
-                    <div id="electros"></div><div id="ePrice"></div></div> -->
+                <div class="item tooltip rin" id="rinAuto"><span style="text-shadow: 1px 1px 2px #fe0;"><img src="faces/rinSelected.svg" style="width: 1rem;"> Auto-Rin</span>
+                    <span class="tooltiptext">Auto-Rin.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Rin per second</small><br>
+                        <img src="faces/rinSelected.svg"> 25 <img src="faces/lukaSelected.svg"> 2500 <img src="faces/neruSelected.svg"> 5000 <img src="faces/tetoSelected.svg"> 10,000 <img src="faces/mikuSelected.svg"> 10,000
+                    </span>
+                    <div id="arins"></div><div id="aRinPrice"></div>
+                </div>
+                <div class="item tooltip len" id="lenAuto"><span style="text-shadow: 1px 1px 2px #fe0;"><img src="faces/lenSelected.svg" style="width: 1rem;"> Auto-Len</span>
+                    <span class="tooltiptext">Auto-Len.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Len per second</small><br>
+                        <img src="faces/lukaSelected.svg"> 25 <img src="faces/neruSelected.svg"> 2500 <img src="faces/tetoSelected.svg"> 5000 <img src="faces/mikuSelected.svg"> 10,000
+                    </span>
+                    <div id="alens"></div><div id="aLenPrice"></div>
+                </div>
             </div>
         </div>
 
