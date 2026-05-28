@@ -15,25 +15,25 @@ function neruLog(msg='') {
 if (checkCookie(path + 'debug') === 'error') {
   setCookie(path + 'debug', false, debug)
 }
-let debug = getCookie(path + 'debug')
-if (debug === 'false') {debug = false}
-else if (debug === 'true') {debug = true}
+let debug = false
+if (getCookie(path+'debug') === 'true') {debug = true}
+if (getCookie(path+'debug') === 'false') {debug = false}
 
+if (checkCookie(path + 'unlockedMiku') === 'error') {
+  setCookie(path + 'unlockedMiku', false, debug)
+}
 if (checkCookie(path + 'unlockedTeto') === 'error') {
   setCookie(path + 'unlockedTeto', false, debug)
 }
-
-let unlockedTeto = getCookie(path + 'unlockedTeto')
-if (unlockedTeto === 'false') {unlockedTeto = false}
-else if (unlockedTeto === 'true') {unlockedTeto = true}
-
 if (checkCookie(path + 'unlockedNeru') === 'error') {
   setCookie(path + 'unlockedNeru', false, debug)
 }
-
-let unlockedNeru = getCookie(path + 'unlockedNeru')
-if (unlockedNeru === 'false') {unlockedNeru = false}
-else if (unlockedNeru === 'true') {unlockedNeru = true}
+if (checkCookie(path + 'unlockedLuka') === 'error') {
+  setCookie(path + 'unlockedLuka', false, debug)
+}
+if (checkCookie(path + 'unlockedKagamines') === 'error') {
+  setCookie(path + 'unlockedKagamines', false, debug)
+}
 
 if (checkCookie(path + 'mikus') === 'error') {
   setCookie(path + 'mikus', 0, debug)
@@ -64,15 +64,6 @@ if (checkCookie(path + 'volume') === 'error') {
 }
 
 // functions
-// function getMikus() {
-//   return Number(getCookie(path + 'mikus'))
-// }
-// function getTetos() {
-//   return Number(getCookie(path + 'tetos'))
-// }
-// function getNerus() {
-//   return Number(getCookie(path + 'nerus'))
-// }
 function getVsynths(vsynth='') {
   return Number(getCookie(path + vsynth + 's'))
 }
@@ -80,12 +71,17 @@ function getAutoVsynth(vsynth='') {
   return Number(getCookie(path + 'a' + vsynth + 's'))
 }
 function displayVsynth(vsynth='') {
-  let vsynths = getCookie(path + vsynth + 's')
-  gewi(`${vsynth}s`).innerHTML = `${vsynths} ${sentenceCase(vsynth)}s`
+  let vsynths = Number(getCookie(path + vsynth + 's'))
+  if (vsynths >= 1000) {
+    gewi(`${vsynth}s`).innerHTML = `${vsynths.toExponential(2)} ${sentenceCase(vsynth)}s`
+  }
+  else {
+    gewi(`${vsynth}s`).innerHTML = `${vsynths} ${sentenceCase(vsynth)}s`
+  }
 }
 function displayAutoVsynth(vsynth='') {
   let avsynths = getAutoVsynth(vsynth)
-  gewi(`${vsynth[0]}ps`).innerHTML = avsynths + ` ${sentenceCase(vsynth)}s per second.`
+  gewi(`${vsynth}ps`).innerHTML = avsynths + ` ${sentenceCase(vsynth)}s per second.`
 }
 function buyAutoVsynth(vsynth='') {
   gewi(`${vsynth}Auto`).addEventListener('click', () => {
@@ -173,6 +169,33 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
           }
         }
       }
+      else if (vsynth === 'rin' || vsynth === 'len') {
+        let mikus = getVsynths('miku')
+        let tetos = getVsynths('teto')
+        let nerus = getVsynths('neru')
+        let lukas = getVsynths('luka')
+        vsynths = getVsynths(vsynth)
+        if (vsynths >= 25*amount && lukas >= 2500 && nerus >= 5000*amount && tetos >= 10000*amount && mikus >= 10000*amount) {
+          neruLog('purchasing neru')
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          lukas -= 2500*amount
+          setCookie(path + 'lukas', lukas, debug)
+          nerus -= 5000*amount
+          setCookie(path + 'nerus', nerus, debug)
+          tetos -= 10000*amount
+          setCookie(path + 'tetos', tetos, debug)
+          mikus -= 10000*amount
+          setCookie(path + 'mikus', mikus, debug)
+          displayVsynth(vsynth)
+          displayAutoVsynth(vsynth)
+          if (avsynths == 1) {
+            autoVsynth(vsynth)
+          }
+        }
+      }
   }
 async function autoVsynth (vsynth = '') {
   mikuLog(`starting auto${sentenceCase(vsynth)}`)
@@ -186,13 +209,13 @@ async function autoVsynth (vsynth = '') {
     if (avsynths < 1000) {
       vsynths = getVsynths(vsynth)
       setCookie(path + vsynth + 's', vsynths +1, debug)
-    gewi(vsynth + 's').innerHTML = vsynths + " " + sentenceCase(vsynth) + 's'
+    displayVsynth(vsynth)
       await delay(1000 / avsynths)
     }
     else {
       vsynths = getVsynths(vsynth)
       setCookie(path + vsynth + 's', vsynths + Math.round(avsynths / 30), debug)
-    gewi(vsynth + 's').innerHTML = vsynths + " " + sentenceCase(vsynth) + 's'
+    displayVsynth(vsynth)
       await delay(30)
     }
   }
@@ -204,12 +227,13 @@ function selectedVsynth(vsynth='', size='4rem') {
   return `<img src="./faces/${vsynth}Selected.svg" style="border: none; width: ${size};">`
 }
 function onclickVsynth(vsynth) {
-  gewi(`${vsynth}Face`).onclick = () => {
+  qSelA(`.${vsynth}Face`).forEach(element => {
+    element.onclick = () => {
     let vsynths = getCookie(path + `${vsynth}s`)
     vsynths++
     setCookie(path + `${vsynth}s`, vsynths, debug)
     displayVsynth(vsynth)
-  }
+  }})
 }
 
 function funFacts(list=[`1`, `2`, `3`]) {
@@ -252,7 +276,18 @@ let allVsynths = [
   'miku',
   'teto',
   'neru',
-  'luka'
+  'luka',
+  'rin',
+  'len'
+]
+let skins = [
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
 ]
 
 // init
@@ -262,15 +297,17 @@ function init() {
   gewi('nerus').innerHTML = ' ' + nerus + ' Nerus'
 
   for (let index = 0; index < allVsynths.length; index++) {
-    const element = allVsynths[index];
+    const vsynth = allVsynths[index];
+    const skin = skins[index];
 
-    displayVsynth(element)
-    gewi(`${element}Face`).innerHTML = selectableVsynth(element)
-    onclickVsynth(element)
-    buyAutoVsynth(element)
+    displayVsynth(vsynth)
+    qSelA(`.${vsynth}Face`).forEach(element => {element.innerHTML = selectableVsynth(skin+vsynth)})
+    gewi(`${vsynth}Face`).innerHTML = selectableVsynth(skin+vsynth, '1rem')
+    onclickVsynth(vsynth)
+    buyAutoVsynth(vsynth)
   }
 
-  if (getCookie(path + 'mikuNews') === 'done') {
+  if (getCookie(path + 'unlockedMiku') === 'done') {
     mikuFacts.forEach(element => {vsynthFacts.push(element)})
     facts = randomNoRepeats(vsynthFacts)
   }
@@ -291,8 +328,13 @@ function init() {
     qSelA('.family').forEach(element => {element.style.display = 'block'})
     lukaFacts.forEach(element => {vsynthFacts.push(element)})
     facts = randomNoRepeats(vsynthFacts)
-    qSelA('.family').forEach(element => {element.style.display = 'block'})
+    // qSelA('.family').forEach(element => {element.style.display = 'block'})
   }
+  if (getCookie(path+'unlockedKagamines') === 'done') {
+    qSelA('.rin').forEach(element => {element.style.display = 'block'})
+    qSelA('.len').forEach(element => {element.style.display = 'block'})
+    kagamineFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)}
 
   gewi('reset').addEventListener('click', () => {
     if (window.confirm('Do you really want to reset?')) {
@@ -327,29 +369,41 @@ function init() {
     else if (event.key === 'e') {
       console.log('e')
     }
-    else if (event.key === 'm') {
+    else if (event.key === '1') {
       purchaseAutoVsynth('miku')
     }
-    else if (event.key === 'M') {
+    else if (event.key === '!') {
       purchaseAutoVsynth('miku', 10)
     }
-    else if (event.key === 't') {
+    else if (event.key === '2') {
       purchaseAutoVsynth('teto')
     }
-    else if (event.key === 'T') {
+    else if (event.key === '@') {
       purchaseAutoVsynth('teto', 10)
     }
-    else if (event.key === 'n') {
+    else if (event.key === '3') {
       purchaseAutoVsynth('neru')
     }
-    else if (event.key === 'N') {
+    else if (event.key === '#') {
       purchaseAutoVsynth('neru', 10)
     }
-    else if (event.key === 'l') {
+    else if (event.key === '4') {
       purchaseAutoVsynth('luka')
     }
-    else if (event.key === 'L') {
+    else if (event.key === '$') {
       purchaseAutoVsynth('luka', 10)
+    }
+    else if (event.key === '5') {
+      purchaseAutoVsynth('rin')
+    }
+    else if (event.key === '%') {
+      purchaseAutoVsynth('rin', 10)
+    }
+    else if (event.key === '6') {
+      purchaseAutoVsynth('len')
+    }
+    else if (event.key === '^') {
+      purchaseAutoVsynth('len', 10)
     }
   }
 
@@ -358,8 +412,8 @@ function init() {
   tick()
 
   window.onload = () => {
-    gewi('loading').remove()
     qSel('.images').remove()
+    setTimeout( () => {gewi('loading').remove()}, 500 )
   }
 
   const music = document.createElement('audio')
@@ -497,14 +551,14 @@ const tick = async () => {
     displayAutoVsynth(element)
   }
     let amikus = getAutoVsynth('miku')
-    if (amikus >= 1 && getCookie(path + 'mikuNews') != 'done' && getCookie(path + 'mikuNews') != 'true') {setCookie(path + 'mikuNews', true), true}
-    if (getCookie('mikuNews') === 'true') {
+    if (amikus >= 1 && getCookie(path + 'unlockedMiku') != 'done' && getCookie(path + 'unlockedMiku') != 'true') {setCookie(path + 'unlockedMiku', true), true}
+    if (getCookie(path + 'unlockedMiku') === 'true') {
+      setCookie(path + 'unlockedMiku', 'done')
       mikuFacts.forEach(element => {vsynthFacts.push(element)})
       facts = randomNoRepeats(vsynthFacts)
-      setCookie(path + 'mikuNews', 'done')
     }
 
-    if (amikus >= 100 && getCookie(path + 'unlockedTeto') != 'done' && getCookie(path + 'unlockedTeto') != 'true') {setCookie(path + 'unlockedTeto', true), true}
+    if (amikus >= 1000 && getCookie(path + 'unlockedTeto') != 'done' && getCookie(path + 'unlockedTeto') != 'true') {setCookie(path + 'unlockedTeto', true), true}
     if (getCookie(path + 'unlockedTeto') === 'true') {
       qSelA('.teto').forEach(element => {element.style.display = 'block'})
       tetoFacts.forEach(element => {vsynthFacts.push(element)})
@@ -514,7 +568,7 @@ const tick = async () => {
     }
 
     let atetos = getAutoVsynth('teto')
-    if (atetos >= 200 && getCookie(path + 'unlockedNeru') != 'done' && getCookie(path + 'unlockedNeru') != 'true') {setCookie(path + 'unlockedNeru', true), true}
+    if (atetos >= 1000 && getCookie(path + 'unlockedNeru') != 'done' && getCookie(path + 'unlockedNeru') != 'true') {setCookie(path + 'unlockedNeru', true), true}
     if (getCookie(path + 'unlockedNeru') === 'true') {
       qSelA('.neru').forEach(element => {element.style.display = 'block'})
       neruFacts.forEach(element => {vsynthFacts.push(element)})
@@ -524,7 +578,7 @@ const tick = async () => {
     }
 
     let anerus = getAutoVsynth('neru')
-    if (anerus >= 300 && getCookie(path + 'unlockedLuka') != 'done' && getCookie(path + 'unlockedLuka') != 'true') {setCookie(path + 'unlockedLuka', true), true}
+    if (anerus >= 1000 && getCookie(path + 'unlockedLuka') != 'done' && getCookie(path + 'unlockedLuka') != 'true') {setCookie(path + 'unlockedLuka', true), true}
     if (getCookie(path + 'unlockedLuka') === 'true') {
       qSelA('.luka').forEach(element => {element.style.display = 'block'})
       qSelA('.family').forEach(element => {element.style.display = 'block'})
@@ -532,6 +586,17 @@ const tick = async () => {
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedLuka', 'done', debug)
+    }
+
+    let alukas = getAutoVsynth('luka')
+    if (alukas >= 1000 && getCookie(path + 'unlockedKagamines') != 'done' && getCookie(path + 'unlockedKagamines') != 'true') {setCookie(path + 'unlockedKagamines', true), true}
+    if (getCookie(path + 'unlockedKagamines') === 'true') {
+      qSelA('.rin').forEach(element => {element.style.display = 'block'})
+      qSelA('.len').forEach(element => {element.style.display = 'block'})
+      kagamineFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
+
+      setCookie(path + 'unlockedKagamines', 'done', debug)
     }
 
     // end
@@ -554,30 +619,34 @@ let mikuFacts = [
   `Hatsune Miku<br>${selectedVsynth('miku', '3rem')}`,
     'Every Miku is canon, which means Miku is canonically super gay',
     `The release of the Hatsune Miku v1 voicebank was 19 years ago, in 2007.`,
-    'Violent dispute over whether world-famous singer Hatsune Miku is "a top or a bottom" continues to rage. 43 hospitalized, 12 dead.'
 
 ]
 let tetoFacts = [
   `Kasane Teto<br>${selectedVsynth('teto', '3rem')}`,
     'Kasane Teto\'s gender is "Chimera".',
-    `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
-    `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
+    // `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
+    // `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
     `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, tied up and paraded through city by fanbase. More at 7.`,
-    `Twitter claims Kasane Teto "cannot be 'transgender'", reasoning ranges from "that is not what the creator said" to "'Transgender' people are mentally ill and should be euthanized".`,
+    `Twitter claims Kasane Teto "cannot be transgender", reasoning ranges from "that is not what the creator said" to "'Transgender' people are mentally ill and should kill themselves".`,
+    'Violent dispute over whether world-famous singer Hatsune Miku is "a top or a bottom" continues to rage. 43 hospitalized, 12 dead.'
 ]
 let neruFacts = [
   `Akita Neru<br>${selectedVsynth('neru', '3rem')}`,
-    '9 hour makeout session with the Baka Polycule<sup>TM</sup>',
+    '<a href="/vocaloid/the goods.html">9 hour makeout session with the Baka Polycule<sup>TM</sup></a>',
     `Hatsune Miku, Akita Neru and Kasane Teto are often portrayed as being in a romantic relationship, forming the Baka Polycule<sup>TM</sup>.`,
-    'What if each member of the Baka Polycule<sup>TM</sup> painted their thumbnails the colors of the other two? For example, Miku would have one thumbnail red and the other yellow...', // Teto would have one blue and one yellow, Neru, one blue one red',
+    'What if each member of the Baka Polycule<sup>TM</sup> painted their thumbnails the colors of the other two? For example, Miku would have one thumbnail red and the other yellow. Teto would have one blue and one yellow, Neru, one blue one red',
+    '*beep bee-beep beep beep bee-beep beep beep*',
     `Twitter users continue to fight among themselves over the gender of popular singer Kasane Teto, death threats number more than a thousand.`,
-    `<strong>Breaking News:</strong> A "Vocaloid fan" admitted to writing a "detransition" fan fiction featuring SynthV idol Kasane Teto, they were promptly beaten senseless, tied up, and paraded through the city to be burned on a cross. Given context, witnesses said: "Deserved."`,
+    `<strong>Breaking News:</strong> A "Vocaloid fan" admitted to writing a "detransition" fan fiction featuring UTAU and SynthV idol Kasane Teto; they were promptly beaten senseless, tied up, and paraded through the city to be burned on a cross. Witnesses commented: "Deserved."`,
 ]
 let lukaFacts = [
   `Megurine Luka<br>${selectedVsynth('luka', '3rem')}`,
-    `<b>Shattering News:</b> Many people would let Luka step on them.<br>The editors of the Shattering News leave no comment.`,
+    `<b>Shattering News:</b> Many people would let Luka step on them.<br>The editors of Shattering News leave no comment.`,
     `Luka is the first adult character made for Vocaloid.`,
     `Luka lacks a V3 voicebank, only having V2 and V4.`,
+]
+let kagamineFacts = [
+
 ]
   "",
   ``,

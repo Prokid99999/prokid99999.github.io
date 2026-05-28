@@ -59,21 +59,22 @@ div.right {
 
     margin-left: auto;
     margin-right: 0px;
-    background: linear-gradient(crimson, red, darkred);
+    background: linear-gradient(0deg, crimson, red, darkred);
 }
 
 #miku, #teto, #neru, #luka {
     color: white;
 }
-#mikuFace, #mikus, #tetoFace, #tetos, #neruFace, #nerus, #lukas, #lukaFace {
+.mikuFace, #mikus, .tetoFace, #tetos, .neruFace, #nerus, #lukas, .lukaFace, #rins, .rinFace, #lens, .lenFace {
     display: inline;
 }
-#mikus, #tetos, #nerus, #lukas {
+#mikus, #tetos, #nerus, #lukas, #rins, #lens {
     position: relative;
     bottom: 1.75rem
 }
 .faces {
     cursor: pointer;
+    display: inline;
 }
 
 .item-container {
@@ -248,4 +249,8 @@ h2 {
     margin-top: 2vh;
     margin-bottom: 1vh;
     font-size: large;
+}
+
+.item>div {
+    display: inline;
 }
