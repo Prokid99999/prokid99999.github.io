@@ -25,11 +25,21 @@
                 <div class="rin" ><div class="rinFace faces" ></div> <div id = "rins" style= "text-shadow: 2px 2px 2px #fe0" >0 Rins </div></div>
                 <div class="len" ><div class="lenFace faces" ></div> <div id = "lens" style ="text-shadow: 2px 2px 2px #fe0" >0 Lens </div></div>
             </div>
+            <div class="utaus">
+                <h2>Utaus</h2>
+                <div class="defoko"><div class="defokoFace faces"></div> <div id="defokos" style="text-shadow: 2px 2px 2px #824e92">0 Defokos</div></div>
+                <div class="rei"><div class="reiFace faces"></div> <div id="reis" style="text-shadow: 2px 2px 2px #ff5f00">0 Reis</div></div>
+            </div>
         </div>
 
         <div class="center">
             <div id="funfacts"><div id="funtext">fun facts</div></div>
             <h2></h2>
+            <pre>Volume: <input type="range" value="0" id="volume-slider"> <span id="volume"></span>%</pre>
+            <pre style="display: none;">Time:   <input type="range" value="0" min="0" id="playbackBar"></pre>
+            <pre>Purchase number: <input type="number" id="purchaseNumber" value="1"></pre>
+            <pre><button id="reset">reset</button></pre>
+            <br>
             <h2>Triple Baka</h2>
             <div class="miku" id="mikups">Mikus per second</div>
             <div class="teto" id="tetops">Tetos per second</div>
@@ -40,14 +50,13 @@
                 <div class="rin" id="rinps">Rins per second</div>
                 <div class="len" id="lenps">Lens per second</div>
             </div>
-            <!-- <br> -->
+            <div class="utaus">
+                <h2>Utaus</h2>
+                <div class="defoko" id="defokops">Defokos per second</div>
+                <div class="rei" id="reips">Reis per second</div>
+            </div>
             <br>
-            <button id="reset">reset</button>
-            <br>
-            <pre>Volume: <input type="range" value="0" id="volume-slider"> <span id="volume"></span>%</pre>
-            <pre style="display: none;">Time:   <input type="range" value="0" min="0" id="playbackBar"></pre>
-
-            <br><div class="images">
+            <div class="images">
                 <img src="background.svg">
                 <img src="left.svg">
                 <img src="fun-facts.svg">
@@ -78,40 +87,124 @@
         <div class="right">
             <div class="item-container">
                 <div class="item tooltip miku" id="mikuAuto"><div id="mikuFace"></div> <span style="text-shadow: 1px 1px 2px #0af; margin-top: auto; margin-bottom: auto; display: inline;">Auto-Miku</span>
-                    <span class="tooltiptext">Auto-Miku.<br><i>It's like autocorrect for Vocaloids.</i><br><small>+1 Miku per second</small><br>
+                    <span class="tooltiptext">
+                        Auto-Miku.
+                        <br>
+                        <i>It's like autocorrect for Vocaloids.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Miku per second</small>
+                        <br>
                         <img src="faces/mikuSelected.svg"> 25
                     </span>
                     <div id="amikus"></div><div id="aMikuPrice"></div>
                 </div>
                 <div class="item tooltip teto" id="tetoAuto"><span style="text-shadow: 1px 1px 2px #f33;"><span id="tetoFace"></span> Auto-Teto</span>
-                    <span class="tooltiptext">Auto-Teto.<br><i>It's like autocorrect for SynthV.</i><br><small>+1 Teto per second</small><br>
-                        <img src="faces/tetoSelected.svg"> 25 <img src="faces/mikuSelected.svg"> 2.5e+3
+                    <span class="tooltiptext">
+                        Auto-Teto.
+                        <br>
+                        <i>It's like autocorrect for SynthV.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Teto per second</small>
+                        <br>
+                        <img src="faces/tetoSelected.svg"> 25 <img src="faces/mikuSelected.svg"> 250
                     </span>
                     <div id="atetos"></div><div id="aTetoPrice"></div>
                 </div>
                 <div class="item tooltip neru" id="neruAuto"><span style="text-shadow: 1px 1px 2px #eeea00;"><span id="neruFace"></span> Auto-Neru</span>
-                    <span class="tooltiptext">Auto-Neru.<br><i>It's like autocorrect for UTAU.</i><br><small>+1 Neru per second</small><br>
-                        <img src="faces/neruSelected.svg"> 25 <img src="faces/tetoSelected.svg"> 2.5e+3 <img src="faces/mikuSelected.svg"> 5e+3
+                    <span class="tooltiptext">
+                        Auto-Neru.
+                        <br>
+                        <i>It's like autocorrect for UTAU.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Neru per second</small>
+                        <br>
+                        <img src="faces/neruSelected.svg"> 25 <img src="faces/tetoSelected.svg"> 250 <img src="faces/mikuSelected.svg"> 5e+3
                     </span>
                     <div id="anerus"></div><div id="aNeruPrice"></div>
                 </div>
                 <div class="item tooltip luka" id="lukaAuto"><span style="text-shadow: 1px 1px 2px #ff7db5;"><span id="lukaFace"></span> Auto-Luka</span>
-                    <span class="tooltiptext">Auto-Luka.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Luka per second</small><br>
-                        <img src="faces/lukaSelected.svg"> 25 <img src="faces/neruSelected.svg"> 2.5e+3 <img src="faces/tetoSelected.svg"> 5e+3 <img src="faces/mikuSelected.svg"> 1e+4
+                    <span class="tooltiptext">
+                        Auto-Luka.
+                        <br>
+                        <i>It's like autocorrect for VOCALOID.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Luka per second</small>
+                        <br>
+                        <img src="faces/lukaSelected.svg"> 25 <img src="faces/neruSelected.svg"> 250 <img src="faces/tetoSelected.svg"> 5e+3 <img src="faces/mikuSelected.svg"> 1e+5
                     </span>
                     <div id="arins"></div><div id="aRinPrice"></div>
                 </div>
                 <div class="item tooltip rin" id="rinAuto"><span style="text-shadow: 1px 1px 2px #fe0;"><span id="rinFace"></span> Auto-Rin</span>
-                    <span class="tooltiptext">Auto-Rin.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Rin per second</small><br>
-                        <img src="faces/rinSelected.svg"> 25 <img src="faces/lukaSelected.svg"> 2.5e+3 <img src="faces/neruSelected.svg"> 5e+3 <img src="faces/tetoSelected.svg"> 1e+4 <img src="faces/mikuSelected.svg"> 1e+4
+                    <span class="tooltiptext">
+                        Auto-Rin.
+                        <br>
+                        <i>It's like autocorrect for VOCALOID.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Rin per second</small>
+                        <br>
+                        <img src="faces/rinSelected.svg"> 25 <img src="faces/lukaSelected.svg"> 250 <img src="faces/neruSelected.svg"> 5e+3 <img src="faces/tetoSelected.svg"> 1e+3 <img src="faces/mikuSelected.svg"> 1e+5
                     </span>
                     <div id="arins"></div><div id="aRinPrice"></div>
                 </div>
                 <div class="item tooltip len" id="lenAuto"><span style="text-shadow: 1px 1px 2px #fe0;"><span id="lenFace"></span> Auto-Len</span>
-                    <span class="tooltiptext">Auto-Len.<br><i>It's like autocorrect for VOCALOID.</i><br><small>+1 Len per second</small><br>
-                        <img src="faces/lenSelected.svg"> 25 <img src="faces/lukaSelected.svg"> 2.5e+3 <img src="faces/neruSelected.svg"> 5e+3 <img src="faces/tetoSelected.svg"> 1e+4 <img src="faces/mikuSelected.svg"> 1e+4
+                    <span class="tooltiptext">
+                        Auto-Len.
+                        <br>
+                        <i>It's like autocorrect for VOCALOID.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Len per second</small>
+                        <br>
+                        <img src="faces/lenSelected.svg"> 25 <img src="faces/lukaSelected.svg"> 250 <img src="faces/neruSelected.svg"> 5e+3 <img src="faces/tetoSelected.svg"> 1e+3 <img src="faces/mikuSelected.svg"> 1e+5
                     </span>
                     <div id="alens"></div><div id="aLenPrice"></div>
+                </div>
+                <div class="item tooltip defoko" id="defokoAuto"><span style="text-shadow: 1px 1px 2px #824e92;"><span id="defokoFace"></span> Auto-Defoko</span>
+                    <span class="tooltiptext">
+                        Auto-Defoko.
+                        <br>
+                        <i>It's like autocorrect for UTAU.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Defoko per second</small>
+                        <br>
+                        <img src="faces/defokoSelected.svg"> 25 <img src="faces/tetoSelected.svg"> 1e+20<br><img src="faces/rinSelected.svg"> 2500 <img src="faces/lenSelected.svg"> 2500 <img src="faces/lukaSelected.svg"> 2500<br><img src="faces/neruSelected.svg"> 2500 <img src="faces/mikuSelected.svg"> 2500
+                    </span>
+                    <div id="adefokos"></div><div id="aDefokoPrice"></div>
+                </div>
+                <div class="item tooltip rei" id="reiAuto"><span style="text-shadow: 1px 1px 2px #ff5f00;"><span id="reiFace"></span> Auto-Rei</span>
+                    <span class="tooltiptext">
+                        Auto-Rei.
+                        <br>
+                        <i>It's like autocorrect for UTAU.</i>
+                        <br>
+                        <br>
+                        <i>For 1:</i>
+                        <br>
+                        <small>+1 Rei per second</small>
+                        <br>
+                        <img src="faces/reiSelected.svg"> 25 <img src="faces/defokoSelected.svg"> 1e+10 <img src="faces/tetoSelected.svg"> 1e+20<br><img src="faces/rinSelected.svg"> 2500 <img src="faces/lenSelected.svg"> 2500 <img src="faces/lukaSelected.svg"> 2500<br><img src="faces/neruSelected.svg"> 2500 <img src="faces/mikuSelected.svg"> 2500
+                    </span>
+                    <div id="areis"></div><div id="aReiPrice"></div>
                 </div>
             </div>
         </div>

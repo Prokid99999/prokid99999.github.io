@@ -12,6 +12,8 @@ function neruLog(msg='') {
   console.log(`/'O > ${msg}`)
 }
 
+let purchase = 0
+
 if (checkCookie(path + 'debug') === 'error') {
   setCookie(path + 'debug', false, debug)
 }
@@ -59,6 +61,30 @@ if (checkCookie(path + 'lukas') === 'error') {
 if (checkCookie(path + 'alukas') === 'error') {
   setCookie(path + 'alukas', 0, debug)
 }
+if (checkCookie(path + 'rins') === 'error') {
+  setCookie(path + 'rins', 25, debug)
+}
+if (checkCookie(path + 'arins') === 'error') {
+  setCookie(path + 'arins', 0, debug)
+}
+if (checkCookie(path + 'lens') === 'error') {
+  setCookie(path + 'lens', 25, debug)
+}
+if (checkCookie(path + 'alens') === 'error') {
+  setCookie(path + 'alens', 0, debug)
+}
+if (checkCookie(path + 'defokos') === 'error') {
+  setCookie(path + 'defokos', 25, debug)
+}
+if (checkCookie(path + 'adefokos') === 'error') {
+  setCookie(path + 'adefokos', 0, debug)
+}
+if (checkCookie(path + 'reis') === 'error') {
+  setCookie(path + 'reis', 25, debug)
+}
+if (checkCookie(path + 'areis') === 'error') {
+  setCookie(path + 'areis', 0, debug)
+}
 if (checkCookie(path + 'volume') === 'error') {
   setCookie(path + 'volume', 10, debug)
 }
@@ -72,7 +98,7 @@ function getAutoVsynth(vsynth='') {
 }
 function displayVsynth(vsynth='') {
   let vsynths = Number(getCookie(path + vsynth + 's'))
-  if (vsynths >= 1000) {
+  if (vsynths >= 1000000) {
     gewi(`${vsynth}s`).innerHTML = `${vsynths.toExponential(2)} ${sentenceCase(vsynth)}s`
   }
   else {
@@ -81,11 +107,16 @@ function displayVsynth(vsynth='') {
 }
 function displayAutoVsynth(vsynth='') {
   let avsynths = getAutoVsynth(vsynth)
-  gewi(`${vsynth}ps`).innerHTML = avsynths + ` ${sentenceCase(vsynth)}s per second.`
+  if (avsynths >= 1000000) {
+    gewi(`${vsynth}ps`).innerHTML = `${avsynths.toExponential(2)} ${sentenceCase(vsynth)}s per second.`
+  }
+  else {
+    gewi(`${vsynth}ps`).innerHTML = `${avsynths} ${sentenceCase(vsynth)}s per second.`
+  }
 }
 function buyAutoVsynth(vsynth='') {
   gewi(`${vsynth}Auto`).addEventListener('click', () => {
-    purchaseAutoVsynth(vsynth)
+    purchaseAutoVsynth(vsynth, purchase)
   })}
 function purchaseAutoVsynth(vsynth='', amount=1) {
     let vsynths = getVsynths(vsynth)
@@ -150,8 +181,8 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
         let tetos = getVsynths('teto')
         let nerus = getVsynths('neru')
         vsynths = getVsynths(vsynth)
-        if (vsynths >= 25*amount && nerus >= 2500*amount && tetos >= 5000*amount && mikus >= 10000*amount) {
-          neruLog('purchasing neru')
+        if (vsynths >= 25*amount && nerus >= 2500*amount && tetos >= 5000*amount && mikus >= 100000*amount) {
+          mikuLog(`purchasing ${vsynth}`)
           avsynths += amount
           setCookie(path + `a${vsynth}s`, avsynths, debug)
           vsynths -= 25*amount
@@ -175,8 +206,8 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
         let nerus = getVsynths('neru')
         let lukas = getVsynths('luka')
         vsynths = getVsynths(vsynth)
-        if (vsynths >= 25*amount && lukas >= 2500 && nerus >= 5000*amount && tetos >= 10000*amount && mikus >= 10000*amount) {
-          neruLog('purchasing neru')
+        if (vsynths >= 25*amount && lukas >= 2500*amount && nerus >= 5000*amount && tetos >= 10000*amount && mikus >= 1000000*amount) {
+          mikuLog(`purchasing ${vsynth}`)
           avsynths += amount
           setCookie(path + `a${vsynth}s`, avsynths, debug)
           vsynths -= 25*amount
@@ -187,11 +218,80 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
           setCookie(path + 'nerus', nerus, debug)
           tetos -= 10000*amount
           setCookie(path + 'tetos', tetos, debug)
-          mikus -= 10000*amount
+          mikus -= 100000*amount
           setCookie(path + 'mikus', mikus, debug)
           displayVsynth(vsynth)
           displayAutoVsynth(vsynth)
-          if (avsynths == 1) {
+          if (avsynths === 1) {
+            autoVsynth(vsynth)
+          }
+        }
+      }
+      else if (vsynth === 'defoko') {
+        let mikus = getVsynths('miku')
+        let tetos = getVsynths('teto')
+        let nerus = getVsynths('neru')
+        let lukas = getVsynths('luka')
+        let rins = getVsynths('rin')
+        let lens = getVsynths('len')
+        vsynths = getVsynths(vsynth)
+        if (vsynths >= 25*amount && lens >= 2500*amount && rins >= 2500*amount && lukas >= 2500*amount && nerus >= 2500*amount && tetos >= 1e+20*amount && mikus >= 2500*amount) {
+          mikuLog(`purchasing ${vsynth}`)
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          lukas -= 2500*amount
+          setCookie(path + 'lukas', lukas, debug)
+          rins -= 2500*amount
+          setCookie(path + 'rins', rins, debug)
+          lens -= 2500*amount
+          setCookie(path + 'lens', lens, debug)
+          nerus -= 2500*amount
+          setCookie(path + 'nerus', nerus, debug)
+          tetos -= 1e+20*amount
+          setCookie(path + 'tetos', tetos, debug)
+          mikus -= 2500*amount
+          setCookie(path + 'mikus', mikus, debug)
+          displayVsynth(vsynth)
+          displayAutoVsynth(vsynth)
+          if (avsynths === 1) {
+            autoVsynth(vsynth)
+          }
+        }
+      }
+      else if (vsynth === 'rei') {
+        let mikus = getVsynths('miku')
+        let tetos = getVsynths('teto')
+        let nerus = getVsynths('neru')
+        let lukas = getVsynths('luka')
+        let rins = getVsynths('rin')
+        let lens = getVsynths('len')
+        let defokos = getVsynths('defoko')
+        vsynths = getVsynths(vsynth)
+        if (vsynths >= 25*amount && defokos >= 1e+10*amount && lens >= 2500*amount && rins >= 2500*amount && lukas >= 2500*amount && nerus >= 2500*amount && tetos >= 1e+20*amount && mikus >= 2500*amount) {
+          mikuLog(`purchasing ${vsynth}`)
+          avsynths += amount
+          setCookie(path + `a${vsynth}s`, avsynths, debug)
+          vsynths -= 25*amount
+          setCookie(path + `${vsynth}s`, vsynths, debug)
+          lukas -= 2500*amount
+          setCookie(path + 'lukas', lukas, debug)
+          rins -= 2500*amount
+          setCookie(path + 'rins', rins, debug)
+          lens -= 2500*amount
+          setCookie(path + 'lens', lens, debug)
+          nerus -= 2500*amount
+          setCookie(path + 'nerus', nerus, debug)
+          tetos -= 1e+20*amount
+          setCookie(path + 'tetos', tetos, debug)
+          defokos -= 1e+10*amount
+          setCookie(path + 'defokos', defokos, debug)
+          mikus -= 2500*amount
+          setCookie(path + 'mikus', mikus, debug)
+          displayVsynth(vsynth)
+          displayAutoVsynth(vsynth)
+          if (avsynths === 1) {
             autoVsynth(vsynth)
           }
         }
@@ -278,9 +378,13 @@ let allVsynths = [
   'neru',
   'luka',
   'rin',
-  'len'
+  'len',
+  'defoko',
+  'rei'
 ]
 let skins = [
+  '',
+  '',
   '',
   '',
   '',
@@ -293,8 +397,6 @@ let skins = [
 // init
 function init() {
 
-  gewi('tetos').innerHTML = ' ' + tetos + ' Tetos'
-  gewi('nerus').innerHTML = ' ' + nerus + ' Nerus'
 
   for (let index = 0; index < allVsynths.length; index++) {
     const vsynth = allVsynths[index];
@@ -328,13 +430,24 @@ function init() {
     qSelA('.family').forEach(element => {element.style.display = 'block'})
     lukaFacts.forEach(element => {vsynthFacts.push(element)})
     facts = randomNoRepeats(vsynthFacts)
-    // qSelA('.family').forEach(element => {element.style.display = 'block'})
   }
   if (getCookie(path+'unlockedKagamines') === 'done') {
     qSelA('.rin').forEach(element => {element.style.display = 'block'})
     qSelA('.len').forEach(element => {element.style.display = 'block'})
     kagamineFacts.forEach(element => {vsynthFacts.push(element)})
-    facts = randomNoRepeats(vsynthFacts)}
+    facts = randomNoRepeats(vsynthFacts)
+  }
+  if (getCookie(path + 'unlockedDefoko') === 'done') {
+    qSelA('.defoko').forEach(element => {element.style.display = 'block'})
+    qSelA('.utaus').forEach(element => {element.style.display = 'block'})
+    defokoFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+  }
+  if (getCookie(path + 'unlockedRei') === 'done') {
+    qSelA('.rei').forEach(element => {element.style.display = 'block'})
+    reiFacts.forEach(element => {vsynthFacts.push(element)})
+    facts = randomNoRepeats(vsynthFacts)
+  }
 
   gewi('reset').addEventListener('click', () => {
     if (window.confirm('Do you really want to reset?')) {
@@ -354,58 +467,78 @@ function init() {
   })
 
   window.onkeydown = function (event) {
-    if (event.key === 'ArrowRight') {
-      // right arrow
-    }
-    else if (event.key === 'ArrowLeft') {
-      // left arrow
-    }
-    else if (event.key === 'ArrowUp') {
-    // Up Arrow pressed
-    }
-    else if (event.key === 'ArrowDown') {
-      // Down Arrow pressed
-    }
-    else if (event.key === 'e') {
-      console.log('e')
-    }
-    else if (event.key === '1') {
-      purchaseAutoVsynth('miku')
-    }
-    else if (event.key === '!') {
-      purchaseAutoVsynth('miku', 10)
-    }
-    else if (event.key === '2') {
-      purchaseAutoVsynth('teto')
-    }
-    else if (event.key === '@') {
-      purchaseAutoVsynth('teto', 10)
-    }
-    else if (event.key === '3') {
-      purchaseAutoVsynth('neru')
-    }
-    else if (event.key === '#') {
-      purchaseAutoVsynth('neru', 10)
-    }
-    else if (event.key === '4') {
-      purchaseAutoVsynth('luka')
-    }
-    else if (event.key === '$') {
-      purchaseAutoVsynth('luka', 10)
-    }
-    else if (event.key === '5') {
-      purchaseAutoVsynth('rin')
-    }
-    else if (event.key === '%') {
-      purchaseAutoVsynth('rin', 10)
-    }
-    else if (event.key === '6') {
-      purchaseAutoVsynth('len')
-    }
-    else if (event.key === '^') {
-      purchaseAutoVsynth('len', 10)
+    if (document.activeElement != gewi('purchaseNumber')) {
+      if (event.key === 'ArrowRight') {
+        // right arrow
+      }
+      if (event.key === 'ArrowLeft') {
+        // left arrow
+      }
+      if (event.key === 'ArrowUp') {
+      // Up Arrow pressed
+      }
+      if (event.key === 'ArrowDown') {
+        // Down Arrow pressed
+      }
+      if (event.key === 'e') {
+        console.log('e')
+      }
+      if (event.key === '1') {
+        purchaseAutoVsynth('miku', purchase)
+      }
+      if (event.key === '!') {
+        purchaseAutoVsynth('miku', purchase*10)
+      }
+      if (event.key === '2') {
+        purchaseAutoVsynth('teto', purchase)
+      }
+      if (event.key === '@') {
+        purchaseAutoVsynth('teto', purchase*10)
+      }
+      if (event.key === '3') {
+        purchaseAutoVsynth('neru', purchase)
+      }
+      if (event.key === '#') {
+        purchaseAutoVsynth('neru', purchase*10)
+      }
+      if (event.key === '4') {
+        purchaseAutoVsynth('luka', purchase)
+      }
+      if (event.key === '$') {
+        purchaseAutoVsynth('luka', purchase*10)
+      }
+      if (event.key === '5') {
+        purchaseAutoVsynth('rin', purchase)
+      }
+      if (event.key === '%') {
+        purchaseAutoVsynth('rin', purchase*10)
+      }
+      if (event.key === '6') {
+        purchaseAutoVsynth('len', purchase)
+      }
+      if (event.key === '^') {
+        purchaseAutoVsynth('len', purchase*10)
+      }
+      if (event.key === '7') {
+        purchaseAutoVsynth('defoko', purchase)
+      }
+      if (event.key === '&') {
+        purchaseAutoVsynth('defoko', purchase*10)
+      }
+      if (event.key === '8') {
+        purchaseAutoVsynth('rei', purchase)
+      }
+      if (event.key === '*') {
+        purchaseAutoVsynth('rei', purchase*10)
+      }
     }
   }
+
+  purchase = Number(gewi('purchaseNumber').value)
+  gewi('purchaseNumber').addEventListener('change', () => {
+    let pNumber = Number(gewi('purchaseNumber').value)
+    purchase = pNumber
+  })
 
   funFacts(vsynthFacts)
   sing()
@@ -413,7 +546,7 @@ function init() {
 
   window.onload = () => {
     qSel('.images').remove()
-    setTimeout( () => {gewi('loading').remove()}, 500 )
+    setTimeout( () => {gewi('loading').remove()}, 1000 )
   }
 
   const music = document.createElement('audio')
@@ -549,6 +682,9 @@ const tick = async () => {
     const element = allVsynths[index];
     displayVsynth(element)
     displayAutoVsynth(element)
+    if (Number(getCookie(path+element)) < 0) {
+      setCookie(path + element, 0)
+    }
   }
     let amikus = getAutoVsynth('miku')
     if (amikus >= 1 && getCookie(path + 'unlockedMiku') != 'done' && getCookie(path + 'unlockedMiku') != 'true') {setCookie(path + 'unlockedMiku', true), true}
@@ -599,6 +735,25 @@ const tick = async () => {
       setCookie(path + 'unlockedKagamines', 'done', debug)
     }
 
+    if (atetos >= 1e+17 && getCookie(path + 'unlockedDefoko') != 'done' && getCookie('unlockedDefoko') != 'true') {setCookie(path + 'unlockedDefoko', true)}
+    if (getCookie(path + 'unlockedDefoko') === 'true') {
+      qSelA('.defoko').forEach(element => {element.style.display = 'block'})
+      qSelA('.utaus').forEach(element => {element.style.display = 'block'})
+      defokoFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
+
+      setCookie(path + 'unlockedDefoko', 'done', debug)
+    }
+    if (atetos >= 1e+20 && getCookie(path + 'unlockedRei') != 'done' && getCookie('unlockedRei') != 'true') {setCookie(path + 'unlockedRei', true)}
+    if (getCookie(path + 'unlockedRei') === 'true') {
+      qSelA('.rei').forEach(element => {element.style.display = 'block'})
+      // qSelA('.utaus').forEach(element => {element.style.display = 'block'})
+      reiFacts.forEach(element => {vsynthFacts.push(element)})
+      facts = randomNoRepeats(vsynthFacts)
+
+      setCookie(path + 'unlockedRei', 'done', debug)
+    }
+
     // end
     await delay(100)
   }
@@ -646,7 +801,14 @@ let lukaFacts = [
     `Luka lacks a V3 voicebank, only having V2 and V4.`,
 ]
 let kagamineFacts = [
-
+  `Kagamine Rin<br>${selectedVsynth('rin', '3rem')}`,
+  `Kagamine Len<br>${selectedVsynth('len', '3rem')}`
+]
+let defokoFacts = [
+  `Uta 'Defoko' Utane<br>${selectedVsynth('defoko', '3rem')}`
+]
+let reiFacts = [
+  `Adachi Rei<br>${selectedVsynth('rei', '3rem')}`
 ]
   "",
   ``,

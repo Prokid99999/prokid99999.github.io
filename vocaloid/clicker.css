@@ -26,6 +26,7 @@ div.left {
     background-image: url('/vocaloid/left.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: scroll;
 }
 
 div.center {
@@ -41,8 +42,10 @@ div.center {
     padding-top: 1vh;
     position: fixed;
     top: 0;
+    z-index: 0;
     color: black;
     text-shadow: 1px 1px 2px #aaa;
+    /* overflow-x: scroll; */
 }
 
 div.right {
@@ -60,15 +63,16 @@ div.right {
     margin-left: auto;
     margin-right: 0px;
     background: linear-gradient(0deg, crimson, red, darkred);
+    /* overflow-x: scroll; */
 }
 
 #miku, #teto, #neru, #luka {
     color: white;
 }
-.mikuFace, #mikus, .tetoFace, #tetos, .neruFace, #nerus, #lukas, .lukaFace, #rins, .rinFace, #lens, .lenFace {
+.mikuFace, #mikus, .tetoFace, #tetos, .neruFace, #nerus, #lukas, .lukaFace, #rins, .rinFace, #lens, .lenFace, #defokos, .defokoFace, #reis, .reiFace {
     display: inline;
 }
-#mikus, #tetos, #nerus, #lukas, #rins, #lens {
+#mikus, #tetos, #nerus, #lukas, #rins, #lens, #defokos, #reis {
     position: relative;
     bottom: 1.75rem
 }
@@ -153,6 +157,7 @@ div.right {
 .tooltip:hover .tooltiptext {
     display: inherit;
     opacity: 1;
+    z-index: 2;
 }
 .tooltiptext{
     position: absolute;
@@ -240,7 +245,7 @@ pre {
     font-size: 1rem;
 }
 
-.teto, .neru, .luka, .rin, .len, .family {
+.teto, .neru, .luka, .rin, .len, .family, .defoko, .rei, .utaus {
     display: none;
     /* width: auto; */
 }
