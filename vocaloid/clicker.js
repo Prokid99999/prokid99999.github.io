@@ -269,7 +269,7 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
         let lens = getVsynths('len')
         let defokos = getVsynths('defoko')
         vsynths = getVsynths(vsynth)
-        if (vsynths >= 25*amount && defokos >= 1e+10*amount && lens >= 2500*amount && rins >= 2500*amount && lukas >= 2500*amount && nerus >= 2500*amount && tetos >= 1e+20*amount && mikus >= 2500*amount) {
+        if (vsynths >= 25*amount && lens >= 2500*amount && rins >= 2500*amount && lukas >= 2500*amount && nerus >= 2500*amount && tetos >= 1e+20*amount && mikus >= 2500*amount) {
           mikuLog(`purchasing ${vsynth}`)
           avsynths += amount
           setCookie(path + `a${vsynth}s`, avsynths, debug)
@@ -285,8 +285,8 @@ function purchaseAutoVsynth(vsynth='', amount=1) {
           setCookie(path + 'nerus', nerus, debug)
           tetos -= 1e+20*amount
           setCookie(path + 'tetos', tetos, debug)
-          defokos -= 1e+10*amount
-          setCookie(path + 'defokos', defokos, debug)
+          // defokos -= 1e+7*amount
+          // setCookie(path + 'defokos', defokos, debug)
           mikus -= 2500*amount
           setCookie(path + 'mikus', mikus, debug)
           displayVsynth(vsynth)
@@ -546,7 +546,7 @@ function init() {
 
   window.onload = () => {
     qSel('.images').remove()
-    setTimeout( () => {gewi('loading').remove()}, 1000 )
+    setTimeout( () => {gewi('loading').remove()}, 800 )
   }
 
   const music = document.createElement('audio')
@@ -599,67 +599,6 @@ function sing() {
   }
 }
 
-const amiku = async () => {
-  mikus = getMikus()
-  amikus = getAutoVsynth('miku')
-
-  while (amikus > 0) {
-    mikus = getMikus()
-    amikus = getAutoVsynth('miku')
-    if (amikus < 1000) {
-      mikus = getMikus()
-      setCookie(path + 'mikus', mikus +1, debug)
-    gewi('mikus').innerHTML = `${mikus} Mikus`
-      await delay(1000 / amikus)
-    }
-    else {
-      mikus = getMikus()
-      setCookie(path + 'mikus', mikus + Math.round(amikus / 30), debug)
-    gewi('mikus').innerHTML = `${mikus} Mikus`
-      await delay(30)
-    }
-  }
-}
-const ateto = async () => {
-  tetos = getTetos()
-  atetos = getCookie(path + 'atetos')
-
-  while (atetos > 0) {
-    if (atetos < 1000) {
-      tetos = getTetos()
-      setCookie(path + 'tetos', tetos +1, debug)
-    gewi('tetos').innerHTML = `${tetos} Tetos`
-      await delay(1000 / atetos)
-    }
-    else {
-      tetos = getTetos()
-      setCookie(path + 'tetos', tetos + Math.round(atetos / 30), debug)
-    gewi('tetos').innerHTML = `${tetos} Tetos`
-      await delay(30)
-    }
-  }
-}
-const aneru = async () => {
-  nerus = getNerus()
-  anerus = getCookie(path + 'anerus')
-
-  while (anerus > 0) {
-    if (anerus < 1000) {
-      nerus = getNerus()
-      setCookie(path + 'nerus', nerus +1, debug)
-    gewi('nerus').innerHTML = `${nerus} Nerus`
-      await delay(1000 / anerus)
-    }
-    else {
-      nerus = getNerus()
-      setCookie(path + 'nerus', nerus + Math.round(anerus / 30), debug)
-    gewi('nerus').innerHTML = `${nerus} Nerus`
-      await delay(30)
-    }
-  }
-}
-
-
 // tick
 const tick = async () => {
   while (true) {
@@ -682,8 +621,8 @@ const tick = async () => {
     const element = allVsynths[index];
     displayVsynth(element)
     displayAutoVsynth(element)
-    if (Number(getCookie(path+element)) < 0) {
-      setCookie(path + element, 0)
+    if (Number(getCookie(path+element+'s')) < 0) {
+      setCookie(path + element+'s', 0)
     }
   }
     let amikus = getAutoVsynth('miku')
