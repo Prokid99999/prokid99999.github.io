@@ -446,7 +446,7 @@ var earth_lore = [
 
   `<h1>dracodemons</h1>\
   <div class='background'>\
-    <p>Dragon demons, or 'dracodemons' or 'dragodaemons', are a subsect of demons aligned with dragons <small>(no shit)</small>. They forge bonds with dragons, hoping to be allowed access to the dragons' enormous stores of mana. Outside of that, having a house-sized, clawed, winged, fire-breathing lizard willing to fight for you is pretty useful.</p>
+    <p>Dragon demons, or 'dracodemons' or 'dragodaemons', are a subsect of demons aligned with dragons <small>(no shit)</small>. They forge bonds with dragons, hoping to be allowed access to the dragons' enormous stores of mana. Outside of that, having a room-sized, clawed, winged, fire-breathing lizard willing to fight for you is pretty useful.</p>
     <p>The main difference between normal demons and dracodemons is their love for and knowledge of dragons.</p>
     <p>Sometimes they have horns.</p>
     <p></p>
