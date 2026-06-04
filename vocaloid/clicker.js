@@ -15,7 +15,7 @@ function neruLog(msg='') {
 let purchase = 0
 
 if (checkCookie(path + 'debug') === 'error') {
-  setCookie(path + 'debug', false, debug)
+  setCookie(path + 'debug', false)
 }
 let debug = false
 if (getCookie(path+'debug') === 'true') {debug = true}
@@ -38,7 +38,7 @@ if (checkCookie(path + 'unlockedKagamines') === 'error') {
 }
 
 if (checkCookie(path + 'mikus') === 'error') {
-  setCookie(path + 'mikus', 0, debug)
+  setCookie(path + 'mikus', 25, debug)
 }
 if (checkCookie(path + 'amikus') === 'error') {
   setCookie(path + 'amikus', 0, debug)
@@ -335,6 +335,15 @@ function onclickVsynth(vsynth) {
     displayVsynth(vsynth)
   }})
 }
+function checkVsynthCookie(vsynth) {
+  if (checkCookie(path + `${vsynth}s`) === 'error') {
+    setCookie(path + `${vsynth}s`, 25, debug)
+  }
+  if (checkCookie(path + `a${vsynth}s`) === 'error') {
+    setCookie(path + `a${vsynth}s`, 0, debug)
+  }
+  
+}
 
 function funFacts(list=[`1`, `2`, `3`]) {
   gewi('funtext').innerHTML = facts()
@@ -400,6 +409,7 @@ function init() {
 
   for (let index = 0; index < allVsynths.length; index++) {
     const vsynth = allVsynths[index];
+    const element = vsynth
     const skin = skins[index];
 
     displayVsynth(vsynth)
@@ -407,6 +417,7 @@ function init() {
     gewi(`${vsynth}Face`).innerHTML = selectableVsynth(skin+vsynth, '1rem')
     onclickVsynth(vsynth)
     buyAutoVsynth(vsynth)
+    checkVsynthCookie(vsynth)
   }
 
   if (getCookie(path + 'unlockedMiku') === 'done') {
@@ -460,7 +471,7 @@ function init() {
         displayVsynth(element)
         qSelA(`.${element}`).forEach(element => {element.style.display = 'none'})
       }
-    setCookie(path+'mikus', 0)
+    // setCookie(path+'mikus', 0)
     qSelA('.miku').forEach(element => {element.style.display = 'block'})
     window.location.reload(true)
   }
