@@ -247,7 +247,12 @@ pre {
 
 .teto, .neru, .luka, .rin, .len, .family, .defoko, .rei, .utaus {
     display: none;
+    color: white;
     /* width: auto; */
+}
+.family, .utaus, .bakas {
+    color: black;
+    text-shadow: 0px 0px 10px white;
 }
 
 h2 {
@@ -258,4 +263,29 @@ h2 {
 
 .item>div {
     display: inline;
+}
+
+.miku {
+    color: white;
+    text-shadow: 2px 2px 2px #0af;
+}
+.teto {
+    color: white;
+    text-shadow: 2px 2px 2px #f00;
+}
+.neru {
+    color: white;
+    text-shadow: 2px 2px 2px #ea0
+}
+.luka {
+    text-shadow: 2px 2px 2px #ff7db5
+}
+.rin, .len {
+    text-shadow: 2px 2px 2px #fe0
+}
+.defoko {
+    text-shadow: 2px 2px 2px #824e92
+}
+.rei{
+    text-shadow: 2px 2px 2px #ff5f00
 }
