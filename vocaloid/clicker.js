@@ -342,7 +342,7 @@ function checkVsynthCookie(vsynth) {
   if (checkCookie(path + `a${vsynth}s`) === 'error') {
     setCookie(path + `a${vsynth}s`, 0, debug)
   }
-  
+
 }
 
 function funFacts(list=[`1`, `2`, `3`]) {
@@ -418,6 +418,7 @@ function init() {
     onclickVsynth(vsynth)
     buyAutoVsynth(vsynth)
     checkVsynthCookie(vsynth)
+    qSel('.achieves').innerHTML += `<div class="${element}">Unlocked ${sentenceCase(vsynth)}!`
   }
 
   if (getCookie(path + 'unlockedMiku') === 'done') {
