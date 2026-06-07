@@ -26,7 +26,7 @@ div.left {
     background-image: url('/vocaloid/left.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: scroll;
+    overflow: scroll;
 }
 
 div.center {
@@ -45,7 +45,12 @@ div.center {
     z-index: 0;
     color: black;
     text-shadow: 1px 1px 2px #aaa;
-    /* overflow-x: scroll; */
+    overflow: scroll;
+}
+div.scroll {
+    overflow-x: scroll;
+    position: initial;
+    height: inherit;
 }
 
 div.right {
@@ -288,4 +293,24 @@ h2 {
 }
 .rei{
     text-shadow: 2px 2px 2px #ff5f00
+}
+
+pre {
+    display: block;
+}
+
+.achievesContainer {
+    background: linear-gradient(#888, #757575);
+    border: solid 2px #555;
+    border-radius: 15.5px;
+    padding: 2%;
+    padding-right: 0px;
+    /* padding-top: 0px; */
+    height: 15vh;
+    overflow: scroll;
+}
+
+.achieves {
+    height: 15vh;
+    overflow: scroll;
 }

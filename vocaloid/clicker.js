@@ -730,8 +730,8 @@ let mikuFacts = [
 let tetoFacts = [
   `Kasane Teto<br>${selectedVsynth('teto', '3rem')}`,
     'Kasane Teto\'s gender is "Chimera".',
-    // `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
-    // `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
+    `Kasane Teto was conceived as an April Fools' joke, and was later turned into an UTAU voicebank.`,
+    `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
     `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, tied up and paraded through city by fanbase. More at 7.`,
     `Twitter claims Kasane Teto "cannot be transgender", reasoning ranges from "that is not what the creator said" to "'Transgender' people are mentally ill and should kill themselves".`,
     'Violent dispute over whether world-famous singer Hatsune Miku is "a top or a bottom" continues to rage. 43 hospitalized, 12 dead.'
