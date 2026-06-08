@@ -785,5 +785,5 @@ document.addEventListener('DOMContentLoaded', () => {
     qSel('.images').remove()
     setTimeout( () => {gewi('loading').remove()}, 800 )
   }
-  document.body.innerHTML += `<div id="click" onclick="init(); this.remove()">Click to play!</div>`
+  document.body.innerHTML += `<div id="click" onclick="init(); this.remove()">Click to play!<br><br>${selectableVsynth('miku')}</div>`
 })
