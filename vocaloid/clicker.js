@@ -474,6 +474,7 @@ function init() {
       }
     // setCookie(path+'mikus', 0)
     qSelA('.miku').forEach(element => {element.style.display = 'block'})
+    setCookie(path + 'unlockedKagamines', false)
     window.location.reload(true)
   }
   })
@@ -556,10 +557,6 @@ function init() {
   sing()
   tick()
 
-  window.onload = () => {
-    qSel('.images').remove()
-    setTimeout( () => {gewi('loading').remove()}, 800 )
-  }
 
   const music = document.createElement('audio')
 
@@ -784,5 +781,9 @@ function unlockVsynth(vsynth='') {
 
 // event listeners
 document.addEventListener('DOMContentLoaded', () => {
-  init()
+  window.onload = () => {
+    qSel('.images').remove()
+    setTimeout( () => {gewi('loading').remove()}, 800 )
+  }
+  document.body.innerHTML += `<div id="click" onclick="init(); this.remove()">Click to play!</div>`
 })

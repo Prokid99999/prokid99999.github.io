@@ -179,18 +179,6 @@ small {
 }
 
 #loading {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    background-image: url('/vocaloid/left.svg');
-    background-size: cover;
-    color: #fff;
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    padding-top: 30vh;
 }
 
 #funfacts {
@@ -313,4 +301,20 @@ pre {
 .achieves {
     height: 15vh;
     overflow: scroll;
+}
+
+#click {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('/vocaloid/left.svg');
+    background-size: cover;
+    color: #fff;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 30vh;
+
 }
