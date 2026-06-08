@@ -600,6 +600,10 @@ function init() {
   }, 30);
 
   gewi('music').play()
+
+  if (window.location.href === 'http://localhost:2009/vocaloid/clicker.html') {
+    skins[0] = 'br'
+  }
 }
 
 // sing
