@@ -631,11 +631,16 @@ const tick = async () => {
 
   for (let index = 0; index < allVsynths.length; index++) {
     const element = allVsynths[index];
+    const vsynth = allVsynths[index]
+    const skin = skins[index]
+
     displayVsynth(element)
     displayAutoVsynth(element)
     if (Number(getCookie(path+element+'s')) < 0) {
       setCookie(path + element+'s', 0)
     }
+    qSelA(`.${vsynth}Face`).forEach(element => {element.innerHTML = selectableVsynth(skin+vsynth)})
+    gewi(`${vsynth}Face`).innerHTML = selectableVsynth(skin+vsynth, '1rem')
   }
     let amikus = getAutoVsynth('miku')
     if (amikus >= 1 && getCookie(path + 'unlockedMiku') != 'done' && getCookie(path + 'unlockedMiku') != 'true') {setCookie(path + 'unlockedMiku', true), true}
