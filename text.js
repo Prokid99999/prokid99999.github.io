@@ -80,9 +80,21 @@ var earth = [
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-top: 2rem;'>\
   Congratulations!</h2>\
   <div style='color: black; background-color: white; padding: 5rem; text-align: left;'>\
-  <span style='font-family: Allan; text-decoration: underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airn Avalon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, you have been accepted by the First Magical Academy of the United States of America!<br><br><br><br><br><br><br><br>\
-  Our school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br><br><br><br><br><br><br><br>\
-  Semester begins on September 1st. You will find an introduction to the magical world within this envelope. Textbooks will be provided.<br><Br><Br><Br><Br><br><br><br>\
+  <span style='font-family: Allan; text-decoration: underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Airn Avalon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, you have been accepted by the First Magical Academy of the United States of America!<br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br>\
+  Our school is located in a pocket dimension between each state. You will enter by finding a state line, identified by its magical barriers. Pick a cardinal direction and travel until you find it.<br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br>\
+  Semester begins on September 1st. You will find an introduction to the magical world within this envelope. Textbooks will be provided.<br>
+  <Br><Br>
+  <Br><Br>
+  <br><br>
+  <br>\
   Yours sincerely,<br>\
   <p style='font-size: 2rem; line-height: 3rem; text-indent: 2rem;'><span style='font-family: Aguafina Script;'>Second Archmage Oleanda Navarisque</span></p>
   <div style='text-indent: 2rem'>Second Archmage Oleanda Navarisque</div>\
@@ -92,9 +104,12 @@ var earth = [
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif; padding-bottom: 0'>A Human's Guide</h2>\
   <span style='font-size: 1.5rem; color: grey; background-color: white; text-align: center; display: block; line-height: 1.5rem; padding-top: 0rem;'><br style='line-height: 1.5rem'>to the<br></span>\
   <h2 id='char' style='color: black; background-color: white; font-family: sans-serif;'>Magical World</h2>\
-  <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'><br><br>\
-  <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p><br><br>\
-  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p><br><br>\
+  <div style='color: black; background-color: white; padding: 2rem; padding-bottom: 2.5rem'>
+  <br><br>\
+  <p>First things first: Humans are notoriously intolerant of their own species, so we ask that you respect, or, at the very least, refrain from attacking other species due to the fact that they are not your own. Discrimination between races will not be tolerated.</p>
+  <br><br>\
+  <p>Second: while you may not be the best at magic, know that others have had many times your experience, and strength is not the only factor we judge.</p>
+  <br><br>\
   <p>Now, we can get to the introduction. Magic is a natural force given to intelligent species that binds us all together. It is a power that can be bent into whatever you please, as long as you know what shape you want it to end in. Attacks, protections, charms, hexes, curses, and so many more. 'Spell' is a general term for magic performing a task. Spells can be used for healing, finding an object or a person, alleviating pain, and, really, whatever you can imagine it can possibly do.</p>
   <p>Every species with magic has a limit of magical energy, called mana, that their body can hold. This limit varies greatly between species, you can have a subject who can burn many days' worth of electricity next to someone who can barely power a lightbulb for a minute.</p>
   <p>\"What could the downside to this kind of power be,\" you may ask?</p>
@@ -102,12 +117,17 @@ var earth = [
   <p>That's what we did in the first days of magic. We have devised strategies that allow a person's mana to handle most of the heavy lifting. When you cast a spell, your magic will do what you ask of it, then you can check its work.</p>
   <br>\
   <br><div style='text-align: center'>------------------------</div>\
-  <br><br>\
+  <br>
+  <br>\
   <p>You may bring conduits and any magical items not enchanted to cause harm to our school.</p>
-  <p>Items designed to injure or kill will be confiscated and destroyed. Their owners will have their welcome to our school reevaluated.</p><br><br>\
-  <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius with the license plate 'Minnesota SEA-354'. She will find you no matter where you go, though you would be wise to not move far until then.</span></p><br>\
+  <p>Items designed to injure or kill will be confiscated and destroyed. Their owners will have their welcome to our school reevaluated.</p>
+  <br><br>\
+  <p style='font-size: 1.75rem; line-height: 2rem; text-indent: 0'><span style='font-family: Amatic SC; font-weight: 900; text-shadow: 1px 0 #000'>Your transport has been arranged. Survive until August 31st and a woman will pick you up in a violet Prius with the license plate 'Minnesota SEA-354'. She will find you no matter where you go, though you would be wise to not move far until then.</span></p>
+  <br>\
   <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>I get the feeling you'll be a very interesting girl.</span></p>
-  <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>Show me what you're made of, Airn Avalon.</span></p><br><br><br>\
+  <p style='font-size: 1.5rem; line-height: 2rem'><span style='font-family: Allan'>Show me what you're made of, Airn Avalon.</span></p>
+  <br><br>
+  <br>\
   </div></div>`,
 
   // `<br>\
@@ -152,8 +172,10 @@ var earth = [
     <p>Once we're all seated, Mrs. Johann says, \"Alright, class, today we'll be reviewing fractions.\" Airn sighs, apparently loud enough for the teacher to hear.</p>
     <p>\"Is there a problem, Miss Avalon?\"</p>
     <p>\"No, ma'am!\" Airn says, with an impressive fake smile.</p>
-    <p>\"Then let's begin.\"</p><br>\
-    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div><br>\
+    <p>\"Then let's begin.\"</p>
+    <br>\
+    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div>
+    <br>\
     <p>This class is easy enough that I can look at a newer student down the row from me. They're a slime, and a young one at that. Their body is more liquid than solid, and they're having trouble staying in their seat. Mrs. Johann keeps giving them looks that make me bristle and them shrink. I want to beat our teacher to death with rocks, but I'm sure that would get me unflattering wanted posters, so I settle for solidifying my body in a position that makes me look busy and send a little ball of slime down the row.</p>
     <p>When I get to the new slime's seat, I slide up the legs of their desk and arrange myself in a puddle on top of it. They stare at me, so I whisper, \"Hold up something to read.\"</p>
     <p>They root through their bag and pull out a math textbook. I slip closer to them as they set it open on their desk. Mrs. Johann looks our way. I look at the pages and quietly order them to turn it right-side-up. They oblige, and I assume my humanoid form. Scaled down to the size of my hand. Between the pages of a math book.</p>
@@ -222,19 +244,26 @@ var earth = [
     <p>I just want to stay in the same grade as Mina. The teasing I would receive for being held back can be fixed easily. That kind of reputational damage is easily repairable. What doesn't make sense is why I would have to retake a grade with 110% in <i>every magical class.</i> This is a <i>magic</i> school. Why do I need to learn math? How the hell does putting numbers together make me a better mage? <i>It fucking doesn't</i>. Anything more than basic arithmetic is unnecessary. Mana isn't something that can be measured. Arch-mages are called arch-mages because they're so goddamn powerful everybody is too afraid to compare them to regular magic users. Why is this school forcing me to lose hours every day shoving techniques I'll never use into my skull?</p>
     <p>\"Airn?\" Mina drags me out of my thoughts with a tired look. I don't like that she's losing sleep over this too... but I'm happy she's next to me. I wonder if I'm selfish for thinking that.</p>
     <p>\"Sorry.\" I don't care right now. I want to be done with this bullshit so I can go to bed.<br>\
-    ...Too bad I won't be able to enjoy cuddling with her.</p><br>\
-    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div><br>\
+    ...Too bad I won't be able to enjoy cuddling with her.</p>
+    <br>\
+    <div class=\"continue\">~~&gt ~~&gt ~~&gt</div>
+    <br>\
     <p>I wake up to Mina gently shaking me. Sometimes I think she couldn't hurt anyone if she tried, but I'll be reminded of how dangerous she can be when we get to sparring. History of our relationship aside- I manage a good morning and perform the Herculean effort of climbing out of bed and putting some clothes on. Doesn't really matter which shirt I wear with my vest, I only care about the sleeve length. A pair of pants. I didn't sweat through the underwear I put on last night, so they don't change. A bra gets put on because nobody willingly sleeps in bras.</p>
-    <p>Mina got me up around ten minutes before we have to start walking to class. I have enough time to get my backpack ready and eat whatever she and Noza brought me from breakfast. I'm too hungry and not conscious enough to resist. I can't spend first period waking up on an empty stomach, after all.</p> <br><br><br>\
-    <p>My thoughts turn to violence as soon as I finish waking up. I overheard a group of succubi gossiping about me and Mina, something about me seeing some guy I don't know. Noza would run with it, say some shit like \"He was <i>really</i> boring, didn't even last five minutes!\" without ever knowing who they were talking about. Mina would act like she doesn't care and tell me not to listen to them.</p>
+    <p>Mina got me up around ten minutes before we have to start walking to class. I have enough time to get my backpack ready and eat whatever she and Noza brought me from breakfast. I'm too hungry and not conscious enough to resist. I can't spend first period waking up on an empty stomach, after all.</p>
+    <br>
+    <br>
+    <br>\
+    <p>My thoughts turn to violence as soon as I finish waking up. I overheard a group of succubi gossiping, something about me seeing some guy I don't know. Noza would run with it, say some shit like \"He was <i>really</i> boring, didn't even last five minutes!\" without ever knowing who they were talking about. Mina would act like she doesn't care and tell me not to listen to them.</p>
+    <br>
     <p>I spent my next three classes thinking about how best to humiliate those bitches.</p>
+    <br>
     <p>If they were talking about Mina or Noza, I would tell them and let them deal with it. It's not my place to act. They've made that very clear. Me, though...</p>
     <p>When Mina and I first got together, I knocked out every kid who called me a faggot with my bare hands. No magic except healing my knuckles after the beatdown. There were a few other slurs; anyone who used them on me had to be taken to the healers on a stretcher. Worth every trip to the principal's office. Used my time there to get the sparring mats, too.</p>
     <p>I one-up insults and threats. Say you're going to kill me? You'll find knives in your wrists tomorrow morning. Threaten to assault me? I'll make you wish you could claw your brain out of your skull right there. That one started with some bastard who was saying he'd rape me if I hurt anyone else. Talked some big shit, got people joining in.</p>
     <p>The day after that, his eyes started bleeding. They wouldn't stop, red running off his face in an almost constant stream. He clawed at them like his nails would help. Screamed about how much it hurt until his voice actually stopped working. Really, no more sounds out of his mouth. I think somebody said he broke his vocal cords.</p>
     <p>Took the healers almost a week to get the curse off. He didn't come to my class after.</p>
-    <p>In the next months, every person who had said they would assault me with him experienced similar torture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never punished a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>
-    <p>All that to say: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether this is a hook for me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, aka the 'Realistic Option', they're hoping to break the record of time survived against me.</p>
+    <p>In the next months, every person who had said they would assault me with him experienced similar torture. It happened in random strikes, no rhyme or reason. Everyone blamed me. Said it was my fault, I was the last person he threatened. I have enough of a reputation for it. The school looked into the incident, but they never found a culprit. Nobody threated to assault me again, and I lived happily ever after.</p>
+    <p>Long story short: this group of succubi was spreading rumors about me, so I'm going to rip them apart. The question is whether this is a hook for me to bite. No way they don't know my reputation, so I'm thinking they're needy for attention. From my eyes, if they win the match, they get glory. If they don't, a.k.a. the 'Realistic Option', they're hoping to break the record of time survived against me.</p>
     <p>Whatever they calculated, it's wrong. Bet they think it only takes a succubus for a difficult match, meaning they're missing some numbers. Mina lasts minutes against me because she's been watching me fight for years and knows me intimately. She has a gold mine of information that these washed-up fools are lacking.</p>
     <p>\"Boylusters!\" My voice echos across the gym. Every head turns to me; people snicker, cringe and outright laugh at the name. Mina raises her eyebrows. Noza settles in excitedly. The clan in question is trying to slit my throat with their eyes. \"I challenge you to a duel.\"</p>
     <p>\"Oh?\" sneers the bitchiest-looking one, probably their leader. \"Go one at a time, if that's what you need.\" She's a little trickier than I thought, thinks she knows how to manipulate a crowd.</p>
@@ -251,7 +280,7 @@ var earth = [
     <p>I blitz forward, standing in front of her before she can start blinking. My hand finds the small heart pendant and tucks it back under her collar. Nobody else needs to see it; we can keep it between myself and Mina. I return to my position as she finishes blinking.</p>
     <p>Mina touches her shirt where the pendant was. Her eyes widen when she discovers it's a layer lower than she thought, then shift into gratitude. I give her a warm smile. I don't know how she thinks I did it, but that doesn't matter right now. We're supposed to be fighting.</p>
     <p>I throw another spell at her. She smirks as she dodges, sidestepping like she had always intended to. I put up a half-assed barrier with my wand hand and spread the rest of my fingers. I can't really conceal my casting, weaving five scorching strings of magic into spells homing in on Mina. Her eyes widen and she dodges one, barely misses the second. She tries that magic flare again, but I bend my power towards her.</p>
-    <p>All five spells hit at once, bringing Mina to all fours. Even with the barrier she was able to throw, her mana burns down to almost nothing. I shove my wand into its holster, rush over to her and put my hands on her shoulders, chanting a spell that forces her body to replenish its magic. It drains my own mana pretty quickly, almost a one-to-one rate. If I didn't have my vest, I would only be able to get her standing before I collapse. Luckily, I only take it off in our room after classes. I can fully restore her mana and only empty one of the power cells along my spine.</p>
+    <p>All five bolts hit at once, bringing Mina to all fours. Even with the barrier she was able to throw, her mana burns down to almost nothing. I shove my wand into its holster, rush over to her and put my hands on her shoulders, chanting a spell that forces her body to replenish its magic. It drains my own mana pretty quickly, almost a one-to-one rate. If I didn't have my vest, I would only be able to get her standing before I collapse. Luckily, I only take it off in our room after classes. I can fully restore her mana and only empty one of the power cells along my spine.</p>
     <p>The grimace on her face says I'm probably going too fast, but I'd rather have her uncomfortable than dead. I need to make a safeguard to keep that from happening again.</p>
     <p>\"I'm sorry,\" I whisper into her ear. \"I'm really sorry. Are you okay?\"</p>
     <p>She gives me a small smile and breathes, \"I'll be fine.\" Then she stands up, brushes some hair out of my face. \"You're already thinking of how to keep me safe. I love you.\"</p>
@@ -271,20 +300,20 @@ var earth = [
     <p>\"What is this...?\" I stare at the twists of metal in Airn's hand, the reflections on its surface almost winking at me. It feels far more alive than it should.</p>
     <p>\"Each of the links will store some of your mana. Combined, they can hold more than enough to get you standing if you run out completely.\" She's grinning. I can hear it in her voice, the little ring it gets when she's proud of herself. She's proud of something she made to keep me safe.</p>
     <p>I squeeze her tighter, press my lips to the top of her head. \"Thank you.\"</p>
-    <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I get to see. \"May I?\"</p>
-    <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentially harmful magic cast upon them without their consent.</i></p>
+    <p>\"You're welcome.\" She twists around, looking up at me with eyes full of love that only I know how to see. \"May I?\"</p>
+    <p>I reach under my shirt and pull out the heart pendant on my necklace. Magic twitches inside it, humming with the burn of Airn's power. The enchantment isn't in English or any other language, but the flow of power indicates what this little metal heart was instructed to do. <i>Protect the wearer of this pendant from any potentially harmful magic cast upon them without their knowledge and consent.</i></p>
     <p>It doesn't have the most pleasant history. Once upon a time, before Airn and I shared a room but after the first time we kissed, an older boy tried at me against a wall. This kind of thing isn't new. Even with my perception-altering powers on full blast to make me seem less attractive, I'm still a succubus. I prepared to deny him, to talk him down and away from me.</p>
-    <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I can't help but think that he walked over for me and doesn't have anything to do there.</p>
+    <p>Before I could open my mouth, his eyes went dull. Not a trace of sentience behind them. He straightened up, turned, and continued in the direction he had been going. I couldn't help but think that he walked over for me and doesn't have anything to do there.</p>
     <p>Airn was standing where she had been while we were walking, held stock-still. There was a dangerous gleam in her eyes, one I would later learn is her 'punisher' or 'justice-bringer' face. She strode over to me in sharp movements.</p>
     <p>\"What... What did you do?\" I stared at her, tasting the leftover sparks of her magic. It's sweet and hot and gives the impression of a one-track mind, like a fighter in pure battle state or a lover unable to think about anything but their partner.</p>
     <p>\"I got that ugly bastard off of you.\" Her voice was low with fresh power and fury. Affection I couldn't yet name fluttered in my chest at the thought that she was angry on my behalf, alongside a twinge of fear.</p>
-    <p>\"You- you mind-controlled him.\" Mind control is a very dangerous power; there's a reason succubi restrict their usage to cosmetic changes and minor coercion.</p>
+    <p>\"You- you mind-controlled him.\" Mind control is a very dangerous power; there's a reason succubi restrict their abilities to cosmetic changes and minor coercion.</p>
     <p>\"Directly controlling the mind is very difficult. I don't know of anyone who can do it.\"</p>
-    <p>\"That's not what you did.\"</p>
+    <p>\"You know that's not what you did.\"</p>
     <p>Airn glanced at me then, eyes and voice soft. \"Is it that big of a deal?\"</p>
     <p>I stared back at her, love and terror twisting my gut into an full tapestry of emotion.</p>
-    <p>She had used succubus magic. Not the way any succubus would, but I had felt the spell. It's a piece of what I do every conscious second to keep people from looking at me the way they look at succubi, on a much grander and more sinister scale. Convincing the mind to see something other than reality requires access to the mind.</p>
-    <p>Airn was able to reverse-engineer my magic. I later confirmed she had worked backward from my anti-attention glamour and learned how to access the mind.</p>
+    <p>She had used succubus magic. Not the way any succubus would, but I had felt the spell. It's a piece of what I do every conscious second to keep people from looking at me like a piece of meat, on a much grander and more sinister scale. Convincing the mind to see something other than reality requires access to the mind.</p>
+    <p>Airn was able to reverse-engineer my magic. I later confirmed she had worked backward from my anti-attention glamour and learned how to hijack people's heads.</p>
     <p>I could tell it was from me. When she cast the spell, I was confused because it was so close my magic, even though I hadn't cast anything on him. After I had time to think, I was able to acknowledge my method of looking into the mind. Most succubi glare into someone's head, demanding that they accept whatever the succubus wants. I keep my looking respectful, quietly but firmly ordering them to stop staring at me.</p>
     <p>Airn had kept that minimal intrusion, though I would guess it was more out of efficiency than respect. She had taken over the bare minimum of his mind to make him get away from me.</p>
     <p>Then the matter of morality. Her usage just now was arguably good, but she hadn't told me what she was capable of. I could easily imagine her simply not knowing its taboo in magical culture, but...</p>
@@ -298,14 +327,14 @@ var earth = [
     <p>She held up a cord with a metal representation of a heart weighing it down.</p>
     <p>\"This is for you.\"</p>
     <p>\"What is it?\" I had asked. Her face didn't change from its guarded expression.</p>
-    <p>\"Read the enchantment yourself so I can't lie.\" My heart shattered at her words, less at what she said than how she was framing herself. A person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>
+    <p>\"Read the enchantment yourself so I can't lie.\" My heart shattered at her words, less at what she said than how she was framing herself. As a person utterly unworthy of trust, a person who will hurt someone they care about and regret it later.</p>
     <p>A person Airn isn't.</p>
     <p>Everything I knew about Airn told me that she would rather rip herself apart than hurt people she cared about. Violent and extreme, but that's Airn. She will deal karma like a dealer stacking the deck to ensure you never even see a good hand. Not because they're in a casino and their job is making the house win, but as a personal grudge.</p>
     <p>Airn is a violent creature who will stop at nothing to exact revenge.</p>
     <p>Learning about her changes that perspective. Yes, she is exactly the creature I just described. She also values her friends above herself. If someone catcalls me, her eyes light up a vengeant fire hotter and brighter than the one that people ignite when they insult her. I have had to talk her down from outright murder many times. Every time she has gotten that angry was over someone targeting her friends.</p>
-    <p>I hated that Airn couldn't see herself the way I do in the moment. That she is deserving of trust, of love, of care. She is the best person I know, not because she hurts people but because she always hurts people for the right reason.</p>
-    <p></p>
-    <p></p>
+    <p>I hated that Airn couldn't see herself the way I did in the moment. That she is deserving of trust, of love, of care. She is the best person I know, not because she hurts people but because she always hurts people for the right reason.</p>
+    <p>I took the necklace, running my fingers along its cord, looking for Airn's power. My fingers kept going until I reached the pendant weighing it down and got struck with a hot wave of power. The words almost forced themselves into my mind, insisting that I translate them. <i>Protect the wearer of this pendant from any potentially harmful magic cast upon them without their knowledge and consent.</i></p>
+    <p>Airn clips two jumper rings at the ends of the chain to the cord, sending its power whispering through my head again. I give it a tiny trickle of my mana to sate it, pushing the whispers to the back of my mind.</p>
     <p></p>
     <p></p>
     <p></p>
@@ -478,11 +507,14 @@ var earth_lore = [
     hr {border-style: dashed;}\
 </style>\<h1>dragons</h1>\
   <div class='background'>\
-    <p>Dragons are very picky creatures, still trying to bring their numbers up after humanity's slaughter of magical creatures and wary of everyone. Some species are more open-minded than others and a small group are even willing to work with magical species. Very few are willing to work with humans, though this mindset is usually imposed upon them by elders. (tl:dr if you want a dragon go young [that sounds weird though   -   ^   -  ])</p><br>\
+    <p>Dragons are very picky creatures, still trying to bring their numbers up after humanity's slaughter of magical creatures and wary of everyone. Some species are more open-minded than others and a small group are even willing to work with magical species. Very few are willing to work with humans, though this mindset is usually imposed upon them by elders. (tl:dr if you want a dragon go young [that sounds weird though   -   ^   -  ])</p>
+    <br>\
     <p>Their general powers are magic manipulation (theyre magic beasts) (this includes breathing fire) and flight with either wings or magic</p>
-    <br><hr color='black' noshade size='2.5'><br>\
+    <br><hr color='black' noshade size='2.5'>
+    <br>\
     <p>The main species/family of dragons that allow riders is the Beatreaux, a friendly clan opposed to reasonless violence. If you get called a name they will stand behind you menacingly, but they won't hurt the person responsible.<br>\
-    most dragon-related knowledge is from them</p><br>\
+    most dragon-related knowledge is from them</p>
+    <br>\
     <p>The Nemonius are a clan that keep so far away from interaction even the Archmages don't really know anything about them. In fact, the only reason anyone(non-dragon) knows anything about them is from other dragons.</p>
     <p></p>
     <p></p>
@@ -646,7 +678,8 @@ var lustwreakers = [
     20<br>\
     Lesbian<br>\
     Demonic power/magic<br>\
-    Demonoid/Cambion(Half human, half Arch Succubus)<br><br>\
+    Demonoid/Cambion(Half human, half Arch Succubus)<br>
+    <br>\
     Marnin is her demon name and Lustwreaker is her clan, nobody is related to each other except Quinn<br>\
     Rory is second-in-command, while Diolas and Raein are defense/offense<br>\
     Quinn will be third-in-command (she isn't included among the members bc her focus is on her childhood (also marnin doesnt want her in danger))\
@@ -671,8 +704,10 @@ var lustwreakers = [
     old enough<br>\
     Bi with female preference<br>\
     Fists/melee<br>\
-    Greater Succubus<br><br>\
-    Short in height, small chest, keeps her horns, tail and wings hidden, very submissive, isn\'t affected by semen the way succubi normally are, really likes women contrary to her evolutionary design<br><br>\
+    Greater Succubus<br>\
+    <br>\
+    Short in height, small chest, keeps her horns, tail and wings hidden, very submissive, isn\'t affected by semen the way succubi normally are, really likes women contrary to her evolutionary design<br>\
+    <br>\
     Bound herself to Marnin out of love, and was named\
     </p>\
   </body>\
@@ -694,7 +729,8 @@ var lustwreakers = [
     old enough<br>\
     Doesn\'t know other than they like Raein<br>\
     Angelic power<br>\
-    Demon/Angel(Nephilim)<br><br>\
+    Demon/Angel(Nephilim)<br>\
+    <br>\
     Forced away from Heaven and Hell, in a kind of exile on Earth<br>\
     </p>\
   </body>\
@@ -716,7 +752,8 @@ var lustwreakers = [
     old enough<br>\
     Gay<br>\
     Holy spear<br>\
-    Fallen Angel<br><br>\
+    Fallen Angel<br>\
+    <br>\
     Rory threw him from grace after he attacked her, Marnin and Diolas<br>\
     </p>\
   </body>\
@@ -738,7 +775,8 @@ var lustwreakers = [
     equivalent of 16<br>\
     more focused on killing people than romance<br>\
     Katana<br>\
-    Demonoid - quarter human, quarter succubus and half Arch Succubus<br><br>\
+    Demonoid - quarter human, quarter succubus and half Arch Succubus<br>\
+    <br>\
     Daughter of Marnin and Rory<br>\
     weeb perhaps? at least very interested in japanese culture\
     </p>\
@@ -942,7 +980,9 @@ var writing_stuff = [
   <p>\
   ACADEMY GUESTBOOK\
 DAY THIRTY-FOUR<br>\
-march the third 2026<br><br><br><br>\
+march the third 2026<br>
+<br><br>
+<br>\
 Brody<br>\
 idk<br>\
 WHERE AND HOW WOULD YOU LIKE THE NEW FIRST-YEARS AT THE ACADEMY TO BE SORTED? DO YOU WANT THE HOUSES TO \"BALANCE OUT,\" IN ORDER TO EVEN UP THE CHALICE CUP STANDINGS? OR DO YOU WANT THE BEST FOR *YOUR* HOUSE? BE HONEST. idk ill go to  ka'iryte ig\
