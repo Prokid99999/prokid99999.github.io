@@ -39,6 +39,12 @@ function setCookie(cname, cvalue, output = true, exdays = 365) {
   )}
 }
 
+function ensureCookie(cookie='', defaultVal='') {
+  if (checkCookie(cookie) === 'error') {
+    setCookie(cookie, defaultVal)
+  }
+}
+
 function setArrayCookie(name, value, daysToLive = 365) {
   // Serialize the value (array → string)
   const serializedValue = JSON.stringify(value);
@@ -373,6 +379,41 @@ function StartThoughts(content = ['wtf']) {
   }
 }
 
+function chattbox(username, msgs=['']) {
+  let page = window.location.pathname + ' - '
+  ensureCookie(page + 'scrollY')
+    window.addEventListener('scrollend', () => {
+        setCookie(page + 'scrollY', window.scrollY)
+    })
+    window.addEventListener('load', () => {
+      window.scrollTo(0, getCookie(page + 'scrollY'))
+    })
+
+  let showSlide = (n) => {
+
+  }
+  if (typeof username === 'string') {
+    showSlide = (n) => {
+      gewi('chatt').innerHTML += `<div class="chattbox"><span class="username">{<span class="user ${username}">${username}</span>}</span> <div class="msg">${msgs[n]}</div></div><br>`
+    }
+  }
+  else if (Array.isArray(username)) {
+    tesLog('chattbox: username is array')
+    showSlide = (n) => {
+      gewi('chatt').innerHTML += `<div class="chattbox"><span class="username">{<span class="user ${username[n]}">${username[n]}</span>}</span> <div class="msg">${msgs[n]}</div></div><br>`
+    }
+  }
+
+  gewi('chatt').innerHTML = ''
+
+  for (let index = 0; index < msgs.length; index++) {
+    if (msgs[index] != '') {
+      showSlide(index)
+    }
+  }
+  // gewi('chatt').innerHTML += linebreak()
+}
+
 function getCommit(owner, repo) {
   fetch(
     'https://api.github.com/repos/' + owner + '/' + repo + '/commits?per_page=1',
@@ -618,6 +659,77 @@ function qSel(params='') {
 function qSelA(params='') {
   return document.querySelectorAll(params)
 }
+
+
+function addBg(html='') {
+  output = '<br><div class="background">'
+  if (html != '') {
+    output += html
+  }
+  output += '</div>'
+  return output
+}
+function background(html='', linebreak=true) {
+  output = ''
+  if (linebreak) {
+    output += '<br>'
+  }
+  output += '<div class="background">'
+  if (html != '') {
+    output += html
+  }
+  output += '</div>'
+  return output
+}
+function addHTML(html='', element='p') {
+  output = `<${element}>`
+  if (html != '') {
+    output += html
+  }
+  output += `</${element}>`
+  return output
+}
+function paragraph(html='') {
+  return addHTML(html, 'p')
+}
+function header1(html='') {
+  element = 'h1'
+  output = `<${element}>`
+  if (html != '') {
+    output += html
+  }
+  output += `</${element}>`
+  return output
+}
+function header2(html='') {
+  return addHTML(html, 'h2')
+}
+function linebreak() {
+  return('<br>')
+}
+function linkAdder(link='', name='', breakline=true) {
+  let output = ''
+  if (link != '' && name != '') {
+    output = `<a href="${link}">${name}</a>`
+  }
+  else if (link != '' && name === '') {
+    output = `<a href="${link}">${link}</a>`
+  }
+  if (breakline) {
+    output += linebreak()
+  }
+  return output
+}
+function addLink(link='', name='', breakline) {
+  return linkAdder(link, name, breakline)
+}
+function addlink(link='', name='', breakline) {
+  return linkAdder(link, name, breakline)
+}
+function link(link='', name='', breakline) {
+  return linkAdder(link, name, breakline)
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   serviceWorker(output)

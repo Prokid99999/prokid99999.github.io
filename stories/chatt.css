@@ -1,0 +1,37 @@
+.chatt {
+  color: white;
+  font-family: 'Lucidia Console', monospace;
+  display: inline;
+  /* font-size: small; */
+}
+.chattbox {
+  font-family: inherit;
+  display: inline;
+  line-height: 1.5rem;
+}
+.username {
+  color: #aaa;
+}
+.user {
+  color: #aaa;
+  text-shadow: 1px 1px 2px #666;
+}
+.msg {
+  display: inline;
+  font-family: inherit;
+  text-wrap-mode: wrap;
+  margin-left: auto;
+}
+
+body {
+  background-color: black;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-left: 17rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* font-size: 1rem; */
+}
+span {
+  font-family: inherit;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<head>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Allan|Aguafina Script|Amatic SC' rel='stylesheet'> -->
+    <link rel="stylesheet" href="/writing.css">
+    <link rel="stylesheet" href="/stories/chatt.css">
+    <link rel="icon" href="/icons/story.png">
+    <script src="/script.js"></script>
+    <script src="/text.js"></script>
+</head>
+<style>
+  .lill {
+    color: #6c00d1;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  br {
+    line-height: 2rem;
+  }
+  h3 {
+    color: white;
+  }
+  h3>br {
+    line-height: 1.5rem
+  }
+  p.warnings {
+    color: #ccc;
+    text-indent: 0px;
+    /* margin-bottom: 1rem; */
+    font-size: small;
+    line-height: 1rem;
+    font-family: inherit;
+  }
+  p.warnings>br {
+    line-height: 1.5rem;
+  }
+  h3.warning {
+    color: red;
+    margin-bottom: 0px;
+    margin-top: 00px;
+    font-size: x-large;
+    font-family: inherit;
+  }
+  div.warnings {
+    position: fixed;
+    left: 0.55rem;
+    top: 0.55rem;
+    background-color: #222;
+    background: radial-gradient(#333, #171717);
+    height: min-content;
+    padding: 15px;
+    padding-top: 10px;
+    border: #111 solid 2px;
+    border-radius: 15px;
+    max-width: 13rem;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+@media screen and (max-width: 900px) {
+  div.warnings {
+    left: 1rem;
+    right: 1rem;
+    position: initial;
+    max-width: 90vw;
+    margin-bottom: 1rem;
+  }
+  p.warnings {
+    font-size: x-large;
+    line-height: 2rem;
+  }
+  h3.warning {
+    font-size: xx-large;
+  }
+  body {
+    max-width: 99vw;
+    margin-left: 1rem;
+    margin-right: 1.75rem;
+    margin-top: 1rem;
+  }
+}
+</style>
+<title>short story</title>
+<html>
+    <body>
+      <div class="warnings">
+        <h3 class="warning">Rated M for:</h3>
+        <p class="warnings">
+          Infrequent Sexual Themes<br>
+          Strong Language<br>
+          Heavy Topics (dysphoria, depression, mental health)
+        </p>
+      </div>
+
+      <div class="chatt" id="chatt"></div>
+    </body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    chattbox(users, chat)
+  })
+
+  let chat = [
+    `hi gyus`,
+    `*guys`,
+    `wahts up`,
+    `man i cannot type today<br>`,
+
+    `so`,
+    `ive been playing deltarune ch5`,
+    `its great (its deltarun e what were you expecting)`,
+    `seth has set up a permanent residence in my head`,
+    `the onyl complaint i have is that my girlfriend can now speak exaclty like folwery`,
+    `*only *flowery oh my god`,
+    `also she started calling my dick a "Jaboner"`,
+    `i dont know how to geel about that`,
+    `*feel`,
+    `its really weird to have my girlfriend say "Sorry to keep a lady in waiting!" while she\'s jerking me off<br>`,
+
+    `what do you mean the secret boss is a catgirl`,
+    `(des just walked over)`,
+    `little miss metroidvania over here`,
+    `bet she 100%\'ed deltarune all routes`,
+    `like, seriously. she beat blood stained sanctuary with <i>only the nemesis and WITHOUT. GETTING. HIT</i>`,
+    `<i>ONCE.</i>`,
+    `i havent even bothered looking at her time<br>`,
+
+    `god i love cave story`,
+    `quote is the rare guy i don\'t really mind playing in a video game`,
+    `probably bc they're not a guy in my head`,
+    `i would rather play as curly though. she\'s so cool`,
+    `also only straight couple i ship`,
+    `i just want to see quote and curly kisssssssssssss<br><br><br>`,
+
+    `I've been wondering; <i>Why am I doing this?</i>`,
+    `<i>Why am I typing things into a computer, why am I trying to record happy stuff?</i>`,
+    `Maybe it's for me to read when I forget that happy things can happen to me, or to remind myself I deserve them.`,
+    `Sometimes it feels like I'm making a problem when I get depressed.`,
+    `I'm figuring myself out, finally, I'm dealing with people trying their damndest to shame me out of who I am.`,
+    `I have a wonderful girlfriend who's happy to help me through all of this.`,
+    `that's not meant to sound like i'm using her. it kind of sounds that way.`,
+    `i feel like i'm putting a lot on her.`,
+    `she helps me through all of my bullshit. there's a lot of it.`,
+    `dysphoria, depression, caring when people want me dead for trying to be myself.`,
+    `sometimes`,
+    `after days and days of nonstop transphobia`,
+    'of almost everyone i know treating me like an unnatural freak',
+    'when i try to fall asleep',
+    'everything they say plays through my head',
+    'on repeat',
+    `and all i can do is cry.`,
+    `i don't want to cry. i don't want to shed tears over mean things people say because they won't ever understand.`,
+    `i don't want to care.`,
+    `i pretend not to`,
+    `but to ignore something`,
+    `or someone`,
+    `you have to listen`,
+    `you need to know what they're talking about so you can filter it out`,
+    `i ignore every hurtful thing`,
+    `push it into some dark cave in my head`,
+    `and sometimes`,
+    `it pulls me in.`,
+    `i think about every single thing i pushed into the cave`,
+    ``
+
+  ]
+
+  let users = [
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+    `lill`,
+  ]
+
+
+  let test = {
+    lill:['idk'],
+    des:['sex lol'],
+
+  }
+</script>
