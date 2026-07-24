@@ -723,8 +723,7 @@ function sentenceCase(string) {
 vsynthFacts = [
   "The term 'Vocaloid' is often used to refer to the general idea of voice synthesizers, rather than the specific software named VOCALOID.",
     "There are at least three mainstream vocal synthesizers: VOCALOID, UTAU, and SynthV.",
-    // "Every Vocaloid is a vocal synthesizer that comes with a character for recognizability.",
-    "Vocal synthesizers are like any other musical synthesizer, but with words and an anime girl.",
+    "Every Vocaloid is a vocal synthesizer that comes with a character for recognizability.",
 
 ]
 let mikuFacts = [
@@ -740,7 +739,8 @@ let tetoFacts = [
     `Kasane Teto is considered a Vocaloid, some placing her on the same level or even higher than Hatsune Miku.`,
     `<strong>Breaking News:</strong> Self-proclaimed "Vocaloid fan" writes transfem Teto detransition, tied up and paraded through city by fanbase. More at 7.`,
     `Twitter claims Kasane Teto "cannot be transgender", reasoning ranges from "that is not what the creator said" to "'Transgender' people are mentally ill and should kill themselves".`,
-    'Violent dispute over whether world-famous singer Hatsune Miku is "a top or a bottom" continues to rage. 43 hospitalized, 12 dead.'
+    'Violent dispute over whether world-famous singer Hatsune Miku is a "top or a bottom" continues to rage. 43 hospitalized, 12 dead.',
+    "Vocal synthesizers are like any other musical synthesizer, but with words and an anime girl.",
 ]
 let neruFacts = [
   `Akita Neru<br>${selectedVsynth('neru', '3rem')}`,

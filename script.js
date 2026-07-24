@@ -1,25 +1,25 @@
 function serviceWorker(output) {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
-    .then(function(registration) {
-      if (output) {console.log(tes[0] + 'Service Worker registered with scope:', registration.scope);}
-    }).catch(function(error) {
-      if (output) {console.log(tes[0] + 'Service Worker registration failed:', error);}
-    });
+      .then(function (registration) {
+        if (output) { console.log(tes[0] + 'Service Worker registered with scope:', registration.scope); }
+      }).catch(function (error) {
+        if (output) { console.log(tes[0] + 'Service Worker registration failed:', error); }
+      });
   }
 }
 let output = false
 
 var program = [
-    '(^///^) ',
-    "(o///o) ",
-    "(0///0) ",
-    "(>///<) ",
-    " ( /o///o) ",
-    " ( /0///0) ",
-    "(v///v) ",
-    '(-///-) ',
-    '(u///u) ',
+  '(^///^) ',
+  "(o///o) ",
+  "(0///0) ",
+  "(>///<) ",
+  " ( /o///o) ",
+  " ( /0///0) ",
+  "(v///v) ",
+  '(-///-) ',
+  '(u///u) ',
 ]
 
 var tes = ["(o ^ o) ", "(- ^ -)"]
@@ -34,12 +34,13 @@ function setCookie(cname, cvalue, output = true, exdays = 365) {
   let expires = 'expires=' + d.toUTCString();
   document.cookie = cname + '=' + cvalue + ';' + expires + ';page=/';
   if (output) {
-  console.log(
-    tes[0] + 'Set cookie \'' + cname + '\' with value \'' + cvalue + '\'; ' + expires
-  )}
+    console.log(
+      tes[0] + 'Set cookie \'' + cname + '\' with value \'' + cvalue + '\'; ' + expires
+    )
+  }
 }
 
-function ensureCookie(cookie='', defaultVal='') {
+function ensureCookie(cookie = '', defaultVal = '') {
   if (checkCookie(cookie) === 'error') {
     setCookie(cookie, defaultVal)
   }
@@ -146,7 +147,7 @@ function checkArrayCookie(cname) {
 //     .catch(error => console.error('Failed to fetch data:', error));
 // }
 
-function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX = false, doY = true, doOutput = false) {
+function displayStory(content = ['wtf'], extraScript = '', doCookies = true, doX = false, doY = true, doOutput = false) {
   var page = window.location.pathname + ' - '
   var showSlide = (n) => {
     gewi('story').innerHTML = content[n]
@@ -206,13 +207,15 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
   }
   function next() {
     var videoElement = qSelA('video')
-    try {videoElement.forEach(element => {
-      element.pause()
-      element.removeAttribute('src')
-      element.load()
-    })}
-    catch (TypeError) {errorMessage('no videos')}
-      index = (index + 1) % content.length
+    try {
+      videoElement.forEach(element => {
+        element.pause()
+        element.removeAttribute('src')
+        element.load()
+      })
+    }
+    catch (TypeError) { errorMessage('no videos') }
+    index = (index + 1) % content.length
     if (index + 1 >= content.length) {
       gewi('next').style.display = 'none'
       gewi('next1').style.display = 'none'
@@ -236,12 +239,14 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
   }
   function prev() {
     var videoElement = qSelA('video')
-    try {videoElement.forEach(element => {
-      element.pause()
-      element.removeAttribute('src')
-      element.load()
-    })}
-    catch (TypeError) {errorMessage('no videos')}
+    try {
+      videoElement.forEach(element => {
+        element.pause()
+        element.removeAttribute('src')
+        element.load()
+      })
+    }
+    catch (TypeError) { errorMessage('no videos') }
     index = (index + content.length - 1) % content.length
     if (index === 0) {
       gewi('prev').style.display = 'none'
@@ -287,7 +292,7 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
       }
     }
     else if (event.key === 'ArrowUp') {
-    // Up Arrow pressed
+      // Up Arrow pressed
     }
     else if (event.key === 'ArrowDown') {
       // Down Arrow pressed
@@ -295,9 +300,9 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
   }
   function char() {
     try {
-    gewi('char').addEventListener('dblclick', () => {
-      word_count()
-    })
+      gewi('char').addEventListener('dblclick', () => {
+        word_count()
+      })
     }
     catch (TypeError) {
       errorMessage('story: no char element')
@@ -319,33 +324,43 @@ function displayStory(content = ['wtf'], extraScript='', doCookies = true, doX =
 
 var startState = 'not started'
 
-function startStory(content=['wtf'], format=false, doOutput=false, extraScript='', doCookies=true, doX=false, doY=true) {
-  if (doOutput) {tesLog('starting story...')}
+/**
+ * starts a story :P
+ * @param {*} content
+ * @param {*} format
+ * @param {*} doOutput
+ * @param {*} extraScript
+ * @param {*} doCookies
+ * @param {*} doX
+ * @param {*} doY
+ */
+function startStory(content = ['wtf'], format = false, doOutput = false, extraScript = '', doCookies = true, doX = false, doY = true) {
+  if (doOutput) { tesLog('starting story...') }
   var s = document.createElement('script');
   s.id = 'text'
   if (startState === 'not started') {
     getScript('/text.js')
-    if (doOutput) {tesLog('story: fetched text')}
+    if (doOutput) { tesLog('story: fetched text') }
     startState = 'debug check'
   }
   if (window.location.href.indexOf('http://localhost:8001') > 0) {
-    if (doOutput) {tesLog('story: debug true')}
+    if (doOutput) { tesLog('story: debug true') }
     startState = 'debug true'
   }
   else {
-    if (doOutput) {tesLog('story: debug false')}
+    if (doOutput) { tesLog('story: debug false') }
     startState = 'ready to display'
   }
   if (startState === 'debug true') {
     tesLog('story: getting text')
     getScript('https://prokid99999.github.io/text.js')
     getScript('http://localhost:2009/text.js')
-    }
-  if (doOutput) {tesLog('story: displaying')}
+  }
+  if (doOutput) { tesLog('story: displaying') }
   if (startState === 'ready to display') {
-    if (format) {document.body.innerHTML +=
-      '\
-        <br>\
+    if (format) {
+      document.body.innerHTML +=
+        '\
         <div class="space">\
             <div style="text-align: left"><button id="prev">&lt; Previous</button></div>\
             <div id="center" style="text-align: center;"></div>\
@@ -379,15 +394,15 @@ function StartThoughts(content = ['wtf']) {
   }
 }
 
-function chattbox(username, msgs=['']) {
+function chattbox(username, msgs = ['']) {
   let page = window.location.pathname + ' - '
   ensureCookie(page + 'scrollY')
-    window.addEventListener('scrollend', () => {
-        setCookie(page + 'scrollY', window.scrollY)
-    })
-    window.addEventListener('load', () => {
-      window.scrollTo(0, getCookie(page + 'scrollY'))
-    })
+  window.addEventListener('scrollend', () => {
+    setCookie(page + 'scrollY', window.scrollY)
+  })
+  window.addEventListener('load', () => {
+    window.scrollTo(0, getCookie(page + 'scrollY'))
+  })
 
   let showSlide = (n) => {
 
@@ -483,13 +498,12 @@ function wordcount(paras = 'background') {
   console.log(words.length)
 }
 
-function stripHtml(html)
-{
+function stripHtml(html) {
   let tmp = document.createElement('DIV');
   tmp.innerHTML = html;
   return tmp.textContent ||
-  tmp.innerText ||
-  '';
+    tmp.innerText ||
+    '';
 }
 
 function vol(video_volume = 0.1, audio_volume = 0.75) {
@@ -502,8 +516,8 @@ function vol(video_volume = 0.1, audio_volume = 0.75) {
   audio.forEach(element => element.volume = audio_volume)
 }
 
-function colorTrace(msg, color='red') {
-    console.log("%c" + msg, "color:" + color + "; font-weight:bolder;");
+function colorTrace(msg, color = 'red') {
+  console.log("%c" + msg, "color:" + color + "; font-weight:bolder;");
 }
 
 function errorMessage(msg) {
@@ -514,7 +528,7 @@ function random(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
 
-function tesLog (msg='') {
+function tesLog(msg = '') {
   console.log(tes[0] + msg)
 }
 
@@ -530,15 +544,15 @@ function getScript(file) {
  * little function to add a face to a log
  * @param {string} msg - message to be displayed in the console
  */
-function bullshitLog(msg='') {
+function bullshitLog(msg = '') {
   let bull = ':3 > '
   console.log(bull + msg)
 }
-function bsLog(msg='') {
+function bsLog(msg = '') {
   bullshitLog(msg)
 }
 function bhbUnhide() {
-  qSelA('.hidden').forEach( element => {
+  qSelA('.hidden').forEach(element => {
     element.style.color = '#666'
   })
   bullshitLog
@@ -549,13 +563,13 @@ function bhbUnhide() {
  * Help function
  * @param {string} func specific function to help with - unfinished
  */
-function bsHelp(func='') {
+function bsHelp(func = '') {
   let bull = ':3 > '
   if (func === '') {
-    return bull+'bullshit.js, console helper/Javascript library by Bullshit Programs.'
+    return bull + 'bullshit.js, console helper/Javascript library by Bullshit Programs.'
   }
 
-  else {return bull+'unrecognized function'}
+  else { return bull + 'unrecognized function' }
 }
 
 /**
@@ -585,14 +599,14 @@ function getModule(file) {
  * @param {string} element element type
  * @param {string} id id to add to the element
  */
-function addElement(element='', id='') {
+function addElement(element = '', id = '') {
   let elem = document.createElement(element)
   if (id != '') {
     elem.id = id
   }
   document.body.appendChild(elem)
-  if (id === '') {return `added ${element} to document`}
-  else {return `added ${element} to document with id ${id}`}
+  if (id === '') { return `added ${element} to document` }
+  else { return `added ${element} to document with id ${id}` }
 }
 
 /**
@@ -600,21 +614,21 @@ function addElement(element='', id='') {
  * @param {string} id - id of the element
  * @returns the element
  */
-function getElementWithId(id='') {
+function getElementWithId(id = '') {
   return document.getElementById(id)
 }
 /**
  *Shortened version of getElementWithId
  * @param {string} id - id of the element
  */
-function gEWI(id='') {
+function gEWI(id = '') {
   return getElementWithId(id)
 }
 /**
  *Shortened version of getElementWithId
  * @param {string} id - id of the element
  */
-function gewi(id='') {
+function gewi(id = '') {
   return getElementWithId(id)
 }
 
@@ -623,7 +637,7 @@ function gewi(id='') {
  * @param {string} clas - class to search for
  * @returns elements
  */
-function getElementsWithClassname(clas='') {
+function getElementsWithClassname(clas = '') {
   return document.getElementsByClassName(clas)
 }
 /**
@@ -631,7 +645,7 @@ function getElementsWithClassname(clas='') {
  * @param {*} clas - class to search for
  * @returns elements
  */
-function gEWC(clas='') {
+function gEWC(clas = '') {
   return getElementsWithClassname(clas)
 }
 /**
@@ -639,7 +653,7 @@ function gEWC(clas='') {
  * @param {*} clas - class to search for
  * @returns elements
  */
-function gewc(clas='') {
+function gewc(clas = '') {
   return gEWC(clas)
 }
 
@@ -648,7 +662,7 @@ function gewc(clas='') {
  * @param {string} params CSS selectors
  * @returns elements
  */
-function qSel(params='') {
+function qSel(params = '') {
   return document.querySelector(params)
 }
 /**
@@ -656,12 +670,12 @@ function qSel(params='') {
  * @param {string} params CSS selectors
  * @returns elements
  */
-function qSelA(params='') {
+function qSelA(params = '') {
   return document.querySelectorAll(params)
 }
 
 
-function addBg(html='') {
+function addBg(html = '') {
   output = '<br><div class="background">'
   if (html != '') {
     output += html
@@ -669,7 +683,7 @@ function addBg(html='') {
   output += '</div>'
   return output
 }
-function background(html='', linebreak=true) {
+function background(html = '', linebreak = true) {
   output = ''
   if (linebreak) {
     output += '<br>'
@@ -681,7 +695,7 @@ function background(html='', linebreak=true) {
   output += '</div>'
   return output
 }
-function addHTML(html='', element='p') {
+function addHTML(html = '', element = 'p') {
   output = `<${element}>`
   if (html != '') {
     output += html
@@ -689,10 +703,10 @@ function addHTML(html='', element='p') {
   output += `</${element}>`
   return output
 }
-function paragraph(html='') {
+function paragraph(html = '') {
   return addHTML(html, 'p')
 }
-function header1(html='') {
+function header1(html = '') {
   element = 'h1'
   output = `<${element}>`
   if (html != '') {
@@ -701,13 +715,13 @@ function header1(html='') {
   output += `</${element}>`
   return output
 }
-function header2(html='') {
+function header2(html = '') {
   return addHTML(html, 'h2')
 }
 function linebreak() {
-  return('<br>')
+  return ('<br>')
 }
-function linkAdder(link='', name='', breakline=true) {
+function linkAdder(link = '', name = '', breakline = true) {
   let output = ''
   if (link != '' && name != '') {
     output = `<a href="${link}">${name}</a>`
@@ -720,14 +734,25 @@ function linkAdder(link='', name='', breakline=true) {
   }
   return output
 }
-function addLink(link='', name='', breakline) {
+function addLink(link = '', name = '', breakline) {
   return linkAdder(link, name, breakline)
 }
-function addlink(link='', name='', breakline) {
+function addlink(link = '', name = '', breakline) {
   return linkAdder(link, name, breakline)
 }
-function link(link='', name='', breakline) {
+function link(link = '', name = '', breakline) {
   return linkAdder(link, name, breakline)
+}
+
+function foxvale(text='') {
+  return `<p><img src="/writers/foxvale16.png" alt=""> ${text}</p>`
+}
+function veilfox(text='') {
+  return `<p>${text} <img src="/writers/valefox16.png" alt=""></p>`
+}
+function chapter(number = '', title = '', content = '') {
+  output = header2(number) + header1(title) + background(content)
+  return output
 }
 
 

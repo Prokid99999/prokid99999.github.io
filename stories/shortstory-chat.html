@@ -3,6 +3,7 @@
     <!-- <link href='https://fonts.googleapis.com/css?family=Allan|Aguafina Script|Amatic SC' rel='stylesheet'> -->
     <link rel="stylesheet" href="/writing.css">
     <link rel="stylesheet" href="/stories/chatt.css">
+    <link rel="stylesheet" href="/writers/foxvale.css">
     <link rel="icon" href="/icons/story.png">
     <script src="/script.js"></script>
     <script src="/text.js"></script>
@@ -43,8 +44,6 @@
   }
   div.warnings {
     position: fixed;
-    left: 0.55rem;
-    top: 0.55rem;
     background-color: #222;
     background: radial-gradient(#333, #171717);
     height: min-content;
@@ -53,17 +52,65 @@
     border: #111 solid 2px;
     border-radius: 15px;
     max-width: 13rem;
+    min-width: min-content;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+  }
+
+  div.side {
+    position: fixed;
+    left: 0.55rem;
+    top: 0.55rem;
+    /* background-color: #222;
+    background: radial-gradient(#333, #171717); */
+    /* height: min-content; */
+    /* padding: 15px;
+    padding-top: 10px; */
+    /* border: #111 solid 2px;
+    border-radius: 15px; */
+    max-width: 13rem;
     text-shadow: 0px 0px 5px #000;
     font-family: 'Courier New', Courier, monospace;
   }
 
+  .writer {
+    position: fixed;
+    background-color: #222;
+    background: radial-gradient(#333, #171717);
+    height: min-content;
+    padding: 15px;
+    padding-top: 10px;
+    border: #111 solid 2px;
+    border-radius: 15px;
+    max-width: 13rem;
+    min-width: min-content;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-indent: 0%;
+  }
+  .side-space {
+    line-height: 6rem;
+  }
+
 @media screen and (max-width: 900px) {
-  div.warnings {
+  div.side {
     left: 1rem;
     right: 1rem;
-    position: initial;
+    position: relative;
     max-width: 90vw;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    max-height: fit-content;
+  }
+  div.warnings {
+    position: relative;
+    margin-right: 2rem;
+    max-width: unset;
+  }
+  .writer {
+    position: relative;
   }
   p.warnings {
     font-size: x-large;
@@ -78,18 +125,26 @@
     margin-right: 1.75rem;
     margin-top: 1rem;
   }
+  .side-space {
+    line-height: 0%;
+  }
 }
 </style>
-<title>short story</title>
+<title>short story chat stuff</title>
 <html>
     <body>
-      <div class="warnings">
-        <h3 class="warning">Rated M for:</h3>
-        <p class="warnings">
-          Infrequent Sexual Themes<br>
-          Strong Language<br>
-          Heavy Topics (dysphoria, depression, mental health)
-        </p>
+      <div class="side">
+        <div class="writer foxvale"><div>Foxvale</div><img src="/writers/foxvale.png"></div>
+        <br class="side-space">
+        <div class="warnings">
+          <h3 class="warning">Rated M for:</h3>
+          <p class="warnings">
+            Infrequent Sexual Themes<br>
+            Strong Language<br>
+            Heavy Topics (dysphoria, depression, mental health)
+          </p>
+        </div>
+
       </div>
 
       <div class="chatt" id="chatt"></div>

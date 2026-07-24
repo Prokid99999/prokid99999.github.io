@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title style="color: blue;">thoughts</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icons/thoughts.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/icons/thoughts.png">
     <script src="/script.js"></script>
 </head>
 <script>
@@ -14,22 +14,24 @@
                 document.getElementById('stories').innerHTML = '<span style="color: #0099ff;">Stories</span>'
                 document.getElementById('universes').innerHTML = '<span style="color: skyblue;">Universes</span>'
                 document.getElementById('passUser').innerHTML = '<span style="color: white;">character sheets</span>'
-                document.getElementById('doc').textContent = 'character sheets google doc (deprecated)'
-                document.getElementById('3ds').textContent = '3ds stuff';
-            document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
-            document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
-            gewi('vocaloid').innerHTML = '<span style="color: #0ff;">Vocaloid Idle</span>'
+                document.getElementById('doc').innerHTML = 'character sheets google doc (deprecated)'
+                document.getElementById('3ds').innerHTML = '3ds stuff';
+                document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
+                document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
+                gewi('vocaloid').innerHTML = '<span style="color: #0ff;">Vocaloid Idle</span>'
+                gewi('writers').innerHTML = '<span style="color: white">writers</span>'
             }
             else if (thoughts === 'true') {
                 setCookie('thoughts', 'false')
-                document.getElementById('stories').textContent = ''
-                document.getElementById('universes').textContent = ''
-                document.getElementById('passUser').textContent = ''
-                document.getElementById('doc').textContent = ''
-                document.getElementById('3ds').textContent = ''
-                document.getElementById('writing').textContent = ''
-                document.getElementById('lore').textContent = ''
-                gewi('vocaloid').textContent = ''
+                document.getElementById('stories').innerHTML = ''
+                document.getElementById('universes').innerHTML = ''
+                document.getElementById('passUser').innerHTML = ''
+                document.getElementById('doc').innerHTML = ''
+                document.getElementById('3ds').innerHTML = ''
+                document.getElementById('writing').innerHTML = ''
+                document.getElementById('lore').innerHTML = ''
+                gewi('vocaloid').innerHTML = ''
+                gewi('writers').innerHTML = ''
             }
         }
         else if (thoughts === 'true' && toggle === false) {
@@ -41,6 +43,7 @@
             document.getElementById('writing').innerHTML = '<span style="color: white;">writing stuff</span>'
             document.getElementById('lore').innerHTML = '<span style="color: white;">lore</span>'
             gewi('vocaloid').innerHTML = '<span style="color: #0ff;">Vocaloid Idle</span>'
+                gewi('writers').innerHTML = '<span style="color: white">writers</span>'
             }
     }
     window.onload = () => {
@@ -69,7 +72,8 @@
 
         <a id='stories' href="stories"></a><br>
         <a id="universes" href="/universes"></a><br>
-        <a id="lore" href="/stories/lore"></a><br><br>
+        <a id="lore" href="/stories/lore"></a><br>
+        <a id="writers" href="writers.html"></a><br><br>
 
         <a href="character-sheets" id="passUser"></a><br>
         <a id="doc" href="https://docs.google.com/document/d/1_JaB4aHlvy7FF0Ulwl8IwmxrR_lsryKxB0W3VUVrp4M/edit?tab=t.b9yrb23q1nt1#heading=h.mjc46dwdun9z" target="_blank" rel="noopener noreferrer"></a><br><br>

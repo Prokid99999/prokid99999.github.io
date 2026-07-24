@@ -3,6 +3,7 @@ body {background-color: black;}
 a:link {color: blue;}
 a:visited {color: #90f;}
 a:active {color: red;}
+a:hover { font-style: italic;}
 strong {color: red;}
 h1 {color:blue; font-family: 'Times New Roman', Times, serif;}
 p {margin-right: 25px; color: white;}

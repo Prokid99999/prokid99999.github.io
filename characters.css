@@ -1,12 +1,12 @@
-body {background-color: black; margin-right: 25%;}
-* {font-family: Arial, Helvetica, sans-serif; color: white;}
+* {font-family: Arial, Helvetica, sans-serif; color: inherit;}
+body {background-color: black; margin-right: 25%; color: white;}
 a:link {color: blue; text-decoration: none;}
 a:visited {color: #90f; text-decoration: underline;}
 a:hover {font-style: italic; text-decoration: underline; color: aqua;}
 a:active {color: red; text-decoration: underline;}
 strong {color: red;}
 button {color: black;}
-p {margin-right: 25px; margin-left: calc(0px + 1rem); text-indent: calc(0px + -1rem); color: white;}
+p {margin-right: 25px; margin-left: calc(0px + 1rem); text-indent: calc(0px + -1rem); }
 i {color: inherit; font-family: inherit;}
 /* classes */
 .hidden {color: black; cursor: default; line-height: 1rem;}
