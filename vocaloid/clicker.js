@@ -479,6 +479,8 @@ function init() {
   }
   })
 
+  let pressedKeys = []
+
   window.onkeydown = function (event) {
     if (document.activeElement != gewi('purchaseNumber')) {
       if (event.key === 'ArrowRight') {
@@ -545,6 +547,7 @@ function init() {
         purchaseAutoVsynth('rei', purchase*10)
       }
     }
+    pressedKeys.push(event.key)
   }
 
   purchase = Number(gewi('purchaseNumber').value)
@@ -598,9 +601,18 @@ function init() {
 
   gewi('music').play()
 
+  document.addEventListener('blur', () => {
+    gewi('music').pause()
+  })
+  document.addEventListener('focus', () => {
+    gewi('music').play()
+  })
+
   if (window.location.href === 'http://localhost:2009/vocaloid/clicker.html') {
     skins[0] = 'br'
   }
+  vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
+  facts = randomNoRepeats(vsynthFacts)
 }
 
 // sing
@@ -648,6 +660,7 @@ const tick = async () => {
     if (getCookie(path + 'unlockedMiku') === 'true') {
       setCookie(path + 'unlockedMiku', 'done')
       mikuFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
     }
 
@@ -655,6 +668,7 @@ const tick = async () => {
     if (getCookie(path + 'unlockedTeto') === 'true') {
       qSelA('.teto').forEach(element => {element.style.display = 'block'})
       tetoFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedTeto', 'done', debug)
@@ -665,6 +679,7 @@ const tick = async () => {
     if (getCookie(path + 'unlockedNeru') === 'true') {
       qSelA('.neru').forEach(element => {element.style.display = 'block'})
       neruFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedNeru', 'done', debug)
@@ -676,6 +691,7 @@ const tick = async () => {
       qSelA('.luka').forEach(element => {element.style.display = 'block'})
       qSelA('.family').forEach(element => {element.style.display = 'block'})
       lukaFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedLuka', 'done', debug)
@@ -687,6 +703,7 @@ const tick = async () => {
       qSelA('.rin').forEach(element => {element.style.display = 'block'})
       qSelA('.len').forEach(element => {element.style.display = 'block'})
       kagamineFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedKagamines', 'done', debug)
@@ -697,6 +714,7 @@ const tick = async () => {
       qSelA('.defoko').forEach(element => {element.style.display = 'block'})
       qSelA('.utaus').forEach(element => {element.style.display = 'block'})
       defokoFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedDefoko', 'done', debug)
@@ -706,6 +724,7 @@ const tick = async () => {
       qSelA('.rei').forEach(element => {element.style.display = 'block'})
       // qSelA('.utaus').forEach(element => {element.style.display = 'block'})
       reiFacts.forEach(element => {vsynthFacts.push(element)})
+      vsynthFacts.push(`Fun fact! There are ${vsynthFacts.length} facts in this ticker!<br>${vsynthFacts.length + 1} including this one`)
       facts = randomNoRepeats(vsynthFacts)
 
       setCookie(path + 'unlockedRei', 'done', debug)
@@ -724,6 +743,7 @@ vsynthFacts = [
   "The term 'Vocaloid' is often used to refer to the general idea of voice synthesizers, rather than the specific software named VOCALOID.",
     "There are at least three mainstream vocal synthesizers: VOCALOID, UTAU, and SynthV.",
     "Every Vocaloid is a vocal synthesizer that comes with a character for recognizability.",
+    // `Fun fact! There are ${vsynthFacts.length} facts!`
 
 ]
 let mikuFacts = [
@@ -762,7 +782,7 @@ let kagamineFacts = [
   `Kagamine Len<br>${selectedVsynth('len', '3rem')}`
 ]
 let defokoFacts = [
-  `Uta 'Defoko' Utane<br>${selectedVsynth('defoko', '3rem')}`
+  `Uta 'Defoko' Utane<br>${selectedVsynth('defoko', '3rem')}`,
 ]
 let reiFacts = [
   `Adachi Rei<br>${selectedVsynth('rei', '3rem')}`
