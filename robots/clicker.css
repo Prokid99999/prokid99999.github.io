@@ -1,0 +1,124 @@
+@keyframes pulse {
+  0% {color: #0a0;}
+  50% {color: #0c0;}
+  100% {color: #0a0;}
+}
+@keyframes border-pulse {
+  0% {border-color: #040;}
+  50% {border-color: #060;}
+  100% {border-color: #040;}
+}
+@keyframes button-pulse {
+  0% {color: #0c0;}
+  50% {color: #0f0;}
+  100% {color: #0c0;}
+}
+
+body {
+  /* user-select: none; */
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.2rem;
+  /* overflow: hidden; */
+}
+
+#click {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('/vocaloid/left.svg');
+    background-size: cover;
+    color: #fff;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+#board_help:hover > #assemble_help {
+  display: block;
+}
+#assemble_help {
+  display: none;
+}
+
+div.container {
+  display: inline-block;
+  margin-bottom: 1rem;
+  min-width: 20vw;
+  min-height: 15vh;
+}
+div#news {
+  margin-right: 9rem;
+  /* margin-left: 1rem; */
+  min-height: 4rem;
+  overflow: hidden;
+}
+div#newstext {
+  margin: auto;
+}
+
+button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  padding: 0.75rem;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #aaa;
+    color: #000;
+  }
+  button {
+    background-color: #bbb;
+    color: #000;
+    border: solid 2px #999;
+    border-radius: 5px;
+  }
+  button:active {
+    background-color: #ccc;
+    border-color: #888;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: white;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  button {
+    background-color: #111;
+    color: #0d0;
+    border: solid 2px #222;
+    border-radius: 5px;
+    animation-name: button-pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  button:active {
+    background-color: #222;
+    border-color: #333;
+  }
+  div.container {
+    background-color: #050505;
+    border: solid 2px #050;
+    border-radius: 5px;
+    padding: 10px;
+    animation-name: border-pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  div#news {
+    background-color: #050505;
+    border: solid 2px #050;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    animation-name: border-pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}

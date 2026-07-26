@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Allan|Aguafina Script|Amatic SC' rel='stylesheet'> -->
+    <link rel="stylesheet" href="/writing.css">
+    <!-- <link rel="stylesheet" href="/stories/chatt.css"> -->
+    <link rel="stylesheet" href="/writers/foxvale.css">
+    <link rel="icon" href="/icons/story.png">
+    <script src="/script.js"></script>
+    <script src="/text.js"></script>
+</head>
+<style>
+  .lill {
+    color: #6c00d1;
+  }
+  .user {
+    color: #aaa;
+    /* text-shadow: 1px 1px 2px #666; */
+  }
+  .dull {
+    color: #444;
+  }
+  .bright {
+    color: #fff;
+  }
+  body {
+    overflow-x: hidden;
+    color: white;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100vw;
+    margin-left: 2rem;
+    margin-right: 5rem;
+  }
+  span {
+    font-family: inherit;
+  }
+  br {
+    line-height: 2rem;
+  }
+  h3 {
+    color: white;
+  }
+  h3>br {
+    line-height: 1.5rem
+  }
+  p.warnings {
+    color: #ccc;
+    text-indent: 0px;
+    /* margin-bottom: 1rem; */
+    font-size: small;
+    line-height: 1rem;
+    font-family: inherit;
+  }
+  p.warnings>br {
+    line-height: 1.5rem;
+  }
+  h3.warning {
+    color: red;
+    margin-bottom: 0px;
+    margin-top: 00px;
+    font-size: x-large;
+    font-family: inherit;
+  }
+  div.warnings {
+    position: fixed;
+    background-color: #222;
+    background: radial-gradient(#333, #171717);
+    height: min-content;
+    padding: 15px;
+    padding-top: 10px;
+    border: #111 solid 2px;
+    border-radius: 15px;
+    max-width: 13rem;
+    min-width: min-content;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+    margin-top: 6rem;
+  }
+
+  div.side {
+    position: fixed;
+    left: 0.55rem;
+    top: 0.55rem;
+    /* background-color: #222;
+    background: radial-gradient(#333, #171717); */
+    /* height: min-content; */
+    /* padding: 15px;
+    padding-top: 10px; */
+    /* border: #111 solid 2px;
+    border-radius: 15px; */
+    max-width: 13rem;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .writer {
+    position: fixed;
+    background-color: #222;
+    background: radial-gradient(#333, #171717);
+    height: min-content;
+    padding: 15px;
+    padding-top: 10px;
+    border: #111 solid 2px;
+    border-radius: 15px;
+    max-width: 13rem;
+    min-width: min-content;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-indent: 0%;
+  }
+  .side-space {
+    line-height: 10rem;
+  }
+  .prokid {
+    color: blue;
+  }
+
+  .chat_message {
+    font-family: inherit;
+    margin-bottom: 0.5rem;
+    display: inline;
+    position: relative;
+  }
+
+  .back {
+    background-color: #050505;
+  }
+
+@media screen and (max-width: 900px) {
+  div.side {
+    left: 1rem;
+    right: 1rem;
+    position: relative;
+    max-width: 90vw;
+    margin-bottom: 2rem;
+    max-height: fit-content;
+  }
+  div.warnings {
+    position: relative;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    max-width: unset;
+  }
+  .writer {
+    position: relative;
+  }
+  p.warnings {
+    font-size: x-large;
+    line-height: 2rem;
+  }
+  h3.warning {
+    font-size: xx-large;
+  }
+  body {
+    max-width: 99vw;
+    margin-left: 1rem;
+    margin-right: 1.75rem;
+    margin-top: 1rem;
+  }
+  .side-space {
+    line-height: 0%;
+  }
+}
+</style>
+<title></title>
+<html>
+    <body>
+      <div class="back"></div>
+    </body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    qSel('.back').innerHTML = rp
+  })
+
+  function chatText(clas='bright', name='', text='put some text here') {
+    return `<p class="chat_message"><span class="user">{<span class="${clas}">${name}</span>}</span> ${text}</p><br>`
+  }
+
+  function fox(text='uwu') {
+    return chatText('foxvale', 'fox', text)
+  }
+  function veil(text='') {
+    return chatText('valefox', 'veil', text)
+  }
+  function prokid(text='') {
+    return chatText('prokid', 'prokid', text)
+  }
+
+  let rp = `<br>` +
+  prokid(`<span class="dull">don't mind me, leaking some rp dms :Pc</span><br>`)+
+  fox()+
+  veil()
+
+</script>

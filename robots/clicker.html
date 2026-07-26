@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="/vocaloid/clicker.css">
+    <link rel="stylesheet" href="clicker.css">
     <link rel="icon" href="/icons/mikuSelected.png">
     <script src="https://benheroblaw.github.io/script.js"></script>
     <script src="clicker.js"></script>
 </head>
 <title>Android Factory</title>
 <style>
-
 </style>
 <html>
     <body>
-        <div id="loading">loading... <img src="loading.gif"></div>
+        <!-- <div id="loading">loading... <img src="loading.gif"></div> -->
+        <div id="news"><div id="newstext"></div></div>
 
+        <div class="left">
+            <div class="container">
+                <!-- <div><span id="cpu"></span> Processors</div>
+                <div><span id="ram"></span> Memory Units</div>
+                <div><span id="ssd"></span> Storage Units</div>
+                <div><span id="mobo"></span> Motherboards</div>
+                ------------------ -->
+                <div><span id="boards"></span> Complete Boards</div>
+                ------------------
+                <div><span id="cased"></span> Cased Robots</div>
+                ------------------
+                <div><span id="complete"></span> Complete Robots</div>
+            </div>
+            <br>
+
+            <div class="container" id="board_help">
+                <div>Board prog: <span id="board_progress"></span></div>
+                <div>Board step: <span id="board_splash"></span></div>
+                <button id="board_assemble">Assemble</button>
+                <!-- <div id="assemble_help">To assemble a board you need:
+                <pre>  1 processor<br>  1 memory unit<br>  1 storage unit<br>  1 motherboard<br></pre>
+                </div> -->
+            </div>
+            <br>
+
+            <div class="container">
+                <div>Casing prog: <span id="case_progress"></span></div>
+                <div>Casing step: <span id="case_splash"></span></div>
+                <button id="case_assemble">Assemble</button>
+            </div>
+            <br>
+            <!-- <div>Testing: <span id="tests"></span></div> -->
+            <div class="container">
+                <div>Testing prog: <span id="test_progress"></span></div>
+                <div>Testing step: <span id="test_splash"></span></div>
+                <button id="testing">Test</button>
+            </div>
+        </div>
+        <div class="images"></div>
     </body>
 </html>
