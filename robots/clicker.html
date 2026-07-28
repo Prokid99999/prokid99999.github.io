@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="clicker.css">
-    <link rel="icon" href="/icons/mikuSelected.png">
-    <script src="https://benheroblaw.github.io/script.js"></script>
+    <link rel="icon" href="/icons/quote.svg">
+    <script src="script.js"></script>
     <script src="clicker.js"></script>
 </head>
 <title>Android Factory</title>
@@ -11,7 +11,9 @@
 <html>
     <body>
         <!-- <div id="loading">loading... <img src="loading.gif"></div> -->
+        <div id="finish"><div class="container">preparing game...</div></div>
         <div id="news"><div id="newstext"></div></div>
+
 
         <div class="left">
             <div class="container">
@@ -50,6 +52,27 @@
                 <div>Testing step: <span id="test_splash"></span></div>
                 <button id="testing">Test</button>
             </div>
+            <br>
+            <div class="container">
+                <div>Completed robots: $<span id="price"></span></div>
+                <button id="sell">Sell</button>
+            </div>
+            <br>
+        </div>
+        <div class="center">
+            <div class="container">
+                Currencies<br>
+                ------------------<br>
+                <div>$<span id="dollars"></span></div>
+            </div>
+            <br>
+            <div class="container">
+                Upgrades<br>
+                ------------------<br>
+                <button class="upgrade" id="autosell">Autosell - $50,000</button>
+            </div>
+        <br>
+        <button id="reset">reset</button>
         </div>
         <div class="images"></div>
     </body>
