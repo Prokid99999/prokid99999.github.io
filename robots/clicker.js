@@ -6,9 +6,9 @@ path = 'robofactory: '
   ]
 
 let board_splashes = [
-  'adding processor',
-  'adding memory',
-  'adding storage',
+  'add processor',
+  'add memory',
+  'add storage',
 ]
 let case_splashes = [
   'building body',
@@ -170,7 +170,8 @@ function autosell() {
 }
 function autosellClick() {
   let dollars = Number(getCookie(path + 'dollars'))
-  if (dollars >= 50000) {
+  if (dollars >= 50000 && getCookie(path + 'autoselling') !== 'true') {
+    setCookie(path + 'autoselling', 'true')
     setCookie(path + 'dollars', Number(getCookie(path + dollars)) - 50000)
     setCookie(path + 'autosell', true)
     gewi('autosell').style.display = 'none'
@@ -192,6 +193,7 @@ function resetGame() {
   setCookie(path + 'boardSplash1', 'placeholder')
   setCookie(path + 'boardSplash2', 'placeholder')
   setCookie(path + 'boardSplash3', 'placeholder')
+  setCookie(path + 'autoselling', 'false')
   gewi('boards').textContent = getCookie(path + 'boards')
   gewi('cased').textContent = getCookie(path + 'cased')
   gewi('complete').textContent = getCookie(path + 'complete')
@@ -252,7 +254,7 @@ function init() {
       const element = displays[index];
       displayNumbers(element)
     }
-    if (Number(getCookie(path + 'dollars')) > 0) {
+    if (Number(getCookie(path + 'allDollars')) > 0) {
       qSel('.center').style.display = 'initial'
     }
     else {
